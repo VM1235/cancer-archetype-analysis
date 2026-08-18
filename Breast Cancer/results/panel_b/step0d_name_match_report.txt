@@ -1,0 +1,6 @@
+n_panelA=63
+n_matched=63
+coverage=1.0000
+unmatched_panelA=
+unmatched_genefu=
+output=/Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/results/panel_b/pam50_labels_panelA.csv

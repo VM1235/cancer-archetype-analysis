@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local clone of the authors' SCLC repo (large; not our code)
+reference/
+
+# Project-local R library for ComBat (sva and dependencies)
+rlib/
+**/rlib/
+
+# Huge raw downloads (over GitHub's file limit; keep locally)
+Breast Cancer/data/raw/OmicsExpressionProteinCodingGenesTPMLogp1.csv
+Breast Cancer/data/tumors/HiSeqV2
+
+# Intermediate Panel C matrices (100–270 MB)
+Breast Cancer/results/panel_c_tcga/tcga_primary_log_shared_genes.csv
+Breast Cancer/results/panel_c_tcga/merged_uncorrected_shared_genes.csv
+Breast Cancer/results/panel_c_tcga/CCLE_TCGA_COMBAT.csv

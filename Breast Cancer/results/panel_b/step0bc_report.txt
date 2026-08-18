@@ -1,0 +1,6 @@
+genefu 2.42.0
+n_input_genes 16500
+n_unmapped 66
+n_entrez_matrix 16434
+n_pam50 63
+n_failed_pam50 0

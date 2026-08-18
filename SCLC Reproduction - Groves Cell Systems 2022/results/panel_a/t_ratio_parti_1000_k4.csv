@@ -1,0 +1,2 @@
+k,t_ratio,p_value,n_perm,n_init_obs,n_init_null,n_success,n_fail,paper_p,paper_t_ratio
+4,0.24731570805871778,0.051,1000,150,50,1000,0,0.059,0.247

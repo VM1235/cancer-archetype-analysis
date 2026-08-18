@@ -1,0 +1,37 @@
+Groves SCLC vs this breast Panel A (Run_2, ParTI PCHA path)
+
+Data (not copied from SCLC)
+  Groves: ComBat-merged Minna+CCLE, genes dropped if all values < 2 then log2.
+          15950 genes x 120 lines.
+  Ours:   DepMap log2(TPM+1), one study, no ComBat.
+          Drop genes with max log2(TPM+1) < 1 (TPM < 1 in every line).
+          16500 genes x 63 invasive breast carcinoma cell lines
+          (Breast Cancer/input_panelA_invasive_breast_carcinoma_ccle_logtpm_filtered.csv)
+
+ParTI.m when algNum=5 (PCHA)  — this is what Groves used (params_lognorm.txt)
+  maxRuns = 1000 shuffles          -> we use 500 (requested)
+  numIter = 5                      -> NOT 50; ParTI lowers it for PCHA
+  observed inits = 3 * numIter = 15 (findMinSimplex.m, keep MAX volume)
+  inits per shuffle = numIter = 5  (CalculateSimplexTratiosPCHA.m, keep MAX t-ratio)
+  delta = 0
+  PCHA maxiter=500, conv_crit=1e-6 (same as py_pcha defaults we use)
+  t-ratio fit space = first (k-1) PCs of the gene-space PCA
+  p = fraction of null t-ratios >= observed t-ratio
+      (MATLAB writes sum(tRatioRand>tRatioReal)/maxRuns for PCHA)
+
+dim (PCA truncation for the ESV curve)
+  Groves SCLC: dim=12, because those 12 PCs explain ~47% of gene-space variance
+               (~50% is what they aimed at).
+  ParTI default dim=10 if you pass nothing; they did not use the default for SCLC.
+  Breast: choose smallest n with cumulative PCA variance >= 50% on THIS matrix.
+          That is data-specific, same rule as Groves, not “always 12”.
+
+Suggested k
+  Groves: ParTI DimensionFinder elbow on the ESV curve, then they forced k=5
+          after also seeing the t-ratio p-values (smallest k with p<0.05).
+  Breast: same DimensionFinder formula; also report smallest k with p<0.05 if any.
+
+What we were doing wrong before
+  150 observed inits and 15 inits/shuffle is the Sisal/MVSA default (numIter=50).
+  For PCHA, ParTI.m explicitly sets numIter=5. t-ratios can look the same because
+  PCHA is stable, but the null is not the Groves null.

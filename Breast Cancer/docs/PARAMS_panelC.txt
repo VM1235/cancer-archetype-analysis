@@ -1,0 +1,25 @@
+Breast Panel C vs Groves Figure 1C
+
+What Groves actually did (not “project tumors into the cell-line PCA”):
+  1. Merge cell-line matrix + tumor matrix on shared genes.
+  2. sva::ComBat, batch = source (CCLE / Minna / tumor), mod = ~1,
+     ref.batch = Minna. Saved file is bc2 = CCLE_Minna_Thomas_COMBAT.csv
+     (not the fsva object).
+  3. Fit a NEW PCA on that combined ComBat matrix.
+  4. Inverse-transform cell-line PCHA vertices to gene space, then
+     pca.transform those vertices. Do not refit PCHA on tumors.
+  5. Scatter in combined PC1–PC2; variance: tumor-only PCA ceiling vs
+     combined PCs on tumors vs gene-row shuffles.
+
+Breast analogue:
+  batches = cell_line (DepMap, n=63) vs tumor (TCGA-BRCA primary, n=1097)
+  ref.batch = cell_line
+  labels on the scatter = IHC ER/HER2 from the clinical matrix
+    breast_carcinoma_estrogen_receptor_status
+    lab_proc_her2_neu_immunohistochemistry_receptor_status
+  not PAM50, not Panel B LumA/LumB.
+
+Code:
+  Breast Cancer/Run_2/codes/combat_cellline_tumor.R
+  Breast Cancer/Run_2/codes/run_panelC_tcga.py
+sva lives in Breast Cancer/Run_2/rlib (project-local).

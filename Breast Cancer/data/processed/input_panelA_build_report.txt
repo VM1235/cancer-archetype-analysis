@@ -1,0 +1,10 @@
+expression_file: /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/raw data/OmicsExpressionProteinCodingGenesTPMLogp1.csv
+model_file: /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/raw data/Model.csv
+id_column: ModelID
+filter: invasive / OncoTree BRCA; ModelType=Cell Line
+n_models_in_metadata: 77
+n_with_rnaseq: 63
+n_genes_before_filter: 19205
+n_genes_after_filter: 16500
+output_matrix: input_panelA_invasive_breast_carcinoma_ccle_logtpm_filtered.csv
+output_models: input_panelA_models_used.csv
