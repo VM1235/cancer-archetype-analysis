@@ -1,0 +1,7 @@
+hypothesis_driven_k=2
+mes_idx=1
+pn_idx=0
+corr_S_with_MES_minus_PN=[-0.252774264876646, 0.25277426487664606]
+t_ratio=1.0000000000000004
+p_value=1.0
+note=not Groves-selected k

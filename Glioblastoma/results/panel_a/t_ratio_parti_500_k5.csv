@@ -1,0 +1,2 @@
+k,t_ratio,p_value,n_perm,n_init_obs,n_init_null,numIter,n_success,n_fail,n_pcs_fit
+5,0.10226333590381113,0.51,500,150,50,50,500,0,12

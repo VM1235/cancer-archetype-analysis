@@ -1,0 +1,11 @@
+expression_file=/Users/apple/Desktop/thesis_iisc/Project_1/Glioblastoma/data/HiSeqV2
+clinical_file=/Users/apple/Desktop/thesis_iisc/Project_1/Glioblastoma/data/TCGA.GBM.sampleMap-GBM_clinicalMatrix
+n_tcga_downloaded=172
+n_genes_tcga=20530
+n_genes_cell_line=15833
+n_genes_shared=13677
+n_expr_in_clinical=172
+n_primary_tumors=154
+n_primary_with_GeneExp_Subtype=152
+n_nan=0
+no extra log transform (HiSeqV2 already log2)

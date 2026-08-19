@@ -51,6 +51,29 @@ def pick_breast_models(models, prefer_invasive=True):
     return breast, "Breast lineage"
 
 
+def pick_gbm_models(models):
+    """Boolean mask of glioblastoma models (OncoTree GB), not all CNS tumors."""
+    cols = {c.lower(): c for c in models.columns}
+
+    def col(*names):
+        for n in names:
+            if n.lower() in cols:
+                return cols[n.lower()]
+        return None
+
+    code = col("OncotreeCode", "OncotreeSubtypeCode")
+    disease = col("OncotreePrimaryDisease", "PrimaryDisease")
+    subtype = col("OncotreeSubtype")
+    gbm = pd.Series(False, index=models.index)
+    if code is not None:
+        gbm |= models[code].astype(str).str.upper().isin(["GB", "GBM"])
+    if disease is not None:
+        gbm |= models[disease].astype(str).str.contains("glioblastoma", case=False, na=False)
+    if subtype is not None:
+        gbm |= models[subtype].astype(str).str.contains("glioblastoma", case=False, na=False)
+    return gbm, "OncoTree GB / glioblastoma"
+
+
 def expression_to_genes_by_samples(expr):
     """DepMap files are usually samples × genes; Panel A wants genes × samples."""
     expr = expr.copy()

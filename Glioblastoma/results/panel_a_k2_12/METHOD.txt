@@ -1,0 +1,7 @@
+Hypothesis-driven k=2 fit in the full 12-PC cell-line space.
+Deviation from ParTI: do not restrict to (k-1)=1 PC. That convention
+is for k>=3 simplices; at k=2 it forces a 1-D hull-endpoint fit with
+t-ratio identically 1. Here PCHA uses all 12 PCs; t-ratio is the
+1-D volume ratio in the affine span of the two archetypes after that
+12-D fit. Inits/shuffles match GBM Panel A (150 / 50 x 500, delta=0).
+Not Groves-selected k. Does not overwrite panel_a or panel_a_k2.
