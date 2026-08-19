@@ -1,0 +1,13 @@
+source=genefu::pam50$centroids.map (same 50 genes as pam50.robust)
+citation=Parker et al. J Clin Oncol 2009; genefu pam50 centroids
+genefu_map_file=/Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/data/processed/pam50_genefu_centroids_map.csv
+n_requested=50
+n_unique_requested=50
+n_present_exact=47
+n_present_alias=3
+n_missing=0
+missing_genes=
+alias_maps=CDCA1->NUF2;KNTC2->NDC80;ORC6L->ORC6
+src_matrix=input_panelA_invasive_breast_carcinoma_ccle_logtpm_filtered.csv 16500x63
+restricted_matrix=input_panelA_pam50_genelist.csv 50x63
+no re-log; no low-expression refilter

@@ -1,0 +1,2 @@
+3
+DimensionFinder elbow (no k with p<0.05); finder=3

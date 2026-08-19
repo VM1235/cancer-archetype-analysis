@@ -1,0 +1,15 @@
+source=Wang et al. Cancer Cell 32:42-56 (2017) Table S1 Subtype Signatures
+file=Glioblastoma/data/processed/Wang2017_CancerCell_TableS1_mmc2.xlsx
+doi=10.1016/j.ccell.2017.06.003
+note=50 upregulated genes per CL/MES/PN; Neural omitted (not tumor-intrinsic)
+n_per_subtype={'Classical': 50, 'Mesenchymal': 50, 'Proneural': 50}
+n_requested_unique=150
+n_present_exact=135
+n_present_alias=8
+n_missing=7
+missing_genes=NPPA,PAK7,PCDHA9,SLC17A6,NHLH1,ARNTL,GRIK1
+missing_by_subtype={'Classical': ['ARNTL', 'GRIK1'], 'Proneural': ['NPPA', 'PAK7', 'PCDHA9', 'SLC17A6', 'NHLH1']}
+alias_maps=ACPP->ACP3;HN1->JPT1;HRASLS->PLAAT1;ZNF643->ZSCAN31;LHFP->LHFPL6;SEPT11->SEPTIN11;C14orf159->DGLUCY;KIAA0494->EFCAB14
+src_matrix=input_panelA_glioblastoma_ccle_logtpm_filtered.csv 15833x54
+restricted_matrix=input_panelA_wang2017_genelist.csv 143x54
+no re-log; no low-expression refilter
