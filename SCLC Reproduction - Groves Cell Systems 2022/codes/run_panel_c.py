@@ -16,6 +16,18 @@ from sklearn.utils import shuffle
 from src.io import load_combined_combat, load_expression_csv, sample_source_from_name
 from src.pca import align_pca_signs, fit_pca, inverse_transform_scores
 
+N_PCS_CELL = 12
+K = 5
+
+
+def barycentric_weights(points, vertices):
+    """Affine weights for points in R^{k-1} vs k vertices. Inside if all w>=0."""
+    k = vertices.shape[0]
+    a = np.vstack([vertices.T, np.ones((1, k))])
+    b = np.vstack([points.T, np.ones((1, points.shape[0]))])
+    w, *_ = np.linalg.lstsq(a, b, rcond=None)
+    return w.T
+
 PANEL_A = SCLC / "results" / "panel_a"
 OUT = SCLC / "results" / "panel_c"
 OUT.mkdir(parents=True, exist_ok=True)
@@ -51,19 +63,27 @@ def main():
     expr_cl = load_expression_csv()
     combined = load_combined_combat()
     saved_scores = np.load(PANEL_A / "pc_scores_12.npy")
-    archetypes = np.load(PANEL_A / "archetypes_k5.npy")
+    archetypes = np.load(PANEL_A / "archetypes_k5_parti.npy")
+    n_vol = archetypes.shape[1]
+    k = archetypes.shape[0]
+    if k != K or n_vol != K - 1:
+        raise ValueError(f"Expected archetypes shape ({K}, {K - 1}), got {archetypes.shape}")
+    print(f"Using archetypes_k5_parti.npy {archetypes.shape}; pad to {N_PCS_CELL} PCs for gene-space inverse")
 
-    pca12, scores12 = fit_pca(expr_cl.T.values, n_components=12)
+    pca12, scores12 = fit_pca(expr_cl.T.values, n_components=N_PCS_CELL)
     pca12, scores12, signs = align_pca_signs(scores12, saved_scores, pca12)
     max_diff = np.max(np.abs(scores12 - saved_scores))
     print(f"Aligned 12-PC scores; max abs diff vs saved = {max_diff:.4g}")
     np.save(PANEL_A / "pca12_components.npy", pca12.components_)
     np.save(PANEL_A / "pca12_mean.npy", pca12.mean_)
 
+    # ParTI vertices live in (k-1)-D; higher PCs are zero (breast/GBM Panel C).
+    arcs_full = np.zeros((k, N_PCS_CELL))
+    arcs_full[:, :n_vol] = archetypes
     gene_arcs = pd.DataFrame(
-        inverse_transform_scores(pca12, archetypes).T,
+        inverse_transform_scores(pca12, arcs_full).T,
         index=expr_cl.index,
-        columns=[f"arc{i + 1}" for i in range(5)],
+        columns=[f"arc{i + 1}" for i in range(k)],
     )
 
     shared = gene_arcs.index.intersection(combined.index)
@@ -101,8 +121,8 @@ def main():
     cum_combined = cumulative(ev_combined)
     ratio = cum_combined / cum_tumor
     print("Cumulative combined / tumor-only at k=1..8:")
-    for k, r in enumerate(ratio[:8], start=1):
-        print(f"  {k}: {100 * r:.1f}%")
+    for n_pc, r in enumerate(ratio[:8], start=1):
+        print(f"  {n_pc}: {100 * r:.1f}%")
 
     pd.DataFrame(
         {
@@ -123,6 +143,39 @@ def main():
     )
     gene_arcs.to_csv(OUT / "archetypes_gene_space_shared.csv")
     sources.to_csv(OUT / "sample_sources.csv")
+
+    t_vol = scores_all[is_tumor.values][:, :n_vol]
+    a_vol = arc_scores[:, :n_vol]
+    dist = np.sqrt(((t_vol[:, None, :] - a_vol[None, :, :]) ** 2).sum(axis=2))
+    nearest = dist.argmin(axis=1) + 1
+    weights = barycentric_weights(t_vol, a_vol)
+    inside = (weights >= -1e-6).all(axis=1)
+    n_inside = int(inside.sum())
+    n_tumor = int(inside.size)
+    print(f"Tumors with all barycentric weights >= 0 in {n_vol}-D: {n_inside}/{n_tumor}")
+
+    tumor_ids = combined.columns[is_tumor.values]
+    table = pd.DataFrame({"source": sources.loc[tumor_ids].values}, index=tumor_ids)
+    table.index.name = "sample"
+    for i in range(min(8, N_COMPONENTS)):
+        table[f"PC{i + 1}"] = scores_all[is_tumor.values, i]
+    dist_df = pd.DataFrame(dist, index=tumor_ids, columns=[f"dist_arc{i + 1}" for i in range(k)])
+    dist_df["nearest_archetype"] = nearest
+    dist_df["inside_simplex"] = inside
+    for i in range(k):
+        dist_df[f"w_arc{i + 1}"] = weights[:, i]
+    table = table.join(dist_df)
+    table.to_csv(OUT / "tcga_sample_subtype_archetype.csv")
+    pd.DataFrame(
+        {
+            "n_inside": [n_inside],
+            "n_tumor": [n_tumor],
+            "fraction": [n_inside / n_tumor if n_tumor else np.nan],
+            "n_vol": [n_vol],
+            "k": [k],
+            "space": [f"combined PCA first {n_vol} PCs"],
+        }
+    ).to_csv(OUT / "containment_summary.csv", index=False)
 
     fig, ax = plt.subplots(figsize=(6, 6))
     ax.scatter(
@@ -177,6 +230,7 @@ def main():
 
     print(f"\nWrote outputs to {OUT}")
     print(f"5-component ratio vs tumor-only ceiling: {100 * ratio[4]:.1f}% (paper ~80%)")
+    print(f"containment: {n_inside}/{n_tumor} tumors inside the simplex")
 
 
 if __name__ == "__main__":

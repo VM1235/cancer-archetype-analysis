@@ -101,10 +101,22 @@ def run_one(subtypes, scores, archetypes, tag):
 def main():
     expr = load_expression_csv()
     scores = np.load(PANEL_A / "pc_scores_12.npy")
-    archetypes = np.load(PANEL_A / "archetypes_k5.npy")
+    archetypes = np.load(PANEL_A / "archetypes_k5_parti.npy")
     sample_names = list(expr.columns)
     if scores.shape[0] != len(sample_names):
         raise ValueError("PCA scores and expression samples are misaligned")
+    n_vol = archetypes.shape[1]
+    if n_vol != archetypes.shape[0] - 1:
+        raise ValueError(
+            f"Expected k-1={archetypes.shape[0] - 1} PC columns in archetypes, "
+            f"got shape {archetypes.shape}"
+        )
+    if scores.shape[1] < n_vol:
+        raise ValueError(f"PCA scores have {scores.shape[1]} PCs; need {n_vol}")
+    # Distances in the (k-1)-D PCHA fitting space, not the 12-D visualization PCA.
+    scores = scores[:, :n_vol]
+    print(f"Using {PANEL_A / 'archetypes_k5_parti.npy'} {archetypes.shape}")
+    print(f"Distance space: first {n_vol} PCs of pc_scores_12.npy")
 
     author = load_author_subtypes().reindex(sample_names)
     if author.isna().any():

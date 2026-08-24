@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cancer Archetype Analysis — End-to-End</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --fg: #e8eef4;
+    --muted: #9aabbc;
+    --accent: #5eb0ef;
+    --good: #3dd68c;
+    --warn: #f5a524;
+    --bad: #f76b72;
+    --card: #1a2330;
+    --line: #2a3544;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: var(--bg); color: var(--fg);
+    font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; }
+  #deck { height: 100%; position: relative; overflow: hidden; }
+  .slide {
+    display: none; height: 100%; padding: 40px 56px 72px;
+    flex-direction: column; gap: 18px; overflow: auto;
+  }
+  .slide.active { display: flex; }
+  .slide h1 { font-size: 2rem; font-weight: 650; letter-spacing: -0.02em; }
+  .slide h2 { font-size: 1.55rem; font-weight: 600; color: var(--accent); }
+  .slide h3 { font-size: 1.1rem; font-weight: 600; margin-top: 4px; }
+  .slide p, .slide li { color: var(--fg); line-height: 1.45; font-size: 1.02rem; }
+  .muted { color: var(--muted); }
+  .small { font-size: 0.88rem; }
+  ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 6px; }
+  .row { display: flex; gap: 20px; align-items: stretch; flex: 1; min-height: 0; }
+  .col { display: flex; flex-direction: column; gap: 10px; flex: 1; min-width: 0; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 14px 16px;
+  }
+  .fig {
+    background: #fff; border-radius: 8px; padding: 6px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; flex: 1; min-height: 0;
+  }
+  .fig img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .fig.tall img { max-height: 58vh; }
+  .tag {
+    display: inline-block; padding: 2px 8px; border-radius: 999px;
+    font-size: 0.75rem; font-weight: 600; border: 1px solid var(--line);
+  }
+  .tag.good { color: var(--good); border-color: var(--good); }
+  .tag.warn { color: var(--warn); border-color: var(--warn); }
+  .tag.bad { color: var(--bad); border-color: var(--bad); }
+  .tag.accent { color: var(--accent); border-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 550; }
+  .kpi { display: flex; gap: 12px; flex-wrap: wrap; }
+  .kpi .card { min-width: 140px; }
+  .kpi .v { font-size: 1.4rem; font-weight: 650; }
+  .kpi .l { font-size: 0.8rem; color: var(--muted); }
+  #bar {
+    position: fixed; left: 0; right: 0; bottom: 0; height: 48px;
+    background: rgba(15,20,25,0.92); border-top: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 20px; gap: 12px; z-index: 10;
+  }
+  #bar button {
+    background: var(--card); color: var(--fg); border: 1px solid var(--line);
+    border-radius: 8px; padding: 6px 14px; cursor: pointer; font: inherit;
+  }
+  #bar button:hover { border-color: var(--accent); color: var(--accent); }
+  #progress { color: var(--muted); font-size: 0.85rem; flex: 1; text-align: center; }
+  .title-slide { justify-content: center; gap: 16px; }
+  .title-slide h1 { font-size: 2.6rem; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  code { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.88em;
+    background: #0b1016; padding: 1px 5px; border-radius: 4px; }
+  .callout {
+    border-left: 3px solid var(--accent); padding: 10px 14px;
+    background: var(--card); border-radius: 0 8px 8px 0;
+  }
+  .callout.warn { border-left-color: var(--warn); }
+  .callout.bad { border-left-color: var(--bad); }
+  .callout.good { border-left-color: var(--good); }
+</style>
+</head>
+<body>
+<div id="deck">
+
+<!-- 0 TITLE -->
+<section class="slide title-slide active" data-title="Title">
+  <p class="tag accent">VM1235 / cancer-archetype-analysis</p>
+  <h1>Pareto Task Inference across tumor types</h1>
+  <p class="muted" style="font-size:1.15rem; max-width:720px">
+    Reproduce Groves et al. <em>Cell Systems</em> 2022 Figure 1A–C on SCLC,
+    then apply the same method to breast cancer (BRCA) and glioblastoma (GBM).
+  </p>
+  <div class="kpi" style="margin-top:18px">
+    <div class="card"><div class="v">SCLC</div><div class="l">Reproduction · significant k=5</div></div>
+    <div class="card"><div class="v">BRCA</div><div class="l">Method transfer · NS simplex</div></div>
+    <div class="card"><div class="v">GBM</div><div class="l">Contrast case · NS simplex</div></div>
+  </div>
+  <p class="small muted">Arrow keys / space to navigate · Esc for overview</p>
+</section>
+
+<!-- 1 WHAT PAPER SHOWED -->
+<section class="slide" data-title="1. What SCLC paper showed">
+  <h2>1. What the SCLC paper showed</h2>
+  <p class="muted">Groves et al., Cell Systems 2022 — Figure 1A–C as one argument</p>
+  <div class="row">
+    <div class="col" style="flex:1.15">
+      <div class="fig tall">
+        <img src="../../SCLC%20Reproduction%20-%20Groves%20Cell%20Systems%202022/figures/Figure_1A.png"
+             alt="SCLC Figure 1A reproduction (paper claim geometry)" />
+      </div>
+    </div>
+    <div class="col" style="flex:0.85">
+      <div class="card">
+        <h3>Claim (three panels, one story)</h3>
+        <ul>
+          <li><strong>A:</strong> 120 SCLC cell lines form a <strong>5-vertex simplex</strong> (Pareto archetypes), not a round blob.</li>
+          <li><strong>B:</strong> Those 5 corners = known TF subtypes (A, A2, N, P, Y).</li>
+          <li><strong>C:</strong> Human tumors sit in the <em>same</em> cell-line polytope (ComBat-corrected; do not refit PCHA on tumors).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Biology</h3>
+        <p class="small">Trade-offs → data cloud shaped like a polytope. Vertices = pure tasks; interior = mixtures (plasticity bridge).</p>
+      </div>
+      <div class="callout small">
+        Method: Hausser et al. Nat Commun 2019 (ParTI / PCHA). Paper PDFs in <code>papers/</code>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 TOOLS -->
+<section class="slide" data-title="2. Tools used">
+  <h2>2. Tools &amp; stack</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>Core method</h3>
+      <ul>
+        <li><strong>PCA</strong> — truncate to first n PCs with ≥50% variance</li>
+        <li><strong>PCHA</strong> (<code>py_pcha</code>) — archetypes as convex combinations of samples</li>
+        <li><strong>ParTI conventions</strong> — fit in <code>k−1</code> PCs; <code>delta=0</code>; max-volume multi-start</li>
+        <li><strong>t-ratio permutation</strong> — shuffle each PC across samples</li>
+        <li><strong>Hypergeometric + BH</strong> — subtype enrichment in distance bins</li>
+        <li><strong>ComBat</strong> (R <code>sva</code>) — cell line vs tumor batch</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Software / data</h3>
+      <ul>
+        <li>Python 3.9+, NumPy <strong>&lt; 2</strong> (required by <code>py_pcha</code>)</li>
+        <li>Shared engines: repo <code>src/</code> (pca, archetypes, enrichment, combat, io)</li>
+        <li>DepMap CCLE expression + Model.csv</li>
+        <li>UCSC Xena TCGA HiSeqV2 + clinical</li>
+        <li>Breast PAM50: R <code>genefu</code></li>
+        <li>Reference MATLAB clone: <code>reference/</code> (local only)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:4px">
+    <h3>Repo layout</h3>
+    <p class="small"><code>SCLC Reproduction…/</code> · <code>Breast Cancer/</code> · <code>Glioblastoma/</code> · each with <code>data/</code>, <code>codes/</code>, <code>figures/</code>, <code>results/</code></p>
+  </div>
+</section>
+
+<!-- 3 TOOLS PROTOCOL -->
+<section class="slide" data-title="2b. Protocol A→B→C">
+  <h2>2b. Shared protocol (A → B → C)</h2>
+  <div class="grid3">
+    <div class="card">
+      <h3>Panel A — how many corners?</h3>
+      <ul class="small">
+        <li>PCA on cell lines</li>
+        <li>PCHA for k = 3…7 (or 2…15 for ESV)</li>
+        <li>ESV elbow (DimensionFinder)</li>
+        <li>t-ratio p-values; take <strong>smallest significant k</strong></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Panel B — what are the corners?</h3>
+      <ul class="small">
+        <li>Independent subtype labels</li>
+        <li>Distance to each vertex → equal-count bins</li>
+        <li>Call match only if enrichment <strong>peaks in bin 0</strong> (q&lt;0.1)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Panel C — do tumors live there?</h3>
+      <ul class="small">
+        <li>Map cell-line archetypes → gene space</li>
+        <li>Merge + ComBat (batch = line vs tumor)</li>
+        <li><strong>Do not</strong> refit PCHA on tumors</li>
+        <li>Scatter + variance vs tumor-only PCA</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout warn" style="margin-top:8px">
+    <strong>Do not copy SCLC numbers.</strong> Each matrix gets its own PC count and its own k.
+    Breast and GBM are the same <em>method</em>, not the same k=5 / 12 PCs.
+  </div>
+  <table style="margin-top:8px">
+    <tr><th>Setting</th><th>SCLC (paper / full)</th><th>Breast</th><th>GBM</th></tr>
+    <tr><td>n cell lines</td><td>120</td><td>63</td><td>54</td></tr>
+    <tr><td>PCs (≥50% var)</td><td>12</td><td>8</td><td>12</td></tr>
+    <tr><td>PCHA numIter</td><td>50 (150/50 inits)</td><td>5 (15/5)</td><td>50 (150/50)</td></tr>
+    <tr><td>Shuffles</td><td>1000 (paper)</td><td>500</td><td>500</td></tr>
+  </table>
+</section>
+
+<!-- 4 SCLC REPRODUCTION -->
+<section class="slide" data-title="3. SCLC reproduction">
+  <h2>3. SCLC reproduction</h2>
+  <div class="row">
+    <div class="col">
+      <div class="fig">
+        <img src="../../SCLC%20Reproduction%20-%20Groves%20Cell%20Systems%202022/figures/Figure_1A.png" alt="SCLC 1A" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="fig">
+        <img src="../../SCLC%20Reproduction%20-%20Groves%20Cell%20Systems%202022/figures/Figure_1B.png" alt="SCLC 1B" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="fig">
+        <img src="../../SCLC%20Reproduction%20-%20Groves%20Cell%20Systems%202022/figures/Figure_1C.png" alt="SCLC 1C" />
+      </div>
+    </div>
+  </div>
+  <div class="callout warn">
+    <strong>Shuffle caveat for the figures shown:</strong> Panel A permutation significance in the
+    exported deck was often driven by a <strong>100-shuffle sanity run</strong>
+    (<code>run_panel_a_sanity_parti.py</code>), not the paper’s 1000 × 50-init null.
+    Full ParTI run (<code>run_panel_a_parti_full.py</code>, 1000 shuffles) recovers paper t-ratios
+    to 3 decimals (k=5: t≈0.108, p≈0.045 vs paper p≈0.034) — same qualitative call:
+    <span class="tag good">k=5 significant</span>, k=4 not.
+  </div>
+  <p class="small muted">B: 1-to-1 subtype↔vertex peaks. C: tumors occupy the cell-line geometry after ComBat.</p>
+</section>
+
+<!-- 5 BRCA CHANGES -->
+<section class="slide" data-title="4a. BRCA — what changed">
+  <h2>4. Analysing BRCA — what changed in tools/codes</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>Data &amp; preprocessing</h3>
+      <ul>
+        <li>DepMap invasive breast <strong>cell lines</strong> (OncoTree), not Minna+CCLE merge</li>
+        <li><strong>63 lines × 16,500 genes</strong> (drop max log2(TPM+1) &lt; 1)</li>
+        <li>Already log2(TPM+1) — <strong>no re-log</strong>, no Panel A ComBat</li>
+        <li>Tumors: TCGA-BRCA HiSeq, <strong>1,097</strong> primaries</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Code / parameter deltas vs SCLC</h3>
+      <ul>
+        <li>Drivers under <code>Breast Cancer/codes/</code>; engines still <code>src/</code></li>
+        <li>PCA dim = first n with ≥50% var → <strong>8 PCs</strong> (not 12)</li>
+        <li>ParTI PCHA <code>numIter=5</code> (15/5 inits) — ParTI lowers this for PCHA</li>
+        <li><strong>500</strong> shuffles (not 1000)</li>
+        <li>Panel B labels = <strong>PAM50</strong> (genefu); drop LumA+Normal from enrichment only</li>
+        <li>Panel C colors = <strong>IHC ER/HER2</strong>, not PAM50</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:6px">
+    Official path is current <code>codes/</code> + <code>figures/</code> — not <code>archive/run1/</code>.
+  </div>
+</section>
+
+<!-- 6 BRCA FIG A -->
+<section class="slide" data-title="4b. BRCA Figure A">
+  <h2>4b. BRCA — Figure A</h2>
+  <div class="row">
+    <div class="col" style="flex:1.2">
+      <div class="fig tall">
+        <img src="../../Breast%20Cancer/figures/Figure_1A_breast.png" alt="Breast Figure 1A" />
+      </div>
+    </div>
+    <div class="col" style="flex:0.8">
+      <div class="kpi">
+        <div class="card"><div class="v">k = 4</div><div class="l">DimensionFinder elbow</div></div>
+        <div class="card"><div class="v">p = 0.082</div><div class="l">best p (k=4, 500 shuffles)</div></div>
+      </div>
+      <div class="card">
+        <h3>Result</h3>
+        <ul class="small">
+          <li><span class="tag bad">No k with p &lt; 0.05</span></li>
+          <li>k=4 is a <strong>descriptive</strong> elbow, not a Groves-style significant simplex</li>
+          <li>t-ratio at k=4 ≈ 0.35 — cloud more continuum-like than SCLC</li>
+        </ul>
+      </div>
+      <table class="small">
+        <tr><th>k</th><th>t</th><th>p</th></tr>
+        <tr><td>3</td><td>0.683</td><td>0.44</td></tr>
+        <tr><td>4</td><td>0.354</td><td><strong>0.082</strong></td></tr>
+        <tr><td>5</td><td>0.162</td><td>0.12</td></tr>
+        <tr><td>7</td><td>0.015</td><td>0.32</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 7 BRCA FIG B+C -->
+<section class="slide" data-title="4c. BRCA Figures B & C">
+  <h2>4c. BRCA — Figures B &amp; C</h2>
+  <div class="row">
+    <div class="col">
+      <div class="fig">
+        <img src="../../Breast%20Cancer/figures/Figure_1B_breast.png" alt="Breast 1B" />
+      </div>
+      <div class="card small">
+        <strong>B:</strong> PAM50 vs distance bins (LumA/Normal dropped from test).
+        <span class="tag good">2/3 matches</span> — LumB and Basal peak at bin 0; Her2 unmatched.
+        Polytope still fit on all 63 lines.
+      </div>
+    </div>
+    <div class="col">
+      <div class="fig">
+        <img src="../../Breast%20Cancer/figures/Figure_1C_tcga.png" alt="Breast 1C" />
+      </div>
+      <div class="card small">
+        <strong>C:</strong> 1,097 TCGA tumors, IHC ER/HER2 colors, cell-line k=4 archetypes held fixed.
+        <span class="tag bad">0 / 1097 inside simplex</span>.
+        Variance axes are dominated by tumors after combined PCA — do not over-read as polytope generalization.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 GBM CHANGES -->
+<section class="slide" data-title="5a. GBM — what changed">
+  <h2>5. Analysing GBM — what changed in tools/codes</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>Data</h3>
+      <ul>
+        <li>DepMap OncoTree <strong>GB only</strong> (not all CNS) → <strong>54</strong> lines with RNA</li>
+        <li>15,833 genes after low-expression filter</li>
+        <li>TCGA-GBM HiSeq: <strong>154</strong> primary tumors (shared genes 13,677)</li>
+        <li>Clinical Verhaak <code>GeneExp_Subtype</code> for Panel C colors</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Code deltas</h3>
+      <ul>
+        <li>Paper-scale PCHA: <code>numIter=50</code> → 150/50 inits (unlike breast’s 5)</li>
+        <li>500 shuffles; k=3…7 fit <strong>in parallel</strong></li>
+        <li>12 PCs (51.4% variance)</li>
+        <li>Panel B labels: marker z-score Classical / MES / PN on CCLE
+            (TCGA-centroid transfer failed — all MES)</li>
+        <li>Neural subtype not used for line labels (Wang 3-type scheme)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout bad">
+    Hypothesis under test: same Groves protocol → significant simplex + vertex↔subtype map + tumors inside.
+    <strong>All three failed on this GBM matrix.</strong>
+  </div>
+</section>
+
+<!-- 9 GBM FIG A -->
+<section class="slide" data-title="5b. GBM Figure A (k=3–7)">
+  <h2>5b. GBM — Figure A (k = 3–7 sweep)</h2>
+  <div class="row">
+    <div class="col" style="flex:1.2">
+      <div class="fig tall">
+        <img src="../../Glioblastoma/figures/Figure_1A_gbm.png" alt="GBM Figure 1A" />
+      </div>
+    </div>
+    <div class="col" style="flex:0.8">
+      <table>
+        <tr><th>k</th><th>t-ratio</th><th>p (500)</th></tr>
+        <tr><td>3</td><td>0.580</td><td>0.224</td></tr>
+        <tr><td>4</td><td>0.297</td><td>0.238</td></tr>
+        <tr><td>5</td><td>0.102</td><td>0.510</td></tr>
+        <tr><td>6</td><td>0.034</td><td>0.694</td></tr>
+        <tr><td>7</td><td>0.027</td><td><strong>0.068</strong></td></tr>
+      </table>
+      <div class="card" style="margin-top:8px">
+        <span class="tag bad">No k with p &lt; 0.05</span>
+        <p class="small" style="margin-top:8px">
+          Suggested k=<strong>7</strong> by DimensionFinder only — a fallback for drawing the polytope,
+          <em>not</em> “GBM has 7 archetypes.” t-ratio at k=7 is tiny (0.027): simplex is a small object in the hull.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 GBM B+C -->
+<section class="slide" data-title="5c. GBM Figures B & C">
+  <h2>5c. GBM — Figures B &amp; C (at suggested k=7)</h2>
+  <div class="row">
+    <div class="col">
+      <div class="fig">
+        <img src="../../Glioblastoma/figures/Figure_1B_gbm.png" alt="GBM 1B" />
+      </div>
+      <div class="card small">
+        <strong>B:</strong> Marker-based CL / MES / PN labels (21 / 20 / 13).
+        <span class="tag bad">0 / 3 bin-0 peaks</span> — no 1-to-1 vertex↔subtype map.
+        Underpowered: 7 arcs × 3 subtypes × 54 lines.
+      </div>
+    </div>
+    <div class="col">
+      <div class="fig">
+        <img src="../../Glioblastoma/figures/Figure_1C_gbm.png" alt="GBM 1C" />
+      </div>
+      <div class="card small">
+        <strong>C:</strong> TCGA Verhaak colors; archetypes from cell lines held fixed.
+        <span class="tag bad">0 / 154 tumors inside</span> the 6-D simplex.
+        Combined-PCA variance looks high because tumors outnumber lines — not evidence the polytope generalizes.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 GBM k=2 -->
+<section class="slide" data-title="5d. GBM k=2 didn't help">
+  <h2>5d. GBM — forcing k=2 (PN–MES) did not rescue the claim</h2>
+  <p class="muted small">Hypothesis from Jolly lab / continuum literature: antagonistic Proneural–Mesenchymal axis instead of multi-archetype simplex.</p>
+  <div class="row">
+    <div class="col">
+      <div class="fig"><img src="../../Glioblastoma/figures/Figure_1A_gbm_k2.png" alt="GBM k2 A" /></div>
+      <p class="small muted">ParTI k=2 in 1 PC → t-ratio ≡ 1 (degenerate)</p>
+    </div>
+    <div class="col">
+      <div class="fig"><img src="../../Glioblastoma/figures/Figure_1A_gbm_k2_12.png" alt="GBM k2 12PC" /></div>
+      <p class="small muted">Relaxation: k=2 in 12 PCs → t≈0.70, <strong>p=0.49</strong> (NS)</p>
+    </div>
+    <div class="col">
+      <div class="fig"><img src="../../Glioblastoma/figures/Figure_1B_gbm_k2.png" alt="GBM k2 B" /></div>
+      <p class="small muted">Still <strong>no</strong> significant bin-0 subtype peaks</p>
+    </div>
+  </div>
+  <div class="callout warn" style="margin-top:6px">
+    Panel C “all tumors inside” for a 1-simplex is geometrically easy and <strong>not</strong> a Groves win.
+    Separate outputs live in <code>panel_*_k2/</code> — official A/B/C figures were not overwritten.
+  </div>
+</section>
+
+<!-- 12 GENELIST BRCA -->
+<section class="slide" data-title="6a. Gene-list BRCA">
+  <h2>6a. Maybe gene-list restricting helps? — BRCA</h2>
+  <p class="muted small">Restrict PCA/PCHA to PAM50 (50 genes) — test whether housekeeping genes were “washing out” the simplex.</p>
+  <div class="row">
+    <div class="col">
+      <div class="fig"><img src="../../Breast%20Cancer/figures/Figure_1A_breast_genelist.png" alt="BRCA genelist A" /></div>
+    </div>
+    <div class="col">
+      <div class="fig"><img src="../../Breast%20Cancer/figures/Figure_1B_breast_genelist.png" alt="BRCA genelist B" /></div>
+    </div>
+    <div class="col">
+      <div class="fig"><img src="../../Breast%20Cancer/figures/Figure_1C_tcga_genelist.png" alt="BRCA genelist C" /></div>
+    </div>
+  </div>
+  <table class="small">
+    <tr><th></th><th>Full transcriptome</th><th>PAM50-restricted</th></tr>
+    <tr><td>Genes / PCs</td><td>16,500 / 8</td><td>50 / 3</td></tr>
+    <tr><td>Best p</td><td>0.082 (k=4)</td><td><strong>0.762</strong> (k=3,4) — worse</td></tr>
+    <tr><td>Bin-0 matches</td><td>2/3 (LumB, Basal)</td><td>2/3 (same)</td></tr>
+    <tr><td>Tumors inside</td><td>0/1097</td><td>526/1097 — low-D triangle; do not compare naively</td></tr>
+  </table>
+  <div class="callout bad">
+    Restricting to subtype genes did <strong>not</strong> produce a significant simplex. p increased.
+  </div>
+</section>
+
+<!-- 13 GENELIST GBM -->
+<section class="slide" data-title="6b. Gene-list GBM">
+  <h2>6b. Gene-list restricting — GBM (Wang 2017 CL/MES/PN)</h2>
+  <div class="row">
+    <div class="col">
+      <div class="fig"><img src="../../Glioblastoma/figures/Figure_1A_gbm_genelist.png" alt="GBM genelist A" /></div>
+    </div>
+    <div class="col">
+      <div class="fig"><img src="../../Glioblastoma/figures/Figure_1B_gbm_genelist.png" alt="GBM genelist B" /></div>
+    </div>
+    <div class="col">
+      <div class="fig"><img src="../../Glioblastoma/figures/Figure_1C_gbm_genelist.png" alt="GBM genelist C" /></div>
+    </div>
+  </div>
+  <table class="small">
+    <tr><th></th><th>Full transcriptome</th><th>Wang 2017 (143 genes)</th></tr>
+    <tr><td>PCs</td><td>12</td><td>7</td></tr>
+    <tr><td>Suggested k</td><td>7 (elbow)</td><td>5 (elbow)</td></tr>
+    <tr><td>Smallest p</td><td>0.068 (k=7)</td><td>0.066 (k=6) — still NS</td></tr>
+    <tr><td>Bin-0 matches</td><td>0/3</td><td>0/3</td></tr>
+    <tr><td>Tumors inside</td><td>0/154</td><td>2/154</td></tr>
+  </table>
+  <div class="callout">
+    <strong>Thesis takeaway:</strong> Null results are not explained by “irrelevant genes dominating PCA”
+    under this protocol. SCLC remains the clean Groves win; BRCA/GBM are contrast cases.
+  </div>
+</section>
+
+<!-- END -->
+<section class="slide title-slide" data-title="Summary">
+  <h1>One-sentence status</h1>
+  <div class="card" style="max-width:820px">
+    <p style="font-size:1.15rem; line-height:1.5">
+      SCLC Fig 1A–C is a successful Groves reproduction; breast is the same method with mixed/weak
+      significance; GBM (and gene-list / k=2 variants) <strong>do not</strong> form a significant
+      cell-line simplex, do not put subtypes cleanly at vertices, and do not place tumors inside
+      that simplex — with the protocol and files in this repo.
+    </p>
+  </div>
+  <div class="kpi">
+    <div class="card"><div class="v tag good">SCLC</div><div class="l">k=5 · subtypes map · tumors in geometry</div></div>
+    <div class="card"><div class="v tag warn">BRCA</div><div class="l">k=4 NS · 2/3 PAM50 · 0/1097 inside</div></div>
+    <div class="card"><div class="v tag bad">GBM</div><div class="l">k=7 NS · 0/3 · 0/154 · k=2 &amp; genelists fail too</div></div>
+  </div>
+  <p class="muted small">Deep dive: <code>docs/DEEP_DIVE.md</code> · Repo: github.com/VM1235/cancer-archetype-analysis</p>
+</section>
+
+</div>
+
+<div id="bar">
+  <button type="button" id="prev">← Prev</button>
+  <div id="progress"></div>
+  <button type="button" id="next">Next →</button>
+</div>
+
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  const progress = document.getElementById('progress');
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, j) => s.classList.toggle('active', j === i));
+    progress.textContent = `${i + 1} / ${slides.length} — ${slides[i].dataset.title || ''}`;
+    location.hash = String(i + 1);
+  }
+  document.getElementById('prev').onclick = () => show(i - 1);
+  document.getElementById('next').onclick = () => show(i + 1);
+  window.addEventListener('keydown', (e) => {
+    if (['ArrowRight', 'ArrowDown', ' ', 'PageDown'].includes(e.key)) { e.preventDefault(); show(i + 1); }
+    if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); show(i - 1); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+  const fromHash = parseInt(location.hash.slice(1), 10);
+  show(Number.isFinite(fromHash) && fromHash >= 1 ? fromHash - 1 : 0);
+</script>
+</body>
+</html>

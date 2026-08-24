@@ -1,0 +1,19 @@
+expression_file=/Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/brca_metabric/data_mrna_illumina_microarray.txt
+clinical_sample=/Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/brca_metabric/data_clinical_sample.txt
+clinical_patient=/Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/brca_metabric/data_clinical_patient.txt
+n_patient_rows=2509
+n_unique_patient_id=2509
+n_genes_metabric=20385
+n_samples_metabric=1980
+n_ks_requested=218
+n_ks_present_exact=205
+n_ks_present_alias=1
+n_ks_matched_metabric=206
+n_ks_missing=12
+missing_genes=GALNT3,C1orf106,GPR56,AIM1,BSPRY,C19orf21,C10orf116,C12orf24,LEPRE1,KDELC1,BAG2,PTRF
+n_genes_full_ccle_shared=15663
+n_genes_cell_line_ks=206
+n_genes_output=203
+n_tumors_output=1980
+n_nan=0
+no extra log transform (Illumina HT-12 already log2)

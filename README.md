@@ -16,8 +16,9 @@ Each disease has its own folder with **data**, **codes**, **figures**, and **res
 | Folder | Status |
 |---|---|
 | [SCLC Reproduction - Groves Cell Systems 2022](SCLC%20Reproduction%20-%20Groves%20Cell%20Systems%202022/) | Figure 1A–C reproduction |
-| [Breast Cancer](Breast%20Cancer/) | Same method on DepMap cell lines + TCGA-BRCA tumors |
-| [Glioblastoma](Glioblastoma/) | Placeholder (not started) |
+| [Breast Cancer](Breast%20Cancer/) | DepMap lines + TCGA-BRCA; KS gene-list + METABRIC projection |
+| [Glioblastoma](Glioblastoma/) | DepMap GB lines + TCGA-GBM Panel A/B/C |
+| [supplementary/emt_hybrid_analysis](supplementary/emt_hybrid_analysis/) | Optional EMT / PN-MES vs archetype weights (not Fig 1A–C) |
 
 ## Setup
 
@@ -34,9 +35,11 @@ Breast Panel C ComBat also needs R with Bioconductor `sva` (a local copy can liv
 
 **In git (or intended to be):** code, READMEs, figures, small/medium tables, processed SCLC matrices, processed breast Panel A matrix, Model.csv, TCGA clinical annotations.
 
-**Kept locally, gitignored (too large for GitHub):** DepMap `OmicsExpressionProteinCodingGenesTPMLogp1.csv` (~500 MB), UCSC Xena `HiSeqV2` (~172 MB), Panel C ComBat intermediates (~100–270 MB), the authors’ cloned `reference/` repo, `.venv/`, and `rlib/`.
+**Kept locally, gitignored (too large for GitHub):** DepMap `OmicsExpressionProteinCodingGenesTPMLogp1.csv` (~500 MB), UCSC Xena `HiSeqV2` (~172 MB), METABRIC cBioPortal study (`Breast Cancer/brca_metabric/`, ~1.3 GB), Panel C ComBat intermediates, the authors’ cloned `reference/` repo, `.venv/`, and `rlib/`.
 
 Place those files in the paths listed in each disease README before rebuilding from raw data. Existing processed matrices are enough to rerun Panels A/B for SCLC and breast.
+
+**KS + METABRIC (breast):** see [`Breast Cancer/docs/KS_METABRIC_PIPELINE.md`](Breast%20Cancer/docs/KS_METABRIC_PIPELINE.md). Download METABRIC via [`Breast Cancer/brca_metabric/DOWNLOAD.md`](Breast%20Cancer/brca_metabric/DOWNLOAD.md).
 
 ## Shared code (`src/`)
 

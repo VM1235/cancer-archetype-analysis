@@ -44,13 +44,16 @@ Project_1/
   SCLC Reproduction - Groves Cell Systems 2022/
   Breast Cancer/
   Glioblastoma/
+  supplementary/emt_hybrid_analysis/   # optional EMT / PN-MES vs archetype weights
+  docs/                                  # audit report, presentation assets
 ```
 
 | Folder | Role | Status |
 |---|---|---|
 | SCLC | Reproduce Groves Fig 1A–C | Official figures exist; t-ratios match paper |
-| Breast | Same **method** on DepMap invasive breast + TCGA-BRCA | Official = current `codes/` + `figures/` (not `archive/run1/`) |
-| GBM | Same **method** on DepMap GB + TCGA-GBM | First full A/B/C run done 18 Aug 2026; **not** a Groves-like win |
+| Breast | DepMap lines + TCGA-BRCA; **also** KS genelist + METABRIC projection | Default + KS/METABRIC tracks in `codes/` |
+| GBM | DepMap GB + TCGA-GBM Panel A/B/C | Done Aug 2026; no k with p&lt;0.05 |
+| supplementary/ | EMT hybrid exploratory (Panel D style) | Not official Fig 1A–C |
 
 `src/paths.py`: `ROOT`, `SCLC`, `BREAST`, `GBM`, `PAPERS`, `REFERENCE`.
 
@@ -122,20 +125,16 @@ Official analysis is **not** `archive/run1/`. Use `codes/`, `figures/`, `results
 | `data/raw/` | `Model.csv`; huge `OmicsExpression…csv` (gitignored) |
 | `data/processed/` | Panel A matrix 16500 genes × **63** lines |
 | `data/tumors/` | Xena BRCA `HiSeqV2` (gitignored), clinical matrix |
-| `codes/` | Build → PAM50 → A → B → prepare TCGA → C |
+| `brca_metabric/` | cBioPortal METABRIC (**gitignored**; `DOWNLOAD.md` in git) |
+| `codes/` | Build → PAM50 → A → B → prepare TCGA → C; **also** `*_ks_genelist*` + `prepare_metabric_brca.py` |
 | `rlib/` | Local Bioconductor `sva` (gitignored); GBM C can reuse this |
-| `docs/` | `PARAMS_vs_Groves.txt`, `PARAMS_panelC.txt`, figure notes |
+| `docs/` | `PARAMS_*.txt`, figure notes, **`KS_METABRIC_PIPELINE.md`** |
 
-**Run order:**
+**Default run order:** see `Breast Cancer/README.md`.
 
-1. `01_build_input_panelA.py` — OncoTree invasive BRCA cell lines, drop all-low genes  
-2. `03_map_and_pam50.R` + `04_match_pam50_to_panelA.py` — genefu PAM50 (only if labels missing)  
-3. `run_panelA.py` — **numIter=5**, 500 shuffles (lighter than paper)  
-4. `run_panelB.py` — PAM50; **drops LumA and Normal** from enrichment only; polytope still all 63  
-5. `prepare_tcga_brca.py`  
-6. `run_panelC_tcga.py` — IHC ER/HER2 colors, not PAM50  
+**KS + METABRIC (Aug 2026):** Tan 2014 KS gene list → `panel_a_ks_genelist` (k=3, 2 PCs) or `panel_a_ks_genelist_extendedk` (k=4..7, 6 PCs). METABRIC projection: `prepare_metabric_brca.py` → `run_panelC_metabric_ks_genelist.py` (k=3) or `_k4.py`. Results: `panel_c_metabric_ks_genelist/` and `_k4/`. k=4 Panel A t-ratio **p=0.018** (500 shuffles). Full steps: `docs/KS_METABRIC_PIPELINE.md`.
 
-Suggested \(k=4\) from DimensionFinder; **no k with p&lt;0.05** (like GBM, unlike SCLC).
+Suggested \(k=4\) from DimensionFinder on the **default** 16k-gene matrix; **no k with p&lt;0.05** on that track (unlike KS k=3/k=4 on the restricted list).
 
 ---
 

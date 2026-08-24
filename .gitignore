@@ -16,10 +16,24 @@ Breast Cancer/data/tumors/HiSeqV2
 Glioblastoma/data/OmicsExpressionProteinCodingGenesTPMLogp1.csv
 Glioblastoma/data/HiSeqV2
 
-# Intermediate Panel C matrices (100–270 MB)
+# METABRIC cBioPortal study (~1.3 GB); see Breast Cancer/brca_metabric/DOWNLOAD.md
+Breast Cancer/brca_metabric/*
+!Breast Cancer/brca_metabric/DOWNLOAD.md
+
+# Intermediate Panel C matrices (large ComBat / merge outputs)
 Breast Cancer/results/panel_c_tcga/tcga_primary_log_shared_genes.csv
 Breast Cancer/results/panel_c_tcga/merged_uncorrected_shared_genes.csv
 Breast Cancer/results/panel_c_tcga/CCLE_TCGA_COMBAT.csv
+Breast Cancer/results/panel_c_metabric_ks_genelist/metabric_log_shared_genes.csv
+Breast Cancer/results/panel_c_metabric_ks_genelist/merged_uncorrected_shared_genes.csv
+Breast Cancer/results/panel_c_metabric_ks_genelist/CCLE_METABRIC_COMBAT.csv
+Breast Cancer/results/panel_c_metabric_ks_genelist_k4/CCLE_METABRIC_COMBAT.csv
 Glioblastoma/results/panel_c_tcga/tcga_primary_log_shared_genes.csv
 Glioblastoma/results/panel_c_tcga/merged_uncorrected_shared_genes.csv
 Glioblastoma/results/panel_c_tcga/CCLE_TCGA_COMBAT.csv
+
+# Local run logs
+**/*_run.log
+
+# Presentation / chat scratch (optional local notes)
+supplementary/emt_hybrid_analysis/**/Chat*.txt
