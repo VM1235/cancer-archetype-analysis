@@ -1,0 +1,8 @@
+cancer_type=LGG
+expression_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/LGG/HiSeqV2
+clinical_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/LGG/TCGA.LGG.sampleMap-LGG_clinicalMatrix
+n_downloaded=530
+n_genes=20530
+n_primary_tumors=516
+n_nan=0
+no extra log transform (Xena HiSeqV2 already log2)

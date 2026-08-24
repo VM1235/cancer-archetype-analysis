@@ -1,0 +1,4 @@
+cancer_type,label,k,n_samples,n_genes,varexpl,t_ratio,p_value,n_perm,hausser_reported_p
+LUAD_OR_LUSC,Lung,3,514,20530,0.9801469168841814,0.5144922413119835,0.03,100,"borderline, p = 0.013"
+LUAD_OR_LUSC,Lung,4,514,20530,0.9369313127350789,0.18722779202723194,0.48,100,"borderline, p = 0.013"
+LUAD_OR_LUSC,Lung,5,514,20530,0.8889553812702825,0.08033379150225606,0.05,100,"borderline, p = 0.013"

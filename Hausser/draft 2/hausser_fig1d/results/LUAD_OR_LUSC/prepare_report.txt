@@ -1,0 +1,8 @@
+cancer_type=LUAD_OR_LUSC
+expression_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/LUAD_OR_LUSC/HiSeqV2
+clinical_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/LUAD_OR_LUSC/TCGA.LUAD.sampleMap-LUAD_clinicalMatrix
+n_downloaded=576
+n_genes=20530
+n_primary_tumors=514
+n_nan=0
+no extra log transform (Xena HiSeqV2 already log2)

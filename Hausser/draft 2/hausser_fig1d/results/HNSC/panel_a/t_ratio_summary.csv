@@ -1,0 +1,4 @@
+cancer_type,label,k,n_samples,n_genes,varexpl,t_ratio,p_value,n_perm,hausser_reported_p
+HNSC,Head & Neck,3,520,20530,0.9871007549032479,0.5638462397017623,0.0,100,"borderline, p = 0.022"
+HNSC,Head & Neck,4,520,20530,0.9165621437120327,0.1525995080514972,0.97,100,"borderline, p = 0.022"
+HNSC,Head & Neck,5,520,20530,0.8728612354535338,0.056158522444284174,0.82,100,"borderline, p = 0.022"

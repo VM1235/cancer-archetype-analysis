@@ -1,0 +1,8 @@
+cancer_type=COAD
+expression_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/COAD/HiSeqV2
+clinical_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/COAD/TCGA.COAD.sampleMap-COAD_clinicalMatrix
+n_downloaded=329
+n_genes=20530
+n_primary_tumors=286
+n_nan=0
+no extra log transform (Xena HiSeqV2 already log2)

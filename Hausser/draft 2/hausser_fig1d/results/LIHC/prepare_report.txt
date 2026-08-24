@@ -1,0 +1,8 @@
+cancer_type=LIHC
+expression_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/LIHC/HiSeqV2
+clinical_file=/Users/apple/Desktop/thesis_iisc/Project_1/Hausser/draft 2/hausser_fig1d/data/LIHC/TCGA.LIHC.sampleMap-LIHC_clinicalMatrix
+n_downloaded=423
+n_genes=20530
+n_primary_tumors=371
+n_nan=0
+no extra log transform (Xena HiSeqV2 already log2)

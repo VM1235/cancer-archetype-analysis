@@ -1,0 +1,11 @@
+# Raw downloads (large; fetch per docs/README.md)
+data/
+
+# Scratch from SI PDF extraction
+tmp_si_images/
+
+# Prepared expression matrices (regenerate from data/)
+results/*/tumor_expr_primary.csv
+results/*/tumor_clinical_primary.csv
+
+.DS_Store

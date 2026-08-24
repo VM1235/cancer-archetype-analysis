@@ -1,0 +1,6 @@
+expression_file=/Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/brca_metabric/data_mrna_illumina_microarray.txt
+n_genes=20385
+n_primary_tumors=1980
+n_nan=16
+full gene set, no KS restriction, no cell-line involvement
+no extra log transform (Illumina HT-12 already log2)
