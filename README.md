@@ -9,7 +9,7 @@ This repository applies Pareto Task Inference (archetypal analysis / PCHA) to bu
 
 PDFs of both papers are in `papers/`.
 
-**New Cursor chats:** read [`PROJECT_CONTEXT.md`](PROJECT_CONTEXT.md) first (folder map, every script and intermediate, GBM results, caveats, next steps).
+
 
 Each disease has its own folder with **data**, **codes**, **figures**, and **results**. Shared Python engines live in `src/` at the repo root (PCA, PCHA, enrichment, I/O). Run all commands from this root unless a disease README says otherwise.
 
