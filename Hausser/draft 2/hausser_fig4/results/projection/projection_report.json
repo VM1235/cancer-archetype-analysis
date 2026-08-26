@@ -1,0 +1,20 @@
+{
+  "n_bulk_tumors": 1970,
+  "n_bulk_genes": 24368,
+  "n_archetypes": 4,
+  "n_sc_cancer_cells": 416,
+  "n_common_genes": 2245,
+  "paper_n_cells": 650,
+  "paper_n_common_genes": 1964,
+  "sc_span_over_arch_span_pc123": [
+    0.5403336939647791,
+    0.4360950330009553,
+    0.732918694015303
+  ],
+  "projection": "center each sc gene across cells; divide by ln(2); multiply by METABRIC PCA loadings on common genes; re-project gene-space archetypes on the same common genes",
+  "sources": {
+    "metabric_exp": "/Users/apple/Desktop/thesis_iisc/Project_1/Hausser_Original /Universal cancer tasks, evolutionary tradeoffs,  and the functions of driver mutations/Karaayvaz2018/brca_metabric/expMatrix.csv",
+    "arcs": "/Users/apple/Desktop/thesis_iisc/Project_1/Hausser_Original /Universal cancer tasks, evolutionary tradeoffs,  and the functions of driver mutations/Karaayvaz2018/brca_metabric/arcsOrig_genes.csv",
+    "sc": "/Users/apple/Desktop/thesis_iisc/Project_1/Hausser_Original /Universal cancer tasks, evolutionary tradeoffs,  and the functions of driver mutations/Karaayvaz2018/GSE118389_counts_rsem.txt"
+  }
+}

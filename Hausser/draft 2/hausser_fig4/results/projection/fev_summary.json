@@ -1,0 +1,10 @@
+{
+  "n_tumors": 4,
+  "mb_pct_of_sc_mean": 22.301820544002695,
+  "mb_pct_of_sc_sd": 2.610651873568201,
+  "rnd_pct_of_sc_mean": 1.6950645039355217,
+  "rnd_pct_of_sc_sd": 0.3825683698610343,
+  "ttest_pvalue": 0.00045010583509158514,
+  "paper_mb": 25.4,
+  "paper_rnd": 1.5
+}
