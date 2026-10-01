@@ -1,0 +1,40 @@
+GSVA matrix: 137 samples × 9 modules
+Bootstrap PCHA in full GSVA space (not PC subspace) ...
+  bootstrap 50/500 kept=50
+  bootstrap 100/500 kept=100
+  bootstrap 150/500 kept=150
+  bootstrap 200/500 kept=200
+  bootstrap 250/500 kept=250
+  bootstrap 300/500 kept=300
+  bootstrap 350/500 kept=350
+  bootstrap 400/500 kept=400
+  bootstrap 450/500 kept=450
+  bootstrap 500/500 kept=500
+kept 500/500; arcs shape (4, 9)
+vertex map (nearest author XC): ['A2: Inflammation', 'A3: Cell adhesion', 'A4: Proliferation', 'A1: Normal-like']
+Euclidean distance fitted vs author XC (same name):
+  A1: Normal-like: 0.665
+  A2: Inflammation: 0.930
+  A3: Cell adhesion: 0.686
+  A4: Proliferation: 0.298
+PC var: [0.206 0.161 0.137]
+PC sign alignment residual vs author arcs: 1.078
+Our arcs PC1-2 after sign align:
+  A1: Normal-like: (-1.222, 0.106)
+  A2: Inflammation: (0.354, 0.157)
+  A3: Cell adhesion: (0.325, -0.676)
+  A4: Proliferation: (0.318, 0.570)
+Primary agreement vs authors: 78.6% (n=28)
+Ours:
+ Secondary            84
+A1: Normal-like      18
+A3: Cell adhesion    14
+A4: Proliferation    12
+A2: Inflammation      9
+Name: count, dtype: int64
+Signed-distance correlation vs authors:
+  A1: Normal-like: r=0.872
+  A2: Inflammation: r=0.585
+  A3: Cell adhesion: r=0.725
+  A4: Proliferation: r=0.877
+Wrote /Users/apple/Desktop/thesis_iisc/Project_1/Anderson_PML_Archetypes/results/fig3_v2_refit9d

@@ -1,0 +1,28 @@
+Lung PCA: 60624 genes x 80 PMLs
+GSE102511: 16260 Ensembl x 17 PMLs
+GSE166720: 16260 Ensembl x 17 PMLs
+GSE193725: 16260 Ensembl x 23 PMLs
+Common Ensembl genes: 16260
+Combined counts: 16260 x 137
+calcNormFactors has been renamed to normLibSizes
+Genes after filterByExpr: 16050
+voom pass 1 ...
+duplicateCorrelation pass 1 ...
+consensus cor 1: 0.3567
+voom pass 2 ...
+duplicateCorrelation pass 2 ...
+consensus cor 2: 0.3668
+Residuals: 16050 x 137
+Module sizes after residual gene filter: Inflammatory Response=186, Regulation Of Endothelial Proliferation=523, Regulation Of Transcription=248, Peptide Biosynthesis=384, Cilia Functions=151, T Cell Activation=65, Cytokine Signaling=59, Cell Cycle=5, Extracellular Matrix Organization=7
+ℹ GSVA version 2.6.6
+ℹ Searching for rows with constant values
+ℹ Calculating GSVA ranks
+ℹ GSVA dense (classical) algorithm
+ℹ Row-wise ECDF estimation with Gaussian kernels
+ℹ Calculating row ECDFs
+ℹ Calculating column ranks
+ℹ GSVA dense (classical) algorithm
+ℹ Calculating GSVA scores for 9 gene sets
+✔ Calculations finished
+Wrote /Users/apple/Desktop/thesis_iisc/Project_1/Anderson_PML_Archetypes/results/fig3_ncbi_voom
+EXIT:0

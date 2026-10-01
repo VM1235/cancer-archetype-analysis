@@ -1,0 +1,33 @@
+{
+  "host": "GSE161529",
+  "guest": "DepMap_KS_63",
+  "k": 3,
+  "n_lines": 63,
+  "n_inside": 57,
+  "frac_inside": 0.9047619047619048,
+  "frac_inside_pal_self": 0.7575589229569041,
+  "filled_genes": [],
+  "batch_match": "gene_mean_sd_to_pal",
+  "inside_by_pam50": {
+    "Basal": {
+      "frac": 1.0,
+      "n": 27
+    },
+    "Her2": {
+      "frac": 0.8571428571428571,
+      "n": 14
+    },
+    "LumA": {
+      "frac": 0.75,
+      "n": 4
+    },
+    "LumB": {
+      "frac": 0.8235294117647058,
+      "n": 17
+    },
+    "Normal": {
+      "frac": 1.0,
+      "n": 1
+    }
+  }
+}

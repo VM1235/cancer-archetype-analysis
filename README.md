@@ -9,6 +9,8 @@ This repository applies Pareto Task Inference (archetypal analysis / PCHA) to bu
 
 PDFs of both papers are in `papers/`.
 
+**From-zero walkthrough of the whole project** (concepts, tasks, figures): [`docs/LEARNING_WALKTHROUGH.md`](docs/LEARNING_WALKTHROUGH.md).
+
 
 
 Each disease has its own folder with **data**, **codes**, **figures**, and **results**. Shared Python engines live in `src/` at the repo root (PCA, PCHA, enrichment, I/O). Run all commands from this root unless a disease README says otherwise.
@@ -16,9 +18,15 @@ Each disease has its own folder with **data**, **codes**, **figures**, and **res
 | Folder | Status |
 |---|---|
 | [SCLC Reproduction - Groves Cell Systems 2022](SCLC%20Reproduction%20-%20Groves%20Cell%20Systems%202022/) | Figure 1A–C reproduction |
-| [Breast Cancer](Breast%20Cancer/) | DepMap lines + TCGA-BRCA; KS gene-list + METABRIC projection |
+| [Breast Cancer](Breast%20Cancer/) | DepMap KS + TCGA/METABRIC; scRNA Fig. 4; Pal reverse simplex |
 | [Glioblastoma](Glioblastoma/) | DepMap GB lines + TCGA-GBM Panel A/B/C |
+| [Anderson_PML_Archetypes](Anderson_PML_Archetypes/) | Anderson et al. premalignant lung Fig. 3 (separate thread) |
+| [Hausser](Hausser/) | Hausser Fig. 1d / 4 draft reproductions |
+| [Sahoo](Sahoo/) | Local GEO dumps for GSE173634 / GSE176078 (mostly gitignored) |
 | [supplementary/emt_hybrid_analysis](supplementary/emt_hybrid_analysis/) | Optional EMT / PN-MES vs archetype weights (not Fig 1A–C) |
+| `src/` | Shared PCA / PCHA / enrichment |
+
+Breast scRNA + Pal reverse: [`Breast Cancer/docs/SCRIPTS.md`](Breast%20Cancer/docs/SCRIPTS.md).
 
 ## Setup
 

@@ -6,6 +6,9 @@ __pycache__/
 # Local clone of the authors' SCLC repo (large; not our code)
 reference/
 
+# Author PDF dump / ParTI MATLAB tree (not our pipeline)
+Hausser_Original */
+
 # Project-local R library for ComBat (sva and dependencies)
 rlib/
 **/rlib/
@@ -19,6 +22,26 @@ Glioblastoma/data/HiSeqV2
 # METABRIC cBioPortal study (~1.3 GB); see Breast Cancer/brca_metabric/DOWNLOAD.md
 Breast Cancer/brca_metabric/*
 !Breast Cancer/brca_metabric/DOWNLOAD.md
+
+# GSE161529 GEO + Figshare (multi-GB). Keep SampleStats + metadata in git.
+Breast Cancer/data/gse161529/GSE161529_RAW/
+Breast Cancer/data/gse161529/GSE161529_RAW.tar
+Breast Cancer/data/gse161529/*.rds
+Breast Cancer/data/gse161529/processed/*.npz
+Breast Cancer/data/gse161529/.venv/
+
+# Wu / Gambardella scRNA dumps (Sahoo/)
+Sahoo/GSE173634_RAW_UMI_counts.txt
+Sahoo/GSE176078_sc/
+Sahoo/*.tar
+Sahoo/GSE176078_Wu_etal_2021_bulkRNAseq_raw_counts.txt
+
+# MAGIC / UMI caches (often >100 MB — GitHub file limit)
+**/*magic_imputed.npz
+**/*ks_counts_cache.npz
+Breast Cancer/results/panel_b_gse161529/pal_cells_named.csv
+Breast Cancer/results/panel_a_ks_genelist_gse161529/S_k*.npy
+Breast Cancer/results/**/sc_cells_in_panelA_space.csv
 
 # Intermediate Panel C matrices (large ComBat / merge outputs)
 Breast Cancer/results/panel_c_tcga/tcga_primary_log_shared_genes.csv
@@ -34,6 +57,27 @@ Glioblastoma/results/panel_c_tcga/CCLE_TCGA_COMBAT.csv
 
 # Local run logs
 **/*_run.log
+Breast Cancer/results/logs/
 
 # Presentation / chat scratch (optional local notes)
 supplementary/emt_hybrid_analysis/**/Chat*.txt
+
+# Local presentation videos
+*.mp4
+
+# Extra paper PDFs (Groves/Hausser/nihms/Lopez already tracked in papers/)
+papers/main.pdf
+papers/fsysb-04-1346076.pdf
+papers/mcr-25-1093.pdf
+
+# Anderson PML thread — salmon index, raw GEO, SRA quant (multi-GB)
+Anderson_PML_Archetypes/data/ref/
+Anderson_PML_Archetypes/data/raw/
+Anderson_PML_Archetypes/data/sra/
+
+# Hausser draft 2 METABRIC bulk download
+Hausser/draft 2/data/
+
+# Pal combined count matrix (rebuild via 00_build_matrix_gse161529.py)
+Breast Cancer/data/gse161529/processed/gse161529_combined_counts.npz
+*.cpp

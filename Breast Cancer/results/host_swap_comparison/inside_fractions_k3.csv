@@ -1,0 +1,5 @@
+guest,frac_inside_depmap_host,frac_inside_pal_host,pct_depmap_host,pct_pal_host
+GSE161529 (Pal),0.1325855181,0.757558923,13.3,75.8
+GSE176078 (Wu),0.4553431007,0.7838341197,45.5,78.4
+GSE173634,0.5358793343,0.9608460208,53.6,96.1
+DepMap (63 lines),0.5238095238,0.9047619048,52.4,90.5

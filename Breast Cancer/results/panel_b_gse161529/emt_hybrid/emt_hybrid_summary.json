@@ -1,0 +1,49 @@
+{
+  "program_definition": {
+    "hybrid": "epi and mes cell scores both >= 75th percentile",
+    "epithelial": "not hybrid and EMT score <= 33rd percentile",
+    "mesenchymal": "not hybrid and EMT score >= 67th percentile",
+    "intermediate": "remaining cells"
+  },
+  "vertex_ks_names": {
+    "1": "mixed / high both",
+    "2": "epithelial",
+    "3": "mesenchymal"
+  },
+  "program_bin0_peaks": [
+    {
+      "program": "mesenchymal",
+      "archetype": 3,
+      "pole": "mesenchymal",
+      "fold_enrichment": 1.8584078905797028,
+      "q_value": 0.0
+    },
+    {
+      "program": "hybrid",
+      "archetype": 1,
+      "pole": "hybrid",
+      "fold_enrichment": 3.0289096835100584,
+      "q_value": 0.0
+    },
+    {
+      "program": "intermediate",
+      "archetype": 1,
+      "pole": "hybrid",
+      "fold_enrichment": 1.6485216437871564,
+      "q_value": 0.0
+    }
+  ],
+  "clinical_bin0_peaks": [
+    {
+      "subtype": "ER+",
+      "archetype": 2,
+      "fold_enrichment": 2.090302196848985
+    },
+    {
+      "subtype": "TNBC",
+      "archetype": 1,
+      "fold_enrichment": 2.8023386834932587
+    }
+  ],
+  "interpretation": "Arc 2 = epithelial pole, Arc 3 = mesenchymal pole, Arc 1 = hybrid/mixed pole (high both at vertex); clinical TNBC enriches at Arc 1 but program hybrid is the primary KS alignment."
+}

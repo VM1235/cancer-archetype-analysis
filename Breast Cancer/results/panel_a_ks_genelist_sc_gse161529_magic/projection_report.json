@@ -1,0 +1,1 @@
+{"dataset":"GSE161529","cell_filter":"Epithelial (Figshare Tum objects: TNBCTum\/HER2Tum\/ERTotalTum)","excluded_samples":["ER-0001"],"magic_imputation":true,"magic_protocol":"libsize_median+sqrt+approximate","magic_knn":5,"magic_n_pca":100,"n_shared_genes":206,"n_cells_projected":84602,"frac_inside_triangle":0.1325855181,"panel_a_p":0.022,"k":3}

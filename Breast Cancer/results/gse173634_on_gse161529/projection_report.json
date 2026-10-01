@@ -1,0 +1,85 @@
+{
+  "host": "GSE161529",
+  "guest": "GSE173634",
+  "n_pal_cells": 84602,
+  "n_guest_cells": 35271,
+  "n_genes_pca": 206,
+  "n_genes_guest_native": 205,
+  "filled_genes": [
+    "LHFPL6"
+  ],
+  "n_pcs": 6,
+  "k_elbow": 4,
+  "batch_match": "gene_mean_sd_to_pal",
+  "p_values": null,
+  "by_k": {
+    "3": {
+      "n_vol": 2,
+      "frac_inside_pal_self": 0.7575589229569041,
+      "n_inside_pal_self": 64091,
+      "frac_inside_guest": 0.9608460208102975,
+      "n_inside_guest": 33890,
+      "n_guest": 35271,
+      "by_subtype": {
+        "Basal-like": {
+          "frac_inside": 0.9885321100917431,
+          "n": 1744
+        },
+        "H": {
+          "frac_inside": 0.9360478490913273,
+          "n": 4347
+        },
+        "LA": {
+          "frac_inside": 0.8568407138136154,
+          "n": 7565
+        },
+        "LB": {
+          "frac_inside": 1.0,
+          "n": 2911
+        },
+        "TNA": {
+          "frac_inside": 1.0,
+          "n": 11716
+        },
+        "TNB": {
+          "frac_inside": 1.0,
+          "n": 6988
+        }
+      }
+    },
+    "4": {
+      "n_vol": 3,
+      "frac_inside_pal_self": 0.37806434836055886,
+      "n_inside_pal_self": 31985,
+      "frac_inside_guest": 0.5067619290635366,
+      "n_inside_guest": 17874,
+      "n_guest": 35271,
+      "by_subtype": {
+        "Basal-like": {
+          "frac_inside": 0.8589449541284404,
+          "n": 1744
+        },
+        "H": {
+          "frac_inside": 0.5829307568438004,
+          "n": 4347
+        },
+        "LA": {
+          "frac_inside": 0.5747521480502313,
+          "n": 7565
+        },
+        "LB": {
+          "frac_inside": 0.766059773273789,
+          "n": 2911
+        },
+        "TNA": {
+          "frac_inside": 0.5057186753158075,
+          "n": 11716
+        },
+        "TNB": {
+          "frac_inside": 0.19161419576416713,
+          "n": 6988
+        }
+      }
+    }
+  }
+}

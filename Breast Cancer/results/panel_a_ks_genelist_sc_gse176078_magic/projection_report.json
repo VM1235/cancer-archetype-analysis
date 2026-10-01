@@ -1,0 +1,1 @@
+{"dataset":"GSE176078","cell_filter":"Cancer Epithelial","magic_imputation":true,"magic_protocol":"libsize_median+sqrt+approximate","magic_knn":5,"magic_n_pca":100,"n_shared_genes":205,"n_cells_projected":24162,"frac_inside_triangle":0.4553431007,"panel_a_p":0.022,"k":3}

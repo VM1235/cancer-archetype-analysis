@@ -1,0 +1,16 @@
+Genes: 13778 Samples: 137
+consensus correlation: 0.1299
+Module sizes: Inflammatory Response=179, Regulation Of Endothelial Proliferation=483, Regulation Of Transcription=204, Peptide Biosynthesis=350, Cilia Functions=97, T Cell Activation=58, Cytokine Signaling=57, Cell Cycle=5, Extracellular Matrix Organization=7
+ℹ GSVA version 2.4.9
+ℹ Searching for rows with constant values
+ℹ Calculating GSVA ranks
+ℹ GSVA dense (classical) algorithm
+ℹ Row-wise ECDF estimation with Gaussian kernels
+ℹ Calculating row ECDFs
+ℹ Calculating column ranks
+ℹ GSVA dense (classical) algorithm
+ℹ Calculating GSVA scores
+✔ Calculations finished
+GSVA done
+ParetoTI not installed — use Python PCHA on gsva_scores.csv
+Wrote /Users/apple/Desktop/thesis_iisc/Project_1/Anderson_PML_Archetypes/results/fig3_v2

@@ -1,0 +1,5 @@
+fix vs codes/08:
+- PCHA bootstrap on full 9-module GSVA (not first 3 PCs)
+- distances Euclidean in 9D GSVA
+- vertex names by nearest author XC column
+- PCA for plot only; PC1/PC2 signs flipped to match author XC projection

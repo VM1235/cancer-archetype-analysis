@@ -1,0 +1,4 @@
+counts: GSE319666 GEO + NCBI GRCh38.p13 raw counts (HISAT2/featureCounts)
+IDs: Entrez->Ensembl via ENS_ENT_ID.rds; gene intersect then filterByExpr(Histology)
+residuals: Step0 TMM/voom two-pass duplicateCorrelation(Patient) ~ Study + TopGenes
+GSVA: kcdf=Gaussian on author pml_modules.rds

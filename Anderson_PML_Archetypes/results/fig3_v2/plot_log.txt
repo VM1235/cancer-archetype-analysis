@@ -1,0 +1,35 @@
+PC var: [0.206 0.161 0.137]
+Bootstrap PCHA n=500 ...
+  bootstrap 50/500 kept=50
+  bootstrap 100/500 kept=100
+  bootstrap 150/500 kept=150
+  bootstrap 200/500 kept=200
+  bootstrap 250/500 kept=250
+  bootstrap 300/500 kept=300
+  bootstrap 350/500 kept=350
+  bootstrap 400/500 kept=400
+  bootstrap 450/500 kept=450
+  bootstrap 500/500 kept=500
+kept 500/500 bootstrap fits
+vertex map: ['A4: Proliferation', 'A1: Normal-like', 'A3: Cell adhesion', 'A2: Inflammation']
+Primary agreement vs authors: 82.4% (n=34)
+Ours:
+ Secondary            65
+A4: Proliferation    18
+A1: Normal-like      18
+A2: Inflammation     18
+A3: Cell adhesion    18
+Name: count, dtype: int64
+Authors:
+ Secondary            81
+A3: Cell adhesion    16
+A4: Proliferation    15
+A2: Inflammation     13
+A1: Normal-like      12
+Name: count, dtype: int64
+Signed-distance correlation vs authors:
+  A1: Normal-like: r=0.670
+  A2: Inflammation: r=0.543
+  A3: Cell adhesion: r=0.833
+  A4: Proliferation: r=0.555
+Wrote /Users/apple/Desktop/thesis_iisc/Project_1/Anderson_PML_Archetypes/results/fig3_v2

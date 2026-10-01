@@ -1,0 +1,19 @@
+{
+  "definition": "Pal cells with distance bin 0 to Arc 1 (IHC: TNBC peak at bin 0)",
+  "n_cells_arc1_bin0": 16921,
+  "n_patients_arc1_bin0": 7,
+  "subtype_counts": {
+    "TNBC": 16920,
+    "ER+": 1
+  },
+  "tnbc_in_bin0": 16920,
+  "tnbc_frac_of_bin0": 0.9999409018379528,
+  "n_tnbc_patients_in_bin0": 6,
+  "top_tnbc_patient_in_bin0": "TN-0135",
+  "top_tnbc_patient_n_cells": 14320,
+  "top_tnbc_patient_frac_of_tnbc_bin0": 0.8463356973995272,
+  "nearest_arc1_cells": 19968,
+  "nearest_arc1_n_patients": 14,
+  "top_tnbc_patient_nearest_arc1": "TN-0135",
+  "top_tnbc_patient_frac_nearest_arc1": 0.7178086311463084
+}

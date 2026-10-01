@@ -1,0 +1,13 @@
+PC var: [0.237 0.14  0.137]
+Author XC projected PC1-2:
+  A1: Normal-like: (-0.977, -0.423)  [right after PC1 flip]
+  A2: Inflammation: (-0.493, 0.543)  [top]
+  A3: Cell adhesion: (0.862, 0.111)  [left after PC1 flip]
+  A4: Proliferation: (0.583, -0.222) [bottom-left after PC1 flip]
+Primary agreement vs authors: 97.8% (n=45)
+Signed-distance correlation vs authors (9D to fixed XC):
+  A1: Normal-like: r=0.922
+  A2: Inflammation: r=0.975
+  A3: Cell adhesion: r=0.964
+  A4: Proliferation: r=0.928
+filterByExpr genes: 16050 (paper ~15968)
