@@ -1,0 +1,54 @@
+{
+  "geometry_rule": "specialist if (largest archetype weight \u2212 second) >= 0.35 after clipping negative barycentric weights to 0 and renormalizing; else interior",
+  "program_rule": "within each dataset: hybrid if epi and mes KS scores both >= 75th percentile; else epithelial if EMT <= 33rd percentile; mesenchymal if EMT >= 67th percentile",
+  "pole_names": {
+    "1": "hybrid",
+    "2": "epithelial",
+    "3": "mesenchymal"
+  },
+  "hybrid_placement": [
+    {
+      "dataset": "GSE161529",
+      "program": "hybrid",
+      "n": 8719,
+      "frac_of_dataset": 0.10305902933736791,
+      "p_specialist": 0.6556944603738961,
+      "p_interior": 0.3443055396261039,
+      "p_corner_arc1": 0.5315976602821424,
+      "p_corner_arc2": 0.10276407844936346,
+      "p_corner_arc3": 0.02133272164239018,
+      "median_max_weight": 0.753718176754773,
+      "median_specialization": 0.6305772651321595,
+      "median_evenness": 0.5139948927039223
+    },
+    {
+      "dataset": "GSE176078",
+      "program": "hybrid",
+      "n": 2413,
+      "frac_of_dataset": 0.09986756063239798,
+      "p_specialist": 0.06340654786572732,
+      "p_interior": 0.9365934521342727,
+      "p_corner_arc1": 0.004973062577704103,
+      "p_corner_arc2": 0.05843348528802321,
+      "p_corner_arc3": 0.0,
+      "median_max_weight": 0.518232298893706,
+      "median_specialization": 0.27734844834055905,
+      "median_evenness": 0.8007560077770688
+    },
+    {
+      "dataset": "GSE173634",
+      "program": "hybrid",
+      "n": 65,
+      "frac_of_dataset": 0.0018428737489722435,
+      "p_specialist": 0.0,
+      "p_interior": 1.0,
+      "p_corner_arc1": 0.0,
+      "p_corner_arc2": 0.0,
+      "p_corner_arc3": 0.0,
+      "median_max_weight": 0.3672258531520231,
+      "median_specialization": 0.05083877972803463,
+      "median_evenness": 0.9932640326820747
+    }
+  ],
+  "pal_program_note": "Program labels were recomputed from MAGIC KS scores with the same quantiles as script 24. Agreement with the saved Pal labels is printed at runtime."
+}
