@@ -1,0 +1,13 @@
+{
+  "held_out_patient": "TN-0135",
+  "n_held_out": 14322,
+  "n_train": 70280,
+  "k": 3,
+  "n_init": 15,
+  "n_init_ok": 15,
+  "delta": 0.0,
+  "esv": 0.9594706302889392,
+  "t_ratio": 0.4978846611113668,
+  "note": "t-ratio is the observed volume ratio only. Shuffles were not rerun.",
+  "projection": "TN-0135 transformed with the training PCA in the shared MAGIC gene space. Wu, GSE173634, and DepMap mean/SD-matched to the training cells first."
+}
