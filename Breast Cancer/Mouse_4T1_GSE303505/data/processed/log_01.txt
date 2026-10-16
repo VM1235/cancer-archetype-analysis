@@ -1,0 +1,16 @@
+E: 11020 cells in file, 795 Tumor, 794 pass QC
+EM1: 6709 cells in file, 2916 Tumor, 2913 pass QC
+EM2: 10015 cells in file, 3382 Tumor, 3381 pass QC
+EM3: 8607 cells in file, 1986 Tumor, 1986 pass QC
+M: 13467 cells in file, 4845 Tumor, 4845 pass QC
+4T1: 10839 cells in file, 6011 Tumor, 6011 pass QC
+cells x genes: (19930, 11911)
+phase      G1   G2M     S    All
+sample                          
+E         653    46    95    794
+EM1      2294   203   416   2913
+EM2      1976   570   835   3381
+EM3      1496   209   281   1986
+M        3531   627   687   4845
+4T1      4213   786  1012   6011
+All     14163  2441  3326  19930

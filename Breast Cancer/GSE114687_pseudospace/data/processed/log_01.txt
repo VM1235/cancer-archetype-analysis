@@ -1,0 +1,19 @@
+MCF10A: 9268 metadata cells, 30 not found among 23951 matrix barcodes
+HuMEC: 22352 metadata cells, 0 not found among 22352 matrix barcodes
+{'line': 'MCF10A', 'before': 9238, 'after': 9221, 'median_umi': 11250}
+{'line': 'HuMEC', 'before': 22352, 'after': 21369, 'median_umi': 8672}
+cells x genes: (30590, 12002)
+position     inner  outer    All
+sample                          
+MCF10A_Mock   2431   2560   4991
+MCF10A_TGFB   2118   2112   4230
+HuMEC_Mock    5894   5318  11212
+HuMEC_TGFB    4269   5888  10157
+All          14712  15878  30590
+phase           G1   G2M     S    All
+sample                               
+MCF10A_Mock   3202   618  1171   4991
+MCF10A_TGFB   2806   709   715   4230
+HuMEC_Mock    7230   950  3032  11212
+HuMEC_TGFB    5900  1146  3111  10157
+All          19138  3423  8029  30590

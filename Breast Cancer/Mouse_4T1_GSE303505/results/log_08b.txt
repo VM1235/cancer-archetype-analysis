@@ -1,0 +1,75 @@
+unit geneset  PC  pct_var  r2_log_depth  r2_mito  r2_KS_EMT  eta_phase  eta_state
+   E     all   1     3.06          0.02     0.27       0.02       0.01       0.01
+   E     all   2     2.93          0.82     0.12       0.02       0.00       0.02
+   E     all   3     1.27          0.02     0.00       0.02       0.01       0.00
+   E     all   1     3.06          0.02     0.27       0.02       0.01       0.01
+   E     all   2     2.93          0.82     0.12       0.02       0.00       0.02
+   E     all   3     1.27          0.02     0.00       0.02       0.01       0.00
+   M     all   1     2.72          0.29     0.04       0.01       0.36       0.02
+   M     all   2     2.08          0.19     0.11       0.02       0.12       0.03
+   M     all   3     1.45          0.11     0.01       0.04       0.01       0.04
+ 4T1     all   1     3.29          0.83     0.28       0.04       0.04       0.04
+ 4T1     all   2     2.01          0.01     0.01       0.00       0.39       0.00
+ 4T1     all   3     1.38          0.01     0.00       0.03       0.01       0.02
+ EM1      ks   1     7.70          0.19     0.07       0.02       0.05       0.03
+ EM1      ks   2     6.38          0.22     0.19       0.01       0.05       0.02
+ EM1      ks   3     5.30          0.01     0.01       0.11       0.00       0.05
+       corner  n_close10  n_specialists  pct_cycling  mean_UMI  mean_mito  KS_EMT  Epithelial  Early-Hybrid  Late-Hybrid  Mesenchymal  pct_specialists_of_unit
+  E|all|k3|V1         80             34         23.8      1714        3.6   -0.73        92.0           2.0          0.0          5.0                      4.3
+  E|all|k3|V2         80            237         25.0      9922        0.6   -0.85        99.0           0.0          0.0          1.0                     29.8
+  E|all|k3|V3         80            149         10.0      6719        3.8   -0.81       100.0           0.0          0.0          0.0                     18.8
+  E|all|k4|V1         80             77         11.2      8488        0.7   -1.01        99.0           0.0          0.0          1.0                      9.7
+  E|all|k4|V2         80             22         23.8      1640        3.6   -0.71        92.0           2.0          0.0          5.0                      2.8
+  E|all|k4|V3         80             46         35.0     10048        0.8   -0.82        96.0           2.0          1.0          0.0                      5.8
+  E|all|k4|V4         80            117          8.8      6393        3.8   -0.78        99.0           0.0          1.0          0.0                     14.7
+  M|all|k4|V1        400            358         89.8     20641        0.3    0.18         3.0          16.0         28.0         52.0                      9.0
+  M|all|k4|V2        400             34         14.8      6407        1.0    0.03        22.0          26.0         24.0         28.0                      0.8
+  M|all|k4|V3        400           1044          0.0     14274        0.4    0.22         2.0           8.0         29.0         60.0                     26.1
+  M|all|k4|V4        400            114         26.5     12683        0.6    0.17        10.0          16.0         26.0         47.0                      2.8
+4T1|all|k4|V1        400            262         90.8     21547        0.6    0.01        20.0          31.0         30.0         20.0                      6.6
+4T1|all|k4|V2        400            126         30.2      2876        2.5   -0.18        53.0          18.0         14.0         16.0                      3.2
+4T1|all|k4|V3        400            557          1.5     14410        0.5   -0.06        36.0          23.0         23.0         18.0                     13.9
+4T1|all|k4|V4        400            409          8.5     13742        0.6   -0.00        23.0          34.0         30.0         14.0                     10.2
+ EM1|ks|k4|V1        292             84         25.3      3871        2.1   -0.10        49.0          20.0         18.0         13.0                      2.9
+ EM1|ks|k4|V2        292             11          7.5      8992        0.4   -0.21        55.0          27.0         12.0          6.0                      0.4
+ EM1|ks|k4|V3        292            357         31.8     11617        0.3    0.04        19.0          35.0         25.0         21.0                     12.3
+ EM1|ks|k4|V4        292            275         15.1     10503        0.4    0.02        26.0          29.0         26.0         18.0                      9.4
+       corner                                                                  top_genes
+  E|all|k3|V1             Cd14, Apoe, S100a8, Arg1, H2-Aa, S100a9, Fos, Il1b, Fth1, Atf3
+  E|all|k3|V2          Atf3, Fosb, Fos, Jun, Tpt1, Gadd45a, Klf2, Eef1a1, Klf4, Hsp90ab1
+  E|all|k3|V3      Csf3, Clcf1, Itga2, Antxr2, Arglu1, Vmp1, Spaca6, Col7a1, Ubp1, Lama3
+  E|all|k4|V1               Atf3, Fosb, Jun, Klf2, Fos, Klf4, Sox9, Hspa1b, Dusp1, Pnrc1
+  E|all|k4|V2             Cd14, Apoe, S100a8, H2-Aa, Arg1, S100a9, Il1b, Trf, Fth1, Srgn
+  E|all|k4|V3     Igfbp4, S100a11, Ccnd1, S100a6, Mt2, Clu, Wfdc2, Hnrnpa1, Tmsb10, Tpt1
+  E|all|k4|V4      Csf3, Clcf1, Spaca6, Ubp1, Vmp1, Arglu1, Itga2, Col7a1, Antxr2, Apbb2
+  M|all|k4|V1 S100a4, Top2a, Odc1, Stmn1, Hist1h1e, Sec11c, Has2, Ier3, Ccnd1, Hist1h2ap
+  M|all|k4|V2         Fos, Jun, Atf3, Fosb, Dusp1, Ppp1r15a, S100a8, S100a9, Lcn2, Ndrg1
+  M|all|k4|V3            Ctla2a, Ccn4, Thbs1, Rdh10, Mgp, Vasn, Clu, Ptgs2, Sphk1, F13a1
+  M|all|k4|V4         Fos, Spry1, Ccn1, Nupr1, Gadd45a, Hes1, Mgp, Dusp1, Ctla2a, Igfbp7
+4T1|all|k4|V1 Top2a, Hist1h1e, Mki67, S100a4, Stmn1, Cdk1, Anln, Hist1h2ap, Sec11c, Vars
+4T1|all|k4|V2          Apoe, Col1a1, Lyz2, Col3a1, S100a8, C1qa, Fos, S100a9, Srgn, Cd14
+4T1|all|k4|V3                   Lcn2, Cp, Fn1, Spp1, Osmr, Sox4, Ext1, Ace, Sbno2, Susd6
+4T1|all|k4|V4              Csf3, Procr, Lif, Nfkb1, Dmp1, Ptgs2, Odc1, Has2, Areg, Cxcl1
+ EM1|ks|k4|V1    Apoe, Arglu1, Ubp1, Vmp1, Fubp1, Ccnl2, Prpf39, Thoc6, Gabbr1, Arhgap42
+ EM1|ks|k4|V2               Cldn4, Epcam, Jup, Krt8, Dsp, Sox4, Krt7, Lgals3, Krt18, Fn1
+ EM1|ks|k4|V3              Areg, S100a4, Odc1, Lif, Has2, Pthlh, Plet1, Inhba, Csf3, Oaf
+ EM1|ks|k4|V4            Slpi, Lcn2, Mgp, Sod3, Thbs1, Ccn1, Lbp, Serpine2, Atp1b1, Saa3
+
+Correlation of corner signatures across libraries (all genes, k=4):
+               E|all|k4|V1  E|all|k4|V2  E|all|k4|V3  E|all|k4|V4  M|all|k4|V1  M|all|k4|V2  M|all|k4|V3  M|all|k4|V4  4T1|all|k4|V1  4T1|all|k4|V2  4T1|all|k4|V3  4T1|all|k4|V4  EM1|ks|k4|V1  EM1|ks|k4|V2  EM1|ks|k4|V3  EM1|ks|k4|V4
+E|all|k4|V1           1.00        -0.04         0.18        -0.65        -0.11         0.14        -0.09         0.10           0.04          -0.22           0.01          -0.14         -0.42          0.30         -0.14          0.30
+E|all|k4|V2          -0.04         1.00        -0.30        -0.38        -0.09         0.55        -0.25         0.29          -0.00           0.69          -0.18          -0.27          0.45         -0.12         -0.28          0.11
+E|all|k4|V3           0.18        -0.30         1.00        -0.39         0.36        -0.57        -0.18         0.15           0.32          -0.68           0.07           0.06         -0.73         -0.25          0.44          0.20
+E|all|k4|V4          -0.65        -0.38        -0.39         1.00        -0.01        -0.15         0.29        -0.34          -0.15           0.06           0.06           0.20          0.39         -0.01          0.05         -0.38
+M|all|k4|V1          -0.11        -0.09         0.36        -0.01         1.00        -0.44        -0.61        -0.26           0.79          -0.32          -0.55          -0.07         -0.22         -0.36          0.61         -0.38
+M|all|k4|V2           0.14         0.55        -0.57        -0.15        -0.44         1.00        -0.15         0.20          -0.31           0.74           0.06          -0.30          0.60          0.29         -0.60          0.10
+M|all|k4|V3          -0.09        -0.25        -0.18         0.29        -0.61        -0.15         1.00        -0.28          -0.50          -0.07           0.41           0.25          0.02          0.27         -0.25          0.18
+M|all|k4|V4           0.10         0.29         0.15        -0.34        -0.26         0.20        -0.28         1.00          -0.02           0.20           0.23          -0.36          0.02         -0.12         -0.33          0.41
+4T1|all|k4|V1         0.04        -0.00         0.32        -0.15         0.79        -0.31        -0.50        -0.02           1.00          -0.26          -0.52          -0.40         -0.18         -0.35          0.37         -0.16
+4T1|all|k4|V2        -0.22         0.69        -0.68         0.06        -0.32         0.74        -0.07         0.20          -0.26           1.00          -0.08          -0.30          0.81          0.07         -0.49         -0.05
+4T1|all|k4|V3         0.01        -0.18         0.07         0.06        -0.55         0.06         0.41         0.23          -0.52          -0.08           1.00          -0.24         -0.03          0.33         -0.51          0.38
+4T1|all|k4|V4        -0.14        -0.27         0.06         0.20        -0.07        -0.30         0.25        -0.36          -0.40          -0.30          -0.24           1.00         -0.22         -0.07          0.42         -0.19
+EM1|ks|k4|V1         -0.42         0.45        -0.73         0.39        -0.22         0.60         0.02         0.02          -0.18           0.81          -0.03          -0.22          1.00          0.01         -0.45         -0.26
+EM1|ks|k4|V2          0.30        -0.12        -0.25        -0.01        -0.36         0.29         0.27        -0.12          -0.35           0.07           0.33          -0.07          0.01          1.00         -0.50          0.01
+EM1|ks|k4|V3         -0.14        -0.28         0.44         0.05         0.61        -0.60        -0.25        -0.33           0.37          -0.49          -0.51           0.42         -0.45         -0.50          1.00         -0.46
+EM1|ks|k4|V4          0.30         0.11         0.20        -0.38        -0.38         0.10         0.18         0.41          -0.16          -0.05           0.38          -0.19         -0.26          0.01         -0.46          1.00

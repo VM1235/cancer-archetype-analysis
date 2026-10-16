@@ -1,0 +1,31 @@
+without_4T1: agreement 93.0% (specialists 100.0%), t=0.209  [53s]
+   V1: main Epithelial 73% | new Epithelial 71%, E 57%
+   V2: main Epithelial 61% | new Epithelial 61%, 4T1 49%
+   V3: main Mesenchymal 41% | new Mesenchymal 44%, M 87%
+   V4: main Early-Hybrid 31% | new Early-Hybrid 32%, EM2 39%
+without_E: agreement 64.9% (specialists 82.9%), t=0.188  [68s]
+   V1: main Epithelial 73% | new Mesenchymal 32%, M 26%
+   V2: main Epithelial 61% | new Epithelial 64%, 4T1 42%
+   V3: main Mesenchymal 41% | new Mesenchymal 44%, M 90%
+   V4: main Early-Hybrid 31% | new Early-Hybrid 29%, 4T1 52%
+without_EM1: agreement 89.2% (specialists 100.0%), t=0.219  [61s]
+   V1: main Epithelial 73% | new Epithelial 74%, E 59%
+   V2: main Epithelial 61% | new Epithelial 64%, 4T1 48%
+   V3: main Mesenchymal 41% | new Mesenchymal 46%, M 94%
+   V4: main Early-Hybrid 31% | new Early-Hybrid 32%, 4T1 43%
+without_EM2: agreement 94.5% (specialists 100.0%), t=0.219  [56s]
+   V1: main Epithelial 73% | new Epithelial 75%, E 64%
+   V2: main Epithelial 61% | new Epithelial 66%, 4T1 39%
+   V3: main Mesenchymal 41% | new Mesenchymal 39%, M 74%
+   V4: main Early-Hybrid 31% | new Early-Hybrid 30%, 4T1 48%
+without_EM3: agreement 96.7% (specialists 100.0%), t=0.221  [56s]
+   V1: main Epithelial 73% | new Epithelial 78%, E 65%
+   V2: main Epithelial 61% | new Epithelial 61%, 4T1 48%
+   V3: main Mesenchymal 41% | new Mesenchymal 43%, M 81%
+   V4: main Early-Hybrid 31% | new Early-Hybrid 31%, 4T1 45%
+without_M: agreement 84.4% (specialists 100.0%), t=0.193  [48s]
+   V1: main Epithelial 73% | new Epithelial 71%, E 57%
+   V2: main Epithelial 61% | new Epithelial 59%, 4T1 42%
+   V3: main Mesenchymal 41% | new Epithelial 30%, EM1 45%
+   V4: main Early-Hybrid 31% | new Late-Hybrid 30%, 4T1 41%
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/Mouse_4T1_GSE303505/results/all_main/robustness/k4_loto.csv

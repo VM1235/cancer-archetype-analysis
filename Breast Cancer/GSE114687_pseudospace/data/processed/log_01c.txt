@@ -1,0 +1,15 @@
+cut-offs [-0.214  0.     0.225]
+cluster_annotation  Epithelial  Early-Hybrid  Late-Hybrid  Mesenchymal    All
+sample                                                                       
+MCF10A_Mock               1500          1142         1472          877   4991
+MCF10A_TGFB                210           206          534         3280   4230
+HuMEC_Mock                4352          3953         2320          587  11212
+HuMEC_TGFB                1586          2346         3321         2904  10157
+All                       7648          7647         7647         7648  30590
+clusterU        K0    K1    K2    K3    K4    All
+sample                                           
+MCF10A_Mock     11   816  1305  2857     2   4991
+MCF10A_TGFB     18   149  3668   395     0   4230
+HuMEC_Mock    2796  1954     8   137  6317  11212
+HuMEC_TGFB    7238   985    19   108  1807  10157
+All          10063  3904  5000  3497  8126  30590

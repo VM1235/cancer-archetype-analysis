@@ -1,0 +1,7 @@
+all/main: 4740 fit cells
+
+k=7: t-ratio 0.0057, 15/15 starts ok (9.4s)
+k=7: p = 0.0199 from 200 shuffles; 0.0s per shuffle
+
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 7   0.0057        0.004      0.0052    0.0061     200   0.0199                0.8827           15              0.0

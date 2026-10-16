@@ -1,0 +1,3 @@
+regressed log10(UMI) out of every gene
+MCF10A_Mock/ks k=3: 2536 cells, t=0.5503
+{"unit": "MCF10A_Mock", "geneset": "ks", "k": 3, "n_cells": 2536, "t_ratio": 0.5503027801736907, "null_median": 0.46011676050646266, "null_95": 0.5089415651530494, "null_max": 0.5325330677916285, "n_null": 200, "p_value": 0.004975124378109453, "evr_pc1_pc3": [0.2612940939751552, 0.046561706072130296, 0.03985797231142606]} (754s)

@@ -1,0 +1,3 @@
+usage: 08c_path_vs_triangle.py [-h] --unit UNIT [--geneset GENESET]
+                               [--n-perm N_PERM] [--suffix SUFFIX]
+08c_path_vs_triangle.py: error: argument --unit: expected one argument

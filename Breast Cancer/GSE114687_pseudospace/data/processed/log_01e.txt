@@ -1,0 +1,5 @@
+MCF10A: 9268 metadata cells, 30 not found among 23951 matrix barcodes
+MCF10A 5663 cells thinned to 10000
+HuMEC: 22352 metadata cells, 0 not found among 22352 matrix barcodes
+HuMEC 7991 cells thinned to 10000
+(13654, 12002) median thinned UMI 7352

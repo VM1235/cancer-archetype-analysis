@@ -1,0 +1,10 @@
+all/main: 4740 fit cells
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 3   0.5143       0.4751      0.5245    0.5601     200   0.1194                0.9757           15              0.0
+ 4   0.2009       0.1589      0.1764    0.1897     200   0.0050                0.9595           15              0.0
+ 5   0.0663       0.0511      0.0622    0.0718     200   0.0149                0.9185           15              0.0
+ 6   0.0210       0.0150      0.0179    0.0195     200   0.0050                0.8943           15              0.0
+ 7   0.0057       0.0040      0.0052    0.0061     200   0.0199                0.8827           15              0.0
+ESV elbow k=5
+k with p < 0.01: [4, 6]
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/Mouse_4T1_GSE303505/results/all_main

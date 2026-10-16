@@ -1,0 +1,6 @@
+phase_regressed: agreement 80.1% (specialists 99.8%), t=0.193  [80s]
+   V1: main Epithelial 73% | new Epithelial 68%, E 53%
+   V2: main Epithelial 61% | new Epithelial 63%, 4T1 49%
+   V3: main Mesenchymal 41% | new Mesenchymal 46%, M 91%
+   V4: main Early-Hybrid 31% | new Early-Hybrid 32%, 4T1 47%
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/Mouse_4T1_GSE303505/results/all_main/robustness/k4_nophase.csv

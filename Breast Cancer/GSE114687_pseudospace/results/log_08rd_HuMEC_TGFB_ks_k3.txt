@@ -1,0 +1,3 @@
+regressed log10(UMI) out of every gene
+HuMEC_TGFB/ks k=3: 4000 cells, t=0.6181
+{"unit": "HuMEC_TGFB", "geneset": "ks", "k": 3, "n_cells": 4000, "t_ratio": 0.6180881636154893, "null_median": 0.46467141267434076, "null_95": 0.507202274895047, "null_max": 0.5236021037490897, "n_null": 200, "p_value": 0.004975124378109453, "evr_pc1_pc3": [0.14363879480789957, 0.054008678020807104, 0.03522882870954146]} (1614s)

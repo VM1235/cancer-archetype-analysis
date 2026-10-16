@@ -1,0 +1,110 @@
+# Groves closest-5% specialists: ks/main, k=4
+
+Reference cells (5% cut-off set on these): 30590
+Cells within the 5% cut-off of two vertices: 0
+Specialists among reference cells: 20.0%
+
+## state: counts
+
+groves5              V1    V2    V3   V4  generalist  total
+cluster_annotation                                         
+Epithelial          894  1493     0  110        5151   7648
+Early-Hybrid        452    34     0  641        6520   7647
+Late-Hybrid         171     3     4  646        6823   7647
+Mesenchymal          13     0  1526  133        5976   7648
+
+## state: % of each state in each class (rows sum to 100)
+
+Read across: where do the cells of this label go?
+
+groves5               V1    V2    V3   V4  generalist
+cluster_annotation                                   
+Epithelial          11.7  19.5   0.0  1.4        67.4
+Early-Hybrid         5.9   0.4   0.0  8.4        85.3
+Late-Hybrid          2.2   0.0   0.1  8.4        89.2
+Mesenchymal          0.2   0.0  20.0  1.7        78.1
+
+## Each class: % made up of each state (columns sum to 100)
+
+Read down: what is this class made of? Compare with the last column (overall share).
+
+                      V1    V2    V3    V4  generalist  all reference cells
+cluster_annotation                                                         
+Epithelial          58.4  97.6   0.0   7.2        21.1                 25.0
+Early-Hybrid        29.5   2.2   0.0  41.9        26.6                 25.0
+Late-Hybrid         11.2   0.2   0.3  42.2        27.9                 25.0
+Mesenchymal          0.8   0.0  99.7   8.7        24.4                 25.0
+
+## clusterU: counts
+
+groves5     V1    V2    V3    V4  generalist  total
+clusterU                                           
+K0           0     0     0  1218        8845  10063
+K1         299  1530     0     0        2075   3904
+K2           0     0  1530     0        3470   5000
+K3        1216     0     0     0        2281   3497
+K4          15     0     0   312        7799   8126
+
+## clusterU: % of each clusterU in each class (rows sum to 100)
+
+Read across: where do the cells of this label go?
+
+groves5     V1    V2    V3    V4  generalist
+clusterU                                    
+K0         0.0   0.0   0.0  12.1        87.9
+K1         7.7  39.2   0.0   0.0        53.2
+K2         0.0   0.0  30.6   0.0        69.4
+K3        34.8   0.0   0.0   0.0        65.2
+K4         0.2   0.0   0.0   3.8        96.0
+
+## Each class: % made up of each clusterU (columns sum to 100)
+
+Read down: what is this class made of? Compare with the last column (overall share).
+
+            V1     V2     V3    V4  generalist  all reference cells
+clusterU                                                           
+K0         0.0    0.0    0.0  79.6        36.1                 32.9
+K1        19.5  100.0    0.0   0.0         8.5                 12.8
+K2         0.0    0.0  100.0   0.0        14.2                 16.3
+K3        79.5    0.0    0.0   0.0         9.3                 11.4
+K4         1.0    0.0    0.0  20.4        31.9                 26.6
+
+## Tumour of each class (% of class)
+
+sample      HuMEC_Mock  HuMEC_TGFB  MCF10A_Mock  MCF10A_TGFB
+groves5                                                     
+V1                 3.1         1.1         94.3          1.4
+V2                64.4        34.9          0.4          0.3
+V3                 0.0         0.0          1.4         98.6
+V4                44.0        56.0          0.0          0.0
+generalist        38.8        35.8         14.4         11.0
+
+## Cell-cycle phase of each class (% of class)
+
+phase         G1   G2M     S
+groves5                     
+V1          75.8   7.5  16.7
+V2          98.1   0.3   1.6
+V3          46.9  28.2  24.9
+V4          58.8   6.5  34.8
+generalist  60.7  11.3  27.9
+
+## Rule comparison, reference cells (counts)
+
+groves5 = closest 5% (Fig 3E); weight095 = weight > 0.95 (STAR Methods); gap035 = purity gap >= 0.35 (Pal work)
+
+            groves5  weight095  gap035
+V1             1530          1     190
+V2             1530          3    1026
+V3             1530          4    3191
+V4             1530         23    9819
+generalist    24470      30559   16364
+
+## % of each state called specialist, by rule
+
+                    groves5  weight095  gap035
+cluster_annotation                            
+Epithelial             32.6        0.1    31.9
+Early-Hybrid           14.7        0.2    51.9
+Late-Hybrid            10.8        0.1    47.8
+Mesenchymal            21.9        0.1    54.4

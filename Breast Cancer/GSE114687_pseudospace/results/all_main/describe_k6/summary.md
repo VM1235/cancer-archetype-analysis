@@ -1,0 +1,209 @@
+# Simplex description: gene set all, tag main, k=6
+
+Cells: 30590; inside simplex 1.2%; specialists 49.0%; interior 51.0%
+Fit cells inside simplex: 1.6%
+
+## Specialists: vertex x EMT state (counts)
+
+cluster_annotation  Epithelial  Early-Hybrid  Late-Hybrid  Mesenchymal
+nearest                                                               
+V1                           5            42          193         1366
+V2                         499           424          308          227
+V3                          11           109          236          293
+V4                          15           139          295          249
+V5                        2080          3446         3059         1379
+V6                         604             0            0            0
+
+## Specialists: vertex x EMT state (% of row)
+
+cluster_annotation  Epithelial  Early-Hybrid  Late-Hybrid  Mesenchymal
+nearest                                                               
+V1                         0.3           2.6         12.0         85.1
+V2                        34.2          29.1         21.1         15.6
+V3                         1.7          16.8         36.4         45.1
+V4                         2.1          19.9         42.3         35.7
+V5                        20.9          34.6         30.7         13.8
+V6                       100.0           0.0          0.0          0.0
+
+## Specialists: vertex x clusterU (% of row)
+
+clusterU    K0    K1    K2    K3    K4
+nearest                               
+V1         0.6   0.0  94.4   5.0   0.0
+V2        37.5   9.8   0.3   3.8  48.6
+V3         0.0   0.0  61.9  38.1   0.0
+V4         0.4   0.0  54.6  45.0   0.0
+V5        53.5   4.2   0.0   0.0  42.2
+V6         0.0  95.2   0.0   4.8   0.0
+
+## Specialists: vertex x phase (% of row)
+
+phase      G1   G2M     S
+nearest                  
+V1       87.4   3.4   9.2
+V2       61.4   8.4  30.2
+V3        1.1  53.8  45.1
+V4       85.2   1.0  13.8
+V5       65.1   3.5  31.4
+V6       99.0   0.0   1.0
+
+## Specialists: vertex x cell line (% of row)
+
+assay    HuMEC  MCF10A
+nearest               
+V1         0.0   100.0
+V2       100.0     0.0
+V3         0.0   100.0
+V4         0.0   100.0
+V5       100.0     0.0
+V6        19.5    80.5
+
+## Specialists: vertex x position (% of row)
+
+position  inner  outer
+nearest               
+V1         45.5   54.5
+V2         20.8   79.2
+V3         25.6   74.4
+V4         41.0   59.0
+V5         54.7   45.3
+V6         72.4   27.6
+
+## Specialists: vertex x arm (% of row)
+
+arm      Mock   TGFB
+nearest             
+V1        0.0  100.0
+V2       62.1   37.9
+V3       85.8   14.2
+V4       99.1    0.9
+V5       46.7   53.3
+V6       96.7    3.3
+
+## Specialists: vertex x tumour (% of row)
+
+sample   HuMEC_Mock  HuMEC_TGFB  MCF10A_Mock  MCF10A_TGFB
+nearest                                                  
+V1              0.0         0.0          0.0        100.0
+V2             62.1        37.9          0.0          0.0
+V3              0.0         0.0         85.8         14.2
+V4              0.0         0.0         99.1          0.9
+V5             46.7        53.3          0.0          0.0
+V6             16.9         2.6         79.8          0.7
+
+## Each EMT state: % of its cells at each vertex or interior
+
+group                 V1   V2   V3   V4    V5   V6  interior
+cluster_annotation                                          
+Epithelial           0.1  6.5  0.1  0.2  27.2  7.9      58.0
+Early-Hybrid         0.5  5.5  1.4  1.8  45.1  0.0      45.6
+Late-Hybrid          2.5  4.0  3.1  3.9  40.0  0.0      46.5
+Mesenchymal         17.9  3.0  3.8  3.3  18.0  0.0      54.1
+
+## Each clusterU: % of its cells at each vertex or interior
+
+group       V1   V2   V3   V4    V5    V6  interior
+clusterU                                           
+K0         0.1  5.4  0.0  0.0  53.0   0.0      41.4
+K1         0.0  3.7  0.0  0.0  10.7  14.7      70.9
+K2        30.3  0.1  8.0  7.6   0.1   0.0      53.9
+K3         2.3  1.6  7.1  9.0   0.1   0.8      79.2
+K4         0.0  8.7  0.0  0.0  51.8   0.0      39.5
+
+## Each sample: % of its cells at each vertex or interior
+
+group          V1   V2    V3    V4    V5   V6  interior
+sample                                                 
+HuMEC_Mock    0.0  8.1   0.0   0.0  41.5  0.9      49.5
+HuMEC_TGFB    0.0  5.4   0.0   0.0  52.3  0.2      42.1
+MCF10A_Mock   0.0  0.0  11.2  13.9   0.0  9.7      65.3
+MCF10A_TGFB  38.0  0.0   2.2   0.1   0.0  0.1      59.6
+
+## Each position: % of its cells at each vertex or interior
+
+group      V1   V2   V3   V4    V5   V6  interior
+position                                         
+inner     5.0  2.1  1.1  1.9  37.0  3.0      49.9
+outer     5.5  7.3  3.0  2.6  28.4  1.1      52.1
+
+## Each arm: % of its cells at each vertex or interior
+
+group    V1   V2   V3   V4    V5   V6  interior
+arm                                            
+Mock    0.0  5.6  3.4  4.3  28.7  3.6      54.4
+TGFB   11.2  3.8  0.6  0.0  36.9  0.1      47.3
+
+## Tumour check per vertex
+
+        n_specialists   top_tumour  top_share_pct  n_tumours_ge5pct
+vertex                                                             
+V1               1606  MCF10A_TGFB          100.0                 1
+V2               1458   HuMEC_Mock           62.1                 2
+V3                649  MCF10A_Mock           85.8                 2
+V4                698  MCF10A_Mock           99.1                 1
+V5               9964   HuMEC_TGFB           53.3                 2
+V6                604  MCF10A_Mock           79.8                 2
+
+## Mean scores per vertex (specialists) and interior
+
+          KS_EMT  purity
+group                   
+V1         0.556   0.512
+V2        -0.086   0.520
+V3         0.233   0.518
+V4         0.158   0.521
+V5        -0.028   0.519
+V6        -0.876   0.505
+interior  -0.014   0.179
+
+## Closest 10% of cells to each vertex: labels enriched >= 1.5-fold (q < 0.1)
+
+                   label_type       subtype  k_in_bin  fold_enrichment  q_value
+archetype                                                                      
+V1                     sample   MCF10A_TGFB      3056           7.2246      0.0
+V1                   clusterU            K2      2809           5.6180      0.0
+V1                      assay        MCF10A      3059           3.3174      0.0
+V1         cluster_annotation   Mesenchymal      2509           3.2806      0.0
+V1                        arm          TGFB      3056           2.1241      0.0
+V2                   clusterU            K4      1419           1.7462      0.0
+V2                     sample    HuMEC_Mock      1914           1.7071      0.0
+V2         cluster_annotation    Epithelial      1187           1.5520      0.0
+V3                     sample   MCF10A_Mock      1842           3.6906      0.0
+V3                      phase           G2M      1235           3.6079      0.0
+V3                   clusterU            K2      1718           3.4360      0.0
+V3                   clusterU            K3      1129           3.2285      0.0
+V3                      assay        MCF10A      2846           3.0864      0.0
+V3                     sample   MCF10A_TGFB      1004           2.3735      0.0
+V3         cluster_annotation   Mesenchymal      1504           1.9665      0.0
+V4                   clusterU            K3      1836           5.2502      0.0
+V4                     sample   MCF10A_Mock      2438           4.8848      0.0
+V4                      assay        MCF10A      3002           3.2556      0.0
+V4                   clusterU            K2      1143           2.2860      0.0
+V4                        arm          Mock      2481           1.5312      0.0
+V5         cluster_annotation  Early-Hybrid      1319           1.7249      0.0
+V5                   clusterU            K0      1692           1.6814      0.0
+V5                   clusterU            K4      1366           1.6810      0.0
+V5                     sample    HuMEC_TGFB      1593           1.5684      0.0
+V6                   clusterU            K1      2635           6.7495      0.0
+V6         cluster_annotation    Epithelial      2943           3.8481      0.0
+V6                     sample   MCF10A_Mock      1140           2.2841      0.0
+V6                      phase            G1      2961           1.5472      0.0
+
+## Top 15 genes higher near each vertex (log-expression difference)
+
+      V1_up     V2_up                   V3_up  V4_up    V5_up   V6_up
+0     KRT81   COL17A1                   KRT81  KRT81   CALML3  SPRR1A
+1     TGFBI     KRT6B                    MT2A  EIF3E   S100A9    SBSN
+2      MT2A     KRT14                    MT1E  DUSP1   PYCARD     PI3
+3       FN1     KRT16                  TUBA1B   MT2A   S100A8  SPRR1B
+4      MT1E  MTRNR2L8                   H2AFZ   SAA1      CA2    SLPI
+5     LAMC2  MTRNR2L1                   SNRPE   MT1E    FXYD3   FABP5
+6     CXCL3    CALML3                KIAA0101   MT1X     CBR1    CSTA
+7   ANGPTL4     LAMB3                   PTTG1  ZFAS1    KRT14  CRABP2
+8      MT1X      KRT5                     ID1  TOMM7    KRT16   LYPD3
+9    PMEPA1    FGFBP1                   EIF5A  UQCRQ   FGFBP1   KRT16
+10    CXCL1    SLC2A1                   SLIRP  SNRPE    KRT15   CLIC3
+11    CXCL2      SDC1                   HMGN2  COX6C  AKR1B10  KRTDAP
+12    POSTN    SLC3A2  CKS1B__ENSG00000173207  TGFBI      TKT    DMKN
+13   DUSP23       GRN                  CACYBP    ID1     KRT5   KRT6B
+14  C4orf48      FLNA                   HSPE1  SRRM2     GLUL  SPINK6

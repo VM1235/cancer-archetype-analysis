@@ -1,0 +1,69 @@
+# HuMEC_Mock cleaned, genes ks, k=3: 3889 cells
+
+## gap rule: % of each state at each corner / generalist
+
+gap             V1    V2    V3  generalist     n
+state                                           
+Epithelial    31.8   5.1   0.9        62.2  1526
+Early-Hybrid   0.0  12.2  16.9        70.9  1267
+Late-Hybrid    0.0   7.6  39.1        53.3   900
+Mesenchymal    0.0   3.6  59.2        37.2   196
+
+## gap rule: % of each position at each corner / generalist
+
+gap         V1    V2    V3  generalist     n
+position                                    
+inner     19.8  11.7   4.4        64.1  1918
+outer      5.3   4.3  31.1        59.4  1971
+
+## gap rule: % of each arm at each corner / generalist
+
+gap     V1   V2    V3  generalist     n
+arm                                    
+Mock  12.5  7.9  17.9        61.7  3889
+
+## gap rule: % of each clusterU at each corner / generalist
+
+gap         V1    V2     V3  generalist     n
+clusterU                                     
+K0         0.0   8.3   42.5        49.2  1396
+K1        63.6   0.0    0.0        36.4   763
+K2         0.0   0.0  100.0         0.0     1
+K3         0.0   0.0   33.3        66.7     3
+K4         0.0  11.1    5.9        83.0  1726
+
+Specialists by gap: 38.3% of cells
+
+## groves5 rule: % of each state at each corner / generalist
+
+groves5         V1   V2    V3  generalist     n
+state                                          
+Epithelial    12.8  1.8   0.1        85.4  1526
+Early-Hybrid   0.0  8.4   1.9        89.7  1267
+Late-Hybrid    0.0  6.2  12.0        81.8   900
+Mesenchymal    0.0  2.6  31.6        65.8   196
+
+## groves5 rule: % of each position at each corner / generalist
+
+groves5    V1   V2   V3  generalist     n
+position                                 
+inner     8.3  7.2  0.9        83.5  1918
+outer     1.8  2.8  9.0        86.4  1971
+
+## groves5 rule: % of each arm at each corner / generalist
+
+groves5   V1   V2   V3  generalist     n
+arm                                     
+Mock     5.0  5.0  5.0        85.0  3889
+
+## groves5 rule: % of each clusterU at each corner / generalist
+
+groves5     V1   V2     V3  generalist     n
+clusterU                                    
+K0         0.0  7.5   13.9        78.6  1396
+K1        25.6  0.0    0.0        74.4   763
+K2         0.0  0.0  100.0         0.0     1
+K3         0.0  0.0    0.0       100.0     3
+K4         0.0  5.2    0.0        94.8  1726
+
+Specialists by groves5: 15.0% of cells

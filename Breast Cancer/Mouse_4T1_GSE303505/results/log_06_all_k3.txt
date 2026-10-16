@@ -1,0 +1,84 @@
+
+== state: counts ==
+groves5              V1   V2   V3  generalist  total
+cluster_annotation                                  
+Epithelial          609   55  610        3709   4983
+Early-Hybrid        157  196  158        4471   4982
+Late-Hybrid         100  299  112        4471   4982
+Mesenchymal         131  447  117        4288   4983
+
+== state: % of each state in each class (rows sum to 100) ==
+groves5               V1   V2    V3  generalist
+cluster_annotation                             
+Epithelial          12.2  1.1  12.2        74.4
+Early-Hybrid         3.2  3.9   3.2        89.7
+Late-Hybrid          2.0  6.0   2.2        89.7
+Mesenchymal          2.6  9.0   2.3        86.1
+
+== Each class: % made up of each state (columns sum to 100) ==
+                      V1    V2    V3  generalist  all reference cells
+cluster_annotation                                                   
+Epithelial          61.1   5.5  61.2        21.9                 25.0
+Early-Hybrid        15.7  19.7  15.8        26.4                 25.0
+Late-Hybrid         10.0  30.0  11.2        26.4                 25.0
+Mesenchymal         13.1  44.8  11.7        25.3                 25.0
+
+== clusterU: counts ==
+groves5    V1   V2   V3  generalist  total
+clusterU                                  
+K0         23  336   49        5505   5913
+K1        244    1  388         819   1452
+K2        547  175  409        2512   3643
+K3        132   52   51        3433   3668
+K4         51  433  100        4670   5254
+
+== clusterU: % of each clusterU in each class (rows sum to 100) ==
+groves5     V1   V2    V3  generalist
+clusterU                             
+K0         0.4  5.7   0.8        93.1
+K1        16.8  0.1  26.7        56.4
+K2        15.0  4.8  11.2        69.0
+K3         3.6  1.4   1.4        93.6
+K4         1.0  8.2   1.9        88.9
+
+== Each class: % made up of each clusterU (columns sum to 100) ==
+            V1    V2    V3  generalist  all reference cells
+clusterU                                                   
+K0         2.3  33.7   4.9        32.5                 29.7
+K1        24.5   0.1  38.9         4.8                  7.3
+K2        54.9  17.6  41.0        14.8                 18.3
+K3        13.2   5.2   5.1        20.3                 18.4
+K4         5.1  43.4  10.0        27.6                 26.4
+
+== Tumour of each class (% of class) ==
+sample       4T1     E   EM1   EM2   EM3     M
+groves5                                       
+V1          30.1  19.5  21.8   8.7   5.7  14.2
+V2          17.9   0.0   1.0  18.4   6.0  56.8
+V3          19.5  36.9  17.7  11.1  13.6   1.2
+generalist  31.5   1.4  14.8  17.7  10.2  24.4
+
+== Cell-cycle phase of each class (% of class) ==
+phase         G1   G2M     S
+groves5                     
+V1          70.9  10.2  18.9
+V2          31.2  28.3  40.5
+V3          82.1   7.7  10.1
+generalist  72.8  11.7  15.5
+
+== Rule comparison, reference cells (counts) ==
+            groves5  weight095  gap035
+V1              997          1     324
+V2              997         57   13443
+V3              997          1     403
+generalist    16939      19871    5760
+
+== % of each state called specialist, by rule ==
+                    groves5  weight095  gap035
+cluster_annotation                            
+Epithelial             25.6        0.0    53.0
+Early-Hybrid           10.3        0.3    72.9
+Late-Hybrid            10.3        0.2    77.9
+Mesenchymal            13.9        0.6    80.6
+
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/Mouse_4T1_GSE303505/results/all_main/groves5_k3

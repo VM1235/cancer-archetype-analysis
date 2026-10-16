@@ -1,0 +1,3 @@
+regressed log10(UMI) out of every gene
+HuMEC_Mock/all k=3: 3889 cells, t=0.5480
+{"unit": "HuMEC_Mock", "geneset": "all", "k": 3, "n_cells": 3889, "t_ratio": 0.5479791129397852, "null_median": 0.48458354880392684, "null_95": 0.5373745665196874, "null_max": 0.5662203337801224, "n_null": 200, "p_value": 0.024875621890547265, "evr_pc1_pc3": [0.05450081847383166, 0.01866673833691576, 0.009420600469609072]} (1009s)

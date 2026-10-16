@@ -1,0 +1,9 @@
+seed1: agreement 93.3% (specialists 100.0%), t=0.498  [43s]
+   V1: main Mesenchymal 32% | new Late-Hybrid 34%, 4T1 51%
+   V2: main Early-Hybrid 29% | new Epithelial 30%, 4T1 43%
+   V3: main Mesenchymal 49% | new Mesenchymal 52%, M 94%
+seed2: agreement 96.4% (specialists 100.0%), t=0.496  [46s]
+   V1: main Mesenchymal 32% | new Mesenchymal 32%, 4T1 41%
+   V2: main Early-Hybrid 29% | new Early-Hybrid 29%, 4T1 46%
+   V3: main Mesenchymal 49% | new Mesenchymal 48%, M 92%
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/Mouse_4T1_GSE303505/results/all_clean/robustness/k3_seed.csv

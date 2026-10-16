@@ -1,0 +1,119 @@
+
+== Specialists: vertex x EMT state (counts) ==
+cluster_annotation  Epithelial  Early-Hybrid  Late-Hybrid  Mesenchymal
+nearest                                                               
+V1                         152           325          399          419
+V2                         655           669          547          449
+V3                          57           116          217          376
+
+== Specialists: vertex x EMT state (% of row) ==
+cluster_annotation  Epithelial  Early-Hybrid  Late-Hybrid  Mesenchymal
+nearest                                                               
+V1                        11.7          25.1         30.8         32.4
+V2                        28.2          28.8         23.6         19.4
+V3                         7.4          15.1         28.3         49.1
+
+== Specialists: vertex x clusterU (% of row) ==
+clusterU    K0   K1    K2    K3    K4
+nearest                              
+V1        61.2  2.2  19.5   0.3  16.9
+V2        42.8  7.2   2.0  10.9  37.1
+V3         0.3  0.4  35.1  51.4  12.8
+
+== Specialists: vertex x phase (% of row) ==
+phase      G1   G2M     S
+nearest                  
+V1        4.6  45.6  49.8
+V2       97.6   0.3   2.1
+V3       97.0   1.0   2.0
+
+== Specialists: vertex x assay (% of row) ==
+assay    in_vivo
+nearest         
+V1         100.0
+V2         100.0
+V3         100.0
+
+== Specialists: vertex x tumour (% of row) ==
+sample    4T1    E  EM1   EM2   EM3     M
+nearest                                  
+V1       40.8  0.2  4.3  17.8   5.4  31.4
+V2       49.9  2.6  6.2  25.9  15.3   0.0
+V3        0.9  0.1  6.3   0.4   2.9  89.4
+
+== Each EMT state: % of its cells at each vertex or interior ==
+group                 V1    V2    V3  interior
+cluster_annotation                            
+Epithelial           6.1  26.5   2.3      65.0
+Early-Hybrid         9.4  19.4   3.4      67.7
+Late-Hybrid         10.9  14.9   5.9      68.3
+Mesenchymal         11.4  12.2  10.2      66.2
+
+== Each clusterU: % of its cells at each vertex or interior ==
+group       V1    V2    V3  interior
+clusterU                            
+K0        16.3  20.5   0.0      63.2
+K1         5.9  35.4   0.6      58.1
+K2        15.7   2.9  16.7      64.7
+K3         0.2  11.4  17.9      70.5
+K4         5.3  20.9   2.4      71.4
+
+== Each tumour: % of its cells at each vertex or interior ==
+group     V1    V2    V3  interior
+sample                            
+4T1     12.5  27.4   0.2      59.9
+E        2.1  43.0   0.7      54.2
+EM1      4.1  10.5   3.5      81.8
+EM2      8.5  22.3   0.1      69.1
+EM3      4.6  23.6   1.5      70.3
+M       12.2   0.0  20.6      67.1
+
+== Tumour check per vertex ==
+        n_specialists top_tumour  top_share_pct  n_tumours_ge5pct
+vertex                                                           
+V1               1295        4T1           40.8                 4
+V2               2320        4T1           49.9                 4
+V3                766          M           89.4                 2
+
+== Mean scores per vertex (specialists) and interior ==
+          KS_EMT  purity
+group                   
+V1         0.052   0.506
+V2        -0.086   0.483
+V3         0.137   0.495
+interior   0.003   0.168
+
+== Closest 10% of cells to each vertex: labels enriched >= 1.5-fold (q < 0.1) ==
+                   label_type      subtype  k_in_bin  fold_enrichment  q_value
+archetype                                                                     
+V1                      phase          G2M       601           3.0732      0.0
+V1                      phase            S       672           2.6786      0.0
+V1                   clusterU           K0       863           1.7763      0.0
+V2                     sample            E        45           3.1681      0.0
+V2                   clusterU           K1       116           2.4414      0.0
+V2                     sample          4T1       697           1.6523      0.0
+V2         cluster_annotation   Epithelial       397           1.6055      0.0
+V3                     sample            M      1111           3.3414      0.0
+V3                   clusterU           K3       647           2.9307      0.0
+V3                   clusterU           K2       430           2.6767      0.0
+V3         cluster_annotation  Mesenchymal       637           1.7323      0.0
+
+== Top 15 genes higher near each vertex (log-expression difference) ==
+        V1_up  V2_up    V3_up
+0       Top2a   Csf3   Ctla2a
+1    Hist1h1e  Plet1     Fosb
+2       Stmn1  Cxcl1      Mgp
+3        Cdk1  Ptgs2     Ccn1
+4       Mki67    Fn1    Thbs1
+5   Hist1h2ap   Areg       Cp
+6      S100a4   Ier3   Igfbp7
+7        Anln    Lif     Tslp
+8      Tuba1b  Nfkb1  Gadd45g
+9        Odc1  Cxcl2     Sgk1
+10       Rrm2  Inhba    Spry1
+11      H2afz   Tns4      Fos
+12      Ccna2  Mtss1     Cdon
+13     Sec11c  Clcf1     Rbp1
+14       Smc4  Pthlh     Ccn2
+
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Breast Cancer/Mouse_4T1_GSE303505/results/all_clean/describe_k3
