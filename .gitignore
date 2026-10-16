@@ -80,4 +80,47 @@ Hausser/draft 2/data/
 
 # Pal combined count matrix (rebuild via 00_build_matrix_gse161529.py)
 Breast Cancer/data/gse161529/processed/gse161529_combined_counts.npz
+
+# GSE288137 GEO (multi-GB RAW tar + Seurat RDS)
+Mouse_SCC/data/raw/
 *.cpp
+
+# ---- single-cell EMT datasets (SCC, Cook, PDAC, 4T1, GSE114687) ----
+# raw downloads and processed matrices are rebuilt by the 01_build scripts
+Mouse_SCC/data/processed/*.h5ad
+Mouse_SCC/Cook/data/raw/*
+Mouse_SCC/Cook/data/processed/*.h5ad
+Mouse_SCC/Mouse_PDAC_GSE173958/data/raw/*
+Mouse_SCC/Mouse_PDAC_GSE173958/data/processed/*.h5ad
+Breast Cancer/Mouse_4T1_GSE303505/data/raw/*
+!Breast Cancer/Mouse_4T1_GSE303505/data/raw/DOWNLOAD_LOG.md
+Breast Cancer/Mouse_4T1_GSE303505/data/processed/*.h5ad
+Breast Cancer/GSE114687_pseudospace/data/raw/*
+!Breast Cancer/GSE114687_pseudospace/data/raw/DOWNLOAD_LOG.md
+Breast Cancer/GSE114687_pseudospace/data/processed/*.h5ad
+# PCA score files (tens of MB, rebuilt by 02_pca.py)
+Mouse_SCC/results/**/pca.npz
+Mouse_SCC/Cook/results/**/pca.npz
+Mouse_SCC/Mouse_PDAC_GSE173958/results/**/pca.npz
+Breast Cancer/Mouse_4T1_GSE303505/results/**/pca.npz
+Breast Cancer/GSE114687_pseudospace/results/**/pca.npz
+# large matrices and embeddings from the authors' SCC object
+Mouse_SCC/data/processed/counts.mtx
+Mouse_SCC/data/processed/emb_*.csv
+# slide decks and Keynote drafts (binary, rebuilt or kept locally)
+Mouse_SCC/*.key
+Mouse_SCC/*.pptx
+Mouse_SCC/research_report/*.pdf
+docs/emt_single_cell/*.pptx
+# audio, Keynote and Pages drafts
+*.m4a
+*.pages
+
+# agent hand-off notes kept in place (other documents link to them)
+Mouse_SCC/HANDOFF_*.md
+
+# ---- local-only folders ----
+admin/
+media/
+notes/
+
