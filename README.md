@@ -1,6 +1,6 @@
 # Archetype analysis across tumor types
 
-This repository applies Pareto Task Inference (archetypal analysis / PCHA) to bulk RNA-seq, following:
+This repository applies Pareto Task Inference (archetypal analysis, PCHA) to bulk and single-cell RNA-seq. The method follows:
 
 - Groves et al., *Cell Systems* **13**, 690–710 (2022). Figure 1A–C on small-cell lung cancer.  
   [doi:10.1016/j.cels.2022.07.006](https://doi.org/10.1016/j.cels.2022.07.006)
@@ -24,9 +24,16 @@ Each disease has its own folder with **data**, **codes**, **figures**, and **res
 | [Hausser](Hausser/) | Hausser Fig. 1d / 4 draft reproductions |
 | [Sahoo](Sahoo/) | Local GEO dumps for GSE173634 / GSE176078 (mostly gitignored) |
 | [supplementary/emt_hybrid_analysis](supplementary/emt_hybrid_analysis/) | Optional EMT / PN-MES vs archetype weights (not Fig 1A–C) |
+| [Mouse_SCC](Mouse_SCC/) | Single-cell EMT: mouse skin SCC (GSE288137), with [Cook](Mouse_SCC/Cook/) (GSE147405) and [mouse PDAC](Mouse_SCC/Mouse_PDAC_GSE173958/) (GSE173958) |
+| [Breast Cancer/Mouse_4T1_GSE303505](Breast%20Cancer/Mouse_4T1_GSE303505/) | Single-cell EMT: 4T1 clones (GSE303505) |
+| [Breast Cancer/GSE114687_pseudospace](Breast%20Cancer/GSE114687_pseudospace/) | Single-cell EMT: MCF10A and HuMEC colony-edge EMT (GSE114687) |
 | `src/` | Shared PCA / PCHA / enrichment |
 
 Breast scRNA + Pal reverse: [`Breast Cancer/docs/SCRIPTS.md`](Breast%20Cancer/docs/SCRIPTS.md).
+
+## Single-cell EMT datasets
+
+Five single-cell datasets are analysed with one pipeline (balanced fit cells, PCA, PCHA for k = 3 to 7, 200-shuffle permutation test, specialist and generalist rules). Two questions are asked: whether EMT data show task corners, and whether hybrid cells lie at corners or in the interior. The report, slide deck and per-dataset results are indexed in [`docs/emt_single_cell/`](docs/emt_single_cell/README.md).
 
 ## Setup
 
@@ -44,6 +51,10 @@ Breast Panel C ComBat also needs R with Bioconductor `sva` (a local copy can liv
 **In git (or intended to be):** code, READMEs, figures, small/medium tables, processed SCLC matrices, processed breast Panel A matrix, Model.csv, TCGA clinical annotations.
 
 **Kept locally, gitignored (too large for GitHub):** DepMap `OmicsExpressionProteinCodingGenesTPMLogp1.csv` (~500 MB), UCSC Xena `HiSeqV2` (~172 MB), METABRIC cBioPortal study (`Breast Cancer/brca_metabric/`, ~1.3 GB), Panel C ComBat intermediates, the authors’ cloned `reference/` repo, `.venv/`, and `rlib/`.
+
+**Single-cell EMT datasets:** raw GEO downloads, processed `.h5ad` matrices and `pca.npz` score files are ignored and are rebuilt by the `01_build` and `02_pca` scripts in each dataset folder. Each download is recorded in the dataset's `DOWNLOAD_LOG.md` where one exists.
+
+**Local-only folders (ignored):** `admin/` (university forms and report drafts), `media/` (talk videos) and `notes/` (working notes and superseded drafts).
 
 Place those files in the paths listed in each disease README before rebuilding from raw data. Existing processed matrices are enough to rerun Panels A/B for SCLC and breast.
 
