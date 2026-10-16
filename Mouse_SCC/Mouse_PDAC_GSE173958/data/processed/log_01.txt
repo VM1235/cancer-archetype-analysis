@@ -1,0 +1,28 @@
+M1-PT: 9348 droplets -> 4970 cells
+M1-SS: 7501 droplets -> 3689 cells
+M1-Met: 11020 droplets -> 6109 cells
+M1-Liver: 14515 droplets -> 8444 cells
+M1-Lung: 1542 droplets -> 709 cells
+M1-CTC: 16284 droplets -> 3059 cells
+M2-PT: 10711 droplets -> 5381 cells
+M2-Met: 20827 droplets -> 15073 cells
+M2-Liver: 28634 droplets -> 19249 cells
+M2-Lung: 1296 droplets -> 757 cells
+iv-5cell: 7859 droplets -> 7126 cells
+iv-100cell: 6658 droplets -> 6378 cells
+cells x genes: (80944, 13370)
+phase          G1    G2M      S    All
+sample                                
+M1-CTC       2351    359    349   3059
+M1-Liver     7114    763    567   8444
+M1-Lung       610     49     50    709
+M1-Met       4715    835    559   6109
+M1-PT        4285    388    297   4970
+M1-SS        3239    221    229   3689
+M2-Liver    13285   3152   2812  19249
+M2-Lung       613     81     63    757
+M2-Met       8189   4178   2706  15073
+M2-PT        4248    625    508   5381
+iv-5cell      223   3875   3028   7126
+iv-100cell    209   3312   2857   6378
+All         49081  17838  14025  80944

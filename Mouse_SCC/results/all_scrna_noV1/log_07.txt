@@ -1,0 +1,42 @@
+markers: ['Camk1d', 'Pcdh7', 'Maml2', 'Frmd4b', 'Adgrl3', 'AY036118', 'Pard3', 'Magi1', 'Ext1', 'Mast4', 'Zswim6', 'Aopep', 'Atxn1', 'Ptpn13', 'Hivep2', 'Macf1', 'Cmss1', 'Efna5', 'Ldlrad4', 'Maml3']
+fit cells 6400 (identical to version B)
+PCA done (90s)
+
+BEFORE (version B):
+ PC  pct_variance  state  clusterU  tumour  tumour_in_state  phase  log_depth  v1_score
+  1         7.136  0.238     0.311   0.491            0.425  0.039      0.034     0.752
+  2         7.029  0.670     0.757   0.553            0.321  0.116      0.483     0.022
+  3         2.940  0.396     0.429   0.539            0.564  0.149      0.001     0.023
+  4         2.096  0.161     0.185   0.532            0.620  0.110      0.071     0.013
+  5         1.629  0.061     0.101   0.579            0.631  0.005      0.001     0.099
+  6         1.446  0.073     0.128   0.418            0.463  0.045      0.001     0.005
+  7         1.261  0.018     0.031   0.709            0.717  0.001      0.025     0.000
+  8         0.999  0.070     0.210   0.184            0.162  0.015      0.078     0.020
+  9         0.835  0.139     0.243   0.206            0.232  0.001      0.015     0.003
+ 10         0.790  0.008     0.198   0.161            0.169  0.176      0.007     0.002
+
+AFTER (V1 score regressed out):
+ PC  pct_variance  state  clusterU  tumour  tumour_in_state  phase  log_depth  v1_score
+  1         7.466  0.599     0.705   0.482            0.309  0.137      0.514       0.0
+  2         3.402  0.478     0.521   0.502            0.466  0.124      0.013       0.0
+  3         2.583  0.087     0.093   0.437            0.431  0.072      0.034       0.0
+  4         2.134  0.152     0.171   0.573            0.701  0.083      0.039       0.0
+  5         1.543  0.082     0.141   0.358            0.390  0.043      0.002       0.0
+  6         1.338  0.018     0.031   0.708            0.716  0.001      0.025       0.0
+  7         1.144  0.116     0.208   0.180            0.180  0.003      0.077       0.0
+  8         0.898  0.115     0.255   0.176            0.204  0.011      0.007       0.0
+  9         0.847  0.010     0.207   0.163            0.162  0.178      0.001       0.0
+ 10         0.713  0.015     0.052   0.349            0.355  0.000      0.019       0.0
+
+Top genes after regression:
+  PC1+   PC1-   PC2+   PC2-     PC3+   PC3-    PC4+          PC4-
+ Krt14 Col1a1  Krt14  Csrp2  Gm42418   Slpi    Nme2         Usmg5
+  Krt5 Col3a1   Krt5 Lgals1 AY036118   Cst3    Ctsl 2010107E04Rik
+ Krt17 Col1a2  Krt17 Tm4sf1     Plec  Uba52 Atp6v0c          Xist
+ Krt6a    Fn1   Slpi  Timp1    Ahnak    Mt1  Rnasek           Aes
+   Sfn    Dcn    Dsp    Mgp     Myh9 S100a4     Mgp       Atp5o-1
+Krtdap    Bgn  Fabp5   Spp1      Jun Igfbp7 Gm42418 2410015M20Rik
+ Fxyd3  Postn  Fxyd3    Dcn  Gm26917 Ifitm3    Tle5        Minos1
+  Perp Col5a2 Krtdap Col1a2    Neat1  Crip1    Ereg         Cyr61
+
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/results/all_scrna_noV1 (91s)

@@ -1,0 +1,16 @@
+PC1+,PC1-,PC2+,PC2-,PC3+,PC3-,PC4+,PC4-,PC5+,PC5-
+Krt19,Cald1,Lgals1,Atp1b1,Cald1,Krt7,Areg,Sparc,Cd9,Krt18
+Krt7,Tuba1a,Krt8,Fxyd3,Krt18,Lgals1,Msn,Tpm2,Sparc,Epcam
+Atp1b1,Vim,Krt19,Camk2n1,Vim,Ank2,Serpine1,Vim,Atp1b1,Krt8
+Krt8,Sparc,Areg,Hes1,Emp3,Lcn2,Klf5,Emp3,Tspan13,Arhgef5
+Fxyd3,Map1b,Tuba1a,Epcam,Arhgef5,Arhgdib,Tob1,Fxyd3,Lgals1,Krt7
+Spint2,Msn,Krt18,Tob1,Map1b,Gja1,Tubb6,Anxa4,Ctsh,Vim
+Cdh1,Axl,Vim,Myo6,Sdc1,Slpi,Map1b,Lgals1,Emp3,Map1b
+Krt18,Ppl,Emp3,Xbp1,Hes1,Tubb6,Cep170,Ctsh,Tuba1a,Serpine1
+Tspan13,Loxl2,Cd9,Sparc,Anxa4,Atp1b1,Rbm47,Cald1,Rbm47,Gpx2
+Elf3,Arhgef5,Krt7,Ehf,Krt8,Tmem158,Soat1,Mgst2,Tob1,Sfn
+Tspan15,Fermt2,Tubb6,Arhgef5,Tpm2,Foxa1,Cdh1,Krt8,Vamp8,Tpm2
+Vamp8,Glyr1,Tpm2,Elf3,Ppl,Cdh1,Arhgef5,Vamp8,Cdh1,S100a14
+Ctsh,Sdc1,Msn,Sdc1,F11r,Tspan13,F11r,Spint2,Mgst2,Cep170
+Rbm47,Tubb6,Syngr2,Jup,Cd9,Myl9,Ank3,Krt19,Xbp1,Tjp2
+Epcam,Hes1,Il1rn,Klf5,Tob1,Mxra7,Tjp2,Krt18,Syngr2,Cald1

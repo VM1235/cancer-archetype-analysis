@@ -1,0 +1,15 @@
+ks/OVCA420: 558 fit cells
+
+k=5: t-ratio 0.0572, 15/15 starts ok (5.3s)
+   25/200 shuffles, null t max so far 0.0834
+   50/200 shuffles, null t max so far 0.0834
+   75/200 shuffles, null t max so far 0.0834
+   100/200 shuffles, null t max so far 0.0834
+   125/200 shuffles, null t max so far 0.0834
+   150/200 shuffles, null t max so far 0.0834
+   175/200 shuffles, null t max so far 0.0834
+   200/200 shuffles, null t max so far 0.1089
+k=5: p = 0.6567 from 200 shuffles; 1.2s per shuffle
+
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 5   0.0572       0.0602      0.0761    0.1089     200   0.6567                0.8961           15           1.2436

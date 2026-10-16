@@ -1,0 +1,10 @@
+ks/in_vivo: 8122 fit cells
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 3   0.4237       0.4879      0.5302    0.5623     200   1.0000                0.9707           15          13.2537
+ 4   0.1706       0.1935      0.2148    0.2413     200   0.9701                0.9625           15          11.6363
+ 5   0.0519       0.0570      0.0695    0.0755     200   0.7711                0.9315           15          13.1484
+ 6   0.0114       0.0150      0.0199    0.0230     200   0.9552                0.9118           15          14.6348
+ 7   0.0036       0.0035      0.0048    0.0061     200   0.4527                0.8948           15          16.8264
+ESV elbow k=4
+k with p < 0.01: none
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/Mouse_PDAC_GSE173958/results/ks_in_vivo

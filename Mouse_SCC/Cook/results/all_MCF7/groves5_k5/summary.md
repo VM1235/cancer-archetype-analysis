@@ -1,0 +1,60 @@
+# Groves closest-5% specialists: all/MCF7, k=5
+
+Reference cells: 1649; specialists 25.2%
+
+## Fit cells: % of each time in each class (rows sum to 100)
+
+groves5    V1   V2   V3   V4   V5  generalist    n
+time                                              
+0d        3.3  4.4  5.0  6.7  5.4        75.3  523
+8h        2.7  4.4  7.8  2.9  6.1        76.1  477
+1d        3.4  7.8  0.5  3.4  5.4        79.5  205
+3d       10.2  5.2  4.5  5.9  3.3        70.9  422
+7d       13.6  4.5  0.0  9.1  4.5        68.2   22
+
+## Removal-arm guests: % of each time in each class (rows sum to 100)
+
+groves5    V1   V2    V3   V4   V5  generalist    n
+time                                               
+8h_rm    15.5  2.1   4.9  2.8  3.5        71.1  142
+1d_rm    15.8  3.8   5.1  5.1  1.9        68.4  158
+3d_rm     0.0  4.1  22.4  4.1  4.1        65.3   49
+
+## Fit cells: % of each phase in each class (rows sum to 100)
+
+groves5   V1   V2    V3    V4   V5  generalist    n
+phase                                              
+G1       9.2  9.1   0.2   1.8  3.7        76.0  891
+S        0.2  0.3   9.0   7.9  7.9        74.8  623
+G2M      0.0  0.0  18.5  13.3  0.7        67.4  135
+
+## Fit cells: % of each mix in each class (rows sum to 100)
+
+groves5    V1    V2    V3   V4   V5  generalist    n
+mix                                                 
+Mix1      4.5   3.7   0.5  9.6  6.8        74.7  748
+Mix2      3.2  11.7   0.5  1.5  6.0        77.1  402
+Mix3a    12.8   0.8  19.2  0.8  0.0        66.4  125
+Mix3b     3.0   1.0  21.2  2.0  0.0        72.7   99
+Mix4a     7.4   2.2  12.5  0.0  2.9        75.0  136
+Mix4b     5.0   2.2  10.8  1.4  2.9        77.7  139
+
+## Rule comparison (counts, fit cells)
+
+            groves5  weight095  gap035
+V1               83          0      38
+V2               83          0      39
+V3               83          1      81
+V4               83          1      61
+V5               83          0     186
+generalist     1234       1647    1244
+
+## % of each time point called specialist, by rule
+
+      groves5  weight095  gap035
+time                            
+0d       24.7        0.0    25.0
+8h       23.9        0.2    26.6
+1d       20.5        0.0    20.0
+3d       29.1        0.2    23.9
+7d       31.8        0.0    22.7

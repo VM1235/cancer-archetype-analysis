@@ -1,0 +1,10 @@
+ks/pooled: 2200 fit cells
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 3   0.5343       0.4692      0.4919    0.5035     200    0.005                0.9931           15           2.8028
+ 4   0.2852       0.1882      0.2136    0.2280     200    0.005                0.9942           15           1.5831
+ 5   0.1011       0.0221      0.0451    0.0730     200    0.005                0.9780           15           3.1169
+ 6   0.0320       0.0045      0.0073    0.0147     200    0.005                0.9581           15           3.4673
+ 7   0.0108       0.0006      0.0014    0.0028     200    0.005                0.9466           15           4.1147
+ESV elbow k=4
+k with p < 0.01: [3, 4, 5, 6, 7]
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/Cook/results/ks_pooled

@@ -1,0 +1,2 @@
+DU145/ks/clean k=3: 1839 cells, t=0.4419
+{"line": "DU145", "geneset": "ks", "variant": "clean", "k": 3, "n_cells": 1839, "t_ratio": 0.44187965351671077, "null_median": 0.4991591917426312, "null_95": 0.5478898708997565, "n_null": 200, "p_value": 0.9502487562189055} (568s)

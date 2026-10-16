@@ -1,0 +1,30 @@
+{
+  "geneset": "all",
+  "tag": "scrna_noV1",
+  "source_tag": "scrna",
+  "markers": [
+    "Camk1d",
+    "Pcdh7",
+    "Maml2",
+    "Frmd4b",
+    "Adgrl3",
+    "AY036118",
+    "Pard3",
+    "Magi1",
+    "Ext1",
+    "Mast4",
+    "Zswim6",
+    "Aopep",
+    "Atxn1",
+    "Ptpn13",
+    "Hivep2",
+    "Macf1",
+    "Cmss1",
+    "Efna5",
+    "Ldlrad4",
+    "Maml3"
+  ],
+  "n_fit_cells": 6400,
+  "score_mean_fit": 0.7289100885391235,
+  "note": "V1 marker score regressed out of every gene (linear, fit-cell slopes)"
+}

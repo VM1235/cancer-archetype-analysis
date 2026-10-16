@@ -1,0 +1,15 @@
+all/scrna6: 4800 fit cells
+
+k=5: t-ratio 0.0601, 15/15 starts ok (9.5s)
+   25/200 shuffles, null t max so far 0.0687
+   50/200 shuffles, null t max so far 0.0687
+   75/200 shuffles, null t max so far 0.0687
+   100/200 shuffles, null t max so far 0.0716
+   125/200 shuffles, null t max so far 0.0716
+   150/200 shuffles, null t max so far 0.0749
+   175/200 shuffles, null t max so far 0.0749
+   200/200 shuffles, null t max so far 0.0764
+k=5: p = 0.2139 from 200 shuffles; 13.6s per shuffle
+
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 5   0.0601       0.0548      0.0664    0.0764     200   0.2139                0.9312           15          13.6482

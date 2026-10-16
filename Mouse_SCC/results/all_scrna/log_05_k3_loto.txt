@@ -1,0 +1,33 @@
+without_SC15: agreement 89.7% (specialists 100.0%), t=0.497  [77s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 69%, MU7 36%
+   V2: main Late-EMT 94% | new Late-EMT 85%, SC2b1 39%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 58%, SC32 32%
+without_SC2b1: agreement 91.4% (specialists 100.0%), t=0.486  [75s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 57%, MU7 40%
+   V2: main Late-EMT 94% | new Late-EMT 88%, SC2b3 36%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 64%, SC32 36%
+without_SC2b3: agreement 97.1% (specialists 100.0%), t=0.542  [68s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 58%, MU7 40%
+   V2: main Late-EMT 94% | new Late-EMT 94%, SC2b3 35%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 61%, SC32 34%
+without_SC32: agreement 95.3% (specialists 100.0%), t=0.534  [65s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 58%, MU7 40%
+   V2: main Late-EMT 94% | new Late-EMT 97%, SC2b3 42%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 50%, SC32 28%
+without_SC33: agreement 94.0% (specialists 100.0%), t=0.524  [64s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 60%, MU7 42%
+   V2: main Late-EMT 94% | new Late-EMT 97%, SC2b3 42%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 46%, SC32 27%
+without_SC35: agreement 97.6% (specialists 100.0%), t=0.535  [65s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 57%, MU7 38%
+   V2: main Late-EMT 94% | new Late-EMT 93%, SC2b3 42%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 60%, SC32 34%
+without_SC43: agreement 98.5% (specialists 100.0%), t=0.541  [62s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 57%, MU7 40%
+   V2: main Late-EMT 94% | new Late-EMT 94%, SC2b3 41%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 59%, SC32 33%
+without_SC46: agreement 98.9% (specialists 100.0%), t=0.534  [62s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 57%, MU7 41%
+   V2: main Late-EMT 94% | new Late-EMT 93%, SC2b3 40%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 60%, SC32 34%
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/results/all_scrna/robustness/k3_loto.csv

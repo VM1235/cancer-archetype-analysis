@@ -1,0 +1,2 @@
+OVCA420/ks/clean k=4: 355 cells, t=0.1879
+{"line": "OVCA420", "geneset": "ks", "variant": "clean", "k": 4, "n_cells": 355, "t_ratio": 0.18788833887146286, "null_median": 0.1856062662512986, "null_95": 0.21459689544519486, "n_null": 200, "p_value": 0.44776119402985076} (196s)

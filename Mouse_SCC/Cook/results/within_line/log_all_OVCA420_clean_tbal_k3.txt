@@ -1,0 +1,2 @@
+OVCA420/all/clean_tbal k=3: 355 cells, t=0.4446
+{"line": "OVCA420", "geneset": "all", "variant": "clean_tbal", "k": 3, "n_cells": 355, "t_ratio": 0.44464282842632874, "null_median": 0.451646064160824, "null_95": 0.48609320573773807, "n_null": 200, "p_value": 0.7263681592039801} (227s)

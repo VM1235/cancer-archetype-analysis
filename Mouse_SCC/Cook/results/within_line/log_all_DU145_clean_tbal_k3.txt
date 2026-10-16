@@ -1,0 +1,2 @@
+DU145/all/clean_tbal k=3: 1423 cells, t=0.4767
+{"line": "DU145", "geneset": "all", "variant": "clean_tbal", "k": 3, "n_cells": 1423, "t_ratio": 0.47672962874907876, "null_median": 0.4510309739346725, "null_95": 0.48115241845296697, "n_null": 200, "p_value": 0.0945273631840796} (478s)

@@ -1,0 +1,58 @@
+# Groves closest-5% specialists: all/OVCA420, k=3
+
+Reference cells: 558; specialists 15.1%
+
+## Fit cells: % of each time in each class (rows sum to 100)
+
+groves5    V1   V2    V3  generalist    n
+time                                     
+0d       20.6  0.0   0.0        79.4   68
+8h        8.4  0.6   0.0        91.0  155
+1d        0.5  7.9   5.1        86.6  216
+3d        0.0  8.9  15.8        75.2  101
+7d        0.0  5.6   5.6        88.9   18
+
+## Removal-arm guests: % of each time in each class (rows sum to 100)
+
+groves5   V1   V2    V3  generalist   n
+time                                   
+8h_rm    0.0  4.7   4.7        90.7  43
+1d_rm    0.0  0.0  11.1        88.9  18
+3d_rm    0.0  0.0   2.2        97.8  46
+
+## Fit cells: % of each phase in each class (rows sum to 100)
+
+groves5   V1   V2   V3  generalist    n
+phase                                  
+G1       1.1  9.8  7.6        81.4  264
+S        8.9  0.0  4.1        87.0  169
+G2M      8.0  1.6  0.8        89.6  125
+
+## Fit cells: % of each mix in each class (rows sum to 100)
+
+groves5   V1   V2    V3  generalist    n
+mix                                     
+Mix1     9.1  7.3   2.7        80.9  110
+Mix2     3.3  0.0  17.6        79.1   91
+Mix3a    5.1  7.1   0.0        87.8   98
+Mix3b    4.3  8.7   1.4        85.5   69
+Mix4a    3.2  2.1   8.4        86.3   95
+Mix4b    4.2  5.3   0.0        90.5   95
+
+## Rule comparison (counts, fit cells)
+
+            groves5  weight095  gap035
+V1               28          0      87
+V2               28          2      44
+V3               28          0      70
+generalist      474        556     357
+
+## % of each time point called specialist, by rule
+
+      groves5  weight095  gap035
+time                            
+0d       20.6        0.0    51.5
+8h        9.0        0.0    36.8
+1d       13.4        0.5    27.8
+3d       24.8        1.0    42.6
+7d       11.1        0.0    33.3

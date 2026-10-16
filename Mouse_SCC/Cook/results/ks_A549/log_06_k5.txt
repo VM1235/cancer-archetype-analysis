@@ -1,0 +1,52 @@
+
+== Fit cells: % of each time in each class (rows sum to 100) ==
+groves5    V1    V2    V3    V4    V5  generalist    n
+time                                                  
+0d        0.0  23.9   0.2   0.5  15.6        59.8  577
+8h        0.3   1.6   7.1   1.4   7.0        82.6  885
+1d        1.6   0.4  11.4   3.4   0.0        83.1  788
+3d       15.8   0.1   0.4  12.6   0.5        70.6  754
+7d       17.1   0.8   0.0  15.5   0.8        65.9  129
+
+== Removal-arm guests: % of each time in each class (rows sum to 100) ==
+groves5    V1   V2   V3    V4   V5  generalist    n
+time                                               
+8h_rm    19.3  0.8  0.4   7.1  0.0        72.3  238
+1d_rm    10.3  0.0  0.0  22.6  0.6        66.5  155
+3d_rm     2.4  2.4  0.0   2.4  4.8        88.1   42
+
+== Fit cells: % of each phase in each class (rows sum to 100) ==
+groves5   V1   V2   V3   V4   V5  generalist     n
+phase                                             
+G1       4.0  3.4  7.0  5.0  6.9        73.7  1430
+S        6.2  6.1  3.6  5.3  3.7        75.1  1284
+G2M      4.8  7.2  2.6  4.1  2.6        78.8   419
+
+== Fit cells: % of each mix in each class (rows sum to 100) ==
+groves5    V1   V2   V3   V4    V5  generalist    n
+mix                                                
+Mix1      7.5  4.1  2.6  2.6   0.4        82.7  266
+Mix2      4.8  0.4  4.2  1.5  17.8        71.3  714
+Mix3a    12.1  9.2  2.9  7.0   1.1        67.6  272
+Mix3b     7.4  8.7  3.5  9.6   2.2        68.6  229
+Mix4a     2.6  5.8  5.6  6.4   1.1        78.5  855
+Mix4b     3.9  6.0  7.0  5.4   1.5        76.2  797
+
+== Rule comparison (counts, fit cells) ==
+            groves5  weight095  gap035
+V1              157          0     239
+V2              157          0      52
+V3              157          0      50
+V4              157          1      18
+V5              157          1      97
+generalist     2348       3131    2677
+
+== % of each time point called specialist, by rule ==
+      groves5  weight095  gap035
+time                            
+0d       40.2        0.2    17.9
+8h       17.4        0.0     7.7
+1d       16.9        0.1     8.1
+3d       29.4        0.0    24.7
+7d       34.1        0.0    27.1
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/Cook/results/ks_A549/groves5_k5

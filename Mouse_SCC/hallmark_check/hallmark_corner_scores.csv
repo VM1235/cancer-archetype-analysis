@@ -1,0 +1,41 @@
+fit,corner,my_name,Hypoxia,EMT,G2-M checkpoint,E2F targets,TGF-β signalling
+Simeonov M1-PT,V1,proliferation,-0.27,-0.16,0.07,0.24,-0.43
+Simeonov M1-PT,V2,EMT signalling,0.2,0.21,0.03,-0.08,0.31
+Simeonov M1-PT,V3,epithelial,-0.02,-0.11,-0.08,-0.11,0.03
+Simeonov M1-SS,V1,proliferation,-0.29,-0.18,0.06,0.2,-0.46
+Simeonov M1-SS,V2,epithelial,-0.08,-0.16,-0.07,-0.07,-0.13
+Simeonov M1-SS,V3,EMT signalling,0.15,0.15,0.03,-0.07,0.34
+Simeonov M1-Liver,V1,proliferation,-0.15,-0.06,0.56,0.73,-0.14
+Simeonov M1-Liver,V2,epithelial,-0.01,-0.17,-0.23,-0.25,-0.08
+Simeonov M1-Liver,V3,EMT signalling,0.11,0.13,-0.09,-0.21,0.26
+Simeonov M2-Liver,V1,proliferation,-0.08,0.02,0.36,0.47,-0.03
+Simeonov M2-Liver,V2,hypoxia,0.12,0.0,-0.36,-0.46,-0.0
+Simeonov M2-Liver,V3,epithelial,0.06,0.02,-0.32,-0.41,0.1
+Simeonov M2-Met,V1,proliferation,-0.15,-0.03,0.38,0.52,-0.08
+Simeonov M2-Met,V2,epithelial,-0.02,-0.07,-0.22,-0.28,0.03
+Simeonov M2-Met,V3,hypoxia,0.28,0.08,-0.31,-0.4,0.05
+Simeonov M2-PT,V1,proliferation,-0.26,-0.12,0.41,0.58,-0.28
+Simeonov M2-PT,V2,epithelial,-0.03,-0.08,-0.16,-0.18,-0.03
+Simeonov M2-PT,V3,hypoxia,0.33,0.16,-0.11,-0.19,0.24
+Simeonov mouse 2,V1,epithelial,0.07,0.04,-0.2,-0.26,0.18
+Simeonov mouse 2,V2,proliferation,-0.15,-0.07,0.44,0.57,-0.13
+Simeonov mouse 2,V3,hypoxia,0.21,0.03,-0.32,-0.4,0.01
+Simeonov mouse 1,V1,proliferation,-0.2,-0.12,0.47,0.65,-0.23
+Simeonov mouse 1,V2,epithelial,-0.02,-0.17,-0.18,-0.19,-0.09
+Simeonov mouse 1,V3,EMT signalling,0.16,0.2,-0.06,-0.16,0.3
+Simeonov both mice (k=4),V1,hypoxia-like,-0.07,-0.12,-0.36,-0.34,-0.34
+Simeonov both mice (k=4),V2,proliferation,-0.15,-0.12,0.49,0.67,-0.21
+Simeonov both mice (k=4),V3,EMT signalling,0.14,0.25,-0.04,-0.16,0.34
+Simeonov both mice (k=4),V4,epithelial,0.03,-0.08,-0.18,-0.23,0.05
+Cook A549,V1,other,0.02,0.01,-0.24,-0.31,0.09
+Cook A549,V2,TGF-β response,0.04,0.23,0.04,0.06,0.04
+Cook A549,V3,proliferation,-0.03,-0.15,0.18,0.23,-0.14
+Cook DU145,V1,other,-0.03,0.03,-0.02,-0.07,0.1
+Cook DU145,V2,TGF-β response,0.1,0.13,-0.27,-0.25,-0.0
+Cook DU145,V3,proliferation,-0.04,-0.12,0.27,0.25,-0.1
+Cook MCF7,V1,other,-0.06,-0.01,0.1,0.08,0.05
+Cook MCF7,V2,TGF-β response,0.14,0.12,-0.31,-0.4,0.12
+Cook MCF7,V3,proliferation,-0.04,-0.06,0.36,0.45,-0.08
+Cook OVCA420,V1,TGF-β response,0.06,0.22,-0.12,-0.27,0.15
+Cook OVCA420,V2,proliferation,-0.13,-0.29,0.13,0.21,-0.23
+Cook OVCA420,V3,other,0.11,0.23,-0.24,-0.3,0.14

@@ -1,0 +1,16 @@
+PC1+,PC1-,PC2+,PC2-,PC3+,PC3-,PC4+,PC4-,PC5+,PC5-
+Vim,Sfn,Slpi,Epcam,Slpi,Lgals1,Areg,Tpm2,Sparc,Slpi
+Lgals1,Dsp,Vim,S100a14,Col5a2,Areg,Ank3,Vamp8,Col5a2,Krt8
+Col5a2,Perp,Lgals1,Myo1d,Fstl1,Tpm2,Zeb1,Fxyd3,Fstl1,Krt18
+Fstl1,Fxyd3,Areg,Cdh1,Hes1,Krt8,Rabgap1l,Epcam,Sfn,Epcam
+Sparc,Itgb4,Krt18,Esrp1,Sdc1,Emp3,Klf5,Sparc,Itgb4,Anxa4
+Tuba1a,Areg,Emp3,Tacstd2,Lhfp,Krt18,Cep170,Lgals1,Sdc1,Vamp8
+Cald1,Klf5,Aqp3,Col5a2,Dsp,Sfn,Itgb4,S100a14,Dsp,Cdh1
+Emp3,Aqp3,Tpm2,Map7,Rabgap1l,Cd9,Map1b,Tuba1a,Areg,Pmp22
+Fermt2,Spint2,Sfn,Rabgap1l,Serpine1,Msn,Dennd5a,Sfn,Aqp3,Ehf
+Mxra7,Slpi,Cd9,Gpx2,Gfpt2,Tubb6,Myo1d,Gpx2,Perp,Lgals1
+Lhfp,Epcam,Sdc1,Arap2,Myo1d,Map1b,Krt18,Perp,Gja1,Mgst2
+Map1b,Tacstd2,Tubb6,Ehf,Zeb1,Epcam,Lhfp,Tacstd2,Serpine1,Rbm47
+Loxl2,Jup,Mgst2,Ank3,Sparc,Arhgdib,Axl,Slpi,Vim,S100a14
+Axl,Sdc1,Perp,Lsr,Irf6,Syngr2,Tob1,Pkp3,Klf5,Esrp1
+Etv1,Pkp3,Axl,Fstl1,Etv1,S100a14,Gfpt2,Jup,Tpm2,Arap2

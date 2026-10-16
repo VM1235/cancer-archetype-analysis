@@ -1,0 +1,9 @@
+{
+  "geneset": "ks",
+  "tag": "DU145",
+  "lines": "DU145",
+  "n_genes": 163,
+  "n_fit_cells": 2012,
+  "n_pcs_rule": 124,
+  "cumvar_at_rule": 0.9803598996256868
+}

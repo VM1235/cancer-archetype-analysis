@@ -1,0 +1,12 @@
+{
+  "line": "A549",
+  "geneset": "all",
+  "variant": "clean",
+  "k": 4,
+  "n_cells": 2646,
+  "t_ratio": 0.14151562829422737,
+  "null_median": 0.1739121778274776,
+  "null_95": 0.19534341102099217,
+  "n_null": 200,
+  "p_value": 1.0
+}

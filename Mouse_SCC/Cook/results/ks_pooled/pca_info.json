@@ -1,0 +1,9 @@
+{
+  "geneset": "ks",
+  "tag": "pooled",
+  "lines": "all",
+  "n_genes": 163,
+  "n_fit_cells": 2200,
+  "n_pcs_rule": 129,
+  "cumvar_at_rule": 0.9788101999904683
+}

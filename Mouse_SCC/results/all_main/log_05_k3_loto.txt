@@ -1,0 +1,49 @@
+without_MU3: agreement 98.4% (specialists 100.0%), t=0.531  [136s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 62%, MU7 45%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 61%, SC32 36%
+   V3: main Late-EMT 93% | new Late-EMT 94%, SC2b3 36%
+without_MU4: agreement 97.9% (specialists 100.0%), t=0.533  [130s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 63%, MU7 45%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 61%, SC32 35%
+   V3: main Late-EMT 93% | new Late-EMT 94%, SC2b3 36%
+without_MU7: agreement 99.1% (specialists 100.0%), t=0.523  [129s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 63%, MU7 39%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 62%, SC32 36%
+   V3: main Late-EMT 93% | new Late-EMT 93%, SC2b3 35%
+without_MU8: agreement 98.7% (specialists 100.0%), t=0.535  [130s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 61%, MU7 48%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 61%, SC32 36%
+   V3: main Late-EMT 93% | new Late-EMT 93%, SC2b3 36%
+without_SC15: agreement 89.9% (specialists 100.0%), t=0.501  [130s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 67%, MU7 41%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 59%, SC33 36%
+   V3: main Late-EMT 93% | new Late-EMT 95%, SC2b3 36%
+without_SC2b1: agreement 95.4% (specialists 100.0%), t=0.502  [125s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 62%, MU7 46%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 63%, SC32 38%
+   V3: main Late-EMT 93% | new Late-EMT 92%, SC2b3 34%
+without_SC2b3: agreement 96.2% (specialists 100.0%), t=0.541  [134s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 61%, MU7 46%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 63%, SC32 36%
+   V3: main Late-EMT 93% | new Late-EMT 91%, SC2b3 32%
+without_SC32: agreement 96.1% (specialists 100.0%), t=0.512  [136s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 64%, MU7 44%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 59%, SC32 34%
+   V3: main Late-EMT 93% | new Late-EMT 95%, SC2b3 36%
+without_SC33: agreement 93.1% (specialists 100.0%), t=0.509  [126s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 66%, MU7 44%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 55%, SC32 34%
+   V3: main Late-EMT 93% | new Late-EMT 96%, SC2b3 36%
+without_SC35: agreement 96.9% (specialists 100.0%), t=0.539  [120s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 61%, MU7 45%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 63%, SC32 36%
+   V3: main Late-EMT 93% | new Late-EMT 90%, SC2b3 36%
+without_SC43: agreement 98.1% (specialists 100.0%), t=0.546  [124s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 61%, MU7 45%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 62%, SC32 35%
+   V3: main Late-EMT 93% | new Late-EMT 93%, SC2b3 36%
+without_SC46: agreement 98.7% (specialists 100.0%), t=0.532  [136s]
+   V1: main Early-Hybrid 63% | new Early-Hybrid 64%, MU7 45%
+   V2: main Early-Hybrid 62% | new Early-Hybrid 62%, SC32 36%
+   V3: main Late-EMT 93% | new Late-EMT 92%, SC2b3 36%
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/results/all_main/robustness/k3_loto.csv

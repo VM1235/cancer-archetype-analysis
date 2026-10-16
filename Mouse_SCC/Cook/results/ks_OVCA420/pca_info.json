@@ -1,0 +1,9 @@
+{
+  "geneset": "ks",
+  "tag": "OVCA420",
+  "lines": "OVCA420",
+  "n_genes": 163,
+  "n_fit_cells": 558,
+  "n_pcs_rule": 129,
+  "cumvar_at_rule": 0.9842861362624816
+}

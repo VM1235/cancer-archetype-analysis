@@ -1,0 +1,43 @@
+# A549 (all, clean), k=3: 2646 fit cells, 922 held-out cells (removal arm and cells dropped by cleaning)
+
+## gap rule: % of each time point at each corner / generalist
+
+gap     V1    V2    V3  generalist    n
+time                                   
+0d     3.3   0.0  31.2        65.5  577
+8h     8.1   0.1  22.3        69.5  885
+1d     7.6   2.9   0.4        89.1  788
+3d     0.1  35.8   0.3        63.8  754
+7d     0.0  38.0   1.6        60.5  129
+8h_rm  0.0  47.1   0.8        52.1  238
+1d_rm  1.9  37.4   0.0        60.6  155
+3d_rm  4.8   2.4   4.8        88.1   42
+
+## gap rule: cell-cycle phase (%)
+
+gap     V1    V2    V3  generalist
+phase                             
+G1     8.0  12.8   4.8        74.4
+G2M    0.2  14.8  24.3        60.7
+S      1.7  16.1  13.1        69.0
+
+## groves5 rule: % of each time point at each corner / generalist
+
+groves5    V1    V2    V3  generalist    n
+time                                      
+0d        5.4   0.0  13.0        81.6  577
+8h       10.1   0.0   7.0        82.9  885
+1d       12.4   1.0   0.0        86.5  788
+3d        1.9  17.5   0.0        80.6  754
+7d        2.3  21.7   0.8        75.2  129
+8h_rm     0.0  23.1   0.0        76.9  238
+1d_rm     1.9  15.5   0.0        82.6  155
+3d_rm     7.1   2.4   0.0        90.5   42
+
+## groves5 rule: cell-cycle phase (%)
+
+groves5    V1   V2    V3  generalist
+phase                               
+G1       11.9  5.7   0.7        81.7
+G2M       0.6  6.5  11.5        81.4
+S         3.1  8.5   4.8        83.7

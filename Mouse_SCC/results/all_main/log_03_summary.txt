@@ -1,0 +1,10 @@
+all/main: 9600 fit cells
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 3   0.5284       0.4682      0.4914    0.5162     200   0.0050                0.9909           15          45.1331
+ 4   0.1863       0.1762      0.1992    0.2101     200   0.1841                0.9688           15          25.1145
+ 5   0.0580       0.0497      0.0590    0.0646     200   0.0697                0.9438           15          33.7652
+ 6   0.0197       0.0122      0.0156    0.0189     200   0.0050                0.9250           15          44.4506
+ 7   0.0062       0.0025      0.0032    0.0038     200   0.0050                0.9001           15          47.8496
+ESV elbow k=4
+k with p < 0.01: [3, 6, 7]
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/results/all_main

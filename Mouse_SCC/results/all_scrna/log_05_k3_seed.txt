@@ -1,0 +1,9 @@
+seed1: agreement 99.4% (specialists 100.0%), t=0.544  [73s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 58%, MU7 42%
+   V2: main Late-EMT 94% | new Late-EMT 94%, SC2b3 39%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 59%, SC32 33%
+seed2: agreement 98.8% (specialists 100.0%), t=0.537  [76s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 59%, MU7 41%
+   V2: main Late-EMT 94% | new Late-EMT 94%, SC2b3 39%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 59%, SC32 33%
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/results/all_scrna/robustness/k3_seed.csv

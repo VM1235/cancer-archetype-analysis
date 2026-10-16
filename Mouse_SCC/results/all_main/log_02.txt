@@ -1,0 +1,21 @@
+gene set 'all': 14502 genes; fit cells 9600 of 23959
+exact PCA done (787s)
+PC1..PC10 variance %: [9.35, 4.82, 1.94, 1.57, 1.32, 1.02, 0.84, 0.82, 0.74, 0.7]
+0.1% rule keeps 49 PCs, which together explain 31.8%
+
+Share of each PC explained by each factor (0-1; fit cells):
+ PC  pct_variance  tumour  assay  state  clusterU  phase  log_depth  pct_mito
+  1         9.348   0.763  0.544  0.497     0.535  0.001      0.131     0.494
+  2         4.819   0.362  0.006  0.444     0.591  0.186      0.257     0.002
+  3         1.938   0.456  0.004  0.243     0.315  0.101      0.034     0.012
+  4         1.570   0.559  0.063  0.150     0.213  0.174      0.203     0.072
+  5         1.323   0.378  0.026  0.217     0.297  0.007      0.001     0.024
+  6         1.019   0.620  0.001  0.034     0.058  0.006      0.006     0.003
+  7         0.839   0.393  0.034  0.018     0.168  0.005      0.023     0.000
+  8         0.818   0.423  0.032  0.005     0.049  0.017      0.025     0.006
+  9         0.743   0.517  0.049  0.047     0.075  0.011      0.000     0.017
+ 10         0.698   0.412  0.003  0.168     0.237  0.005      0.001     0.001
+
+randomized vs exact |corr| PC1..10: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/results/all_main  (802s total)

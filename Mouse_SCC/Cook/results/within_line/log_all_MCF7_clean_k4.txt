@@ -1,0 +1,2 @@
+MCF7/all/clean k=4: 1378 cells, t=0.1548
+{"line": "MCF7", "geneset": "all", "variant": "clean", "k": 4, "n_cells": 1378, "t_ratio": 0.1547751343046762, "null_median": 0.17600480360218101, "null_95": 0.20513581617733775, "n_null": 200, "p_value": 0.9303482587064676} (370s)

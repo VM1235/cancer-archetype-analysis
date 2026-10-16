@@ -1,0 +1,12 @@
+{
+  "line": "MCF7",
+  "geneset": "all",
+  "variant": "clean_tbal",
+  "k": 4,
+  "n_cells": 1098,
+  "t_ratio": 0.1595003424926926,
+  "null_median": 0.17780891238158858,
+  "null_95": 0.20937973555409592,
+  "n_null": 200,
+  "p_value": 0.8656716417910447
+}

@@ -1,0 +1,2 @@
+A549/all/clean k=3: 2646 cells, t=0.4840
+{"line": "A549", "geneset": "all", "variant": "clean", "k": 3, "n_cells": 2646, "t_ratio": 0.4839661032607846, "null_median": 0.44576208521439437, "null_95": 0.46866455714474675, "n_null": 200, "p_value": 0.009950248756218905} (766s)

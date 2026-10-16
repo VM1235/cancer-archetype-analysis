@@ -1,0 +1,9 @@
+{
+  "geneset": "ks",
+  "tag": "MCF7",
+  "lines": "MCF7",
+  "n_genes": 163,
+  "n_fit_cells": 1649,
+  "n_pcs_rule": 126,
+  "cumvar_at_rule": 0.9803266143122207
+}

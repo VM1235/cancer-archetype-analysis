@@ -1,0 +1,59 @@
+
+== Fit cells: % of each time in each class (rows sum to 100) ==
+groves5   V1    V2   V3    V4  generalist    n
+time                                          
+0d       9.8   0.7  4.9   0.5        84.1  429
+8h       4.9   3.1  8.1   2.8        81.1  607
+1d       2.1  13.1  5.1   6.6        73.0  564
+3d       5.2   2.7  2.3   4.8        84.9  477
+7d       0.8   0.8  0.0  25.2        73.2  123
+
+== Removal-arm guests: % of each time in each class (rows sum to 100) ==
+groves5   V1   V2   V3    V4  generalist    n
+time                                         
+8h_rm    1.1  0.0  0.6  17.8        80.5  709
+1d_rm    2.2  0.0  0.3  21.6        75.9  726
+3d_rm    2.0  0.0  0.7  12.8        84.5  297
+
+== Fit cells: % of each cell_line in each class (rows sum to 100) ==
+groves5      V1    V2    V3    V4  generalist    n
+cell_line                                         
+A549        0.0   0.0  20.0   0.0        80.0  550
+DU145       0.0   0.0   0.0  20.0        80.0  550
+MCF7       20.0   0.0   0.0   0.0        80.0  550
+OVCA420     0.0  20.0   0.0   0.0        80.0  550
+
+== Fit cells: % of each phase in each class (rows sum to 100) ==
+groves5   V1   V2   V3    V4  generalist     n
+phase                                         
+G1       4.9  6.7  5.3   4.9        78.2  1130
+S        6.2  2.6  5.8   2.0        83.4   658
+G2M      3.4  4.1  2.9  10.2        79.4   412
+
+== Fit cells: % of each mix in each class (rows sum to 100) ==
+groves5    V1   V2    V3   V4  generalist    n
+mix                                           
+Mix1     12.1  4.2   0.2  1.0        82.5  480
+Mix2      4.2  4.0   7.7  3.5        80.5  426
+Mix3a     3.3  9.5   2.2  7.7        77.3  273
+Mix3b     5.6  9.1   2.6  9.5        73.3  232
+Mix4a     0.8  4.0  10.3  4.3        80.6  397
+Mix4b     2.3  2.6   5.9  7.7        81.6  392
+
+== Rule comparison (counts, fit cells) ==
+            groves5  weight095  gap035
+V1              110          2     506
+V2              110          1     391
+V3              110          0     428
+V4              110          1     545
+generalist     1760       2196     330
+
+== % of each time point called specialist, by rule ==
+      groves5  weight095  gap035
+time                            
+0d       15.9        0.5    82.3
+8h       18.9        0.0    86.7
+1d       27.0        0.2    90.4
+3d       15.1        0.0    81.3
+7d       26.8        0.8    75.6
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/Cook/results/ks_pooled/groves5_k4

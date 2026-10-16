@@ -1,0 +1,43 @@
+# M2-Liver cleaned, genes all, k=3: 4000 cells
+
+## gap rule: % of each state at each corner / generalist
+
+gap             V1    V2    V3  generalist     n
+state                                           
+Epithelial     5.2  33.0  10.6        51.3  1828
+Early-Hybrid  22.3  15.1   0.6        61.9  1706
+Late-Hybrid   45.5   8.7   0.2        45.5   404
+Mesenchymal   66.1   4.8   0.0        29.0    62
+
+## gap rule: % of each clusterU at each corner / generalist
+
+gap         V1    V2    V3  generalist     n
+clusterU                                    
+K0         3.8   0.0   7.7        88.5    26
+K1        47.9   4.2   1.4        46.5    71
+K2        19.7  18.3   0.3        61.6  2743
+K3         0.4  40.5  19.6        39.5   965
+K4        62.6   1.0   2.1        34.4   195
+
+Specialists by gap: 45.1% of cells
+
+## groves5 rule: % of each state at each corner / generalist
+
+groves5         V1   V2    V3  generalist     n
+state                                          
+Epithelial     0.6  6.8  10.3        82.3  1828
+Early-Hybrid   4.9  3.8   0.6        90.6  1706
+Late-Hybrid   20.8  2.2   0.2        76.7   404
+Mesenchymal   33.9  1.6   0.0        64.5    62
+
+## groves5 rule: % of each clusterU at each corner / generalist
+
+groves5     V1   V2    V3  generalist     n
+clusterU                                   
+K0         0.0  0.0   0.0       100.0    26
+K1        18.3  0.0   1.4        80.3    71
+K2         4.3  5.0   0.3        90.4  2743
+K3         0.0  6.5  19.5        74.0   965
+K4        34.9  0.0   2.1        63.1   195
+
+Specialists by groves5: 15.0% of cells

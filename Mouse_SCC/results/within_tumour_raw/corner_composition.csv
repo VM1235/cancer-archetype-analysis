@@ -1,0 +1,13 @@
+corner,n_specialists,Epithelial,Early-Hybrid,Hybrid,Late-EMT,pct_cycling,top_genes
+SC15_V1,183.0,97.8,2.2,0.0,0.0,24.6,"Frmd4b, Trps1, Adgrl2, Stox2, Nfib, Trp63, Efna5, 2610307P16Rik"
+SC15_V2,146.0,0.0,52.1,7.5,40.4,32.2,"Col5a2, Fn1, Malat1, Col1a1, Fndc3b, Fosb, Slit3, Ghr"
+SC15_V3,395.0,12.9,77.0,9.9,0.3,42.8,"Lgals1, S100a4, Ly6a, Rplp0, S100a6, Gapdh, Krt5, 2200002D01Rik"
+"SC15: t=0.512, p=0.005",,,,,,,
+SC32_V1,367.0,49.9,50.1,0.0,0.0,80.4,"Fabp5, Krt6a, Krt14, Krtdap, Ly6a, Krt5, Hmgb2, Ly6c1"
+SC32_V2,371.0,0.0,23.5,21.0,55.5,6.7,"Spp1, Vim, Fn1, Prrx1, Thbs2, Ereg, Col5a2, Colec12"
+SC32_V3,114.0,78.9,21.1,0.0,0.0,22.8,"Tmem176b, Krt17, Thbs1, Tmem176a, Krt42, Fxyd3, Emb, AY036118"
+"SC32: t=0.498, p=0.015",,,,,,,
+SC46_V1,25.0,12.0,56.0,0.0,32.0,68.0,"Malat1, Pcdh7, Pde4d, Hivep2, Neat1, Lncpint, Pard3, Med13l"
+SC46_V2,310.0,0.0,1.0,0.0,99.0,21.9,"Col3a1, Bgn, Eln, Col5a2, Col1a1, Col1a2, Id3, Igfbp7"
+SC46_V3,377.0,4.2,27.6,65.3,2.9,78.0,"Ccnd1, H2afz, Ran, Tm4sf1, Tuba1b, Upp1, Lgals1, Areg"
+"SC46: t=0.501, p=0.244",,,,,,,

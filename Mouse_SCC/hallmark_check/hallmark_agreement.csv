@@ -1,0 +1,28 @@
+fit,corner,my_name,top_set,agree,expected_best
+Simeonov M1-PT,V1,proliferation,E2F targets,True,0.24
+Simeonov M1-PT,V2,EMT signalling,TGF-β signalling,True,0.31
+Simeonov M1-SS,V1,proliferation,E2F targets,True,0.2
+Simeonov M1-SS,V3,EMT signalling,TGF-β signalling,True,0.34
+Simeonov M1-Liver,V1,proliferation,E2F targets,True,0.73
+Simeonov M1-Liver,V3,EMT signalling,TGF-β signalling,True,0.26
+Simeonov M2-Liver,V1,proliferation,E2F targets,True,0.47
+Simeonov M2-Liver,V2,hypoxia,Hypoxia,True,0.12
+Simeonov M2-Met,V1,proliferation,E2F targets,True,0.52
+Simeonov M2-Met,V3,hypoxia,Hypoxia,True,0.28
+Simeonov M2-PT,V1,proliferation,E2F targets,True,0.58
+Simeonov M2-PT,V3,hypoxia,Hypoxia,True,0.33
+Simeonov mouse 2,V2,proliferation,E2F targets,True,0.57
+Simeonov mouse 2,V3,hypoxia,Hypoxia,True,0.21
+Simeonov mouse 1,V1,proliferation,E2F targets,True,0.65
+Simeonov mouse 1,V3,EMT signalling,TGF-β signalling,True,0.3
+Simeonov both mice (k=4),V1,hypoxia-like,Hypoxia,True,-0.07
+Simeonov both mice (k=4),V2,proliferation,E2F targets,True,0.67
+Simeonov both mice (k=4),V3,EMT signalling,TGF-β signalling,True,0.34
+Cook A549,V2,TGF-β response,EMT,True,0.23
+Cook A549,V3,proliferation,E2F targets,True,0.23
+Cook DU145,V2,TGF-β response,EMT,True,0.13
+Cook DU145,V3,proliferation,G2-M checkpoint,True,0.27
+Cook MCF7,V2,TGF-β response,Hypoxia,False,0.12
+Cook MCF7,V3,proliferation,E2F targets,True,0.45
+Cook OVCA420,V1,TGF-β response,EMT,True,0.22
+Cook OVCA420,V2,proliferation,E2F targets,True,0.21

@@ -1,0 +1,2 @@
+A549/ks/clean k=4: 2646 cells, t=0.1582
+{"line": "A549", "geneset": "ks", "variant": "clean", "k": 4, "n_cells": 2646, "t_ratio": 0.1581515836399153, "null_median": 0.1654361495501661, "null_95": 0.18808161535675585, "n_null": 200, "p_value": 0.7164179104477612} (1018s)

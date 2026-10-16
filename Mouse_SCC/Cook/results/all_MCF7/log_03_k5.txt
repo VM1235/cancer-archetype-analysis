@@ -1,0 +1,15 @@
+all/MCF7: 1649 fit cells
+
+k=5: t-ratio 0.0642, 15/15 starts ok (2.2s)
+   25/200 shuffles, null t max so far 0.0705
+   50/200 shuffles, null t max so far 0.0705
+   75/200 shuffles, null t max so far 0.0705
+   100/200 shuffles, null t max so far 0.0705
+   125/200 shuffles, null t max so far 0.0736
+   150/200 shuffles, null t max so far 0.0736
+   175/200 shuffles, null t max so far 0.0736
+   200/200 shuffles, null t max so far 0.0736
+k=5: p = 0.0896 from 200 shuffles; 2.0s per shuffle
+
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 5   0.0642       0.0534      0.0663    0.0736     200   0.0896                0.9184           15           1.9912

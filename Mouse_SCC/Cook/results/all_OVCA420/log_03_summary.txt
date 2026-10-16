@@ -1,0 +1,10 @@
+all/OVCA420: 558 fit cells
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 3   0.4311       0.4515      0.4809    0.5037     200   0.9403                0.9523           15           0.9857
+ 4   0.1505       0.1913      0.2238    0.2618     200   1.0000                0.8880           15           0.6854
+ 5   0.0583       0.0570      0.0738    0.0925     200   0.4527                0.8832           15           0.9569
+ 6   0.0207       0.0158      0.0237    0.0309     200   0.1692                0.8596           15           1.0943
+ 7   0.0035       0.0048      0.0084    0.0108     200   0.7562                0.8297           15           1.2128
+ESV elbow k=5
+k with p < 0.01: none
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/Cook/results/all_OVCA420

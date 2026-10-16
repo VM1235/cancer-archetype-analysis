@@ -1,0 +1,158 @@
+# Simplex description: gene set all, tag scrna_noV1, k=3
+
+Cells: 23959; inside simplex 83.0%; specialists 35.8%; interior 64.2%
+Fit cells inside simplex: 72.5%
+
+## Specialists: vertex x EMT state (counts)
+
+cluster_annotation  Epithelial  Early-Hybrid  Hybrid  Late-EMT
+nearest                                                       
+V1                          23           236      11      2383
+V2                          14            50    2103       203
+V3                        1190          2364       0         4
+
+## Specialists: vertex x EMT state (% of row)
+
+cluster_annotation  Epithelial  Early-Hybrid  Hybrid  Late-EMT
+nearest                                                       
+V1                         0.9           8.9     0.4      89.8
+V2                         0.6           2.1    88.7       8.6
+V3                        33.4          66.4     0.0       0.1
+
+## Specialists: vertex x clusterU (% of row)
+
+clusterU  Epithelial  Epithelial (Differentiated)  Proliferative Early Hybrid EMT  Early Hybrid EMT_1  Early Hybrid EMT_2  Early Hybrid EMT_3  Proliferative Hybrid EMT  Hybrid EMT  Late EMT
+nearest                                                                                                                                                                                      
+V1               0.9                          0.0                             0.0                 0.6                 6.7                 1.8                       0.2        10.0      79.9
+V2               0.5                          0.0                             1.4                 0.1                 0.4                 0.0                      63.4        32.2       1.9
+V3              23.2                          7.8                            31.7                28.4                 2.4                 6.3                       0.0         0.1       0.0
+
+## Specialists: vertex x phase (% of row)
+
+phase      G1   G2M     S
+nearest                  
+V1       88.1   3.2   8.7
+V2       21.9  43.6  34.5
+V3       54.8  26.3  18.9
+
+## Specialists: vertex x assay (% of row)
+
+assay    multiome  scRNA
+nearest                 
+V1            8.0   92.0
+V2            3.6   96.4
+V3           23.1   76.9
+
+## Specialists: vertex x tumour (% of row)
+
+sample   MU3  MU4  MU7   MU8  SC15  SC2b1  SC2b3  SC32  SC33  SC35  SC43  SC46
+nearest                                                                       
+V1       0.6  0.2  0.8   6.4   5.4   20.4   42.9   0.4   0.3  20.4   1.1   1.2
+V2       0.1  0.9  1.7   0.9   4.5    3.6   13.9   2.2   0.7  28.9  27.7  14.9
+V3       1.4  3.1  1.3  17.2   1.3    0.6    6.1  36.3  32.0   0.3   0.3   0.0
+
+## Each EMT state: % of its cells at each vertex or interior
+
+group                 V1    V2    V3  interior
+cluster_annotation                            
+Epithelial           0.6   0.3  28.7      70.4
+Early-Hybrid         2.4   0.5  23.7      73.5
+Hybrid               0.3  58.3   0.0      41.4
+Late-EMT            38.3   3.3   0.1      58.4
+
+## Each clusterU: % of its cells at each vertex or interior
+
+group                             V1    V2    V3  interior
+clusterU                                                  
+Epithelial                       0.7   0.4  24.0      74.9
+Epithelial (Differentiated)      0.0   0.0  51.6      48.4
+Proliferative Early Hybrid EMT   0.0   1.0  33.4      65.6
+Early Hybrid EMT_1               0.5   0.1  30.1      69.4
+Early Hybrid EMT_2               7.8   0.4   3.8      88.0
+Early Hybrid EMT_3               4.2   0.0  19.5      76.3
+Proliferative Hybrid EMT         0.2  72.3   0.0      27.5
+Hybrid EMT                       7.3  21.0   0.1      71.6
+Late EMT                        51.8   1.1   0.0      47.1
+
+## Each tumour: % of its cells at each vertex or interior
+
+group     V1    V2    V3  interior
+sample                            
+MU3      2.0   0.4   5.9      91.8
+MU4      0.6   2.2  11.9      85.2
+MU7      0.7   1.5   1.7      96.1
+MU8      3.2   0.4  11.5      84.9
+SC15     9.1   6.7   3.0      81.2
+SC2b1   49.1   7.8   2.0      41.0
+SC2b3   38.5  11.1   7.3      43.1
+SC32     0.5   2.7  67.5      29.2
+SC33     0.5   1.2  82.5      15.8
+SC35    21.0  26.6   0.3      52.1
+SC43     2.7  63.0   1.1      33.2
+SC46     2.1  23.3   0.1      74.5
+
+## Tumour check per vertex
+
+        n_specialists top_tumour  top_share_pct  n_tumours_ge5pct
+vertex                                                           
+V1               2653      SC2b3           42.9                 5
+V2               2370       SC35           28.9                 4
+V3               3558       SC32           36.3                 4
+
+## Mean scores per vertex (specialists) and interior
+
+          KS_EMT  LKPR_Epithelial_andrea  LKPR_EarlyHybridEMT_andrea  LKPR_HybridEMT_andrea  LKPR_LateEMT_andrea  purity
+group                                                                                                                   
+V1         0.449                  -0.298                       0.247                  0.378                0.626   0.555
+V2         0.446                  -0.447                       0.281                  0.355                0.294   0.547
+V3        -0.418                   1.086                       1.439                 -0.099               -0.092   0.546
+interior  -0.049                   0.423                       0.838                  0.109                0.126   0.152
+
+## Closest 10% of cells to each vertex: labels enriched >= 1.5-fold (q < 0.1)
+
+                   label_type                         subtype  k_in_bin  fold_enrichment  q_value
+archetype                                                                                        
+V1                   clusterU                        Late EMT      2068           5.0573      0.0
+V1                     sample                           SC2b1       550           5.0043      0.0
+V1         cluster_annotation                        Late-EMT      2257           3.6285      0.0
+V1                     sample                           SC2b3      1050           3.5460      0.0
+V1                     sample                            SC35       487           1.8919      0.0
+V1                      assay                           scRNA      2282           1.6231      0.0
+V2                   clusterU        Proliferative Hybrid EMT      1514           7.2785      0.0
+V2                     sample                            SC43       613           5.8883      0.0
+V2         cluster_annotation                          Hybrid      2113           5.8562      0.0
+V2                     sample                            SC35       686           2.6650      0.0
+V2                     sample                            SC46       390           2.5674      0.0
+V2                      phase                             G2M      1084           2.3371      0.0
+V2                   clusterU                      Hybrid EMT       724           1.9917      0.0
+V2                      phase                               S       841           1.9310      0.0
+V2                      assay                           scRNA      2291           1.6295      0.0
+V3                     sample                            SC33       975           7.0700      0.0
+V3                     sample                            SC32      1018           5.3296      0.0
+V3                   clusterU     Epithelial (Differentiated)       158           2.9531      0.0
+V3                   clusterU  Proliferative Early Hybrid EMT       924           2.7352      0.0
+V3         cluster_annotation                      Epithelial       826           1.9922      0.0
+V3                   clusterU              Early Hybrid EMT_1       612           1.8208      0.0
+V3                   clusterU                      Epithelial       580           1.6835      0.0
+V3         cluster_annotation                    Early-Hybrid      1570           1.5723      0.0
+V3                      assay                           scRNA      2185           1.5541      0.0
+V3                      phase                             G2M       707           1.5243      0.0
+
+## Top 15 genes higher near each vertex (log-expression difference)
+
+     V1_up   V2_up   V3_up
+0   Col3a1  Lgals1   Krt14
+1   Col1a1   Csrp2    Krt5
+2   Col1a2  Tm4sf1   Krt6a
+3    Postn     Vim  Krtdap
+4      Dcn  S100a4   Krt17
+5      Bgn    Pfn1   Fabp5
+6      Fn1   Timp1     Sfn
+7   Col5a2   Actg1    Gclm
+8     Mmp2   H2afz   Fxyd3
+9    Aebp1     Dcn  Lgals7
+10   Sparc     Ran    Aqp3
+11  Cxcl12   Hmgb2    Perp
+12   Fstl1  Ranbp1    Rbm3
+13     Id3    Actb   Pitx1
+14  Crabp1   Ccnd1    Klk8

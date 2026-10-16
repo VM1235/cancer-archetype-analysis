@@ -1,0 +1,9 @@
+{
+  "geneset": "all",
+  "tag": "A549",
+  "lines": "A549",
+  "n_genes": 11250,
+  "n_fit_cells": 3133,
+  "n_pcs_rule": 38,
+  "cumvar_at_rule": 0.13231873900899363
+}

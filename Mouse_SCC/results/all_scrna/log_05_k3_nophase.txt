@@ -1,0 +1,5 @@
+phase_regressed: agreement 83.5% (specialists 100.0%), t=0.491  [79s]
+   V1: main Early-Hybrid 59% | new Early-Hybrid 57%, SC15 36%
+   V2: main Late-EMT 94% | new Late-EMT 83%, SC2b3 42%
+   V3: main Early-Hybrid 58% | new Early-Hybrid 68%, SC32 39%
+wrote /Users/apple/Desktop/thesis_iisc/Project_1/Mouse_SCC/results/all_scrna/robustness/k3_nophase.csv

@@ -1,0 +1,15 @@
+ks/A549: 3133 fit cells
+
+k=7: t-ratio 0.0041, 15/15 starts ok (29.3s)
+   25/200 shuffles, null t max so far 0.0052
+   50/200 shuffles, null t max so far 0.0055
+   75/200 shuffles, null t max so far 0.0059
+   100/200 shuffles, null t max so far 0.0059
+   125/200 shuffles, null t max so far 0.0059
+   150/200 shuffles, null t max so far 0.0059
+   175/200 shuffles, null t max so far 0.0075
+   200/200 shuffles, null t max so far 0.0075
+k=7: p = 0.3383 from 200 shuffles; 6.3s per shuffle
+
+ k  t_ratio  null_median  null_95pct  null_max  n_null  p_value  esv_in_k_minus_1_pcs  n_starts_ok  sec_per_shuffle
+ 7   0.0041       0.0038      0.0053    0.0075     200   0.3383                0.8661           15           6.3405
