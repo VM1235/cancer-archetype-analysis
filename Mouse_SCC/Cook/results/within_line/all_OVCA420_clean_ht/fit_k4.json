@@ -1,0 +1,12 @@
+{
+  "line": "OVCA420",
+  "geneset": "all",
+  "variant": "clean",
+  "k": 4,
+  "n_cells": 355,
+  "t_ratio": 0.14250404055794952,
+  "null_median": 0.18687972377341028,
+  "null_95": 0.22775767491094304,
+  "n_null": 200,
+  "p_value": 1.0
+}

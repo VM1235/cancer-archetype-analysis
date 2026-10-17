@@ -1,0 +1,3 @@
+technical genes dropped: ['MALAT1', 'NEAT1']
+HuMEC/all k=3: 857 cells, t=0.6026
+{"unit": "HuMEC", "geneset": "all", "k": 3, "n_cells": 857, "t_ratio": 0.6026120735386594, "null_median": 0.4716669126685806, "null_95": 0.5014190842815422, "null_max": 0.5351026383801465, "n_null": 200, "p_value": 0.004975124378109453, "evr_pc1_pc3": [0.07115421238621346, 0.023913507035917957, 0.019552869930638015]} (296s)

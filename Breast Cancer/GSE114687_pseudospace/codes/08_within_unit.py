@@ -34,14 +34,17 @@ ap.add_argument("--min-umi", type=int, default=10000)
 ap.add_argument("--regress-depth", action="store_true",
                 help="remove the linear effect of log10(UMI) from every gene before PCA; output suffix _rd")
 ap.add_argument("--out-suffix", default="", help="extra output suffix (e.g. _dm for the depth-matched matrix, _t5000 for a UMI threshold sweep)")
+ap.add_argument("--drop-human-tech", action="store_true",
+                help="with --clean: also drop the human technical genes (MALAT1, NEAT1, haemoglobin, liver ambient); output suffix _ht")
 PANEL = "Ptprc Lyz2 C1qa C1qb Cd3e Cd79a Itgam Adgre1 Col1a1 Col3a1 Dcn Lum Pecam1".split()   # not expressed by 4T1 tumour cells
 DC_CUT = 0.3
 TECH = ("Alb Apoa1 Apoa2 Apoh Fga Fgb Fgg Hp Saa1 Saa2 Serpina1a Serpina1b Serpina1c Serpina1d "
         "Serpina1e Hbb-bs Hbb-bt Hba-a1 Hba-a2 Malat1 Neat1 Gm26870 Gm42418 AY036118").split()
+TECH_HUMAN = "MALAT1 NEAT1 HBB HBA1 HBA2".split()   # human symbols (cultured cells: no liver ambient genes); the mouse list above matches nothing in human data
 args = ap.parse_args()
 args_min_umi = args.min_umi
 t0 = time.time()
-out = C.RESULTS / "within_unit" / f"{args.geneset}_{args.unit}{'_clean' if args.clean else ''}{'_dc' if args.decontam else ''}{'_rd' if args.regress_depth else ''}{args.out_suffix}"
+out = C.RESULTS / "within_unit" / f"{args.geneset}_{args.unit}{'_clean' if args.clean else ''}{'_dc' if args.decontam else ''}{'_rd' if args.regress_depth else ''}{'_ht' if args.drop_human_tech else ''}{args.out_suffix}"
 out.mkdir(parents=True, exist_ok=True)
 
 a = C.load_adata()
@@ -72,7 +75,8 @@ if len(rows) > args.max_cells:
     rows = np.sort(np.random.default_rng(0).choice(rows, args.max_cells, replace=False))
 gi = C.gene_index(a, args.geneset)
 if args.clean:
-    bad = set(TECH)
+    bad = set(TECH) | (set(TECH_HUMAN) if args.drop_human_tech else set())
+    print('technical genes dropped:', sorted(g for g in a.var_names[gi] if g in bad), flush=True)
     gi = np.array([i for i in gi if a.var_names[i] not in bad])
 Xd = a.X[rows][:, gi].toarray().astype(np.float64)
 genes = a.var_names[gi].tolist()

@@ -1,0 +1,3 @@
+technical genes dropped: []
+DU145/ks/clean k=4: 1839 cells, t=0.1414
+{"line": "DU145", "geneset": "ks", "variant": "clean", "k": 4, "n_cells": 1839, "t_ratio": 0.14141697229924777, "null_median": 0.18900449565212768, "null_95": 0.2179816896828001, "n_null": 200, "p_value": 1.0} (370s)

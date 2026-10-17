@@ -28,12 +28,13 @@ ap.add_argument("--max-cells", type=int, default=4000)
 ap.add_argument("--clean", action="store_true",
                 help="drop cells with < 10,000 UMI and technical genes (hepatocyte ambient RNA, "
                      "haemoglobin, Malat1/Neat1/Gm26870/Gm42418/AY036118); outputs get suffix _clean")
-args_min_umi = 10000
+ap.add_argument("--min-umi", type=int, default=10000, help="UMI cutoff with --clean; non-default adds suffix _u<value>")
 TECH = ("Alb Apoa1 Apoa2 Apoh Fga Fgb Fgg Hp Saa1 Saa2 Serpina1a Serpina1b Serpina1c Serpina1d "
         "Serpina1e Hbb-bs Hbb-bt Hba-a1 Hba-a2 Malat1 Neat1 Gm26870 Gm42418 AY036118").split()
 args = ap.parse_args()
+args_min_umi = args.min_umi
 t0 = time.time()
-out = C.RESULTS / "within_unit" / f"{args.geneset}_{args.unit}{'_clean' if args.clean else ''}"
+out = C.RESULTS / "within_unit" / f"{args.geneset}_{args.unit}{'_clean' if args.clean else ''}{'' if args.min_umi == 10000 else f'_u{args.min_umi}'}"
 out.mkdir(parents=True, exist_ok=True)
 
 a = C.load_adata()

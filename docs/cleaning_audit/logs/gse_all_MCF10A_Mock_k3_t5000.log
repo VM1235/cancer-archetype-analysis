@@ -1,0 +1,3 @@
+technical genes dropped: ['MALAT1', 'NEAT1']
+MCF10A_Mock/all k=3: 4000 cells, t=0.5773
+{"unit": "MCF10A_Mock", "geneset": "all", "k": 3, "n_cells": 4000, "t_ratio": 0.5772631849385785, "null_median": 0.4811909873322733, "null_95": 0.5072970863471006, "null_max": 0.5276679761858482, "n_null": 200, "p_value": 0.004975124378109453, "evr_pc1_pc3": [0.06801359819984198, 0.021318868783809397, 0.012576114910771553]} (1002s)

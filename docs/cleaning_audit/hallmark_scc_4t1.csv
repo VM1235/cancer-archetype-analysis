@@ -1,0 +1,32 @@
+fit,corner,n_cells,cycling_pct,Hypoxia,EMT,G2-M,E2F,TGF-b,ApicalJunction,KRAS-up,top_set
+SCC pooled all genes k3,V1,23959,24,-0.04,-0.11,-0.05,-0.24,0.23,0.08,0.04,TGF-b
+SCC pooled all genes k3,V2,23959,62,-0.05,-0.24,0.27,0.42,-0.12,-0.02,-0.07,E2F
+SCC pooled all genes k3,V3,23959,9,0.07,0.37,-0.34,-0.29,-0.09,-0.09,0.01,EMT
+SCC scRNA-only all genes k3,V1,23959,23,-0.04,-0.1,-0.05,-0.23,0.25,0.09,0.05,TGF-b
+SCC scRNA-only all genes k3,V2,23959,10,0.07,0.36,-0.34,-0.28,-0.1,-0.09,-0.0,EMT
+SCC scRNA-only all genes k3,V3,23959,67,-0.06,-0.23,0.29,0.47,-0.15,-0.04,-0.08,E2F
+SCC six clean scRNA tumours k3,V1,23959,10,0.08,0.43,-0.36,-0.36,0.0,-0.08,0.03,EMT
+SCC six clean scRNA tumours k3,V2,23959,59,-0.03,-0.22,0.25,0.24,-0.03,0.02,-0.02,G2-M
+SCC six clean scRNA tumours k3,V3,23959,81,-0.06,-0.01,0.34,0.58,-0.24,-0.03,-0.08,E2F
+4T1 pooled light-QC all genes k4,V1,19930,13,-0.17,-0.08,-0.14,-0.21,-0.15,-0.02,-0.0,KRAS-up
+4T1 pooled light-QC all genes k4,V2,19930,28,-0.21,-0.23,-0.28,-0.24,-0.37,-0.18,-0.12,KRAS-up
+4T1 pooled light-QC all genes k4,V3,19930,4,0.13,0.09,-0.1,-0.16,0.26,0.05,0.05,TGF-b
+4T1 pooled light-QC all genes k4,V4,19930,83,-0.03,-0.02,0.44,0.56,-0.09,0.03,-0.02,E2F
+4T1 pooled cleaned all genes k3,V1,13256,96,-0.1,-0.14,0.57,0.75,-0.19,-0.02,-0.09,E2F
+4T1 pooled cleaned all genes k3,V2,13256,1,-0.02,0.05,-0.22,-0.32,0.02,-0.03,0.03,EMT
+4T1 pooled cleaned all genes k3,V3,13256,6,0.15,0.08,-0.18,-0.24,0.25,0.05,0.05,TGF-b
+4T1 within EM1 cleaned k3,V1,1365,64,0.12,-0.03,0.29,0.43,-0.03,0.02,-0.01,E2F
+4T1 within EM1 cleaned k3,V2,1365,0,0.0,0.04,-0.19,-0.27,0.09,-0.04,-0.0,TGF-b
+4T1 within EM1 cleaned k3,V3,1365,51,-0.1,-0.06,0.11,0.16,-0.13,-0.01,-0.0,E2F
+4T1 within EM2 cleaned k3,V1,2701,97,-0.08,-0.09,0.59,0.7,-0.12,0.05,-0.05,E2F
+4T1 within EM2 cleaned k3,V2,2701,0,0.07,0.06,-0.3,-0.39,0.08,-0.03,0.01,TGF-b
+4T1 within EM2 cleaned k3,V3,2701,67,0.02,-0.05,0.04,0.05,0.02,-0.02,-0.01,E2F
+4T1 within EM3 cleaned k3,V1,1507,1,0.02,0.01,-0.14,-0.24,0.06,-0.05,0.01,TGF-b
+4T1 within EM3 cleaned k3,V2,1507,13,0.11,0.02,-0.11,-0.09,0.12,0.07,-0.0,TGF-b
+4T1 within EM3 cleaned k3,V3,1507,80,-0.09,-0.08,0.35,0.5,-0.14,-0.0,-0.05,E2F
+4T1 within M cleaned k3,V1,3324,96,-0.12,-0.17,0.52,0.71,-0.23,-0.0,-0.09,E2F
+4T1 within M cleaned k3,V2,3324,0,-0.03,0.08,-0.17,-0.26,0.07,0.0,0.02,EMT
+4T1 within M cleaned k3,V3,3324,6,0.18,0.1,-0.24,-0.27,0.18,0.04,0.04,Hypoxia
+4T1 within 4T1 cleaned k3,V1,4000,94,-0.1,-0.2,0.6,0.81,-0.21,-0.04,-0.13,E2F
+4T1 within 4T1 cleaned k3,V2,4000,1,0.05,0.03,-0.17,-0.24,0.1,0.03,0.03,TGF-b
+4T1 within 4T1 cleaned k3,V3,4000,14,-0.01,0.06,-0.23,-0.29,-0.01,-0.04,0.03,EMT

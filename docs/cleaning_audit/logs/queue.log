@@ -1,0 +1,210 @@
+QUEUE START
+01:58:55 START cook_all_A549_k3_ht
+01:58:55 START cook_all_A549_k4_ht
+01:58:55 START cook_all_DU145_k3_ht
+01:58:55 START cook_all_DU145_k4_ht
+02:02:30 DONE  cook_all_DU145_k4_ht (215s)
+02:02:30 START cook_all_MCF7_k3_ht
+02:04:16 DONE  cook_all_DU145_k3_ht (321s)
+02:04:16 START cook_all_MCF7_k4_ht
+02:05:41 DONE  cook_all_A549_k4_ht (406s)
+02:05:41 START cook_all_OVCA420_k3_ht
+02:08:07 DONE  cook_all_OVCA420_k3_ht (146s)
+02:08:07 START cook_all_OVCA420_k4_ht
+02:08:28 DONE  cook_all_MCF7_k4_ht (252s)
+02:08:28 START cook_ks_A549_k3_ht
+02:08:34 DONE  cook_all_A549_k3_ht (579s)
+02:08:34 START cook_ks_A549_k4_ht
+02:09:26 DONE  cook_all_MCF7_k3_ht (416s)
+02:09:26 START cook_ks_DU145_k3_ht
+02:09:35 DONE  cook_all_OVCA420_k4_ht (88s)
+02:09:35 START cook_ks_DU145_k4_ht
+02:15:45 DONE  cook_ks_DU145_k4_ht (370s)
+02:15:45 START cook_ks_MCF7_k3_ht
+02:17:02 DONE  cook_ks_A549_k3_ht (514s)
+02:17:02 START cook_ks_MCF7_k4_ht
+02:17:36 DONE  cook_ks_DU145_k3_ht (490s)
+02:17:36 START cook_ks_OVCA420_k3_ht
+02:19:11 DONE  cook_ks_A549_k4_ht (637s)
+02:19:11 START cook_ks_OVCA420_k4_ht
+02:19:32 DONE  cook_ks_OVCA420_k3_ht (116s)
+02:19:32 START cook_all_A549_k3_tbal_ht
+02:21:09 DONE  cook_ks_OVCA420_k4_ht (118s)
+02:21:09 START cook_ks_A549_k3_tbal_ht
+02:21:33 DONE  cook_ks_MCF7_k3_ht (348s)
+02:21:33 START gse_all_MCF10A_Mock_k3_ht
+02:22:00 DONE  cook_ks_MCF7_k4_ht (298s)
+02:22:00 START gse_all_HuMEC_Mock_k3_ht
+02:24:25 DONE  cook_all_A549_k3_tbal_ht (293s)
+02:24:25 START gse_all_MCF10A_TGFB_k3_ht
+02:26:18 DONE  cook_ks_A549_k3_tbal_ht (309s)
+02:26:18 START gse_all_HuMEC_TGFB_k3_ht
+02:30:27 DONE  gse_all_MCF10A_Mock_k3_ht (534s)
+02:30:27 START gse_all_MCF10A_k3_ht
+02:34:23 DONE  gse_all_MCF10A_TGFB_k3_ht (598s)
+02:34:23 START gse_all_HuMEC_k3_ht
+02:37:59 DONE  gse_all_HuMEC_Mock_k3_ht (959s)
+02:37:59 START gse_ks_MCF10A_Mock_k3_ht
+02:42:46 DONE  gse_all_HuMEC_TGFB_k3_ht (988s)
+02:42:46 START gse_ks_HuMEC_Mock_k3_ht
+02:48:59 DONE  gse_all_MCF10A_k3_ht (1112s)
+02:48:59 START gse_ks_MCF10A_TGFB_k3_ht
+02:49:15 DONE  gse_ks_MCF10A_Mock_k3_ht (676s)
+02:49:15 START gse_ks_HuMEC_TGFB_k3_ht
+02:54:09 DONE  gse_all_HuMEC_k3_ht (1186s)
+02:54:09 START gse_ks_MCF10A_k3_ht
+03:01:50 DONE  gse_ks_HuMEC_Mock_k3_ht (1144s)
+03:01:50 START gse_ks_HuMEC_k3_ht
+03:03:45 DONE  gse_ks_MCF10A_TGFB_k3_ht (886s)
+03:03:45 START gse_all_MCF10A_Mock_k4_ht
+03:09:22 DONE  gse_ks_HuMEC_TGFB_k3_ht (1207s)
+03:09:22 START gse_all_HuMEC_Mock_k4_ht
+03:11:55 DONE  gse_ks_MCF10A_k3_ht (1066s)
+03:11:55 START gse_all_MCF10A_TGFB_k4_ht
+03:15:42 DONE  gse_all_MCF10A_Mock_k4_ht (717s)
+03:15:42 START gse_all_HuMEC_TGFB_k4_ht
+03:16:30 DONE  gse_ks_HuMEC_k3_ht (880s)
+03:16:30 START gse_all_MCF10A_k4_ht
+03:20:52 DONE  gse_all_MCF10A_TGFB_k4_ht (537s)
+03:20:52 START gse_all_HuMEC_k4_ht
+03:30:19 DONE  gse_all_MCF10A_k4_ht (829s)
+03:30:19 START gse_ks_MCF10A_Mock_k4_ht
+03:30:45 DONE  gse_all_HuMEC_Mock_k4_ht (1283s)
+03:30:45 START gse_ks_HuMEC_Mock_k4_ht
+03:33:33 DONE  gse_all_HuMEC_TGFB_k4_ht (1071s)
+03:33:33 START gse_ks_MCF10A_TGFB_k4_ht
+03:37:52 DONE  gse_all_HuMEC_k4_ht (1020s)
+03:37:52 START gse_ks_HuMEC_TGFB_k4_ht
+03:40:56 DONE  gse_ks_MCF10A_Mock_k4_ht (637s)
+03:40:56 START gse_ks_MCF10A_k4_ht
+03:47:31 DONE  gse_ks_HuMEC_Mock_k4_ht (1006s)
+03:47:31 START gse_ks_HuMEC_k4_ht
+03:49:55 DONE  gse_ks_MCF10A_TGFB_k4_ht (982s)
+03:49:55 START t4_all_EM1_k3_c0.2
+03:54:22 DONE  gse_ks_HuMEC_TGFB_k4_ht (990s)
+03:54:22 START t4_all_EM2_k3_c0.2
+03:54:35 DONE  t4_all_EM1_k3_c0.2 (280s)
+03:54:35 START t4_all_EM3_k3_c0.2
+03:58:41 DONE  gse_ks_MCF10A_k4_ht (1065s)
+03:58:41 START t4_all_M_k3_c0.2
+03:59:26 DONE  t4_all_EM3_k3_c0.2 (291s)
+03:59:26 START t4_all_4T1_k3_c0.2
+04:02:44 DONE  gse_ks_HuMEC_k4_ht (913s)
+04:02:44 START t4_ks_EM1_k3_c0.2
+04:03:20 DONE  t4_all_EM2_k3_c0.2 (538s)
+04:03:20 START t4_ks_EM2_k3_c0.2
+04:07:43 DONE  t4_ks_EM1_k3_c0.2 (299s)
+04:07:43 START t4_ks_EM3_k3_c0.2
+04:09:35 DONE  t4_all_M_k3_c0.2 (654s)
+04:09:35 START t4_ks_M_k3_c0.2
+04:11:40 DONE  t4_ks_EM3_k3_c0.2 (237s)
+04:11:40 START t4_ks_4T1_k3_c0.2
+04:13:33 DONE  t4_all_4T1_k3_c0.2 (847s)
+04:13:33 START t4_all_EM1_k3_c0.5
+04:13:47 DONE  t4_ks_EM2_k3_c0.2 (627s)
+04:13:47 START t4_all_EM2_k3_c0.5
+04:18:44 DONE  t4_ks_M_k3_c0.2 (549s)
+04:18:44 START t4_all_EM3_k3_c0.5
+04:19:21 DONE  t4_all_EM1_k3_c0.5 (348s)
+04:19:21 START t4_all_M_k3_c0.5
+04:23:06 DONE  t4_all_EM2_k3_c0.5 (559s)
+04:23:06 START t4_all_4T1_k3_c0.5
+04:24:09 DONE  t4_all_EM3_k3_c0.5 (325s)
+04:24:09 START t4_ks_EM1_k3_c0.5
+04:30:45 DONE  t4_ks_EM1_k3_c0.5 (396s)
+04:30:45 START t4_ks_EM2_k3_c0.5
+04:34:42 DONE  t4_all_M_k3_c0.5 (921s)
+04:34:42 START t4_ks_EM3_k3_c0.5
+04:36:11 DONE  t4_ks_4T1_k3_c0.2 (1471s)
+04:36:11 START t4_ks_M_k3_c0.5
+04:38:17 DONE  t4_all_4T1_k3_c0.5 (911s)
+04:38:17 START t4_ks_4T1_k3_c0.5
+04:39:25 DONE  t4_ks_EM3_k3_c0.5 (283s)
+04:39:25 START pdac_ks_M2-Met_k3
+04:44:38 DONE  t4_ks_EM2_k3_c0.5 (833s)
+04:44:38 START pdac_ks_M2-PT_k3
+04:48:13 DONE  t4_ks_M_k3_c0.5 (722s)
+04:48:13 START pdac_ks_M2-Liver_k3
+04:53:02 DONE  pdac_ks_M2-Met_k3 (817s)
+04:53:02 START pdac_ks_M1-PT_k3
+04:57:39 DONE  t4_ks_4T1_k3_c0.5 (1162s)
+04:57:39 START pdac_ks_M1-Met_k3
+04:58:24 DONE  pdac_ks_M2-PT_k3 (826s)
+04:58:24 START pdac_ks_M1-Liver_k3
+05:04:51 DONE  pdac_ks_M1-PT_k3 (709s)
+05:04:51 START pdac_ks_M1-SS_k3
+05:07:40 DONE  pdac_ks_M2-Liver_k3 (1167s)
+05:07:40 START pdac_ks_M1_k3
+05:12:15 DONE  pdac_ks_M1-Met_k3 (876s)
+05:12:15 START pdac_ks_M2_k3
+05:12:39 DONE  pdac_ks_M1-Liver_k3 (855s)
+05:12:39 START pdac_ks_M2-Met_k4
+05:12:52 DONE  pdac_ks_M1-SS_k3 (481s)
+05:12:52 START pdac_ks_M2-PT_k4
+05:24:23 DONE  pdac_ks_M2_k3 (728s)
+05:24:23 START pdac_ks_M2-Liver_k4
+05:25:09 DONE  pdac_ks_M1_k3 (1049s)
+05:25:09 START pdac_ks_M1-PT_k4
+05:25:55 DONE  pdac_ks_M2-PT_k4 (783s)
+05:25:55 START pdac_ks_M1-Met_k4
+05:28:42 DONE  pdac_ks_M2-Met_k4 (963s)
+05:28:42 START pdac_ks_M1-Liver_k4
+05:38:21 DONE  pdac_ks_M1-PT_k4 (792s)
+05:38:21 START pdac_ks_M1-SS_k4
+05:43:56 DONE  pdac_ks_M1-Met_k4 (1081s)
+05:43:56 START pdac_ks_M1_k4
+05:44:17 DONE  pdac_ks_M1-Liver_k4 (935s)
+05:44:17 START pdac_ks_M2_k4
+05:44:22 DONE  pdac_ks_M2-Liver_k4 (1199s)
+05:44:22 START gse_all_MCF10A_Mock_k3_t5000
+05:45:25 DONE  pdac_ks_M1-SS_k4 (424s)
+05:45:25 START gse_all_HuMEC_Mock_k3_t5000
+05:55:25 DONE  pdac_ks_M2_k4 (668s)
+05:55:25 START gse_all_MCF10A_TGFB_k3_t5000
+06:01:04 DONE  gse_all_MCF10A_Mock_k3_t5000 (1002s)
+06:01:04 START gse_all_HuMEC_TGFB_k3_t5000
+06:01:42 DONE  gse_all_HuMEC_Mock_k3_t5000 (977s)
+06:01:42 START gse_all_MCF10A_k3_t5000
+06:02:11 DONE  pdac_ks_M1_k4 (1095s)
+06:02:11 START gse_all_HuMEC_k3_t5000
+06:10:07 DONE  gse_all_MCF10A_TGFB_k3_t5000 (882s)
+06:10:07 START gse_ks_MCF10A_Mock_k3_t5000
+06:17:34 DONE  gse_all_HuMEC_TGFB_k3_t5000 (990s)
+06:17:34 START gse_ks_HuMEC_Mock_k3_t5000
+06:20:40 DONE  gse_all_MCF10A_k3_t5000 (1138s)
+06:20:40 START gse_ks_MCF10A_TGFB_k3_t5000
+06:20:53 DONE  gse_all_HuMEC_k3_t5000 (1122s)
+06:20:53 START gse_ks_HuMEC_TGFB_k3_t5000
+06:27:03 DONE  gse_ks_MCF10A_Mock_k3_t5000 (1016s)
+06:27:03 START gse_ks_MCF10A_k3_t5000
+06:37:52 DONE  gse_ks_HuMEC_TGFB_k3_t5000 (1019s)
+06:37:52 START gse_ks_HuMEC_k3_t5000
+06:38:51 DONE  gse_ks_HuMEC_Mock_k3_t5000 (1277s)
+06:38:51 START gse_all_MCF10A_Mock_k3_t15000
+06:40:14 DONE  gse_ks_MCF10A_TGFB_k3_t5000 (1174s)
+06:40:14 START gse_all_HuMEC_Mock_k3_t15000
+06:41:17 DONE  gse_all_MCF10A_Mock_k3_t15000 (146s)
+06:41:17 START gse_all_MCF10A_TGFB_k3_t15000
+06:43:54 DONE  gse_all_HuMEC_Mock_k3_t15000 (220s)
+06:43:54 START gse_all_HuMEC_TGFB_k3_t15000
+06:45:09 DONE  gse_ks_MCF10A_k3_t5000 (1086s)
+06:45:09 START gse_all_MCF10A_k3_t15000
+06:45:54 DONE  gse_all_HuMEC_TGFB_k3_t15000 (120s)
+06:45:54 START gse_all_HuMEC_k3_t15000
+06:47:08 DONE  gse_all_MCF10A_TGFB_k3_t15000 (351s)
+06:47:08 START gse_ks_MCF10A_Mock_k3_t15000
+06:50:14 DONE  gse_ks_MCF10A_Mock_k3_t15000 (186s)
+06:50:14 START gse_ks_HuMEC_Mock_k3_t15000
+06:50:51 DONE  gse_all_HuMEC_k3_t15000 (297s)
+06:50:51 START gse_ks_MCF10A_TGFB_k3_t15000
+06:53:00 DONE  gse_ks_HuMEC_k3_t5000 (908s)
+06:53:00 START gse_ks_HuMEC_TGFB_k3_t15000
+06:53:27 DONE  gse_all_MCF10A_k3_t15000 (498s)
+06:53:27 START gse_ks_MCF10A_k3_t15000
+06:53:37 DONE  gse_ks_HuMEC_Mock_k3_t15000 (203s)
+06:53:37 START gse_ks_HuMEC_k3_t15000
+06:55:11 DONE  gse_ks_HuMEC_TGFB_k3_t15000 (131s)
+06:57:39 DONE  gse_ks_MCF10A_TGFB_k3_t15000 (408s)
+06:57:52 DONE  gse_ks_HuMEC_k3_t15000 (255s)
+07:00:19 DONE  gse_ks_MCF10A_k3_t15000 (412s)
+QUEUE END

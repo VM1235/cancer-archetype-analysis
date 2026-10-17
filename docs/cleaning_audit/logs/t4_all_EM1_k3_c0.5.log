@@ -1,0 +1,3 @@
+decontam: dropping 5 of 1378 cells with panel score > 0.5
+EM1/all k=3: 1373 cells, t=0.4716
+{"unit": "EM1", "geneset": "all", "k": 3, "n_cells": 1373, "t_ratio": 0.4716372145292534, "null_median": 0.4826900861316402, "null_95": 0.519977095023008, "null_max": 0.5414010385362193, "n_null": 200, "p_value": 0.7014925373134329, "evr_pc1_pc3": [0.02786500916629898, 0.0192173954334025, 0.011401179222089832]} (347s)

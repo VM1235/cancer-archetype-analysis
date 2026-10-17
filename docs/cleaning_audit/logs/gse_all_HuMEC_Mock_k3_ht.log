@@ -1,0 +1,3 @@
+technical genes dropped: ['MALAT1', 'NEAT1']
+HuMEC_Mock/all k=3: 3889 cells, t=0.6403
+{"unit": "HuMEC_Mock", "geneset": "all", "k": 3, "n_cells": 3889, "t_ratio": 0.6402774973715302, "null_median": 0.47358640874597485, "null_95": 0.5173456457869937, "null_max": 0.5572572866381195, "n_null": 200, "p_value": 0.004975124378109453, "evr_pc1_pc3": [0.054427463536554366, 0.019825302112812818, 0.009393339832905667]} (959s)

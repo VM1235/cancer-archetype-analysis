@@ -30,9 +30,12 @@ ap.add_argument("--k", type=int, default=3)
 ap.add_argument("--variant", choices=["clean", "clean_tbal"], default="clean")
 ap.add_argument("--tcap", type=int, default=300)
 ap.add_argument("--n-perm", type=int, default=200)
+ap.add_argument("--drop-human-tech", action="store_true",
+                help="also drop human technical genes (MALAT1, NEAT1, haemoglobin, liver ambient); output suffix _ht")
+TECH_HUMAN = "MALAT1 NEAT1 HBB HBA1 HBA2".split()   # human symbols (cultured cells: no liver ambient genes); the mouse list above matches nothing in human data
 args = ap.parse_args()
 t0 = time.time()
-out = C.RESULTS / "within_line" / f"{args.geneset}_{args.line}_{args.variant}"
+out = C.RESULTS / "within_line" / f"{args.geneset}_{args.line}_{args.variant}{'_ht' if args.drop_human_tech else ''}"
 out.mkdir(parents=True, exist_ok=True)
 
 a = C.load_adata()
@@ -45,6 +48,10 @@ if args.variant == "clean_tbal":
     rows = np.sort(pd.concat([g.sample(min(len(g), args.tcap), random_state=0)
                               for _, g in df.groupby("t")])["i"].values)
 gi = C.gene_index(a, args.geneset)
+if args.drop_human_tech:
+    bad = set(TECH_HUMAN)
+    print('technical genes dropped:', sorted(g for g in a.var_names[gi] if g in bad), flush=True)
+    gi = np.array([i for i in gi if a.var_names[i] not in bad])
 genes = a.var_names[gi].tolist()
 Xd = a.X[rows][:, gi].toarray().astype(np.float64)
 pca = C.fit_pca(Xd, n_pcs=10)

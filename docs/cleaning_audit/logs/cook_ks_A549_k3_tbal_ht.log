@@ -1,0 +1,3 @@
+technical genes dropped: []
+A549/ks/clean_tbal k=3: 1303 cells, t=0.4596
+{"line": "A549", "geneset": "ks", "variant": "clean_tbal", "k": 3, "n_cells": 1303, "t_ratio": 0.4595891810446941, "null_median": 0.4765656205210342, "null_95": 0.5361087521928375, "n_null": 200, "p_value": 0.7263681592039801} (309s)

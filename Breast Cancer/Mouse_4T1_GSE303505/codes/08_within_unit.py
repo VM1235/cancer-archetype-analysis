@@ -30,14 +30,16 @@ ap.add_argument("--clean", action="store_true",
                      "haemoglobin, Malat1/Neat1/Gm26870/Gm42418/AY036118); outputs get suffix _clean")
 ap.add_argument("--decontam", action="store_true",
                 help="also drop cells whose immune/stromal panel score is > 0.3 (use with --clean); suffix _clean_dc")
-args_min_umi = 10000
+ap.add_argument("--min-umi", type=int, default=10000, help="UMI cutoff with --clean; non-default adds suffix _u<value>")
+ap.add_argument("--dc-cut", type=float, default=0.3, help="panel-score cutoff with --decontam; non-default adds suffix _c<value>")
 PANEL = "Ptprc Lyz2 C1qa C1qb Cd3e Cd79a Itgam Adgre1 Col1a1 Col3a1 Dcn Lum Pecam1".split()   # not expressed by 4T1 tumour cells
-DC_CUT = 0.3
 TECH = ("Alb Apoa1 Apoa2 Apoh Fga Fgb Fgg Hp Saa1 Saa2 Serpina1a Serpina1b Serpina1c Serpina1d "
         "Serpina1e Hbb-bs Hbb-bt Hba-a1 Hba-a2 Malat1 Neat1 Gm26870 Gm42418 AY036118").split()
 args = ap.parse_args()
+args_min_umi = args.min_umi
+DC_CUT = args.dc_cut
 t0 = time.time()
-out = C.RESULTS / "within_unit" / f"{args.geneset}_{args.unit}{'_clean' if args.clean else ''}{'_dc' if args.decontam else ''}"
+out = C.RESULTS / "within_unit" / f"{args.geneset}_{args.unit}{'_clean' if args.clean else ''}{'_dc' if args.decontam else ''}{'' if args.min_umi == 10000 else f'_u{args.min_umi}'}{'' if args.dc_cut == 0.3 else f'_c{args.dc_cut}'}"
 out.mkdir(parents=True, exist_ok=True)
 
 a = C.load_adata()

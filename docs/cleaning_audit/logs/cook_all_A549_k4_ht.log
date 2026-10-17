@@ -1,0 +1,3 @@
+technical genes dropped: ['MALAT1', 'NEAT1']
+A549/all/clean k=4: 2646 cells, t=0.1412
+{"line": "A549", "geneset": "all", "variant": "clean", "k": 4, "n_cells": 2646, "t_ratio": 0.14121953726259515, "null_median": 0.17323461209410967, "null_95": 0.19458440993216908, "n_null": 200, "p_value": 1.0} (406s)
