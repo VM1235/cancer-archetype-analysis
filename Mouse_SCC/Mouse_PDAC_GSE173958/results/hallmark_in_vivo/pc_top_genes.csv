@@ -1,0 +1,16 @@
+PC1+,PC1-,PC2+,PC2-,PC3+,PC3-,PC4+,PC4-,PC5+,PC5-
+Fn1,Lgals1,Spp1,Lgals1,Spp1,Jun,Cxcl1,Fn1,Cxcl1,Areg
+Fbln2,Capg,Fn1,Inhba,Lgals1,Vegfa,Jun,Cald1,Sparc,Capg
+Cald1,Mcm7,Id2,Vim,Igfbp4,Rhob,Areg,Fbln2,Cald1,Basp1
+Pmepa1,Areg,Jun,Areg,Pcolce,Fn1,Vcam1,Igfbp4,Pcolce,Pmepa1
+Ecm1,Glipr1,Vegfa,Igfbp3,Emp3,Dst,Gem,Igfbp3,Vcam1,Vegfa
+Inhba,Pcolce,Sat1,Tpm1,Ecm1,Serpine1,Tnfrsf12a,Vim,Timp3,Plaur
+Rhob,Mylk,Tgm2,Tpm4,Ppib,Sat1,Plaur,Tpm2,Igfbp4,Tnfrsf12a
+Cd44,Il15,Vcam1,Capg,Capg,Sdc4,Spp1,Ecm1,Jun,Rhob
+Spp1,Lamc2,Qsox1,Dpysl3,Vcam1,Gadd45b,Sdc4,Sdc1,Vcan,Itga2
+Igfbp3,Vcam1,Cdh6,Tnfrsf12a,Tpm4,Igfbp3,Rhob,Vcan,Ppib,Spp1
+Dst,Lama3,Lrp1,Cd44,Timp1,Pvr,Gadd45b,Sparc,Dcn,Nt5e
+Jun,Serpine2,Gadd45a,Cald1,Vim,Gadd45a,Tnfaip3,Mmp14,Fn1,Lamc2
+Basp1,Sgcd,Itgb5,Cxcl1,Pcolce2,Timp3,Vegfa,Calu,Htra1,Cdh6
+Igfbp4,Nid2,Gadd45b,Emp3,Tnfrsf12a,Gem,Sat1,Loxl2,Col3a1,Serpine1
+Sdc4,Myl9,Fuca1,Tpm2,Fbln2,Copa,Id2,Tgm2,Tnfaip3,Itgb1

@@ -63,6 +63,22 @@ def ks_genes_mouse(var_names):
     return epi, mes
 
 
+def hallmark_emt_genes(var_names, human=False):
+    """MSigDB Hallmark_2020 'Epithelial Mesenchymal Transition' genes present in the data
+    (mouse symbols by capitalisation, human as they are). Added for the Hallmark-EMT pooled fits."""
+    from pathlib import Path as _P
+    root = next(p for p in _P(__file__).resolve().parents if (p / "Mouse_SCC" / "hallmark_data").exists())
+    for line in open(root / "Mouse_SCC" / "hallmark_data" / "MSigDB_Hallmark_2020.txt"):
+        parts = line.rstrip("\n").split("\t")
+        if parts[0] == "Epithelial Mesenchymal Transition":
+            genes = [g for g in parts[2:] if g]
+            break
+    if not human:
+        genes = [g[0] + g[1:].lower() for g in genes]
+    present = set(var_names)
+    return [g for g in genes if g in present]
+
+
 def gene_index(adata, geneset):
     """Column indices of the genes used for PCA."""
     if geneset == "all":
@@ -70,6 +86,9 @@ def gene_index(adata, geneset):
     if geneset == "ks":
         epi, mes = ks_genes_mouse(adata.var_names)
         names = set(epi + mes)
+        return np.array([i for i, g in enumerate(adata.var_names) if g in names])
+    if geneset == "hallmark":
+        names = set(hallmark_emt_genes(adata.var_names))
         return np.array([i for i, g in enumerate(adata.var_names) if g in names])
     raise ValueError("geneset must be 'all' or 'ks'")
 

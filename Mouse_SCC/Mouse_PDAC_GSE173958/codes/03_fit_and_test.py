@@ -69,7 +69,7 @@ def t_ratio(scores, arcs):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--geneset", choices=["all", "ks"], default="all")
+    ap.add_argument("--geneset", choices=["all", "ks", "hallmark"], default="all")
     ap.add_argument("--tag", default="main")
     ap.add_argument("--n-perm", type=int, default=200)
     ap.add_argument("--pilot", action="store_true", help="time a few shuffles; write nothing final")

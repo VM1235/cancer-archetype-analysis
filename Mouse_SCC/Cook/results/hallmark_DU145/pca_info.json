@@ -1,0 +1,9 @@
+{
+  "geneset": "hallmark",
+  "tag": "DU145",
+  "lines": "DU145",
+  "n_genes": 114,
+  "n_fit_cells": 2012,
+  "n_pcs_rule": 99,
+  "cumvar_at_rule": 0.9919285736124984
+}

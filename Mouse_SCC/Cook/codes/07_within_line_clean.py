@@ -25,7 +25,7 @@ import cook_common as C
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--line", required=True)
-ap.add_argument("--geneset", choices=["all", "ks"], default="all")
+ap.add_argument("--geneset", choices=["all", "ks", "hallmark"], default="all")
 ap.add_argument("--k", type=int, default=3)
 ap.add_argument("--variant", choices=["clean", "clean_tbal"], default="clean")
 ap.add_argument("--tcap", type=int, default=300)

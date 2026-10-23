@@ -1,0 +1,26 @@
+{
+  "geneset": "all",
+  "tag": "clean",
+  "n_genes": 12000,
+  "n_fit_cells": 6000,
+  "n_cells": 13654,
+  "fit_assay": null,
+  "excluded_tumours": [],
+  "max_per_tumour": 1500,
+  "seed": 0,
+  "n_pcs_rule": 27,
+  "cumvar_at_rule": 0.21007915567718402,
+  "randomized_vs_exact_abs_corr": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9999999999996813,
+    0.9999999999991773,
+    0.9999999957869617,
+    0.9999999854748031,
+    0.9999994207161959,
+    0.9999992729219325
+  ],
+  "remove_phase": false
+}

@@ -1,0 +1,12 @@
+{
+  "line": "DU145",
+  "geneset": "hallmark",
+  "variant": "clean",
+  "k": 4,
+  "n_cells": 1839,
+  "t_ratio": 0.18389974982455107,
+  "null_median": 0.17463435667193,
+  "null_95": 0.20354313047269948,
+  "n_null": 200,
+  "p_value": 0.2935323383084577
+}

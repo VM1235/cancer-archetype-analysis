@@ -1,0 +1,9 @@
+{
+  "geneset": "hallmark",
+  "tag": "MCF7",
+  "lines": "MCF7",
+  "n_genes": 114,
+  "n_fit_cells": 1649,
+  "n_pcs_rule": 95,
+  "cumvar_at_rule": 0.9893715961203656
+}

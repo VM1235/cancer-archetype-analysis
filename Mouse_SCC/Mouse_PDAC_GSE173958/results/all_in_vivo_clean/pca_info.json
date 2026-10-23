@@ -1,0 +1,26 @@
+{
+  "geneset": "all",
+  "tag": "in_vivo_clean",
+  "n_genes": 13347,
+  "n_fit_cells": 7907,
+  "n_cells": 45933,
+  "fit_assay": "in_vivo",
+  "excluded_tumours": [],
+  "max_per_tumour": 1000,
+  "seed": 0,
+  "n_pcs_rule": 52,
+  "cumvar_at_rule": 0.29899865482267757,
+  "randomized_vs_exact_abs_corr": [
+    1.0,
+    1.0,
+    0.9999999999999908,
+    0.999999999999977,
+    0.9999999999430591,
+    0.999999999245121,
+    0.9999999969112076,
+    0.9999999196722933,
+    0.9999999036195203,
+    0.9999939169656732
+  ],
+  "remove_phase": false
+}

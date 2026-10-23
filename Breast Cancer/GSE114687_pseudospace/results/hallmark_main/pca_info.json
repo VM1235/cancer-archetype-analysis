@@ -1,0 +1,26 @@
+{
+  "geneset": "hallmark",
+  "tag": "main",
+  "n_genes": 149,
+  "n_fit_cells": 6000,
+  "n_cells": 30590,
+  "fit_assay": null,
+  "excluded_tumours": [],
+  "max_per_tumour": 1500,
+  "seed": 0,
+  "n_pcs_rule": 113,
+  "cumvar_at_rule": 0.9842559634175685,
+  "randomized_vs_exact_abs_corr": [
+    0.9999999999999993,
+    1.0,
+    0.9999999998600586,
+    0.9999999600409184,
+    0.9999997164878469,
+    0.9999993262416249,
+    0.999959440920978,
+    0.9998368688604241,
+    0.9996889108302515,
+    0.9946400941213808
+  ],
+  "remove_phase": false
+}

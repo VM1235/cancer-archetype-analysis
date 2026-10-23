@@ -35,7 +35,7 @@ import scc_common as C
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--geneset", choices=["all", "ks"], default="all")
+    ap.add_argument("--geneset", choices=["all", "ks", "hallmark"], default="all")
     ap.add_argument("--remove-phase", action="store_true")
     ap.add_argument("--pca-method", choices=["gram", "svd"], default="gram")
     ap.add_argument("--assay", choices=["in_vivo", "in_vitro"], default=None)

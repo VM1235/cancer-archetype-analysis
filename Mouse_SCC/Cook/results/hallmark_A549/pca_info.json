@@ -1,0 +1,9 @@
+{
+  "geneset": "hallmark",
+  "tag": "A549",
+  "lines": "A549",
+  "n_genes": 114,
+  "n_fit_cells": 3133,
+  "n_pcs_rule": 101,
+  "cumvar_at_rule": 0.9933633696675362
+}

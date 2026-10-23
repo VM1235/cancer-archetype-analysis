@@ -1,0 +1,9 @@
+{
+  "geneset": "all",
+  "tag": "pooled_clean",
+  "lines": "all",
+  "n_genes": 11248,
+  "n_fit_cells": 2005,
+  "n_pcs_rule": 50,
+  "cumvar_at_rule": 0.28505993030445165
+}

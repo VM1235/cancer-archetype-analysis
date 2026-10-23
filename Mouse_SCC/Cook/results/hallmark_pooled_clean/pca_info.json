@@ -1,0 +1,9 @@
+{
+  "geneset": "hallmark",
+  "tag": "pooled_clean",
+  "lines": "all",
+  "n_genes": 114,
+  "n_fit_cells": 2005,
+  "n_pcs_rule": 101,
+  "cumvar_at_rule": 0.9917416107339931
+}

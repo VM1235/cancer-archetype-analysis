@@ -1,0 +1,26 @@
+{
+  "geneset": "hallmark",
+  "tag": "scrna",
+  "n_genes": 183,
+  "n_fit_cells": 6400,
+  "n_cells": 23959,
+  "fit_assay": "scRNA",
+  "excluded_tumours": [],
+  "max_per_tumour": 800,
+  "seed": 0,
+  "n_pcs_rule": 139,
+  "cumvar_at_rule": 0.9787849458764313,
+  "randomized_vs_exact_abs_corr": [
+    0.9999999999999997,
+    0.9999999999999956,
+    0.9999999999999707,
+    0.9999999999989642,
+    0.9999999999904075,
+    0.9999999994975509,
+    0.999999997545087,
+    0.9999999710599232,
+    0.9999995292031977,
+    0.9999993320784377
+  ],
+  "remove_phase": false
+}

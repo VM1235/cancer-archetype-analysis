@@ -21,7 +21,7 @@ import scc_common as C
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--unit", required=True)
-ap.add_argument("--geneset", choices=["all", "ks"], default="all")
+ap.add_argument("--geneset", choices=["all", "ks", "hallmark"], default="all")
 ap.add_argument("--k", type=int, default=3)
 ap.add_argument("--n-perm", type=int, default=200)
 ap.add_argument("--max-cells", type=int, default=4000)

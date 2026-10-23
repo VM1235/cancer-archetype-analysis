@@ -1,0 +1,16 @@
+PC1+,PC1-,PC2+,PC2-,PC3+,PC3-,PC4+,PC4-,PC5+,PC5-
+Areg,Ccn1,Mgp,Jun,Serpine2,Lamc2,Cxcl1,Htra1,Cxcl1,Fn1
+Cxcl1,Mgp,Spp1,Mcm7,Nt5e,Ccn1,Jun,Vim,Vcam1,Lamc2
+Pthlh,Jun,Fn1,Gadd45b,Spp1,Col4a1,Fn1,Sparc,Tnfaip3,Nt5e
+Inhba,Thbs1,Serpine2,Tnfaip3,Fn1,Inhba,Rhob,Emp3,Mgp,Vegfa
+Plaur,Gadd45a,Cxcl1,Capg,Lrp1,Cxcl1,Tnfaip3,Itgav,Sdc4,Col7a1
+Itga2,Itgb5,Inhba,Lgals1,Gja1,Thbs1,Ccn1,Pcolce,Lgals1,Pmepa1
+Cd44,Sparc,Nt5e,Rhob,Tgfbr3,Mgp,Lamc2,Vegfa,Mmp3,Serpine1
+Vegfa,Ccn2,Vcam1,Htra1,Gadd45a,Col4a2,Gadd45a,Serpine2,Emp3,Sdc1
+Sdc1,Gadd45b,Sparc,Pthlh,Jun,Tpm1,Spp1,Lgals1,Htra1,Inhba
+Itga5,Col6a2,Col6a2,Lama3,Pmp22,Serpine1,Nt5e,Serpinh1,Il6,Crlf1
+Col7a1,Rhob,Col5a1,Wipf1,Matn2,Vegfa,Mmp3,Id2,Tgm2,Pthlh
+Mmp3,Col5a1,Crlf1,Gadd45a,Wipf1,Pcolce,Sat1,Pcolce2,Sparc,Rhob
+Basp1,Serpine1,Gpc1,Mest,Emp3,Vcam1,Crlf1,Bdnf,Serpinh1,Fbln2
+Timp1,Tgm2,Igfbp4,Sfrp1,Sgcb,Tnfrsf12a,Gadd45b,Pmepa1,Fas,Itga5
+Nt5e,Col4a1,Thbs1,Pmp22,Dab2,Sdc1,Pthlh,Col4a1,Efemp2,Tnfrsf12a

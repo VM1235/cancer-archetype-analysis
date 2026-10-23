@@ -1,0 +1,9 @@
+{
+  "geneset": "hallmark",
+  "tag": "OVCA420",
+  "lines": "OVCA420",
+  "n_genes": 114,
+  "n_fit_cells": 558,
+  "n_pcs_rule": 86,
+  "cumvar_at_rule": 0.9875767679322414
+}

@@ -1,0 +1,16 @@
+PC1+,PC1-,PC2+,PC2-,PC3+,PC3-,PC4+,PC4-,PC5+,PC5-
+Col1a1,Areg,Mgp,Cxcl1,Mgp,Dcn,Timp3,Igfbp4,Spp1,Vim
+Col1a2,Tpm2,Timp1,Postn,Thbs1,Cxcl1,Acta2,Timp1,Mgp,Ecm1
+Col3a1,Ecm1,Lgals1,Mmp3,Thbs2,Lgals1,Cxcl12,Spp1,Dcn,Lgals1
+Dcn,Tgfb1,Acta2,Mmp2,Igfbp3,Vim,Htra1,Gas1,Bgn,Cxcl1
+Fn1,Sdc1,Spp1,Gas1,Fbln2,Vcam1,Tpm2,Grem1,Fn1,Tpm2
+Bgn,Lama3,Cald1,Fbln1,Pmepa1,Timp3,Pmepa1,Thbs2,Postn,Acta2
+Postn,Igfbp2,Emp3,Sat1,Sdc1,Emp3,Tagln,Prrx1,Col1a2,Tpm1
+Col5a2,Flna,Fn1,Ecm1,Itgb1,Rhob,Basp1,Sat1,Gadd45a,Flna
+Sparc,Lamc2,Tpm4,Col4a1,Col12a1,Cxcl12,Dst,Dcn,Timp3,Htra1
+Mmp2,Id2,Tnfrsf12a,Col12a1,Mmp3,Pcolce,Fbln2,Areg,Sat1,Igfbp4
+Fstl1,Pthlh,Dpysl3,Rhob,Tgfb1,Spp1,Flna,Ecm1,Col4a1,Emp3
+Cxcl12,Sdc4,Tpm1,Col4a2,Col5a2,Tnfaip3,Vcam1,Igfbp3,Sfrp1,Areg
+Fbn1,Capg,Tpm2,Col3a1,Ccn1,Htra1,Jun,Slit2,Serpine1,Pthlh
+Spp1,Tnfrsf12a,Vim,Serpine1,Itgb5,Vcan,Tnc,Lgals1,Ccn2,Prrx1
+Vcan,Cadm1,Cdh2,Sparc,Gas1,Dpysl3,Loxl1,Pthlh,Cxcl12,Tgfbi

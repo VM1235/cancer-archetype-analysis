@@ -17,7 +17,7 @@ import numpy as np, pandas as pd
 import cook_common as C
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--geneset", choices=["all", "ks"], default="all")
+ap.add_argument("--geneset", choices=["all", "ks", "hallmark"], default="all")
 ap.add_argument("--lines", default="all")
 ap.add_argument("--tag", required=True)
 args = ap.parse_args()

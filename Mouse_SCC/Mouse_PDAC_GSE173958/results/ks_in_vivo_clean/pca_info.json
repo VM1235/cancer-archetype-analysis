@@ -1,0 +1,26 @@
+{
+  "geneset": "ks",
+  "tag": "in_vivo_clean",
+  "n_genes": 168,
+  "n_fit_cells": 7907,
+  "n_cells": 45933,
+  "fit_assay": "in_vivo",
+  "excluded_tumours": [],
+  "max_per_tumour": 1000,
+  "seed": 0,
+  "n_pcs_rule": 116,
+  "cumvar_at_rule": 0.9769468014565774,
+  "randomized_vs_exact_abs_corr": [
+    1.0,
+    0.9999999999999988,
+    0.9999999999932832,
+    0.9999999942854702,
+    0.9999999788436359,
+    0.9999997259751864,
+    0.9999999000998917,
+    0.9999956696108069,
+    0.9999905111521629,
+    0.9999247717067109
+  ],
+  "remove_phase": false
+}

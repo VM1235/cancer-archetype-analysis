@@ -1,0 +1,26 @@
+{
+  "geneset": "ks",
+  "tag": "scrna",
+  "n_genes": 176,
+  "n_fit_cells": 6400,
+  "n_cells": 23959,
+  "fit_assay": "scRNA",
+  "excluded_tumours": [],
+  "max_per_tumour": 800,
+  "seed": 0,
+  "n_pcs_rule": 98,
+  "cumvar_at_rule": 0.974327405874408,
+  "randomized_vs_exact_abs_corr": [
+    1.0,
+    0.9999999999999999,
+    0.9999999999999988,
+    0.9999999999889597,
+    0.9999999994154123,
+    0.9999999976683179,
+    0.9999999930519944,
+    0.9999990757677034,
+    0.9999792310059195,
+    0.9999848394809138
+  ],
+  "remove_phase": false
+}
