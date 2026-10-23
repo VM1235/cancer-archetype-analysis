@@ -124,3 +124,13 @@ admin/
 media/
 notes/
 
+
+# docs/emt_single_cell/best_simplex: regenerable HTML copies and per-unit figure folders, and the superseded dark-theme outputs
+docs/emt_single_cell/best_simplex/*.html
+docs/emt_single_cell/best_simplex/figures/explainer_beige/
+docs/emt_single_cell/best_simplex/figures/explainer/
+docs/emt_single_cell/best_simplex/figures/book/
+docs/emt_single_cell/best_simplex/figures/*.png
+docs/emt_single_cell/best_simplex/Best_simplex_hybrid_generalists.*
+docs/emt_single_cell/best_simplex/EXPLAINER_results.*
+docs/emt_single_cell/best_simplex/REPORT_best_simplex.*

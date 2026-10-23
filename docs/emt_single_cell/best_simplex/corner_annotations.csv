@@ -1,0 +1,775 @@
+dataset,level,unit,geneset,arm,k,p,corner,n_specialists,top_set,top_effect,second_set,second_effect,task,cycling_pct,top_state,top_state_pct,top_sample,top_sample_pct,top_genes
+SCC,pooled,pooled,all,light QC,3,0.0049751243781094,V1,1198,UV Response Dn,1.34,Mitotic Spindle,1.15,UV Response Dn,24.0,Early-Hybrid,57.0,MU7,35.0,Frmd4b Adgrl3 Maml2 Pcdh7
+SCC,pooled,pooled,all,light QC,3,0.0049751243781094,V2,1198,Myc Targets V1,1.8,Myc Targets V2,1.67,MYC / growth (translation),75.0,Early-Hybrid,62.0,SC33,47.0,Krt14 Krt5 Krt6a Krtdap
+SCC,pooled,pooled,all,light QC,3,0.0049751243781094,V3,1198,Coagulation,1.42,Epithelial Mesenchymal Transition,1.39,coagulation / matrix-like,9.0,Late-EMT,98.0,SC2b1,60.0,Col3a1 Col1a1 Col1a2 Postn
+SCC,pooled,pooled,all,scRNA only,3,0.0049751243781094,V1,703,Mitotic Spindle,1.8,UV Response Dn,1.63,cycling,34.0,Early-Hybrid,44.0,SC15,82.0,Adgrl3 Ext1 Atxn1 Mast4
+SCC,pooled,pooled,all,scRNA only,3,0.0049751243781094,V2,703,Coagulation,1.04,Angiogenesis,0.88,coagulation / matrix-like,11.0,Late-EMT,99.0,SC2b1,92.0,Postn Col1a1 Col3a1 Col1a2
+SCC,pooled,pooled,all,scRNA only,3,0.0049751243781094,V3,703,Myc Targets V1,1.57,Myc Targets V2,1.56,MYC / growth (translation),80.0,Early-Hybrid,57.0,SC33,48.0,Krt14 Krt5 Krt6a Krtdap
+SCC,within,SC15,all,light QC,3,0.0049751243781094,V1,79,UV Response Dn,1.35,Wnt-beta Catenin Signaling,1.29,UV Response Dn,22.0,Epithelial,100.0,SC15,100.0,Trps1 Frmd4b Adgrl2 Nfib
+SCC,within,SC15,all,light QC,3,0.0049751243781094,V2,79,UV Response Dn,0.99,Epithelial Mesenchymal Transition,0.93,UV Response Dn,38.0,Early-Hybrid,54.0,SC15,100.0,Col5a2 Fn1 Col1a1 Malat1
+SCC,within,SC15,all,light QC,3,0.0049751243781094,V3,79,Myc Targets V1,1.5,Myc Targets V2,1.48,MYC / growth (translation),62.0,Early-Hybrid,78.0,SC15,100.0,S100a4 Lgals1 Ly6a 2200002D01Rik
+SCC,within,SC2b1,all,light QC,3,0.0049751243781094,V1,55,Myc Targets V2,2.1,Myc Targets V1,2.09,MYC / growth (translation),96.0,Hybrid,100.0,SC2b1,100.0,Hmgb2 Hist1h2ap Tuba1b Krt8
+SCC,within,SC2b1,all,light QC,3,0.0049751243781094,V2,55,Epithelial Mesenchymal Transition,1.53,Myogenesis,1.38,EMT / matrix,5.0,Late-EMT,98.0,SC2b1,100.0,Mmp13 Col6a3 Mmp3 Col1a1
+SCC,within,SC2b1,all,light QC,3,0.0049751243781094,V3,55,TNF-alpha Signaling via NF-kB,1.31,TGF-beta Signaling,1.15,inflammatory / stress response,31.0,Late-EMT,100.0,SC2b1,100.0,Cebpd Id3 Cst3 Junb
+SCC,within,MU7,ks,light QC,3,0.0049751243781094,V1,141,Cholesterol Homeostasis,0.79,Estrogen Response Late,0.46,metabolic,37.0,Epithelial,94.0,MU7,100.0,Epcam Tacstd2 Cdh1 Arap2
+SCC,within,MU7,ks,light QC,3,0.0049751243781094,V2,141,KRAS Signaling Up,0.94,Inflammatory Response,0.92,KRAS-up (squamous / differentiation),34.0,Early-Hybrid,99.0,MU7,100.0,Areg Aqp3 Itgb4 Sdc1
+SCC,within,MU7,ks,light QC,3,0.0049751243781094,V3,141,Epithelial Mesenchymal Transition,2.05,Angiogenesis,1.79,EMT / matrix,35.0,Late-EMT,69.0,MU7,100.0,Col5a2 Fstl1 Vim Sparc
+SCC,within,MU8,ks,light QC,3,0.0049751243781094,V1,266,Cholesterol Homeostasis,1.19,KRAS Signaling Dn,0.66,metabolic,45.0,Epithelial,98.0,MU8,100.0,Tacstd2 Epcam Cdh1 Dsc2
+SCC,within,MU8,ks,light QC,3,0.0049751243781094,V2,266,p53 Pathway,0.96,heme Metabolism,0.81,p53 / stress,33.0,Early-Hybrid,100.0,MU8,100.0,Areg Aqp3 Sfn Itgb4
+SCC,within,MU8,ks,light QC,3,0.0049751243781094,V3,266,Epithelial Mesenchymal Transition,2.0,Angiogenesis,1.65,EMT / matrix,17.0,Late-EMT,64.0,MU8,100.0,Col5a2 Vim Fstl1 Sparc
+SCC,within,SC2b3,ks,light QC,3,0.0049751243781094,V1,149,p53 Pathway,1.78,KRAS Signaling Dn,1.66,p53 / stress,46.0,Epithelial,65.0,SC2b3,100.0,Sfn Perp Sdc1 Epcam
+SCC,within,SC2b3,ks,light QC,3,0.0049751243781094,V2,149,Myc Targets V1,1.47,E2F Targets,1.47,MYC / growth (translation),81.0,Hybrid,99.0,SC2b3,100.0,Krt8 Krt18 Lgals1 Tubb6
+SCC,within,SC2b3,ks,light QC,3,0.0049751243781094,V3,149,Epithelial Mesenchymal Transition,1.59,Angiogenesis,1.45,EMT / matrix,11.0,Late-EMT,100.0,SC2b3,100.0,Col5a2 Sparc Fstl1 Serpine1
+SCC,within,SC32,ks,light QC,3,0.0049751243781094,V1,96,KRAS Signaling Dn,0.64,Estrogen Response Late,0.31,KRAS-down (epithelial / differentiated),48.0,Epithelial,98.0,SC32,100.0,S100a14 Gpx2 Epcam Fxyd3
+SCC,within,SC32,ks,light QC,3,0.0049751243781094,V2,96,Xenobiotic Metabolism,0.92,heme Metabolism,0.83,Xenobiotic Metabolism,19.0,Early-Hybrid,100.0,SC32,100.0,Slpi Areg Aqp3 Vim
+SCC,within,SC32,ks,light QC,3,0.0049751243781094,V3,96,Epithelial Mesenchymal Transition,1.18,UV Response Dn,1.07,EMT / matrix,32.0,Hybrid,56.0,SC32,100.0,Vim Lgals1 Krt8 Col5a2
+SCC,within,MU3,all,light QC,4,0.0049751243781094,V1,43,DNA Repair,1.67,Myc Targets V1,1.64,DNA Repair,88.0,Epithelial,65.0,MU3,100.0,H2afz Hmgb2 Ly6c1 Cks1b
+SCC,within,MU3,all,light QC,4,0.0049751243781094,V2,43,Mitotic Spindle,1.37,UV Response Dn,1.19,cycling,65.0,Early-Hybrid,93.0,MU3,100.0,Grip1 Jmjd1c Pkp4 Nrg1
+SCC,within,MU3,all,light QC,4,0.0049751243781094,V3,43,Estrogen Response Early,1.15,p53 Pathway,0.81,luminal / differentiation,9.0,Early-Hybrid,79.0,MU3,100.0,Slpi Krt16 Aqp3 Dmkn
+SCC,within,MU3,all,light QC,4,0.0049751243781094,V4,43,Epithelial Mesenchymal Transition,2.64,Coagulation,2.42,EMT / matrix,7.0,Early-Hybrid,53.0,MU3,100.0,Fn1 Col5a2 Col1a1 Dcn
+SCC,within,MU4,all,light QC,4,0.0049751243781094,V1,47,Androgen Response,1.22,Protein Secretion,1.17,Androgen Response,53.0,Early-Hybrid,81.0,MU4,100.0,Cxcl3 Csf3 Areg Cxcl2
+SCC,within,MU4,all,light QC,4,0.0049751243781094,V2,47,Epithelial Mesenchymal Transition,2.81,Angiogenesis,2.73,EMT / matrix,11.0,Late-EMT,91.0,MU4,100.0,Dcn Col1a2 Spp1 Fn1
+SCC,within,MU4,all,light QC,4,0.0049751243781094,V3,47,TGF-beta Signaling,0.77,UV Response Dn,0.63,TGF-β response,26.0,Early-Hybrid,62.0,MU4,100.0,Kcnq5 Grip1 Adgrl3 Neat1
+SCC,within,MU4,all,light QC,4,0.0049751243781094,V4,47,Oxidative Phosphorylation,1.76,DNA Repair,1.72,metabolic,98.0,Epithelial,91.0,MU4,100.0,Hmgb2 Tubb5 H2afz Birc5
+SCC,within,SC2b3,all,light QC,4,0.0049751243781094,V1,149,UV Response Dn,1.37,Inflammatory Response,1.11,UV Response Dn,19.0,Late-EMT,97.0,SC2b3,100.0,Malat1 Col5a2 Ahnak Timp3
+SCC,within,SC2b3,all,light QC,4,0.0049751243781094,V2,149,KRAS Signaling Dn,1.5,p53 Pathway,1.44,KRAS-down (epithelial / differentiated),62.0,Epithelial,68.0,SC2b3,100.0,Krt14 Krt5 Krt17 Krt6a
+SCC,within,SC2b3,all,light QC,4,0.0049751243781094,V3,149,Angiogenesis,1.62,Epithelial Mesenchymal Transition,1.41,angiogenesis / matrix,4.0,Late-EMT,100.0,SC2b3,100.0,Mmp3 Col3a1 Spp1 Postn
+SCC,within,SC2b3,all,light QC,4,0.0049751243781094,V4,149,E2F Targets,2.05,Myc Targets V2,2.01,cycling,97.0,Hybrid,100.0,SC2b3,100.0,Hmgb2 H2afz Ran Krt8
+SCC,within,MU3,hallmark,light QC,4,0.0049751243781094,V1,43,E2F Targets,0.41,Myc Targets V1,0.41,cycling,65.0,Epithelial,63.0,MU3,100.0,Jun Mcm7 Plod1 Col12a1
+SCC,within,MU3,hallmark,light QC,4,0.0049751243781094,V2,43,Angiogenesis,2.54,Coagulation,2.48,angiogenesis / matrix,9.0,Late-EMT,51.0,MU3,100.0,Dcn Col5a2 Col1a1 Fn1
+SCC,within,MU3,hallmark,light QC,4,0.0049751243781094,V3,43,Inflammatory Response,1.09,Apical Junction,0.85,inflammatory / stress response,51.0,Early-Hybrid,84.0,MU3,100.0,Areg Cxcl1 Lama3 Pthlh
+SCC,within,MU3,hallmark,light QC,4,0.0049751243781094,V4,43,Protein Secretion,1.16,Coagulation,0.92,Protein Secretion,0.0,Early-Hybrid,98.0,MU3,100.0,Spp1 Col6a2 Ecm1 Fn1
+SCC,within,MU4,hallmark,light QC,4,0.0049751243781094,V1,47,Inflammatory Response,1.37,Allograft Rejection,1.25,inflammatory / stress response,36.0,Early-Hybrid,85.0,MU4,100.0,Areg Vim Cxcl1 Lamc2
+SCC,within,MU4,hallmark,light QC,4,0.0049751243781094,V2,47,Angiogenesis,2.94,Coagulation,2.42,angiogenesis / matrix,9.0,Late-EMT,94.0,MU4,100.0,Col1a2 Dcn Spp1 Col3a1
+SCC,within,MU4,hallmark,light QC,4,0.0049751243781094,V3,47,KRAS Signaling Dn,0.4,Cholesterol Homeostasis,0.39,cycling,64.0,Epithelial,55.0,MU4,100.0,Igfbp3 Areg Pthlh Sfrp1
+SCC,within,MU4,hallmark,light QC,4,0.0049751243781094,V4,47,Notch Signaling,0.26,Wnt-beta Catenin Signaling,0.04,no Hallmark set above 0.5 SD,49.0,Epithelial,89.0,MU4,100.0,Thbs1 Timp3 Tnc Dst
+SCC,pooled,pooled,hallmark,six clean tumours,3,0.0099009900990099,V1,549,KRAS Signaling Dn,1.25,Estrogen Response Late,0.97,KRAS-down (epithelial / differentiated),51.0,Epithelial,65.0,SC32,76.0,Areg Sdc1 Lama3 Lamc2
+SCC,pooled,pooled,hallmark,six clean tumours,3,0.0099009900990099,V2,549,Angiogenesis,1.62,Coagulation,1.49,angiogenesis / matrix,6.0,Late-EMT,99.0,SC2b3,41.0,Col3a1 Postn Col1a1 Col1a2
+SCC,pooled,pooled,hallmark,six clean tumours,3,0.0099009900990099,V3,549,Apical Junction,0.66,DNA Repair,0.65,epithelial junction,50.0,Hybrid,57.0,SC43,86.0,Mgp Acta2 Timp1 Fn1
+SCC,pooled,pooled,ks,six clean tumours,4,0.0099009900990099,V1,549,Epithelial Mesenchymal Transition,1.53,Angiogenesis,1.42,EMT / matrix,7.0,Late-EMT,98.0,SC35,43.0,Col5a2 Sparc Fstl1 Serpine1
+SCC,pooled,pooled,ks,six clean tumours,4,0.0099009900990099,V2,549,p53 Pathway,1.53,Estrogen Response Early,1.52,p53 / stress,28.0,Early-Hybrid,94.0,SC33,70.0,Slpi Aqp3 Dsp Sfn
+SCC,pooled,pooled,ks,six clean tumours,4,0.0099009900990099,V3,549,E2F Targets,1.11,Myc Targets V1,0.95,cycling,79.0,Hybrid,99.0,SC2b3,57.0,Krt8 Lgals1 Vim Tpm2
+SCC,pooled,pooled,ks,six clean tumours,4,0.0099009900990099,V4,549,KRAS Signaling Dn,1.31,p53 Pathway,0.89,KRAS-down (epithelial / differentiated),44.0,Epithelial,86.0,SC32,81.0,Fxyd3 Sfn Epcam Dsp
+SCC,pooled,pooled,ks,scRNA only,5,0.0099009900990099,V1,703,E2F Targets,1.02,Myc Targets V1,0.93,cycling,72.0,Hybrid,95.0,SC2b3,55.0,Krt8 Lgals1 Vim Krt18
+SCC,pooled,pooled,ks,scRNA only,5,0.0099009900990099,V2,703,Mitotic Spindle,1.38,Wnt-beta Catenin Signaling,1.37,cycling,33.0,Epithelial,51.0,SC15,74.0,Dsp Rabgap1l Ank3 Arap2
+SCC,pooled,pooled,ks,scRNA only,5,0.0099009900990099,V3,703,p53 Pathway,1.38,Estrogen Response Late,1.31,p53 / stress,34.0,Early-Hybrid,96.0,SC33,59.0,Slpi Sfn Aqp3 Fxyd3
+SCC,pooled,pooled,ks,scRNA only,5,0.0099009900990099,V4,703,Epithelial Mesenchymal Transition,1.66,Angiogenesis,1.54,EMT / matrix,10.0,Late-EMT,98.0,SC2b3,35.0,Col5a2 Sparc Fstl1 Loxl2
+SCC,pooled,pooled,ks,scRNA only,5,0.0099009900990099,V5,703,KRAS Signaling Dn,1.15,p53 Pathway,0.88,KRAS-down (epithelial / differentiated),44.0,Epithelial,84.0,SC32,68.0,Fxyd3 Sfn Epcam Perp
+SCC,within,MU7,hallmark,light QC,3,0.0099502487562189,V1,141,Angiogenesis,2.15,Interferon Gamma Response,1.47,angiogenesis / matrix,28.0,Late-EMT,80.0,MU7,100.0,Col1a2 Col1a1 Col3a1 Col5a2
+SCC,within,MU7,hallmark,light QC,3,0.0099502487562189,V2,141,Cholesterol Homeostasis,0.52,heme Metabolism,0.37,metabolic,30.0,Epithelial,61.0,MU7,100.0,Spp1 Areg Sdc1 Gja1
+SCC,within,MU7,hallmark,light QC,3,0.0099502487562189,V3,141,Apical Junction,0.88,TGF-beta Signaling,0.61,epithelial junction,13.0,Epithelial,96.0,MU7,100.0,Lama3 Adam12 Lamc2 Tnc
+SCC,within,SC2b1,hallmark,light QC,3,0.0099502487562189,V1,55,Myogenesis,1.41,Protein Secretion,0.92,muscle / matrix-like,15.0,Late-EMT,91.0,SC2b1,100.0,Col6a3 Mmp3 Col1a1 Col6a2
+SCC,within,SC2b1,hallmark,light QC,3,0.0099502487562189,V2,55,Myc Targets V1,1.71,Myc Targets V2,1.66,MYC / growth (translation),73.0,Hybrid,71.0,SC2b1,100.0,Areg Tnfrsf12a Basp1 Tpm1
+SCC,within,SC2b1,hallmark,light QC,3,0.0099502487562189,V3,55,TNF-alpha Signaling via NF-kB,1.27,UV Response Dn,1.07,inflammatory / stress response,15.0,Late-EMT,100.0,SC2b1,100.0,Postn Col3a1 Lox Cthrc1
+SCC,within,SC35,ks,light QC,4,0.0099502487562189,V1,129,Epithelial Mesenchymal Transition,1.37,Coagulation,1.16,EMT / matrix,2.0,Late-EMT,99.0,SC35,100.0,Col5a2 Sparc Fstl1 Loxl2
+SCC,within,SC35,ks,light QC,4,0.0099502487562189,V2,129,Angiogenesis,1.04,KRAS Signaling Up,0.94,angiogenesis / matrix,2.0,Late-EMT,98.0,SC35,100.0,Slpi Col5a2 Sparc Sdc1
+SCC,within,SC35,ks,light QC,4,0.0099502487562189,V3,129,Myc Targets V1,1.29,Myc Targets V2,1.19,MYC / growth (translation),67.0,Hybrid,96.0,SC35,100.0,Tuba1a Map1b Krt8 Lgals1
+SCC,within,SC35,ks,light QC,4,0.0099502487562189,V4,129,Myc Targets V1,0.26,DNA Repair,0.25,no Hallmark set above 0.5 SD,29.0,Hybrid,64.0,SC35,100.0,Areg Cd9 Krt18 Klf5
+SCC,within,SC32,all,light QC,3,0.0149253731343283,V1,96,Myc Targets V2,1.76,Myc Targets V1,1.71,MYC / growth (translation),98.0,Epithelial,66.0,SC32,100.0,Fabp5 Krt6a Krt14 Krtdap
+SCC,within,SC32,all,light QC,3,0.0149253731343283,V2,96,Epithelial Mesenchymal Transition,1.49,Complement,1.48,EMT / matrix,1.0,Late-EMT,73.0,SC32,100.0,Spp1 Vim Fn1 Dcn
+SCC,within,SC32,all,light QC,3,0.0149253731343283,V3,96,TGF-beta Signaling,1.03,Wnt-beta Catenin Signaling,0.99,TGF-β response,24.0,Epithelial,76.0,SC32,100.0,Thbs1 Tmem176b Krt42 Tmem176a
+SCC,within,SC15,hallmark,light QC,4,0.0248756218905472,V1,79,UV Response Dn,1.25,Wnt-beta Catenin Signaling,1.13,UV Response Dn,25.0,Epithelial,100.0,SC15,100.0,Cadm1 Edil3 Sntb1 Tgfbr3
+SCC,within,SC15,hallmark,light QC,4,0.0248756218905472,V2,79,Angiogenesis,1.89,Myogenesis,1.64,angiogenesis / matrix,56.0,Late-EMT,68.0,SC15,100.0,Col1a1 Col1a2 Col3a1 Col5a2
+SCC,within,SC15,hallmark,light QC,4,0.0248756218905472,V3,79,Myc Targets V2,1.57,Myc Targets V1,1.54,MYC / growth (translation),65.0,Early-Hybrid,99.0,SC15,100.0,Lgals1 Areg Cxcl1 Vim
+SCC,within,SC15,hallmark,light QC,4,0.0248756218905472,V4,79,Coagulation,1.14,Complement,1.1,coagulation / matrix-like,6.0,Early-Hybrid,78.0,SC15,100.0,Fn1 Col5a2 Fbln2 Mmp14
+SCC,within,SC32,hallmark,light QC,3,0.0298507462686567,V1,96,Angiogenesis,2.35,Myogenesis,2.14,angiogenesis / matrix,5.0,Late-EMT,79.0,SC32,100.0,Bgn Col5a2 Spp1 Fn1
+SCC,within,SC32,hallmark,light QC,3,0.0298507462686567,V2,96,KRAS Signaling Dn,0.64,Wnt-beta Catenin Signaling,0.53,KRAS-down (epithelial / differentiated),34.0,Epithelial,91.0,SC32,100.0,Sfrp1 Thbs1 Igfbp3 Timp3
+SCC,within,SC32,hallmark,light QC,3,0.0298507462686567,V3,96,Xenobiotic Metabolism,0.98,Cholesterol Homeostasis,0.86,Xenobiotic Metabolism,26.0,Early-Hybrid,98.0,SC32,100.0,Areg Ecm1 Vim Lgals1
+SCC,within,MU4,ks,light QC,4,0.044776119402985,V1,47,Xenobiotic Metabolism,1.15,Estrogen Response Early,1.1,Xenobiotic Metabolism,38.0,Early-Hybrid,100.0,MU4,100.0,Areg Aqp3 Slpi Vim
+SCC,within,MU4,ks,light QC,4,0.044776119402985,V2,47,Cholesterol Homeostasis,1.05,KRAS Signaling Dn,0.88,metabolic,51.0,Epithelial,53.0,MU4,100.0,Tacstd2 Dsc2 Epcam Perp
+SCC,within,MU4,ks,light QC,4,0.044776119402985,V3,47,Epithelial Mesenchymal Transition,2.48,Angiogenesis,2.4,EMT / matrix,26.0,Late-EMT,72.0,MU4,100.0,Vim Lgals1 Col5a2 Zeb1
+SCC,within,MU4,ks,light QC,4,0.044776119402985,V4,47,Notch Signaling,0.29,Wnt-beta Catenin Signaling,0.14,no Hallmark set above 0.5 SD,43.0,Epithelial,83.0,MU4,100.0,Fxyd3 Map7 Myo1d Ehf
+SCC,pooled,pooled,hallmark,scRNA only,3,0.0495049504950495,V1,703,Angiogenesis,1.76,Coagulation,1.47,angiogenesis / matrix,7.0,Late-EMT,99.0,SC2b3,42.0,Col3a1 Postn Col1a1 Col1a2
+SCC,pooled,pooled,hallmark,scRNA only,3,0.0495049504950495,V2,703,E2F Targets,0.94,DNA Repair,0.94,cycling,67.0,Hybrid,86.0,SC43,56.0,Mgp Timp1 Lgals1 Spp1
+SCC,pooled,pooled,hallmark,scRNA only,3,0.0495049504950495,V3,703,KRAS Signaling Dn,1.22,Wnt-beta Catenin Signaling,0.65,KRAS-down (epithelial / differentiated),41.0,Epithelial,79.0,SC32,59.0,Lama3 Sfrp1 Lamc2 Igfbp3
+SCC,within,MU8,all,light QC,3,0.0497512437810945,V1,266,p53 Pathway,1.0,TNF-alpha Signaling via NF-kB,0.94,p53 / stress,34.0,Early-Hybrid,100.0,MU8,100.0,Nrg1 Areg Mmp10 Grip1
+SCC,within,MU8,all,light QC,3,0.0497512437810945,V2,266,Epithelial Mesenchymal Transition,1.64,Angiogenesis,1.46,EMT / matrix,9.0,Early-Hybrid,60.0,MU8,100.0,Col5a2 Col12a1 Hmcn1 Cp
+SCC,within,MU8,all,light QC,3,0.0497512437810945,V3,266,Oxidative Phosphorylation,1.32,DNA Repair,1.18,metabolic,79.0,Epithelial,99.0,MU8,100.0,Epcam Krt17 S100a14 Dsg3
+SCC,within,SC2b1,ks,light QC,4,0.0547263681592039,V1,55,Myc Targets V1,1.55,E2F Targets,1.45,MYC / growth (translation),75.0,Hybrid,96.0,SC2b1,100.0,Krt8 Map1b Emp3 Lgals1
+SCC,within,SC2b1,ks,light QC,4,0.0547263681592039,V2,55,Estrogen Response Late,1.66,Apical Junction,1.57,luminal / differentiation,47.0,Epithelial,42.0,SC2b1,100.0,Sfn Areg Perp S100a14
+SCC,within,SC2b1,ks,light QC,4,0.0547263681592039,V3,55,Epithelial Mesenchymal Transition,1.05,Myogenesis,1.0,EMT / matrix,16.0,Late-EMT,98.0,SC2b1,100.0,Col5a2 Sparc Hes1 Fstl1
+SCC,within,SC2b1,ks,light QC,4,0.0547263681592039,V4,55,KRAS Signaling Up,0.89,Angiogenesis,0.86,KRAS-up (squamous / differentiation),15.0,Late-EMT,98.0,SC2b1,100.0,Slpi Col5a2 Fstl1 Sparc
+SCC,within,SC33,ks,light QC,3,0.0746268656716417,V1,69,Epithelial Mesenchymal Transition,1.66,Angiogenesis,1.39,EMT / matrix,30.0,Hybrid,51.0,SC33,100.0,Col5a2 Vim Krt8 Fstl1
+SCC,within,SC33,ks,light QC,3,0.0746268656716417,V2,69,Glycolysis,0.57,mTORC1 Signaling,0.5,hypoxia / glycolysis,46.0,Epithelial,58.0,SC33,100.0,S100a14 Aqp3 Sfn Epcam
+SCC,within,SC33,ks,light QC,3,0.0746268656716417,V3,69,Estrogen Response Early,0.73,Notch Signaling,0.63,luminal / differentiation,14.0,Early-Hybrid,96.0,SC33,100.0,Slpi Krt18 Aqp3 Sdc1
+SCC,within,SC46,all,light QC,4,0.0796019900497512,V1,76,Myc Targets V2,1.98,Myc Targets V1,1.89,MYC / growth (translation),95.0,Hybrid,76.0,SC46,100.0,Ccnd1 H2afz Birc5 Ran
+SCC,within,SC46,all,light QC,4,0.0796019900497512,V2,76,Epithelial Mesenchymal Transition,1.85,Angiogenesis,1.72,EMT / matrix,25.0,Late-EMT,100.0,SC46,100.0,Col3a1 Eln Bgn Col5a2
+SCC,within,SC46,all,light QC,4,0.0796019900497512,V3,76,Apoptosis,1.11,UV Response Up,1.01,Apoptosis,12.0,Late-EMT,95.0,SC46,100.0,Chil4 Gsn Nupr1 Lgals3
+SCC,within,SC46,all,light QC,4,0.0796019900497512,V4,76,Mitotic Spindle,1.15,UV Response Dn,0.97,cycling,51.0,Early-Hybrid,62.0,SC46,100.0,Neat1 Pcdh7 Hivep2 Gm42418
+SCC,pooled,pooled,ks,light QC,5,0.0945273631840796,V1,1198,UV Response Dn,1.16,Wnt-beta Catenin Signaling,0.98,UV Response Dn,29.0,Early-Hybrid,53.0,MU7,39.0,Rabgap1l Ank3 Myo1d Dsp
+SCC,pooled,pooled,ks,light QC,5,0.0945273631840796,V2,1198,DNA Repair,1.17,Myc Targets V1,1.16,DNA Repair,68.0,Hybrid,90.0,SC2b3,43.0,Lgals1 Krt8 Vim Emp3
+SCC,pooled,pooled,ks,light QC,5,0.0945273631840796,V3,1198,p53 Pathway,1.1,Xenobiotic Metabolism,0.97,p53 / stress,30.0,Early-Hybrid,96.0,MU8,35.0,Slpi Aqp3 Areg Dsp
+SCC,pooled,pooled,ks,light QC,5,0.0945273631840796,V4,1198,Epithelial Mesenchymal Transition,1.83,Angiogenesis,1.62,EMT / matrix,12.0,Late-EMT,96.0,SC35,34.0,Col5a2 Sparc Fstl1 Vim
+SCC,pooled,pooled,ks,light QC,5,0.0945273631840796,V5,1198,Cholesterol Homeostasis,0.75,Estrogen Response Late,0.71,metabolic,48.0,Epithelial,87.0,SC32,30.0,Epcam Tacstd2 S100a14 Perp
+SCC,within,SC43,ks,light QC,3,0.1094527363184079,V1,53,KRAS Signaling Dn,0.79,TNF-alpha Signaling via NF-kB,0.34,KRAS-down (epithelial / differentiated),49.0,Late-EMT,55.0,SC43,100.0,Areg Perp Epcam Dsp
+SCC,within,SC43,ks,light QC,3,0.1094527363184079,V2,53,Myc Targets V1,0.88,Fatty Acid Metabolism,0.88,MYC / growth (translation),85.0,Hybrid,100.0,SC43,100.0,Krt8 Krt18 Lgals1 Vim
+SCC,within,SC43,ks,light QC,3,0.1094527363184079,V3,53,Angiogenesis,2.09,Epithelial Mesenchymal Transition,2.08,angiogenesis / matrix,11.0,Late-EMT,98.0,SC43,100.0,Col5a2 Sparc Loxl2 Fstl1
+SCC,within,SC2b3,hallmark,light QC,3,0.154228855721393,V1,149,Myogenesis,1.53,Angiogenesis,1.47,muscle / matrix-like,10.0,Late-EMT,100.0,SC2b3,100.0,Col3a1 Postn Bgn Col1a1
+SCC,within,SC2b3,hallmark,light QC,3,0.154228855721393,V2,149,Pperoxisome,0.84,mTORC1 Signaling,0.82,Pperoxisome,51.0,Hybrid,57.0,SC2b3,100.0,Tagln Acta2 Spp1 Myl9
+SCC,within,SC2b3,hallmark,light QC,3,0.154228855721393,V3,149,p53 Pathway,1.55,KRAS Signaling Dn,1.49,p53 / stress,54.0,Epithelial,68.0,SC2b3,100.0,Sdc1 Areg Lamc2 Lama3
+SCC,within,SC46,ks,light QC,3,0.1641791044776119,V1,76,Epithelial Mesenchymal Transition,1.82,Angiogenesis,1.66,EMT / matrix,20.0,Late-EMT,100.0,SC46,100.0,Col5a2 Fstl1 Sparc Myo1d
+SCC,within,SC46,ks,light QC,3,0.1641791044776119,V2,76,Myc Targets V2,1.25,Myc Targets V1,1.22,MYC / growth (translation),68.0,Hybrid,61.0,SC46,100.0,Krt18 Areg Krt8 Lgals1
+SCC,within,SC46,ks,light QC,3,0.1641791044776119,V3,76,p53 Pathway,1.04,Apical Surface,0.83,p53 / stress,25.0,Early-Hybrid,93.0,SC46,100.0,Fxyd3 Slpi Sfn Dsp
+SCC,within,SC35,all,light QC,4,0.1691542288557214,V1,129,IL-2/STAT5 Signaling,0.86,KRAS Signaling Up,0.79,IL-2/STAT5 Signaling,5.0,Late-EMT,82.0,SC35,100.0,Ereg Ptgs2 Neat1 Lif
+SCC,within,SC35,all,light QC,4,0.1691542288557214,V2,129,Coagulation,1.26,Epithelial Mesenchymal Transition,1.25,coagulation / matrix-like,1.0,Late-EMT,100.0,SC35,100.0,Postn Mmp13 Col3a1 Mmp3
+SCC,within,SC35,all,light QC,4,0.1691542288557214,V3,129,Oxidative Phosphorylation,1.51,Fatty Acid Metabolism,0.86,metabolic,41.0,Hybrid,91.0,SC35,100.0,Akr1b3 S100a4 Upp1 Anxa2
+SCC,within,SC35,all,light QC,4,0.1691542288557214,V4,129,E2F Targets,2.24,G2-M Checkpoint,2.2,cycling,100.0,Hybrid,100.0,SC35,100.0,Hmgb2 Ccnd1 H2afz Hist1h1b
+SCC,within,SC15,ks,light QC,3,0.1840796019900497,V1,79,Spermatogenesis,1.15,Mitotic Spindle,1.1,Spermatogenesis,19.0,Epithelial,100.0,SC15,100.0,Ank3 Arap2 Epcam Map7
+SCC,within,SC15,ks,light QC,3,0.1840796019900497,V2,79,p53 Pathway,1.15,Xenobiotic Metabolism,1.09,p53 / stress,23.0,Early-Hybrid,97.0,SC15,100.0,Slpi Aqp3 Areg Sfn
+SCC,within,SC15,ks,light QC,3,0.1840796019900497,V3,79,Epithelial Mesenchymal Transition,2.03,Angiogenesis,1.68,EMT / matrix,59.0,Late-EMT,66.0,SC15,100.0,Lgals1 Vim Col5a2 Sparc
+SCC,pooled,pooled,all,six clean tumours,5,0.2139303482587064,V1,549,UV Response Dn,1.39,Inflammatory Response,1.1,UV Response Dn,26.0,Late-EMT,93.0,SC2b3,93.0,Timp3 Fn1 Gm42418 Col5a2
+SCC,pooled,pooled,all,six clean tumours,5,0.2139303482587064,V2,549,E2F Targets,1.68,Myc Targets V1,1.51,cycling,95.0,Hybrid,100.0,SC35,46.0,Nme2 Csrp2 Hmgb2 Tm4sf1
+SCC,pooled,pooled,all,six clean tumours,5,0.2139303482587064,V3,549,KRAS Signaling Dn,1.53,Estrogen Response Late,1.46,KRAS-down (epithelial / differentiated),34.0,Early-Hybrid,79.0,SC32,50.0,Krt14 Krt5 Krt6a Krtdap
+SCC,pooled,pooled,all,six clean tumours,5,0.2139303482587064,V4,549,Complement,1.52,Angiogenesis,1.41,Complement,1.0,Late-EMT,99.0,SC35,97.0,Col3a1 Dcn Col1a2 Col1a1
+SCC,pooled,pooled,all,six clean tumours,5,0.2139303482587064,V5,549,Coagulation,0.97,Interferon Gamma Response,0.71,coagulation / matrix-like,10.0,Late-EMT,98.0,SC2b1,100.0,Postn Col1a1 Mt2 Col3a1
+SCC,within,SC43,hallmark,light QC,3,0.2189054726368159,V1,53,Angiogenesis,2.16,Myogenesis,1.54,angiogenesis / matrix,11.0,Late-EMT,100.0,SC43,100.0,Postn Col3a1 Col5a2 Col1a1
+SCC,within,SC43,hallmark,light QC,3,0.2189054726368159,V2,53,Coagulation,0.62,Pancreas Beta Cells,0.59,coagulation / matrix-like,17.0,Late-EMT,85.0,SC43,100.0,Mgp Bgn Fbln2 Fn1
+SCC,within,SC43,hallmark,light QC,3,0.2189054726368159,V3,53,Myc Targets V1,1.13,Myc Targets V2,1.02,MYC / growth (translation),83.0,Hybrid,77.0,SC43,100.0,Areg Pthlh Mcm7 Tpm1
+SCC,within,MU3,ks,light QC,3,0.263681592039801,V1,43,Protein Secretion,0.86,Xenobiotic Metabolism,0.8,Protein Secretion,12.0,Early-Hybrid,98.0,MU3,100.0,Slpi Aqp3 Sdc1 Krt18
+SCC,within,MU3,ks,light QC,3,0.263681592039801,V2,43,Epithelial Mesenchymal Transition,2.43,Coagulation,2.19,EMT / matrix,14.0,Late-EMT,47.0,MU3,100.0,Col5a2 Fstl1 Cald1 Vim
+SCC,within,MU3,ks,light QC,3,0.263681592039801,V3,43,Cholesterol Homeostasis,0.9,Apical Junction,0.77,metabolic,65.0,Epithelial,79.0,MU3,100.0,Epcam S100a14 Gpx2 Tacstd2
+SCC,pooled,pooled,hallmark,light QC,5,0.2772277227722772,V1,1198,DNA Repair,1.3,Myc Targets V1,1.18,DNA Repair,67.0,Hybrid,87.0,SC43,43.0,Lgals1 Timp1 Vim Mgp
+SCC,pooled,pooled,hallmark,light QC,5,0.2772277227722772,V2,1198,p53 Pathway,1.12,Estrogen Response Late,1.02,p53 / stress,46.0,Early-Hybrid,92.0,MU8,25.0,Areg Cxcl1 Ecm1 Pthlh
+SCC,pooled,pooled,hallmark,light QC,5,0.2772277227722772,V3,1198,Angiogenesis,1.22,TGF-beta Signaling,1.21,angiogenesis / matrix,13.0,Early-Hybrid,50.0,MU7,28.0,Fn1 Col5a2 Spp1 Fbln2
+SCC,pooled,pooled,hallmark,light QC,5,0.2772277227722772,V4,1198,KRAS Signaling Dn,0.61,Notch Signaling,0.39,KRAS-down (epithelial / differentiated),44.0,Epithelial,83.0,MU8,38.0,Sfrp1 Lama3 Cadm1 Thbs1
+SCC,pooled,pooled,hallmark,light QC,5,0.2772277227722772,V5,1198,Angiogenesis,1.54,Coagulation,1.49,angiogenesis / matrix,9.0,Late-EMT,98.0,SC35,40.0,Col3a1 Col1a1 Col1a2 Postn
+SCC,within,SC33,all,light QC,4,0.3184079601990049,V1,69,E2F Targets,1.72,Myc Targets V2,1.71,cycling,100.0,Early-Hybrid,57.0,SC33,100.0,Hmgb2 Rrm2 Hist1h1b Hist1h2ap
+SCC,within,SC33,all,light QC,4,0.3184079601990049,V2,69,Epithelial Mesenchymal Transition,1.66,Angiogenesis,1.49,EMT / matrix,9.0,Late-EMT,54.0,SC33,100.0,Spp1 Fn1 Dcn Col1a2
+SCC,within,SC33,all,light QC,4,0.3184079601990049,V3,69,Pancreas Beta Cells,0.34,KRAS Signaling Dn,0.29,no Hallmark set above 0.5 SD,7.0,Early-Hybrid,68.0,SC33,100.0,Fabp5 Krtdap Ndufa4l2 Krt16
+SCC,within,SC33,all,light QC,4,0.3184079601990049,V4,69,UV Response Dn,1.91,Hedgehog Signaling,1.77,UV Response Dn,14.0,Early-Hybrid,96.0,SC33,100.0,Thbs1 Nr4a1 Fosb Xist
+SCC,within,SC46,hallmark,light QC,4,0.3482587064676617,V1,76,Apical Surface,1.0,heme Metabolism,0.52,Apical Surface,28.0,Early-Hybrid,79.0,SC46,100.0,Cadm1 Sfrp1 Tgfbi Pthlh
+SCC,within,SC46,hallmark,light QC,4,0.3482587064676617,V2,76,Myogenesis,1.74,Angiogenesis,1.68,muscle / matrix-like,26.0,Late-EMT,100.0,SC46,100.0,Col3a1 Eln Bgn Col1a1
+SCC,within,SC46,hallmark,light QC,4,0.3482587064676617,V3,76,Myc Targets V2,1.57,Myc Targets V1,1.56,MYC / growth (translation),79.0,Hybrid,72.0,SC46,100.0,Areg Lgals1 Pthlh Timp1
+SCC,within,SC46,hallmark,light QC,4,0.3482587064676617,V4,76,Apoptosis,1.18,Inflammatory Response,1.12,Apoptosis,13.0,Late-EMT,100.0,SC46,100.0,Spp1 Dcn Fn1 Fbn1
+SCC,within,SC35,hallmark,light QC,4,0.5223880597014925,V1,129,DNA Repair,0.76,Myc Targets V1,0.75,DNA Repair,41.0,Hybrid,86.0,SC35,100.0,Spp1 Areg Sat1 Tnfrsf12a
+SCC,within,SC35,hallmark,light QC,4,0.5223880597014925,V2,129,Coagulation,1.42,Myogenesis,1.37,coagulation / matrix-like,0.0,Late-EMT,100.0,SC35,100.0,Postn Col3a1 Mmp3 Col1a1
+SCC,within,SC35,hallmark,light QC,4,0.5223880597014925,V3,129,Myc Targets V1,1.01,Myc Targets V2,0.99,MYC / growth (translation),61.0,Hybrid,81.0,SC35,100.0,Timp3 Acta2 Dpysl3 Flna
+SCC,within,SC35,hallmark,light QC,4,0.5223880597014925,V4,129,Inflammatory Response,0.93,Angiogenesis,0.92,inflammatory / stress response,2.0,Late-EMT,99.0,SC35,100.0,Timp1 Col3a1 Fn1 Col5a2
+SCC,within,MU7,all,light QC,4,0.5522388059701493,V1,141,Epithelial Mesenchymal Transition,1.74,Angiogenesis,1.59,EMT / matrix,26.0,Late-EMT,70.0,MU7,100.0,Brinp3 Col1a1 Col1a2 Col3a1
+SCC,within,MU7,all,light QC,4,0.5522388059701493,V2,141,TGF-beta Signaling,1.23,Wnt-beta Catenin Signaling,1.13,TGF-β response,5.0,Early-Hybrid,99.0,MU7,100.0,Macrod2 Ccnd2 Thbs1 Hmcn1
+SCC,within,MU7,all,light QC,4,0.5522388059701493,V3,141,Myc Targets V1,2.37,E2F Targets,2.24,MYC / growth (translation),92.0,Early-Hybrid,60.0,MU7,100.0,Ly6a H2afz Krt6a Ran
+SCC,within,MU7,all,light QC,4,0.5522388059701493,V4,141,Notch Signaling,-0.01,KRAS Signaling Dn,-0.03,no Hallmark set above 0.5 SD,26.0,Epithelial,78.0,MU7,100.0,Arap2 2610035D17Rik Grip1 Dsg3
+SCC,within,MU8,hallmark,light QC,4,0.681592039800995,V1,266,Cholesterol Homeostasis,0.48,KRAS Signaling Dn,0.1,no Hallmark set above 0.5 SD,52.0,Epithelial,93.0,MU8,100.0,Lama3 Lamc2 Sdc1 Pthlh
+SCC,within,MU8,hallmark,light QC,4,0.681592039800995,V2,266,Interferon Alpha Response,1.07,TGF-beta Signaling,0.97,interferon response,38.0,Early-Hybrid,98.0,MU8,100.0,Timp3 Thbs1 Col12a1 Tnc
+SCC,within,MU8,hallmark,light QC,4,0.681592039800995,V3,266,p53 Pathway,0.94,Xenobiotic Metabolism,0.76,p53 / stress,43.0,Early-Hybrid,100.0,MU8,100.0,Areg Igfbp3 Ecm1 Tgfbi
+SCC,within,MU8,hallmark,light QC,4,0.681592039800995,V4,266,Angiogenesis,1.97,Coagulation,1.74,angiogenesis / matrix,9.0,Late-EMT,77.0,MU8,100.0,Col5a2 Dcn Fn1 Prrx1
+SCC,within,SC33,hallmark,light QC,4,0.6915422885572139,V1,69,mTORC1 Signaling,0.19,Myc Targets V2,0.16,no Hallmark set above 0.5 SD,38.0,Epithelial,65.0,SC33,100.0,Lama3 Lamc2 Gja1 Sdc1
+SCC,within,SC33,hallmark,light QC,4,0.6915422885572139,V2,69,Angiogenesis,2.27,Complement,1.88,angiogenesis / matrix,7.0,Early-Hybrid,51.0,SC33,100.0,Fn1 Spp1 Col6a2 Col3a1
+SCC,within,SC33,hallmark,light QC,4,0.6915422885572139,V3,69,DNA Repair,0.65,Inflammatory Response,0.6,DNA Repair,61.0,Early-Hybrid,99.0,SC33,100.0,Areg Cxcl1 Mmp3 Lgals1
+SCC,within,SC33,hallmark,light QC,4,0.6915422885572139,V4,69,UV Response Dn,1.59,Myogenesis,1.53,UV Response Dn,16.0,Early-Hybrid,94.0,SC33,100.0,Thbs1 Col12a1 Acta2 Pmepa1
+SCC,within,SC43,all,light QC,3,0.7512437810945274,V1,53,Mitotic Spindle,0.79,UV Response Dn,0.67,cycling,79.0,Late-EMT,51.0,SC43,100.0,Malat1 AY036118 Colec12 Krt14
+SCC,within,SC43,all,light QC,3,0.7512437810945274,V2,53,Angiogenesis,1.56,Coagulation,1.44,angiogenesis / matrix,0.0,Late-EMT,100.0,SC43,100.0,Postn Spp1 Igfbp7 Col3a1
+SCC,within,SC43,all,light QC,3,0.7512437810945274,V3,53,Oxidative Phosphorylation,1.19,Myc Targets V1,1.02,metabolic,98.0,Hybrid,100.0,SC43,100.0,Selenoh Crisp1 H2afz Lgals1
+COOK,pooled,pooled (4 lines),all,light QC,3,0.0049751243781094,V1,368,Estrogen Response Early,1.9,Estrogen Response Late,1.65,luminal / differentiation,25.0,Epithelial,91.0,MCF7,100.0,TFF1 DSCAM-AS1 BCAS3 GATA3
+COOK,pooled,pooled (4 lines),all,light QC,3,0.0049751243781094,V2,368,Allograft Rejection,1.51,E2F Targets,1.51,Allograft Rejection,69.0,Late-Hybrid,43.0,DU145,100.0,CDKN2A MT1E MYL9 MT2A
+COOK,pooled,pooled (4 lines),all,light QC,3,0.0049751243781094,V3,368,p53 Pathway,1.98,KRAS Signaling Up,1.13,p53 / stress,40.0,Epithelial,88.0,OVCA420,100.0,S100A2 KRT17 CRCT1 SPP1
+COOK,pooled,pooled (4 lines),ks,light QC,3,0.0049751243781094,V1,368,Estrogen Response Late,2.0,Estrogen Response Early,1.85,luminal / differentiation,55.0,Epithelial,96.0,MCF7,100.0,KRT19 XBP1 FXYD3 KRT8
+COOK,pooled,pooled (4 lines),ks,light QC,3,0.0049751243781094,V2,368,p53 Pathway,1.99,KRAS Signaling Up,1.09,p53 / stress,47.0,Epithelial,93.0,OVCA420,100.0,S100A14 KRT19 FXYD3 TACSTD2
+COOK,pooled,pooled (4 lines),ks,light QC,3,0.0049751243781094,V3,368,Epithelial Mesenchymal Transition,1.07,Myogenesis,0.53,EMT / matrix,58.0,Mesenchymal,77.0,A549,72.0,VIM LGALS1 TPM2 KRT7
+COOK,within,OVCA420,hallmark,light QC,3,0.0049751243781094,V1,28,Fatty Acid Metabolism,1.23,Myc Targets V2,0.94,Fatty Acid Metabolism,79.0,Epithelial,96.0,OVCA420,100.0,SPP1 ID2 MCM7 MEST
+COOK,within,OVCA420,hallmark,light QC,3,0.0049751243781094,V2,28,TGF-beta Signaling,1.15,UV Response Dn,1.05,TGF-β response,43.0,Epithelial,71.0,OVCA420,100.0,TGM2 THBS1 PMEPA1 SERPINE2
+COOK,within,OVCA420,hallmark,light QC,3,0.0049751243781094,V3,28,TNF-alpha Signaling via NF-kB,2.05,Inflammatory Response,2.04,inflammatory / stress response,4.0,Epithelial,61.0,OVCA420,100.0,TFPI2 LAMC2 TGM2 IL32
+COOK,pooled,pooled (4 lines),all,cleaned,3,0.0099009900990099,V1,311,Estrogen Response Early,1.96,Apical Surface,1.64,luminal / differentiation,21.0,Epithelial,94.0,MCF7,100.0,TFF1 DSCAM-AS1 BCAS3 GATA3
+COOK,pooled,pooled (4 lines),all,cleaned,3,0.0099009900990099,V2,311,Angiogenesis,1.32,Coagulation,1.14,angiogenesis / matrix,15.0,Early-Hybrid,49.0,A549,85.0,KRT81 S100A4 ALDH1A1 AKR1B10
+COOK,pooled,pooled (4 lines),all,cleaned,3,0.0099009900990099,V3,311,Allograft Rejection,1.47,E2F Targets,1.4,Allograft Rejection,69.0,Late-Hybrid,42.0,DU145,100.0,MT1E CDKN2A MYL9 MT2A
+COOK,pooled,pooled (4 lines),ks,cleaned,4,0.0099009900990099,V1,311,p53 Pathway,2.11,KRAS Signaling Up,0.98,p53 / stress,51.0,Epithelial,90.0,OVCA420,99.0,S100A14 KRT19 FXYD3 TACSTD2
+COOK,pooled,pooled (4 lines),ks,cleaned,4,0.0099009900990099,V2,311,Angiogenesis,1.19,Xenobiotic Metabolism,0.97,angiogenesis / matrix,49.0,Late-Hybrid,48.0,A549,100.0,TPM2 KRT7 VIM SERPINE1
+COOK,pooled,pooled (4 lines),ks,cleaned,4,0.0099009900990099,V3,311,Estrogen Response Late,2.08,Estrogen Response Early,1.92,luminal / differentiation,53.0,Epithelial,97.0,MCF7,100.0,KRT19 XBP1 FXYD3 KRT8
+COOK,pooled,pooled (4 lines),ks,cleaned,4,0.0099009900990099,V4,311,Allograft Rejection,1.19,Apical Junction,1.16,Allograft Rejection,50.0,Mesenchymal,64.0,DU145,100.0,MYL9 AXL LGALS1 PTRF
+COOK,pooled,pooled (4 lines),hallmark,light QC,4,0.0099009900990099,V1,368,Estrogen Response Late,1.56,Estrogen Response Early,1.47,luminal / differentiation,59.0,Epithelial,86.0,MCF7,100.0,MGP IGFBP2 AREG ID2
+COOK,pooled,pooled (4 lines),hallmark,light QC,4,0.0099009900990099,V2,368,Allograft Rejection,1.37,Apical Junction,1.37,Allograft Rejection,43.0,Late-Hybrid,45.0,DU145,100.0,TAGLN MYL9 LGALS1 VIM
+COOK,pooled,pooled (4 lines),hallmark,light QC,4,0.0099009900990099,V3,368,p53 Pathway,2.05,TNF-alpha Signaling via NF-kB,1.26,p53 / stress,43.0,Epithelial,83.0,OVCA420,100.0,SPP1 SERPINE1 TGM2 SERPINE2
+COOK,pooled,pooled (4 lines),hallmark,light QC,4,0.0099009900990099,V4,368,Angiogenesis,1.09,Coagulation,1.02,angiogenesis / matrix,57.0,Mesenchymal,59.0,A549,100.0,TGFBI TPM2 VIM SERPINE2
+COOK,pooled,pooled (4 lines),hallmark,cleaned,4,0.0099009900990099,V1,311,Apical Junction,1.41,Allograft Rejection,1.34,epithelial junction,46.0,Mesenchymal,48.0,DU145,100.0,TAGLN MYL9 LGALS1 VIM
+COOK,pooled,pooled (4 lines),hallmark,cleaned,4,0.0099009900990099,V2,311,p53 Pathway,2.15,KRAS Signaling Up,1.06,p53 / stress,50.0,Epithelial,86.0,OVCA420,100.0,SPP1 SERPINE1 SERPINE2 GADD45A
+COOK,pooled,pooled (4 lines),hallmark,cleaned,4,0.0099009900990099,V3,311,Angiogenesis,1.24,Coagulation,1.19,angiogenesis / matrix,56.0,Mesenchymal,56.0,A549,100.0,TGFBI TPM2 SERPINE2 VIM
+COOK,pooled,pooled (4 lines),hallmark,cleaned,4,0.0099009900990099,V4,311,Estrogen Response Late,1.78,Estrogen Response Early,1.62,luminal / differentiation,64.0,Epithelial,89.0,MCF7,100.0,MGP ID2 AREG LOXL1
+COOK,within,A549,all,cleaned,3,0.0099502487562189,V1,133,Epithelial Mesenchymal Transition,1.49,Coagulation,1.24,EMT / matrix,70.0,Mesenchymal,77.0,A549,100.0,SERPINE2 IGFBP7 CCDC80 TAGLN
+COOK,within,A549,all,cleaned,3,0.0099502487562189,V2,133,mTORC1 Signaling,1.82,Myc Targets V1,1.64,mTORC1 Signaling,92.0,Early-Hybrid,55.0,A549,100.0,AKR1B10 HSP90AA1 CCNB1 KPNA2
+COOK,within,A549,all,cleaned,3,0.0099502487562189,V3,133,Estrogen Response Early,0.71,p53 Pathway,0.7,luminal / differentiation,12.0,Early-Hybrid,66.0,A549,100.0,GPX2 NEAT1 SAT1 SCD
+COOK,within,OVCA420,hallmark,cleaned,3,0.0099502487562189,V1,18,Inflammatory Response,2.2,TNF-alpha Signaling via NF-kB,2.14,inflammatory / stress response,0.0,Epithelial,56.0,OVCA420,100.0,TFPI2 LAMC2 IL32 PLAUR
+COOK,within,OVCA420,hallmark,cleaned,3,0.0099502487562189,V2,18,TGF-beta Signaling,1.07,UV Response Dn,0.62,TGF-β response,44.0,Epithelial,94.0,OVCA420,100.0,SERPINE1 TGM2 SERPINE2 IGFBP4
+COOK,within,OVCA420,hallmark,cleaned,3,0.0099502487562189,V3,18,Fatty Acid Metabolism,1.39,Reactive Oxygen Species Pathway,0.99,Fatty Acid Metabolism,78.0,Epithelial,94.0,OVCA420,100.0,SPP1 ID2 LRP1 MCM7
+COOK,within,MCF7,ks,light QC,3,0.0149253731343283,V1,83,G2-M Checkpoint,0.33,Mitotic Spindle,0.23,no Hallmark set above 0.5 SD,54.0,Epithelial,54.0,MCF7,100.0,LGALS1 CYB561 SLC9A3R1 PMP22
+COOK,within,MCF7,ks,light QC,3,0.0149253731343283,V2,83,Fatty Acid Metabolism,1.04,Myc Targets V1,0.92,Fatty Acid Metabolism,58.0,Epithelial,88.0,MCF7,100.0,AGR2 KRT8 KRT18 KRT19
+COOK,within,MCF7,ks,light QC,3,0.0149253731343283,V3,83,TNF-alpha Signaling via NF-kB,1.74,Epithelial Mesenchymal Transition,1.35,inflammatory / stress response,5.0,Epithelial,99.0,MCF7,100.0,AQP3 S100A14 AREG TACSTD2
+COOK,within,DU145,hallmark,light QC,3,0.0199004975124378,V1,101,Myc Targets V2,0.44,Myc Targets V1,0.3,no Hallmark set above 0.5 SD,36.0,Early-Hybrid,65.0,DU145,100.0,AREG GPC1 SAT1 ID2
+COOK,within,DU145,hallmark,light QC,3,0.0199004975124378,V2,101,Myogenesis,1.22,Apical Junction,1.13,muscle / matrix-like,40.0,Mesenchymal,58.0,DU145,100.0,TAGLN MYL9 TPM1 TGFBI
+COOK,within,DU145,hallmark,light QC,3,0.0199004975124378,V3,101,KRAS Signaling Up,1.12,Complement,0.91,KRAS-up (squamous / differentiation),29.0,Mesenchymal,46.0,DU145,100.0,TIMP1 TGFBI TFPI2 VIM
+COOK,within,DU145,hallmark,cleaned,3,0.0248756218905472,V1,92,Myogenesis,1.37,Apical Junction,1.22,muscle / matrix-like,37.0,Mesenchymal,60.0,DU145,100.0,TAGLN MYL9 TPM1 TGFBI
+COOK,within,DU145,hallmark,cleaned,3,0.0248756218905472,V2,92,KRAS Signaling Up,1.07,Complement,0.88,KRAS-up (squamous / differentiation),30.0,Mesenchymal,45.0,DU145,100.0,TIMP1 TGFBI VIM BASP1
+COOK,within,DU145,hallmark,cleaned,3,0.0248756218905472,V3,92,Myc Targets V2,0.55,Myc Targets V1,0.45,MYC / growth (translation),39.0,Early-Hybrid,63.0,DU145,100.0,AREG SAT1 GPC1 ID2
+COOK,within,MCF7,ks,cleaned,3,0.0298507462686567,V1,69,TNF-alpha Signaling via NF-kB,1.8,Epithelial Mesenchymal Transition,1.34,inflammatory / stress response,6.0,Epithelial,99.0,MCF7,100.0,AQP3 S100A14 AREG TACSTD2
+COOK,within,MCF7,ks,cleaned,3,0.0298507462686567,V2,69,Myc Targets V1,1.22,Fatty Acid Metabolism,1.18,MYC / growth (translation),74.0,Epithelial,86.0,MCF7,100.0,AGR2 KRT18 KRT8 KRT19
+COOK,within,MCF7,ks,cleaned,3,0.0298507462686567,V3,69,Hedgehog Signaling,0.48,Mitotic Spindle,0.47,no Hallmark set above 0.5 SD,58.0,Epithelial,74.0,MCF7,100.0,LGALS1 CYB561 SLC9A3R1 RBM47
+COOK,within,A549,hallmark,cleaned,3,0.044776119402985,V1,133,Coagulation,1.37,Myogenesis,1.35,coagulation / matrix-like,62.0,Mesenchymal,81.0,A549,100.0,TAGLN SERPINE2 TGFBI GLIPR1
+COOK,within,A549,hallmark,cleaned,3,0.044776119402985,V2,133,TGF-beta Signaling,0.85,TNF-alpha Signaling via NF-kB,0.62,TGF-β response,44.0,Late-Hybrid,43.0,A549,100.0,IGFBP4 SERPINE1 PMEPA1 TNFRSF12A
+COOK,within,A549,hallmark,cleaned,3,0.044776119402985,V3,133,Reactive Oxygen Species Pathway,0.71,Estrogen Response Late,0.43,Reactive Oxygen Species Pathway,51.0,Early-Hybrid,89.0,A549,100.0,AREG BASP1 DKK1 PMP22
+COOK,within,A549,all,light QC,4,0.0646766169154228,V1,157,Hedgehog Signaling,0.87,Epithelial Mesenchymal Transition,0.84,Hedgehog Signaling,20.0,Early-Hybrid,36.0,A549,100.0,TGFBI COL4A2 NEAT1 CCDC80
+COOK,within,A549,all,light QC,4,0.0646766169154228,V2,157,Myc Targets V1,1.56,Glycolysis,1.29,MYC / growth (translation),92.0,Mesenchymal,69.0,A549,100.0,KPNA2 SERPINE2 TAGLN TGFBI
+COOK,within,A549,all,light QC,4,0.0646766169154228,V3,157,G2-M Checkpoint,0.9,E2F Targets,0.81,cycling,67.0,Late-Hybrid,43.0,A549,100.0,UBE2S UBE2C COTL1 CKS2
+COOK,within,A549,all,light QC,4,0.0646766169154228,V4,157,Xenobiotic Metabolism,1.02,Reactive Oxygen Species Pathway,0.92,Xenobiotic Metabolism,19.0,Early-Hybrid,88.0,A549,100.0,GPX2 ALDH3A1 AGR2 AKR1B10
+COOK,within,MCF7,all,light QC,5,0.0895522388059701,V1,83,Epithelial Mesenchymal Transition,1.59,TNF-alpha Signaling via NF-kB,1.35,EMT / matrix,1.0,Epithelial,88.0,MCF7,100.0,TUBA1A PMEPA1 S100A10 ANXA2
+COOK,within,MCF7,all,light QC,5,0.0895522388059701,V2,83,TNF-alpha Signaling via NF-kB,0.69,KRAS Signaling Dn,0.4,inflammatory / stress response,2.0,Epithelial,83.0,MCF7,100.0,NEAT1 SNHG7 EIF4A2 SNHG8
+COOK,within,MCF7,all,light QC,5,0.0895522388059701,V3,83,Myc Targets V1,2.06,mTORC1 Signaling,1.85,MYC / growth (translation),98.0,Epithelial,89.0,MCF7,100.0,TUBB4B PKIB NQO1 STMN1
+COOK,within,MCF7,all,light QC,5,0.0895522388059701,V4,83,Oxidative Phosphorylation,1.1,DNA Repair,0.9,metabolic,81.0,Epithelial,80.0,MCF7,100.0,COX6C CRABP2 WISP2 TUBA1B
+COOK,within,MCF7,all,light QC,5,0.0895522388059701,V5,83,Mitotic Spindle,0.77,G2-M Checkpoint,0.58,cycling,60.0,Epithelial,84.0,MCF7,100.0,HIST1H4C KIAA0101 MYBL2 SNRNP25
+COOK,within,DU145,all,light QC,3,0.099502487562189,V1,101,Hedgehog Signaling,0.71,Mitotic Spindle,0.45,Hedgehog Signaling,28.0,Mesenchymal,41.0,DU145,100.0,HIST1H4C ATP5E MT2A OST4
+COOK,within,DU145,all,light QC,3,0.099502487562189,V2,101,Hypoxia,1.17,Coagulation,1.15,hypoxia / glycolysis,5.0,Late-Hybrid,43.0,DU145,100.0,KRT19 ANGPTL4 TGFBI HSPA5
+COOK,within,DU145,all,light QC,3,0.099502487562189,V3,101,Myc Targets V1,1.7,Myc Targets V2,1.67,MYC / growth (translation),91.0,Late-Hybrid,41.0,DU145,100.0,CCNB1 KPNA2 CDC20 TUBA1C
+COOK,within,A549,ks,light QC,5,0.1691542288557214,V1,157,Epithelial Mesenchymal Transition,1.06,Coagulation,0.9,EMT / matrix,64.0,Mesenchymal,70.0,A549,100.0,TPM2 KRT7 TUBA1A VIM
+COOK,within,A549,ks,light QC,5,0.1691542288557214,V2,157,Myc Targets V2,0.73,Estrogen Response Late,0.6,MYC / growth (translation),69.0,Early-Hybrid,49.0,A549,100.0,AXL AREG GPX2 EMP3
+COOK,within,A549,ks,light QC,5,0.1691542288557214,V3,157,Estrogen Response Early,0.81,Coagulation,0.8,luminal / differentiation,36.0,Early-Hybrid,43.0,A549,100.0,SERPINE1 TSPAN15 GPX2 KRT19
+COOK,within,A549,ks,light QC,5,0.1691542288557214,V4,157,Epithelial Mesenchymal Transition,0.69,TGF-beta Signaling,0.61,EMT / matrix,54.0,Mesenchymal,66.0,A549,100.0,SERPINE1 LGALS1 SDC1 AKAP12
+COOK,within,A549,ks,light QC,5,0.1691542288557214,V5,157,Xenobiotic Metabolism,0.7,Reactive Oxygen Species Pathway,0.69,Xenobiotic Metabolism,38.0,Early-Hybrid,99.0,A549,100.0,GPX2 AGR2 ELF3 KRT8
+COOK,within,DU145,all,cleaned,3,0.2537313432835821,V1,92,Myc Targets V1,1.72,G2-M Checkpoint,1.72,MYC / growth (translation),90.0,Early-Hybrid,42.0,DU145,100.0,CCNB1 CDC20 KPNA2 TUBA1C
+COOK,within,DU145,all,cleaned,3,0.2537313432835821,V2,92,Hypoxia,1.19,Complement,1.17,hypoxia / glycolysis,2.0,Late-Hybrid,43.0,DU145,100.0,ANGPTL4 TGFBI KRT19 HSPA5
+COOK,within,DU145,all,cleaned,3,0.2537313432835821,V3,92,Hedgehog Signaling,0.9,Apical Junction,0.55,Hedgehog Signaling,21.0,Mesenchymal,39.0,DU145,100.0,HIST1H4C ATP5E MT2A OST4
+COOK,within,A549,hallmark,light QC,3,0.2587064676616915,V1,157,Coagulation,1.3,Myogenesis,1.28,coagulation / matrix-like,63.0,Mesenchymal,80.0,A549,100.0,TAGLN SERPINE2 TGFBI GLIPR1
+COOK,within,A549,hallmark,light QC,3,0.2587064676616915,V2,157,TGF-beta Signaling,0.74,TNF-alpha Signaling via NF-kB,0.59,TGF-β response,40.0,Early-Hybrid,44.0,A549,100.0,IGFBP4 SERPINE1 PMEPA1 TGM2
+COOK,within,A549,hallmark,light QC,3,0.2587064676616915,V3,157,Reactive Oxygen Species Pathway,0.58,Interferon Alpha Response,0.45,Reactive Oxygen Species Pathway,53.0,Early-Hybrid,85.0,A549,100.0,AREG DKK1 ID2 BASP1
+COOK,within,MCF7,hallmark,cleaned,4,0.3681592039800995,V1,69,TGF-beta Signaling,1.31,Hypoxia,1.26,TGF-β response,13.0,Epithelial,94.0,MCF7,100.0,PMEPA1 CD59 LGALS1 BASP1
+COOK,within,MCF7,hallmark,cleaned,4,0.3681592039800995,V2,69,UV Response Dn,0.36,Wnt-beta Catenin Signaling,0.34,no Hallmark set above 0.5 SD,45.0,Epithelial,93.0,MCF7,100.0,MGP PMEPA1 DKK1 TIMP1
+COOK,within,MCF7,hallmark,cleaned,4,0.3681592039800995,V3,69,Estrogen Response Late,0.61,Estrogen Response Early,0.5,luminal / differentiation,52.0,Epithelial,96.0,MCF7,100.0,AREG BASP1 DKK1 FLNA
+COOK,within,MCF7,hallmark,cleaned,4,0.3681592039800995,V4,69,E2F Targets,0.47,Pperoxisome,0.41,cycling,71.0,Epithelial,81.0,MCF7,100.0,WIPF1 PMP22 LGALS1 MCM7
+COOK,within,OVCA420,ks,light QC,3,0.417910447761194,V1,28,Fatty Acid Metabolism,1.37,Xenobiotic Metabolism,1.13,Fatty Acid Metabolism,75.0,Epithelial,100.0,OVCA420,100.0,ELF3 AGR2 ANXA4 GPX2
+COOK,within,OVCA420,ks,light QC,3,0.417910447761194,V2,28,Hypoxia,0.95,Notch Signaling,0.86,hypoxia / glycolysis,25.0,Epithelial,93.0,OVCA420,100.0,CTSH SERPINE1 KRT8 TACSTD2
+COOK,within,OVCA420,ks,light QC,3,0.417910447761194,V3,28,Epithelial Mesenchymal Transition,0.96,Inflammatory Response,0.87,EMT / matrix,43.0,Early-Hybrid,71.0,OVCA420,100.0,LGALS1 PTRF MAP1B MSN
+COOK,within,OVCA420,ks,cleaned,4,0.4477611940298507,V1,18,Reactive Oxygen Species Pathway,0.86,Xenobiotic Metabolism,0.84,Reactive Oxygen Species Pathway,28.0,Epithelial,100.0,OVCA420,100.0,AGR2 KRT19 FXYD3 KRT15
+COOK,within,OVCA420,ks,cleaned,4,0.4477611940298507,V2,18,Inflammatory Response,1.86,Apical Junction,1.81,inflammatory / stress response,28.0,Early-Hybrid,67.0,OVCA420,100.0,TACSTD2 PTRF SERPINE1 MSN
+COOK,within,OVCA420,ks,cleaned,4,0.4477611940298507,V3,18,TGF-beta Signaling,0.54,Hypoxia,0.39,TGF-β response,50.0,Epithelial,78.0,OVCA420,100.0,SERPINE1 CTSH ITGB4 SFN
+COOK,within,OVCA420,ks,cleaned,4,0.4477611940298507,V4,18,Fatty Acid Metabolism,0.82,Myc Targets V2,0.71,Fatty Acid Metabolism,72.0,Epithelial,94.0,OVCA420,100.0,ELF3 ANXA4 ABCC3 AP1M2
+COOK,within,OVCA420,all,light QC,5,0.4527363184079602,V1,28,TNF-alpha Signaling via NF-kB,1.89,Inflammatory Response,1.85,inflammatory / stress response,7.0,Epithelial,71.0,OVCA420,100.0,C15orf48 TFPI2 LAMC2 G0S2
+COOK,within,OVCA420,all,light QC,5,0.4527363184079602,V2,28,TGF-beta Signaling,0.74,Estrogen Response Early,0.6,TGF-β response,7.0,Epithelial,89.0,OVCA420,100.0,HSPB1 ANGPTL4 LGALS3 ITGB4
+COOK,within,OVCA420,all,light QC,5,0.4527363184079602,V3,28,Myc Targets V1,1.6,mTORC1 Signaling,1.27,MYC / growth (translation),96.0,Epithelial,96.0,OVCA420,100.0,TUBB4B AKR1B10 EIF4A3 PSMA4
+COOK,within,OVCA420,all,light QC,5,0.4527363184079602,V4,28,Mitotic Spindle,1.34,UV Response Dn,1.0,cycling,68.0,Epithelial,64.0,OVCA420,100.0,MT2A TGM2 MT1X LAMC2
+COOK,within,OVCA420,all,light QC,5,0.4527363184079602,V5,28,Fatty Acid Metabolism,0.6,Myc Targets V2,0.56,Fatty Acid Metabolism,79.0,Epithelial,96.0,OVCA420,100.0,FTL CBR1 ELF3 MPC2
+COOK,within,MCF7,all,cleaned,3,0.4626865671641791,V1,69,Myc Targets V1,2.09,mTORC1 Signaling,1.95,MYC / growth (translation),99.0,Epithelial,86.0,MCF7,100.0,TUBB4B TUBA1B HMGB2 STMN1
+COOK,within,MCF7,all,cleaned,3,0.4626865671641791,V2,69,TNF-alpha Signaling via NF-kB,1.52,Hypoxia,1.28,inflammatory / stress response,0.0,Epithelial,93.0,MCF7,100.0,NEAT1 BTG1 ANXA2 MALAT1
+COOK,within,MCF7,all,cleaned,3,0.4626865671641791,V3,69,Mitotic Spindle,0.61,Estrogen Response Early,0.43,cycling,57.0,Epithelial,83.0,MCF7,100.0,HIST1H4C KIAA0101 DSCAM-AS1 LINC00052
+COOK,within,A549,ks,cleaned,4,0.7164179104477612,V1,133,TGF-beta Signaling,0.36,Notch Signaling,0.23,cycling,64.0,Late-Hybrid,47.0,A549,100.0,AKAP12 FHL1 SDC1 COL5A2
+COOK,within,A549,ks,cleaned,4,0.7164179104477612,V2,133,Xenobiotic Metabolism,0.78,Reactive Oxygen Species Pathway,0.71,Xenobiotic Metabolism,38.0,Early-Hybrid,99.0,A549,100.0,GPX2 AGR2 ELF3 KRT19
+COOK,within,A549,ks,cleaned,4,0.7164179104477612,V3,133,Mitotic Spindle,0.6,Inflammatory Response,0.53,cycling,55.0,Mesenchymal,59.0,A549,100.0,AXL MAP1B PTRF LGALS1
+COOK,within,A549,ks,cleaned,4,0.7164179104477612,V4,133,Epithelial Mesenchymal Transition,1.27,Coagulation,1.23,EMT / matrix,60.0,Mesenchymal,68.0,A549,100.0,KRT7 SERPINE1 TPM2 TUBA1A
+COOK,within,OVCA420,all,cleaned,3,0.7562189054726368,V1,18,Complement,1.57,Coagulation,1.55,Complement,6.0,Epithelial,89.0,OVCA420,100.0,C15orf48 KRT17 SERPINE2 CYR61
+COOK,within,OVCA420,all,cleaned,3,0.7562189054726368,V2,18,Fatty Acid Metabolism,1.51,Oxidative Phosphorylation,1.31,Fatty Acid Metabolism,89.0,Epithelial,89.0,OVCA420,100.0,CBR1 AKR1B10 GSTA1 PTGR1
+COOK,within,OVCA420,all,cleaned,3,0.7562189054726368,V3,18,IL-2/STAT5 Signaling,1.45,Myogenesis,1.23,IL-2/STAT5 Signaling,11.0,Epithelial,78.0,OVCA420,100.0,MT2A LAMC2 TGM2 FST
+COOK,within,MCF7,hallmark,light QC,4,0.8905472636815921,V1,83,UV Response Dn,0.47,TNF-alpha Signaling via NF-kB,0.38,no Hallmark set above 0.5 SD,29.0,Epithelial,89.0,MCF7,100.0,MGP AREG PMEPA1 DKK1
+COOK,within,MCF7,hallmark,light QC,4,0.8905472636815921,V2,83,mTORC1 Signaling,0.76,Myc Targets V1,0.71,mTORC1 Signaling,65.0,Epithelial,92.0,MCF7,100.0,AREG BASP1 DKK1 MCM7
+COOK,within,MCF7,hallmark,light QC,4,0.8905472636815921,V3,83,E2F Targets,0.1,Oxidative Phosphorylation,0.06,no Hallmark set above 0.5 SD,58.0,Epithelial,71.0,MCF7,100.0,LGALS1 WIPF1 PMP22 SPP1
+COOK,within,MCF7,hallmark,light QC,4,0.8905472636815921,V4,83,TGF-beta Signaling,1.21,Hypoxia,1.06,TGF-β response,12.0,Epithelial,92.0,MCF7,100.0,PMEPA1 CD59 LGALS1 TNFRSF12A
+COOK,within,DU145,ks,light QC,4,0.900497512437811,V1,101,Fatty Acid Metabolism,0.86,Estrogen Response Late,0.84,Fatty Acid Metabolism,46.0,Early-Hybrid,51.0,DU145,100.0,KRT19 AREG EPCAM CD9
+COOK,within,DU145,ks,light QC,4,0.900497512437811,V2,101,Myc Targets V2,0.44,Myc Targets V1,0.43,no Hallmark set above 0.5 SD,41.0,Early-Hybrid,62.0,DU145,100.0,AREG SPINT2 RHOD ATP1B1
+COOK,within,DU145,ks,light QC,4,0.900497512437811,V3,101,Epithelial Mesenchymal Transition,1.24,Apical Junction,0.95,EMT / matrix,46.0,Mesenchymal,51.0,DU145,100.0,MYL9 KRT8 KRT7 KRT18
+COOK,within,DU145,ks,light QC,4,0.900497512437811,V4,101,Hedgehog Signaling,0.27,TGF-beta Signaling,0.19,no Hallmark set above 0.5 SD,35.0,Mesenchymal,43.0,DU145,100.0,AXL POPDC3 ICA1 PLXNB2
+COOK,within,DU145,ks,cleaned,3,0.9502487562189056,V1,92,Epithelial Mesenchymal Transition,0.69,Apical Junction,0.45,EMT / matrix,32.0,Mesenchymal,58.0,DU145,100.0,MYL9 MSN LGALS1 AXL
+COOK,within,DU145,ks,cleaned,3,0.9502487562189056,V2,92,Fatty Acid Metabolism,1.26,Cholesterol Homeostasis,1.13,Fatty Acid Metabolism,43.0,Late-Hybrid,60.0,DU145,100.0,KRT19 KRT8 KRT18 KRT7
+COOK,within,DU145,ks,cleaned,3,0.9502487562189056,V3,92,Myc Targets V2,0.41,E2F Targets,0.21,no Hallmark set above 0.5 SD,39.0,Early-Hybrid,57.0,DU145,100.0,AREG TOB1 ELF3 KLF5
+PDAC,within,M1-PT,all,light QC,3,0.0049751243781094,V1,200,Oxidative Phosphorylation,0.35,Myc Targets V1,-0.65,no Hallmark set above 0.5 SD,42.0,Early-Hybrid,50.0,M1-PT,100.0,Lgals1 Rplp0 S100a6 Lgals2
+PDAC,within,M1-PT,all,light QC,3,0.0049751243781094,V2,200,Epithelial Mesenchymal Transition,1.44,TGF-beta Signaling,1.23,EMT / matrix,3.0,Late-Hybrid,61.0,M1-PT,100.0,Inhba Gm26870 Trf Fbln2
+PDAC,within,M1-PT,all,light QC,3,0.0049751243781094,V3,200,KRAS Signaling Dn,1.5,Estrogen Response Early,1.27,KRAS-down (epithelial / differentiated),1.0,Epithelial,94.0,M1-PT,100.0,Ttr Atp1b1 Fos Atf3
+PDAC,within,M1-SS,all,light QC,3,0.0049751243781094,V1,141,Oxidative Phosphorylation,0.08,Myc Targets V1,-0.88,no Hallmark set above 0.5 SD,28.0,Late-Hybrid,48.0,M1-SS,100.0,Lgals1 Rplp1 Rplp0 S100a6
+PDAC,within,M1-SS,all,light QC,3,0.0049751243781094,V2,141,TGF-beta Signaling,1.37,UV Response Dn,1.21,TGF-β response,1.0,Late-Hybrid,51.0,M1-SS,100.0,Gm26870 Neat1 Id3 Fosb
+PDAC,within,M1-SS,all,light QC,3,0.0049751243781094,V3,141,Adipogenesis,1.58,Oxidative Phosphorylation,1.55,Adipogenesis,16.0,Epithelial,99.0,M1-SS,100.0,Lgals4 Atp1b1 Krt7 Krt19
+PDAC,within,M1-SS,all,cleaned,3,0.0049751243781094,V1,120,Oxidative Phosphorylation,0.62,Myc Targets V1,-0.08,metabolic,39.0,Early-Hybrid,42.0,M1-SS,100.0,Lgals1 S100a6 Rplp1 Rplp0
+PDAC,within,M1-SS,all,cleaned,3,0.0049751243781094,V2,120,Bile Acid Metabolism,1.57,Adipogenesis,1.25,metabolic,0.0,Epithelial,99.0,M1-SS,100.0,Atp1b1 Ttr C3 Dmbt1
+PDAC,within,M1-SS,all,cleaned,3,0.0049751243781094,V3,120,TGF-beta Signaling,1.43,UV Response Dn,1.2,TGF-β response,1.0,Late-Hybrid,52.0,M1-SS,100.0,Gm26870 Neat1 Id3 Fosb
+PDAC,within,M2-PT,all,cleaned,3,0.0049751243781094,V1,200,Myc Targets V1,1.86,E2F Targets,1.71,MYC / growth (translation),92.0,Early-Hybrid,50.0,M2-PT,100.0,H2afz Hmgb2 Birc5 Cenpa
+PDAC,within,M2-PT,all,cleaned,3,0.0049751243781094,V2,200,Bile Acid Metabolism,1.73,Adipogenesis,1.37,metabolic,0.0,Epithelial,100.0,M2-PT,100.0,2210407C18Rik Ttr Dmbt1 Sptssb
+PDAC,within,M2-PT,all,cleaned,3,0.0049751243781094,V3,200,Hypoxia,1.87,Hedgehog Signaling,1.33,hypoxia / glycolysis,2.0,Early-Hybrid,42.0,M2-PT,100.0,Ero1l Vegfa Hilpda Slc2a1
+PDAC,within,M2-Liver,all,cleaned,3,0.0049751243781094,V1,200,Myc Targets V1,1.55,Myc Targets V2,1.5,MYC / growth (translation),100.0,Early-Hybrid,42.0,M2-Liver,100.0,Hmgb2 Birc5 Phgdh AC160336.1
+PDAC,within,M2-Liver,all,cleaned,3,0.0049751243781094,V2,200,Angiogenesis,1.06,Hypoxia,0.87,angiogenesis / matrix,2.0,Epithelial,62.0,M2-Liver,100.0,Clu Sprr1a Spp1 S100a4
+PDAC,within,M2-Liver,all,cleaned,3,0.0049751243781094,V3,200,Bile Acid Metabolism,1.8,Estrogen Response Early,1.59,metabolic,2.0,Epithelial,94.0,M2-Liver,100.0,2210407C18Rik Gsta4 Sptssb Lgals2
+PDAC,within,M2-Met,all,cleaned,3,0.0049751243781094,V1,200,Myc Targets V1,1.75,Myc Targets V2,1.71,MYC / growth (translation),100.0,Early-Hybrid,58.0,M2-Met,100.0,Hmgb2 Phgdh Birc5 Cks1b
+PDAC,within,M2-Met,all,cleaned,3,0.0049751243781094,V2,200,Bile Acid Metabolism,1.42,KRAS Signaling Dn,1.17,metabolic,5.0,Epithelial,94.0,M2-Met,100.0,Ttr Fxyd3 Sptssb Lgals4
+PDAC,within,M2-Met,all,cleaned,3,0.0049751243781094,V3,200,Hypoxia,2.11,Glycolysis,1.06,hypoxia / glycolysis,4.0,Early-Hybrid,52.0,M2-Met,100.0,Mt1 Ero1l Ndrg1 Bnip3
+PDAC,within,M2,all,cleaned,3,0.0049751243781094,V1,137,Bile Acid Metabolism,1.57,Xenobiotic Metabolism,1.51,metabolic,0.0,Epithelial,91.0,M2-PT,89.0,2210407C18Rik Gsta4 Ttr Sptssb
+PDAC,within,M2,all,cleaned,3,0.0049751243781094,V2,137,Myc Targets V1,1.67,E2F Targets,1.66,MYC / growth (translation),100.0,Early-Hybrid,64.0,M2-Liver,58.0,Hmgb2 Birc5 Cks1b H2afz
+PDAC,within,M2,all,cleaned,3,0.0049751243781094,V3,137,Hypoxia,1.52,Angiogenesis,0.86,hypoxia / glycolysis,1.0,Early-Hybrid,46.0,M2-Met,58.0,Mt1 Sprr1a Malat1 Bnip3
+PDAC,within,M1-SS,hallmark,cleaned,3,0.0049751243781094,V1,120,Myc Targets V1,1.13,Oxidative Phosphorylation,1.05,MYC / growth (translation),42.0,Epithelial,40.0,M1-SS,100.0,Lgals1 Capg Qsox1 Tpm2
+PDAC,within,M1-SS,hallmark,cleaned,3,0.0049751243781094,V2,120,Bile Acid Metabolism,1.18,Interferon Alpha Response,1.01,metabolic,0.0,Epithelial,98.0,M1-SS,100.0,Spp1 Tgm2 Id2 Gja1
+PDAC,within,M1-SS,hallmark,cleaned,3,0.0049751243781094,V3,120,Angiogenesis,1.95,Myogenesis,1.51,angiogenesis / matrix,1.0,Mesenchymal,82.0,M1-SS,100.0,Col3a1 Inhba Sparc Col4a1
+PDAC,within,M1-Liver,all,light QC,4,0.0049751243781094,V1,197,E2F Targets,2.27,Myc Targets V1,2.1,cycling,97.0,Late-Hybrid,73.0,M1-Liver,100.0,Hmgb2 Birc5 Cenpa Selenoh
+PDAC,within,M1-Liver,all,light QC,4,0.0049751243781094,V2,197,Oxidative Phosphorylation,-0.88,E2F Targets,-0.96,no Hallmark set above 0.5 SD,42.0,Early-Hybrid,38.0,M1-Liver,100.0,Alb AY036118 Gm42418 Hp
+PDAC,within,M1-Liver,all,light QC,4,0.0049751243781094,V3,197,Estrogen Response Early,1.4,Adipogenesis,1.39,luminal / differentiation,0.0,Epithelial,100.0,M1-Liver,100.0,Dmbt1 Lgals4 Atp1b1 Fxyd3
+PDAC,within,M1-Liver,all,light QC,4,0.0049751243781094,V4,197,TGF-beta Signaling,1.27,TNF-alpha Signaling via NF-kB,0.99,TGF-β response,0.0,Early-Hybrid,54.0,M1-Liver,100.0,Gm26870 Fn1 Neat1 Malat1
+PDAC,within,M1-Liver,all,cleaned,4,0.0049751243781094,V1,177,Oxidative Phosphorylation,0.56,Reactive Oxygen Species Pathway,-0.1,metabolic,19.0,Early-Hybrid,41.0,M1-Liver,100.0,Lgals2 Lgals1 AY036118 AW112010
+PDAC,within,M1-Liver,all,cleaned,4,0.0049751243781094,V2,177,TGF-beta Signaling,1.43,Hedgehog Signaling,1.06,TGF-β response,0.0,Early-Hybrid,47.0,M1-Liver,100.0,Gm26870 Fn1 Neat1 Trf
+PDAC,within,M1-Liver,all,cleaned,4,0.0049751243781094,V3,177,E2F Targets,2.33,G2-M Checkpoint,2.17,cycling,98.0,Late-Hybrid,67.0,M1-Liver,100.0,Hmgb2 Birc5 Cenpa Selenoh
+PDAC,within,M1-Liver,all,cleaned,4,0.0049751243781094,V4,177,Estrogen Response Early,1.5,Estrogen Response Late,1.44,luminal / differentiation,0.0,Epithelial,100.0,M1-Liver,100.0,Dmbt1 Lgals4 Atp1b1 Ttr
+PDAC,within,M2-PT,all,light QC,4,0.0049751243781094,V1,200,Oxidative Phosphorylation,-0.26,Reactive Oxygen Species Pathway,-1.02,no Hallmark set above 0.5 SD,37.0,Epithelial,48.0,M2-PT,100.0,AY036118 Gm42418 Lgals2 Rplp1
+PDAC,within,M2-PT,all,light QC,4,0.0049751243781094,V2,200,Hypoxia,1.47,Hedgehog Signaling,1.25,hypoxia / glycolysis,4.0,Early-Hybrid,40.0,M2-PT,100.0,Malat1 Vegfa Ero1l Slc2a1
+PDAC,within,M2-PT,all,light QC,4,0.0049751243781094,V3,200,E2F Targets,2.29,Myc Targets V1,2.15,cycling,91.0,Early-Hybrid,46.0,M2-PT,100.0,Hmgb2 H2afz Birc5 Cenpa
+PDAC,within,M2-PT,all,light QC,4,0.0049751243781094,V4,200,Bile Acid Metabolism,1.68,Xenobiotic Metabolism,1.3,metabolic,0.0,Epithelial,100.0,M2-PT,100.0,Ttr 2210407C18Rik Sptssb Dmbt1
+PDAC,within,M2-Liver,all,light QC,4,0.0049751243781094,V1,200,Bile Acid Metabolism,1.69,Estrogen Response Early,1.57,metabolic,4.0,Epithelial,97.0,M2-Liver,100.0,2210407C18Rik Gsta4 Sptssb Dmbt1
+PDAC,within,M2-Liver,all,light QC,4,0.0049751243781094,V2,200,Bile Acid Metabolism,-0.83,Coagulation,-0.9,no Hallmark set above 0.5 SD,57.0,Epithelial,52.0,M2-Liver,100.0,Gm42418 AY036118 Saa1 Alb
+PDAC,within,M2-Liver,all,light QC,4,0.0049751243781094,V3,200,Hypoxia,1.24,Angiogenesis,1.04,hypoxia / glycolysis,2.0,Epithelial,68.0,M2-Liver,100.0,Malat1 Clu Sprr1a S100a4
+PDAC,within,M2-Liver,all,light QC,4,0.0049751243781094,V4,200,Myc Targets V1,1.53,Myc Targets V2,1.52,MYC / growth (translation),100.0,Early-Hybrid,49.0,M2-Liver,100.0,Hmgb2 AC160336.1 Birc5 Phgdh
+PDAC,within,M1,all,light QC,4,0.0049751243781094,V1,200,TGF-beta Signaling,1.2,UV Response Dn,1.08,TGF-β response,2.0,Late-Hybrid,50.0,M1-SS,42.0,Gm26870 Neat1 Malat1 Fn1
+PDAC,within,M1,all,light QC,4,0.0049751243781094,V2,200,Oxidative Phosphorylation,-0.68,Angiogenesis,-0.94,no Hallmark set above 0.5 SD,34.0,Early-Hybrid,40.0,M1-SS,34.0,Rplp1 Gm10076 Uba52 Rpsa
+PDAC,within,M1,all,light QC,4,0.0049751243781094,V3,200,Adipogenesis,1.45,Bile Acid Metabolism,1.33,Adipogenesis,6.0,Epithelial,99.0,M1-PT,30.0,Lgals4 Atp1b1 Dmbt1 Krt7
+PDAC,within,M1,all,light QC,4,0.0049751243781094,V4,200,E2F Targets,2.23,Myc Targets V1,2.03,cycling,82.0,Late-Hybrid,76.0,M1-Met,38.0,Hmgb2 Birc5 H2afz Selenoh
+PDAC,within,M1,all,cleaned,4,0.0049751243781094,V1,200,E2F Targets,2.39,Myc Targets V1,2.18,cycling,94.0,Late-Hybrid,73.0,M1-Met,34.0,Hmgb2 Birc5 H2afz Cenpa
+PDAC,within,M1,all,cleaned,4,0.0049751243781094,V2,200,Estrogen Response Early,1.38,Adipogenesis,1.31,luminal / differentiation,1.0,Epithelial,100.0,M1-PT,36.0,Lgals4 Atp1b1 Dmbt1 Fxyd3
+PDAC,within,M1,all,cleaned,4,0.0049751243781094,V3,200,TGF-beta Signaling,1.4,UV Response Dn,1.23,TGF-β response,0.0,Late-Hybrid,54.0,M1-SS,42.0,Gm26870 Neat1 Fn1 Trf
+PDAC,within,M1,all,cleaned,4,0.0049751243781094,V4,200,Oxidative Phosphorylation,0.15,Myc Targets V1,-0.57,no Hallmark set above 0.5 SD,30.0,Late-Hybrid,40.0,M1-SS,22.0,Lgals1 Tmsb10 Tmsb4x Rplp0
+PDAC,within,M1-PT,ks,light QC,4,0.0049751243781094,V1,200,KRAS Signaling Dn,1.34,Estrogen Response Early,1.31,KRAS-down (epithelial / differentiated),4.0,Epithelial,100.0,M1-PT,100.0,Epcam Fxyd3 Atp1b1 Krt7
+PDAC,within,M1-PT,ks,light QC,4,0.0049751243781094,V2,200,Epithelial Mesenchymal Transition,1.53,Allograft Rejection,1.16,EMT / matrix,8.0,Late-Hybrid,66.0,M1-PT,100.0,Cald1 Tuba1a Map1b Msn
+PDAC,within,M1-PT,ks,light QC,4,0.0049751243781094,V3,200,Hedgehog Signaling,-0.46,KRAS Signaling Dn,-0.56,no Hallmark set above 0.5 SD,14.0,Early-Hybrid,40.0,M1-PT,100.0,Sparc Fstl1 Myl9 Dennd5a
+PDAC,within,M1-PT,ks,light QC,4,0.0049751243781094,V4,200,Oxidative Phosphorylation,0.47,Myc Targets V1,0.45,no Hallmark set above 0.5 SD,48.0,Early-Hybrid,56.0,M1-PT,100.0,Krt7 Krt19 Lgals1 Krt8
+PDAC,within,M1-SS,ks,cleaned,4,0.0049751243781094,V1,120,Adipogenesis,1.54,Fatty Acid Metabolism,1.51,Adipogenesis,12.0,Epithelial,100.0,M1-SS,100.0,Fxyd3 Krt19 Atp1b1 Gpx2
+PDAC,within,M1-SS,ks,cleaned,4,0.0049751243781094,V2,120,Epithelial Mesenchymal Transition,1.76,Angiogenesis,1.7,EMT / matrix,10.0,Mesenchymal,88.0,M1-SS,100.0,Sparc Cald1 Lhfp Pmp22
+PDAC,within,M1-SS,ks,cleaned,4,0.0049751243781094,V3,120,Cholesterol Homeostasis,1.0,Myc Targets V1,0.98,metabolic,31.0,Late-Hybrid,61.0,M1-SS,100.0,Krt8 Krt18 Lgals1 Krt19
+PDAC,within,M1-SS,ks,cleaned,4,0.0049751243781094,V4,120,TGF-beta Signaling,1.3,TNF-alpha Signaling via NF-kB,0.95,TGF-β response,1.0,Late-Hybrid,63.0,M1-SS,100.0,Hes1 Serpine1 Cald1 Map1b
+PDAC,within,M1-SS,hallmark,light QC,3,0.0099502487562189,V1,141,Angiogenesis,1.72,Myogenesis,1.44,angiogenesis / matrix,1.0,Mesenchymal,72.0,M1-SS,100.0,Inhba Col3a1 Col4a1 Sparc
+PDAC,within,M1-SS,hallmark,light QC,3,0.0099502487562189,V2,141,Bile Acid Metabolism,1.06,Interferon Alpha Response,0.95,metabolic,2.0,Epithelial,93.0,M1-SS,100.0,Spp1 Id2 Tgm2 Gja1
+PDAC,within,M1-SS,hallmark,light QC,3,0.0099502487562189,V3,141,Oxidative Phosphorylation,0.51,Myc Targets V1,0.24,metabolic,49.0,Early-Hybrid,38.0,M1-SS,100.0,Lgals1 Capg Tpm2 Tpm4
+PDAC,within,M1-Met,all,cleaned,4,0.0099502487562189,V1,200,E2F Targets,2.23,G2-M Checkpoint,2.05,cycling,92.0,Late-Hybrid,69.0,M1-Met,100.0,Hmgb2 Birc5 Cenpa H2afz
+PDAC,within,M1-Met,all,cleaned,4,0.0099502487562189,V2,200,Bile Acid Metabolism,1.84,KRAS Signaling Dn,1.62,metabolic,1.0,Epithelial,95.0,M1-Met,100.0,Lgals4 Atp1b1 Gsta4 Ttr
+PDAC,within,M1-Met,all,cleaned,4,0.0099502487562189,V3,200,Oxidative Phosphorylation,0.42,Myc Targets V1,-0.31,no Hallmark set above 0.5 SD,37.0,Late-Hybrid,44.0,M1-Met,100.0,Lgals1 S100a6 S100a11 Tmsb4x
+PDAC,within,M1-Met,all,cleaned,4,0.0099502487562189,V4,200,TGF-beta Signaling,1.48,Hedgehog Signaling,1.4,TGF-β response,0.0,Late-Hybrid,55.0,M1-Met,100.0,Gm26870 Col6a1 Fn1 Id3
+PDAC,within,M2,hallmark,cleaned,4,0.0099502487562189,V1,137,Oxidative Phosphorylation,0.75,E2F Targets,0.19,metabolic,58.0,Epithelial,77.0,M2-Met,42.0,Fuca1 Mcm7 Capg Ppib
+PDAC,within,M2,hallmark,cleaned,4,0.0099502487562189,V2,137,IL-6/JAK/STAT3 Signaling,1.22,Inflammatory Response,1.1,IL-6/JAK/STAT3 Signaling,61.0,Early-Hybrid,39.0,M2-Liver,82.0,Cxcl1 Vcam1 Tnfaip3 Lgals1
+PDAC,within,M2,hallmark,cleaned,4,0.0099502487562189,V3,137,PI3K/AKT/mTOR  Signaling,0.92,Myc Targets V1,0.76,PI3K/AKT/mTOR  Signaling,66.0,Early-Hybrid,61.0,M2-Lung,39.0,Areg Tnfrsf12a Inhba Plaur
+PDAC,within,M2,hallmark,cleaned,4,0.0099502487562189,V4,137,Myogenesis,1.47,TGF-beta Signaling,1.46,muscle / matrix-like,2.0,Early-Hybrid,49.0,M2-PT,93.0,Fn1 Spp1 Fbln2 Pmepa1
+PDAC,within,M1-PT,all,cleaned,3,0.0199004975124378,V1,189,Oxidative Phosphorylation,1.02,Myc Targets V1,0.38,metabolic,49.0,Early-Hybrid,44.0,M1-PT,100.0,Lgals1 S100a6 Lgals2 Rplp0
+PDAC,within,M1-PT,all,cleaned,3,0.0199004975124378,V2,189,Epithelial Mesenchymal Transition,1.29,TGF-beta Signaling,1.29,EMT / matrix,2.0,Late-Hybrid,59.0,M1-PT,100.0,Inhba Gm26870 Trf Fbln2
+PDAC,within,M1-PT,all,cleaned,3,0.0199004975124378,V3,189,KRAS Signaling Dn,1.46,Estrogen Response Early,1.23,KRAS-down (epithelial / differentiated),1.0,Epithelial,97.0,M1-PT,100.0,Ttr Atp1b1 Dmbt1 Fos
+PDAC,within,M1-Met,all,light QC,4,0.0248756218905472,V1,200,TGF-beta Signaling,1.33,Epithelial Mesenchymal Transition,1.33,TGF-β response,0.0,Late-Hybrid,58.0,M1-Met,100.0,Gm26870 Fn1 Col6a1 Neat1
+PDAC,within,M1-Met,all,light QC,4,0.0248756218905472,V2,200,Oxidative Phosphorylation,-0.76,E2F Targets,-1.03,no Hallmark set above 0.5 SD,48.0,Early-Hybrid,38.0,M1-Met,100.0,Rplp0 Rpsa Rplp1 Lgals1
+PDAC,within,M1-Met,all,light QC,4,0.0248756218905472,V3,200,E2F Targets,2.15,G2-M Checkpoint,1.98,cycling,88.0,Late-Hybrid,68.0,M1-Met,100.0,Hmgb2 Birc5 Cenpa Selenoh
+PDAC,within,M1-Met,all,light QC,4,0.0248756218905472,V4,200,Bile Acid Metabolism,1.82,KRAS Signaling Dn,1.49,metabolic,2.0,Epithelial,95.0,M1-Met,100.0,Lgals4 Gsta4 Atp1b1 Ttr
+PDAC,within,M2,ks,cleaned,4,0.0248756218905472,V1,137,Estrogen Response Early,1.47,Estrogen Response Late,1.24,luminal / differentiation,13.0,Epithelial,100.0,M2-PT,69.0,Fxyd3 Epcam Krt19 Atp1b1
+PDAC,within,M2,ks,cleaned,4,0.0248756218905472,V2,137,Hedgehog Signaling,0.0,heme Metabolism,-0.01,no Hallmark set above 0.5 SD,35.0,Early-Hybrid,47.0,M2-PT,42.0,Cald1 Sparc Lcn2 Ank3
+PDAC,within,M2,ks,cleaned,4,0.0248756218905472,V3,137,Myc Targets V1,0.68,PI3K/AKT/mTOR  Signaling,0.59,MYC / growth (translation),72.0,Early-Hybrid,77.0,M2-Liver,47.0,Areg Tuba1a Lgals1 Tubb6
+PDAC,within,M2,ks,cleaned,4,0.0248756218905472,V4,137,Epithelial Mesenchymal Transition,1.67,Myogenesis,1.41,EMT / matrix,5.0,Early-Hybrid,51.0,M2-PT,81.0,Cald1 Camk2n1 Sparc Msn
+PDAC,within,M2-Liver,hallmark,light QC,4,0.0248756218905472,V1,200,Myc Targets V1,0.69,Myc Targets V2,0.63,MYC / growth (translation),93.0,Early-Hybrid,62.0,M2-Liver,100.0,Lgals1 Areg Mcm7 Tpm4
+PDAC,within,M2-Liver,hallmark,light QC,4,0.0248756218905472,V2,200,Coagulation,1.31,Myogenesis,1.21,coagulation / matrix-like,28.0,Early-Hybrid,38.0,M2-Liver,100.0,Fbln2 Fn1 Basp1 Pmepa1
+PDAC,within,M2-Liver,hallmark,light QC,4,0.0248756218905472,V3,200,KRAS Signaling Dn,0.66,Interferon Alpha Response,0.65,KRAS-down (epithelial / differentiated),16.0,Epithelial,91.0,M2-Liver,100.0,Fn1 Vegfa Jun Spp1
+PDAC,within,M2-Liver,hallmark,light QC,4,0.0248756218905472,V4,200,IL-6/JAK/STAT3 Signaling,1.39,TNF-alpha Signaling via NF-kB,1.11,IL-6/JAK/STAT3 Signaling,72.0,Late-Hybrid,43.0,M2-Liver,100.0,Cxcl1 Cald1 Igfbp4 Prrx1
+PDAC,within,M2-PT,hallmark,cleaned,4,0.0298507462686567,V1,200,Oxidative Phosphorylation,1.09,Myc Targets V1,1.05,metabolic,67.0,Epithelial,55.0,M2-PT,100.0,Lgals1 Capg Tpm2 Tpm4
+PDAC,within,M2-PT,hallmark,cleaned,4,0.0298507462686567,V2,200,KRAS Signaling Dn,1.01,Bile Acid Metabolism,0.86,KRAS-down (epithelial / differentiated),2.0,Epithelial,92.0,M2-PT,100.0,Jun Tgm2 Pdlim4 Sat1
+PDAC,within,M2-PT,hallmark,cleaned,4,0.0298507462686567,V3,200,Hypoxia,1.67,Glycolysis,1.08,hypoxia / glycolysis,8.0,Early-Hybrid,41.0,M2-PT,100.0,Vegfa Serpine1 Igfbp3 Fbln2
+PDAC,within,M2-PT,hallmark,cleaned,4,0.0298507462686567,V4,200,Angiogenesis,1.11,Coagulation,1.02,angiogenesis / matrix,4.0,Early-Hybrid,48.0,M2-PT,100.0,Fn1 Spp1 Fbln2 Cald1
+PDAC,within,M2-PT,hallmark,light QC,4,0.0348258706467661,V1,200,KRAS Signaling Dn,0.79,TNF-alpha Signaling via NF-kB,0.55,KRAS-down (epithelial / differentiated),4.0,Epithelial,85.0,M2-PT,100.0,Jun Sat1 Vegfa Tgm2
+PDAC,within,M2-PT,hallmark,light QC,4,0.0348258706467661,V2,200,Hypoxia,1.61,Hedgehog Signaling,1.09,hypoxia / glycolysis,10.0,Early-Hybrid,40.0,M2-PT,100.0,Vegfa Serpine1 Igfbp3 Fbln2
+PDAC,within,M2-PT,hallmark,light QC,4,0.0348258706467661,V3,200,Oxidative Phosphorylation,0.33,Myc Targets V1,0.19,cycling,62.0,Epithelial,56.0,M2-PT,100.0,Lgals1 Capg Tpm2 Ppib
+PDAC,within,M2-PT,hallmark,light QC,4,0.0348258706467661,V4,200,Angiogenesis,1.23,Myogenesis,1.04,angiogenesis / matrix,4.0,Early-Hybrid,44.0,M2-PT,100.0,Fn1 Spp1 Fbln2 Cald1
+PDAC,pooled,pooled (in vivo),all,cleaned,4,0.0396039603960396,V1,1870,Estrogen Response Early,1.69,KRAS Signaling Dn,1.63,luminal / differentiation,0.0,Epithelial,98.0,M1-PT,35.0,Ttr Atp1b1 Lgals4 Gsta4
+PDAC,pooled,pooled (in vivo),all,cleaned,4,0.0396039603960396,V2,1870,E2F Targets,1.91,Myc Targets V2,1.81,cycling,100.0,Early-Hybrid,59.0,M2-Liver,45.0,Hmgb2 H2afz Birc5 Cenpa
+PDAC,pooled,pooled (in vivo),all,cleaned,4,0.0396039603960396,V3,1870,Epithelial Mesenchymal Transition,1.88,TGF-beta Signaling,1.72,EMT / matrix,1.0,Late-Hybrid,60.0,M1-Met,41.0,Trf Gm26870 Fn1 Inhba
+PDAC,pooled,pooled (in vivo),all,cleaned,4,0.0396039603960396,V4,1870,Angiogenesis,0.13,Hypoxia,-0.06,no Hallmark set above 0.5 SD,12.0,Early-Hybrid,51.0,M2-Met,70.0,Sprr1a S100a4 Ly6a Bsg
+PDAC,within,M2-Met,ks,cleaned,4,0.0398009950248756,V1,200,Epithelial Mesenchymal Transition,1.1,Allograft Rejection,0.76,EMT / matrix,44.0,Early-Hybrid,59.0,M2-Met,100.0,Cald1 Sparc Emp3 Msn
+PDAC,within,M2-Met,ks,cleaned,4,0.0398009950248756,V2,200,Bile Acid Metabolism,1.11,Interferon Alpha Response,1.1,metabolic,10.0,Epithelial,96.0,M2-Met,100.0,Fxyd3 Atp1b1 Camk2n1 Tspan13
+PDAC,within,M2-Met,ks,cleaned,4,0.0398009950248756,V3,200,Myc Targets V1,1.16,E2F Targets,1.11,MYC / growth (translation),89.0,Late-Hybrid,52.0,M2-Met,100.0,Areg Tubb6 Lgals1 Tuba1a
+PDAC,within,M2-Met,ks,cleaned,4,0.0398009950248756,V4,200,Estrogen Response Early,0.62,Estrogen Response Late,0.47,luminal / differentiation,34.0,Epithelial,63.0,M2-Met,100.0,Krt19 Krt7 Krt8 Areg
+PDAC,within,M1-Met,hallmark,cleaned,4,0.044776119402985,V1,200,TGF-beta Signaling,1.3,Myogenesis,1.22,TGF-β response,2.0,Mesenchymal,52.0,M1-Met,100.0,Inhba Fn1 Col6a2 Sparc
+PDAC,within,M1-Met,hallmark,cleaned,4,0.044776119402985,V2,200,Myc Targets V1,1.56,Myc Targets V2,1.42,MYC / growth (translation),62.0,Late-Hybrid,71.0,M1-Met,100.0,Igfbp3 Lgals1 Areg Tnfrsf12a
+PDAC,within,M1-Met,hallmark,cleaned,4,0.044776119402985,V3,200,Angiogenesis,1.1,KRAS Signaling Up,0.76,angiogenesis / matrix,1.0,Late-Hybrid,63.0,M1-Met,100.0,Spp1 Cdh6 Ecm1 Fn1
+PDAC,within,M1-Met,hallmark,cleaned,4,0.044776119402985,V4,200,KRAS Signaling Dn,1.47,Bile Acid Metabolism,1.4,KRAS-down (epithelial / differentiated),6.0,Epithelial,92.0,M1-Met,100.0,Tgm2 Sat1 Qsox1 Fuca1
+PDAC,within,M2,all,light QC,4,0.0497512437810945,V1,163,Hypoxia,1.23,Hedgehog Signaling,1.12,hypoxia / glycolysis,7.0,Epithelial,38.0,M2-Met,42.0,Malat1 Vegfa Ndrg1 Ero1l
+PDAC,within,M2,all,light QC,4,0.0497512437810945,V2,163,Oxidative Phosphorylation,-0.23,Pancreas Beta Cells,-0.76,no Hallmark set above 0.5 SD,53.0,Early-Hybrid,51.0,M2-PT,56.0,AY036118 Gm42418 Lgals2 Rpsa
+PDAC,within,M2,all,light QC,4,0.0497512437810945,V3,163,Bile Acid Metabolism,1.59,Xenobiotic Metabolism,1.54,metabolic,0.0,Epithelial,91.0,M2-PT,86.0,Gsta4 2210407C18Rik Sptssb Ttr
+PDAC,within,M2,all,light QC,4,0.0497512437810945,V4,163,E2F Targets,1.78,Myc Targets V1,1.67,cycling,100.0,Early-Hybrid,64.0,M2-Liver,72.0,Hmgb2 H2afz Cks1b Birc5
+PDAC,within,M2-Met,all,light QC,3,0.0646766169154228,V1,200,Hypoxia,1.46,Hedgehog Signaling,1.19,hypoxia / glycolysis,14.0,Epithelial,43.0,M2-Met,100.0,Malat1 Ndrg1 Vegfa Ero1l
+PDAC,within,M2-Met,all,light QC,3,0.0646766169154228,V2,200,Myc Targets V2,1.7,Myc Targets V1,1.68,MYC / growth (translation),100.0,Early-Hybrid,59.0,M2-Met,100.0,Hmgb2 Phgdh Birc5 Cks1b
+PDAC,within,M2-Met,all,light QC,3,0.0646766169154228,V3,200,Bile Acid Metabolism,0.98,Interferon Alpha Response,0.91,metabolic,7.0,Epithelial,91.0,M2-Met,100.0,Fxyd3 Gsta4 Lgals4 Sptssb
+PDAC,within,M2-Liver,ks,light QC,4,0.0796019900497512,V1,200,Estrogen Response Early,1.4,Bile Acid Metabolism,1.29,luminal / differentiation,9.0,Epithelial,100.0,M2-Liver,100.0,Fxyd3 Atp1b1 Elf3 Krt19
+PDAC,within,M2-Liver,ks,light QC,4,0.0796019900497512,V2,200,heme Metabolism,-0.14,E2F Targets,-0.34,no Hallmark set above 0.5 SD,54.0,Epithelial,46.0,M2-Liver,100.0,Lcn2 Sparc Pycard Gja1
+PDAC,within,M2-Liver,ks,light QC,4,0.0796019900497512,V3,200,DNA Repair,0.39,Myc Targets V1,0.37,cycling,72.0,Early-Hybrid,70.0,M2-Liver,100.0,Areg Krt7 Krt19 Krt18
+PDAC,within,M2-Liver,ks,light QC,4,0.0796019900497512,V4,200,Epithelial Mesenchymal Transition,1.7,Interferon Gamma Response,0.92,EMT / matrix,76.0,Late-Hybrid,64.0,M2-Liver,100.0,Cald1 Sparc Tubb6 Tuba1a
+PDAC,pooled,pooled (in vivo),all,light QC,5,0.0796019900497512,V1,2214,Bile Acid Metabolism,1.52,Estrogen Response Early,1.41,metabolic,1.0,Epithelial,98.0,M2-PT,35.0,Lgals4 Gsta4 Sptssb 2210407C18Rik
+PDAC,pooled,pooled (in vivo),all,light QC,5,0.0796019900497512,V2,2214,Hedgehog Signaling,1.13,UV Response Dn,1.07,Hedgehog Signaling,5.0,Early-Hybrid,34.0,M1-PT,30.0,Malat1 Neat1 Fn1 Gm26870
+PDAC,pooled,pooled (in vivo),all,light QC,5,0.0796019900497512,V3,2214,E2F Targets,1.75,Myc Targets V1,1.6,cycling,100.0,Early-Hybrid,67.0,M2-Met,63.0,Hmgb2 H2afz Sprr1a AC160336.1
+PDAC,pooled,pooled (in vivo),all,light QC,5,0.0796019900497512,V4,2214,Epithelial Mesenchymal Transition,1.66,Allograft Rejection,1.3,EMT / matrix,4.0,Late-Hybrid,65.0,M1-Met,51.0,Trf Fbln2 Gm26870 Inhba
+PDAC,pooled,pooled (in vivo),all,light QC,5,0.0796019900497512,V5,2214,Oxidative Phosphorylation,-0.62,E2F Targets,-0.97,no Hallmark set above 0.5 SD,42.0,Early-Hybrid,41.0,M2-PT,20.0,AY036118 Gm42418 Tpt1 Rack1
+PDAC,within,M2-Met,hallmark,light QC,3,0.0845771144278607,V1,200,Coagulation,1.59,Myogenesis,1.32,coagulation / matrix-like,14.0,Early-Hybrid,52.0,M2-Met,100.0,Fn1 Fbln2 Ecm1 Spp1
+PDAC,within,M2-Met,hallmark,light QC,3,0.0845771144278607,V2,200,Myc Targets V1,1.21,Myc Targets V2,1.16,MYC / growth (translation),88.0,Early-Hybrid,64.0,M2-Met,100.0,Areg Tnfrsf12a Lgals1 Mcm7
+PDAC,within,M2-Met,hallmark,light QC,3,0.0845771144278607,V3,200,KRAS Signaling Dn,0.45,Interferon Alpha Response,0.34,no Hallmark set above 0.5 SD,9.0,Epithelial,85.0,M2-Met,100.0,Vegfa Fn1 Lrp1 Id2
+PDAC,within,M2,hallmark,light QC,3,0.1243781094527363,V1,163,Bile Acid Metabolism,-0.25,Interferon Alpha Response,-0.27,no Hallmark set above 0.5 SD,45.0,Epithelial,78.0,M2-Met,36.0,Fuca1 Anpep Serpine2 Mylk
+PDAC,within,M2,hallmark,light QC,3,0.1243781094527363,V2,163,Myogenesis,1.47,TGF-beta Signaling,1.44,muscle / matrix-like,2.0,Early-Hybrid,48.0,M2-PT,90.0,Fn1 Fbln2 Spp1 Pmepa1
+PDAC,within,M2,hallmark,light QC,3,0.1243781094527363,V3,163,Myc Targets V1,0.84,PI3K/AKT/mTOR  Signaling,0.82,MYC / growth (translation),69.0,Early-Hybrid,56.0,M2-Liver,57.0,Areg Cxcl1 Inhba Tnfrsf12a
+PDAC,pooled,pooled (in vivo),hallmark,light QC,3,0.1287128712871287,V1,2214,TGF-beta Signaling,1.56,Myogenesis,1.51,TGF-β response,3.0,Late-Hybrid,57.0,M1-Met,44.0,Fn1 Inhba Fbln2 Cald1
+PDAC,pooled,pooled (in vivo),hallmark,light QC,3,0.1287128712871287,V2,2214,KRAS Signaling Dn,0.74,Bile Acid Metabolism,0.55,KRAS-down (epithelial / differentiated),6.0,Epithelial,89.0,M2-Met,33.0,Spp1 Fn1 Vegfa Id2
+PDAC,pooled,pooled (in vivo),hallmark,light QC,3,0.1287128712871287,V3,2214,Myc Targets V1,0.82,E2F Targets,0.74,MYC / growth (translation),80.0,Early-Hybrid,54.0,M2-Met,38.0,Lgals1 Areg Capg Tpm4
+PDAC,within,M1-PT,ks,cleaned,4,0.154228855721393,V1,189,Estrogen Response Early,1.49,Estrogen Response Late,1.46,luminal / differentiation,2.0,Epithelial,100.0,M1-PT,100.0,Epcam Fxyd3 Atp1b1 Sfn
+PDAC,within,M1-PT,ks,cleaned,4,0.154228855721393,V2,189,Epithelial Mesenchymal Transition,1.16,TGF-beta Signaling,0.8,EMT / matrix,2.0,Late-Hybrid,46.0,M1-PT,100.0,Cald1 Sparc Sdc1 Map1b
+PDAC,within,M1-PT,ks,cleaned,4,0.154228855721393,V3,189,Oxidative Phosphorylation,1.18,DNA Repair,0.56,metabolic,36.0,Epithelial,66.0,M1-PT,100.0,Krt7 Fxyd3 Krt19 Lgals1
+PDAC,within,M1-PT,ks,cleaned,4,0.154228855721393,V4,189,Glycolysis,1.21,Epithelial Mesenchymal Transition,0.87,hypoxia / glycolysis,18.0,Late-Hybrid,72.0,M1-PT,100.0,Areg Vim Tuba1a Lgals1
+PDAC,within,M2-Liver,hallmark,cleaned,3,0.1641791044776119,V1,200,Coagulation,1.55,Myogenesis,1.27,coagulation / matrix-like,6.0,Epithelial,56.0,M2-Liver,100.0,Fn1 Spp1 Fbln2 Vegfa
+PDAC,within,M2-Liver,hallmark,cleaned,3,0.1641791044776119,V2,200,IL-6/JAK/STAT3 Signaling,0.95,TNF-alpha Signaling via NF-kB,0.78,IL-6/JAK/STAT3 Signaling,80.0,Early-Hybrid,42.0,M2-Liver,100.0,Cxcl1 Areg Timp1 Cald1
+PDAC,within,M2-Liver,hallmark,cleaned,3,0.1641791044776119,V3,200,Oxidative Phosphorylation,0.58,heme Metabolism,0.41,metabolic,59.0,Epithelial,76.0,M2-Liver,100.0,Mcm7 Fuca1 Pfn2 Ppib
+PDAC,within,M1-Liver,hallmark,light QC,3,0.2039800995024875,V1,197,Angiogenesis,1.19,KRAS Signaling Up,1.08,angiogenesis / matrix,3.0,Late-Hybrid,62.0,M1-Liver,100.0,Inhba Spp1 Fbln2 Fn1
+PDAC,within,M1-Liver,hallmark,light QC,3,0.2039800995024875,V2,197,Myc Targets V1,0.79,E2F Targets,0.69,MYC / growth (translation),70.0,Late-Hybrid,45.0,M1-Liver,100.0,Lgals1 Capg Vim Tpm4
+PDAC,within,M1-Liver,hallmark,light QC,3,0.2039800995024875,V3,197,Bile Acid Metabolism,0.88,KRAS Signaling Dn,0.88,metabolic,2.0,Epithelial,96.0,M1-Liver,100.0,Id2 Vegfa Tgm2 Sat1
+PDAC,within,M1-Met,hallmark,light QC,3,0.2039800995024875,V1,200,Angiogenesis,1.28,Myogenesis,1.17,angiogenesis / matrix,2.0,Late-Hybrid,59.0,M1-Met,100.0,Fn1 Inhba Spp1 Fbln2
+PDAC,within,M1-Met,hallmark,light QC,3,0.2039800995024875,V2,200,Myc Targets V1,1.39,Myc Targets V2,1.23,MYC / growth (translation),57.0,Late-Hybrid,60.0,M1-Met,100.0,Igfbp3 Lgals1 Inhba Areg
+PDAC,within,M1-Met,hallmark,light QC,3,0.2039800995024875,V3,200,KRAS Signaling Dn,0.19,Interferon Alpha Response,0.14,no Hallmark set above 0.5 SD,28.0,Epithelial,72.0,M1-Met,100.0,Spp1 Tgm2 Fuca1 Mylk
+PDAC,pooled,pooled (in vivo),hallmark,cleaned,3,0.2079207920792079,V1,1870,Myc Targets V1,1.04,E2F Targets,0.99,MYC / growth (translation),82.0,Early-Hybrid,54.0,M2-Met,45.0,Areg Lgals1 Mcm7 Capg
+PDAC,pooled,pooled (in vivo),hallmark,cleaned,3,0.2079207920792079,V2,1870,KRAS Signaling Dn,1.13,heme Metabolism,1.07,KRAS-down (epithelial / differentiated),1.0,Epithelial,87.0,M1-PT,28.0,Fn1 Spp1 Jun Tgm2
+PDAC,pooled,pooled (in vivo),hallmark,cleaned,3,0.2079207920792079,V3,1870,TGF-beta Signaling,1.56,Myogenesis,1.55,TGF-β response,4.0,Late-Hybrid,57.0,M1-Met,49.0,Inhba Fn1 Fbln2 Cald1
+PDAC,within,M1,hallmark,light QC,3,0.2338308457711442,V1,200,Angiogenesis,1.35,Myogenesis,1.2,angiogenesis / matrix,4.0,Late-Hybrid,50.0,M1-SS,36.0,Inhba Fn1 Fbln2 Sparc
+PDAC,within,M1,hallmark,light QC,3,0.2338308457711442,V2,200,Myc Targets V1,0.12,E2F Targets,0.1,cycling,60.0,Late-Hybrid,40.0,M1-CTC,22.0,Lgals1 Tpm4 Tpm2 Capg
+PDAC,within,M1,hallmark,light QC,3,0.2338308457711442,V3,200,KRAS Signaling Dn,1.06,Bile Acid Metabolism,0.78,KRAS-down (epithelial / differentiated),2.0,Epithelial,94.0,M1-PT,42.0,Spp1 Jun Tgm2 Id2
+PDAC,within,M1-Met,ks,light QC,4,0.3432835820895522,V1,200,Myc Targets V2,-0.64,E2F Targets,-0.71,no Hallmark set above 0.5 SD,32.0,Early-Hybrid,39.0,M1-Met,100.0,Fstl1 Slpi Arhgdib Myl9
+PDAC,within,M1-Met,ks,light QC,4,0.3432835820895522,V2,200,Estrogen Response Early,1.24,Estrogen Response Late,1.21,luminal / differentiation,10.0,Epithelial,98.0,M1-Met,100.0,Krt7 Krt19 Atp1b1 Fxyd3
+PDAC,within,M1-Met,ks,light QC,4,0.3432835820895522,V3,200,Epithelial Mesenchymal Transition,1.43,TGF-beta Signaling,1.28,EMT / matrix,1.0,Late-Hybrid,56.0,M1-Met,100.0,Hes1 Sdc1 Sparc Cald1
+PDAC,within,M1-Met,ks,light QC,4,0.3432835820895522,V4,200,Myc Targets V1,0.92,E2F Targets,0.81,MYC / growth (translation),54.0,Late-Hybrid,74.0,M1-Met,100.0,Areg Krt19 Tuba1a Krt8
+PDAC,within,M2,ks,light QC,4,0.36318407960199,V1,163,Myc Targets V1,0.68,Myc Targets V2,0.49,MYC / growth (translation),69.0,Early-Hybrid,72.0,M2-Liver,50.0,Areg Lgals1 Krt7 Krt8
+PDAC,within,M2,ks,light QC,4,0.36318407960199,V2,163,Hedgehog Signaling,0.01,KRAS Signaling Dn,-0.33,no Hallmark set above 0.5 SD,29.0,Epithelial,39.0,M2-PT,39.0,Sparc Lcn2 Cald1 Zeb1
+PDAC,within,M2,ks,light QC,4,0.36318407960199,V3,163,Estrogen Response Early,1.33,Estrogen Response Late,1.1,luminal / differentiation,12.0,Epithelial,100.0,M2-PT,70.0,Fxyd3 Epcam Krt19 Atp1b1
+PDAC,within,M2,ks,light QC,4,0.36318407960199,V4,163,Epithelial Mesenchymal Transition,1.62,Myogenesis,1.16,EMT / matrix,18.0,Early-Hybrid,50.0,M2-PT,70.0,Cald1 Tuba1a Sparc Msn
+PDAC,within,M1-Liver,hallmark,cleaned,4,0.4427860696517413,V1,177,Angiogenesis,0.92,Myogenesis,0.73,angiogenesis / matrix,3.0,Late-Hybrid,50.0,M1-Liver,100.0,Spp1 Fbln2 Fn1 Ecm1
+PDAC,within,M1-Liver,hallmark,cleaned,4,0.4427860696517413,V2,177,Myc Targets V1,1.64,E2F Targets,1.49,MYC / growth (translation),70.0,Late-Hybrid,62.0,M1-Liver,100.0,Lgals1 Igfbp3 Dpysl3 Mcm7
+PDAC,within,M1-Liver,hallmark,cleaned,4,0.4427860696517413,V3,177,Adipogenesis,1.19,Estrogen Response Early,0.98,Adipogenesis,6.0,Epithelial,97.0,M1-Liver,100.0,Qsox1 Sat1 Plaur Fuca1
+PDAC,within,M1-Liver,hallmark,cleaned,4,0.4427860696517413,V4,177,IL-6/JAK/STAT3 Signaling,1.57,TNF-alpha Signaling via NF-kB,1.43,IL-6/JAK/STAT3 Signaling,1.0,Early-Hybrid,49.0,M1-Liver,100.0,Cxcl1 Vcam1 Fn1 Spp1
+PDAC,within,M1-SS,ks,light QC,4,0.4477611940298507,V1,141,TGF-beta Signaling,1.27,Epithelial Mesenchymal Transition,1.15,TGF-β response,1.0,Late-Hybrid,57.0,M1-SS,100.0,Hes1 Serpine1 Cald1 Sparc
+PDAC,within,M1-SS,ks,light QC,4,0.4477611940298507,V2,141,Adipogenesis,1.37,Fatty Acid Metabolism,1.33,Adipogenesis,9.0,Epithelial,100.0,M1-SS,100.0,Atp1b1 Fxyd3 Krt19 Gpx2
+PDAC,within,M1-SS,ks,light QC,4,0.4477611940298507,V3,141,Angiogenesis,-0.37,Epithelial Mesenchymal Transition,-0.47,no Hallmark set above 0.5 SD,19.0,Late-Hybrid,46.0,M1-SS,100.0,Cald1 Sparc Lgals1 Map1b
+PDAC,within,M1-SS,ks,light QC,4,0.4477611940298507,V4,141,Myc Targets V1,0.68,Oxidative Phosphorylation,0.63,MYC / growth (translation),47.0,Early-Hybrid,52.0,M1-SS,100.0,Krt8 Krt19 Lgals1 Krt18
+PDAC,within,M1,hallmark,cleaned,3,0.4925373134328358,V1,200,KRAS Signaling Dn,1.24,Bile Acid Metabolism,1.09,KRAS-down (epithelial / differentiated),0.0,Epithelial,98.0,M1-PT,42.0,Spp1 Tgm2 Jun Id2
+PDAC,within,M1,hallmark,cleaned,3,0.4925373134328358,V2,200,Myc Targets V1,0.75,E2F Targets,0.67,MYC / growth (translation),52.0,Late-Hybrid,49.0,M1-CTC,24.0,Lgals1 Tpm4 Dpysl3 Mcm7
+PDAC,within,M1,hallmark,cleaned,3,0.4925373134328358,V3,200,Angiogenesis,1.38,Myogenesis,1.23,angiogenesis / matrix,3.0,Late-Hybrid,50.0,M1-SS,36.0,Inhba Fn1 Fbln2 Sparc
+PDAC,within,M2-Met,hallmark,cleaned,3,0.5373134328358209,V1,200,Adipogenesis,0.74,Interferon Alpha Response,0.67,Adipogenesis,44.0,Epithelial,82.0,M2-Met,100.0,Fuca1 Jun Lrp1 Il15
+PDAC,within,M2-Met,hallmark,cleaned,3,0.5373134328358209,V2,200,Myc Targets V1,1.02,Myc Targets V2,0.96,MYC / growth (translation),86.0,Early-Hybrid,53.0,M2-Met,100.0,Areg Cxcl1 Tnfrsf12a Inhba
+PDAC,within,M2-Met,hallmark,cleaned,3,0.5373134328358209,V3,200,Coagulation,1.54,Myogenesis,1.19,coagulation / matrix-like,10.0,Early-Hybrid,49.0,M2-Met,100.0,Fn1 Fbln2 Ecm1 Spp1
+PDAC,within,M1-Met,ks,cleaned,4,0.5970149253731343,V1,200,Epithelial Mesenchymal Transition,1.35,TGF-beta Signaling,1.31,EMT / matrix,0.0,Late-Hybrid,52.0,M1-Met,100.0,Sparc Sdc1 Hes1 Cald1
+PDAC,within,M1-Met,ks,cleaned,4,0.5970149253731343,V2,200,Estrogen Response Early,1.45,Estrogen Response Late,1.43,luminal / differentiation,10.0,Epithelial,98.0,M1-Met,100.0,Krt7 Krt19 Atp1b1 Fxyd3
+PDAC,within,M1-Met,ks,cleaned,4,0.5970149253731343,V3,200,Cholesterol Homeostasis,0.87,mTORC1 Signaling,0.73,metabolic,38.0,Late-Hybrid,71.0,M1-Met,100.0,Krt19 Krt8 Areg Krt18
+PDAC,within,M1-Met,ks,cleaned,4,0.5970149253731343,V4,200,Myc Targets V1,0.82,E2F Targets,0.81,MYC / growth (translation),59.0,Late-Hybrid,52.0,M1-Met,100.0,Lgals1 Tubb6 Axl Lhfp
+PDAC,within,M2-PT,ks,cleaned,3,0.6218905472636815,V1,200,Epithelial Mesenchymal Transition,1.2,Myogenesis,0.55,EMT / matrix,8.0,Late-Hybrid,44.0,M2-PT,100.0,Cald1 Tuba1a Sparc Msn
+PDAC,within,M2-PT,ks,cleaned,3,0.6218905472636815,V2,200,Estrogen Response Early,0.88,Adipogenesis,0.84,luminal / differentiation,9.0,Epithelial,100.0,M2-PT,100.0,Epcam Fxyd3 Atp1b1 Elf3
+PDAC,within,M2-PT,ks,cleaned,3,0.6218905472636815,V3,200,Myc Targets V1,0.71,mTORC1 Signaling,0.71,MYC / growth (translation),40.0,Epithelial,60.0,M2-PT,100.0,Areg Krt7 Krt19 Krt8
+PDAC,within,M1-PT,hallmark,cleaned,4,0.6417910447761194,V1,189,Angiogenesis,1.01,Myogenesis,0.63,angiogenesis / matrix,1.0,Late-Hybrid,48.0,M1-PT,100.0,Spp1 Fbln2 Ecm1 Fn1
+PDAC,within,M1-PT,hallmark,cleaned,4,0.6417910447761194,V2,189,KRAS Signaling Dn,1.12,UV Response Up,0.81,KRAS-down (epithelial / differentiated),1.0,Epithelial,84.0,M1-PT,100.0,Jun Id2 Tgm2 Gadd45b
+PDAC,within,M1-PT,hallmark,cleaned,4,0.6417910447761194,V3,189,Glycolysis,1.24,Hypoxia,1.04,hypoxia / glycolysis,6.0,Late-Hybrid,60.0,M1-PT,100.0,Inhba Igfbp3 Fbln2 Cd44
+PDAC,within,M1-PT,hallmark,cleaned,4,0.6417910447761194,V4,189,Oxidative Phosphorylation,1.19,Myc Targets V1,0.54,metabolic,49.0,Epithelial,50.0,M1-PT,100.0,Lgals1 Capg Ppib Tpm2
+PDAC,within,M1-PT,hallmark,light QC,4,0.7263681592039801,V1,200,KRAS Signaling Dn,1.05,TNF-alpha Signaling via NF-kB,0.73,KRAS-down (epithelial / differentiated),3.0,Epithelial,84.0,M1-PT,100.0,Jun Id2 Sat1 Tgm2
+PDAC,within,M1-PT,hallmark,light QC,4,0.7263681592039801,V2,200,Angiogenesis,1.1,KRAS Signaling Up,0.72,angiogenesis / matrix,1.0,Late-Hybrid,48.0,M1-PT,100.0,Spp1 Fbln2 Fn1 Ecm1
+PDAC,within,M1-PT,hallmark,light QC,4,0.7263681592039801,V3,200,Oxidative Phosphorylation,0.4,Myc Targets V1,-0.24,no Hallmark set above 0.5 SD,51.0,Early-Hybrid,44.0,M1-PT,100.0,Lgals1 Capg Tpm4 Vim
+PDAC,within,M1-PT,hallmark,light QC,4,0.7263681592039801,V4,200,Glycolysis,1.26,Allograft Rejection,1.05,hypoxia / glycolysis,8.0,Late-Hybrid,60.0,M1-PT,100.0,Inhba Igfbp3 Fbln2 Cd44
+PDAC,within,M2-Liver,ks,cleaned,4,0.746268656716418,V1,200,Bile Acid Metabolism,1.57,Estrogen Response Early,1.43,metabolic,6.0,Epithelial,100.0,M2-Liver,100.0,Fxyd3 Atp1b1 Elf3 Tmprss2
+PDAC,within,M2-Liver,ks,cleaned,4,0.746268656716418,V2,200,Epithelial Mesenchymal Transition,1.87,Interferon Gamma Response,1.05,EMT / matrix,74.0,Late-Hybrid,66.0,M2-Liver,100.0,Cald1 Sparc Tubb6 Gja1
+PDAC,within,M2-Liver,ks,cleaned,4,0.746268656716418,V3,200,Estrogen Response Early,0.78,Estrogen Response Late,0.7,luminal / differentiation,61.0,Early-Hybrid,50.0,M2-Liver,100.0,Krt19 Il1rn Areg Krt8
+PDAC,within,M2-Liver,ks,cleaned,4,0.746268656716418,V4,200,Myc Targets V1,0.81,E2F Targets,0.76,MYC / growth (translation),89.0,Early-Hybrid,65.0,M2-Liver,100.0,Lgals1 Krt7 Areg Krt18
+PDAC,within,M2-Met,ks,light QC,3,0.9253731343283582,V1,200,Hedgehog Signaling,0.38,UV Response Dn,0.17,no Hallmark set above 0.5 SD,28.0,Early-Hybrid,46.0,M2-Met,100.0,Klf5 Gja1 Serpine1 Camk2n1
+PDAC,within,M2-Met,ks,light QC,3,0.9253731343283582,V2,200,Myc Targets V1,0.81,DNA Repair,0.68,MYC / growth (translation),76.0,Early-Hybrid,70.0,M2-Met,100.0,Areg Lgals1 Tuba1a Tubb6
+PDAC,within,M2-Met,ks,light QC,3,0.9253731343283582,V3,200,Estrogen Response Early,1.15,Bile Acid Metabolism,0.91,luminal / differentiation,16.0,Epithelial,100.0,M2-Met,100.0,Fxyd3 Atp1b1 Krt19 Tspan13
+PDAC,pooled,pooled (in vivo),ks,cleaned,4,0.9306930693069309,V1,1870,DNA Repair,0.44,Oxidative Phosphorylation,0.38,no Hallmark set above 0.5 SD,54.0,Early-Hybrid,59.0,M2-Met,54.0,Krt19 Krt7 Areg Krt8
+PDAC,pooled,pooled (in vivo),ks,cleaned,4,0.9306930693069309,V2,1870,Epithelial Mesenchymal Transition,1.76,TGF-beta Signaling,1.33,EMT / matrix,9.0,Late-Hybrid,66.0,M1-Met,55.0,Cald1 Vim Map1b Sparc
+PDAC,pooled,pooled (in vivo),ks,cleaned,4,0.9306930693069309,V3,1870,Estrogen Response Early,1.49,Estrogen Response Late,1.33,luminal / differentiation,8.0,Epithelial,100.0,M2-PT,26.0,Fxyd3 Atp1b1 Epcam Krt19
+PDAC,pooled,pooled (in vivo),ks,cleaned,4,0.9306930693069309,V4,1870,Epithelial Mesenchymal Transition,0.73,TGF-beta Signaling,0.6,EMT / matrix,11.0,Late-Hybrid,39.0,M1-SS,34.0,Sparc Cald1 Map1b Serpine1
+PDAC,within,M1-Liver,ks,light QC,4,0.945273631840796,V1,197,E2F Targets,-0.15,Myc Targets V2,-0.22,no Hallmark set above 0.5 SD,27.0,Late-Hybrid,46.0,M1-Liver,100.0,Sparc Cald1 Slpi Lcn2
+PDAC,within,M1-Liver,ks,light QC,4,0.945273631840796,V2,197,Estrogen Response Early,1.28,Estrogen Response Late,1.25,luminal / differentiation,9.0,Epithelial,100.0,M1-Liver,100.0,Atp1b1 Krt7 Fxyd3 Krt19
+PDAC,within,M1-Liver,ks,light QC,4,0.945273631840796,V3,197,TGF-beta Signaling,1.11,Complement,0.96,TGF-β response,1.0,Early-Hybrid,60.0,M1-Liver,100.0,Ppl Msn Arhgef5 Map1b
+PDAC,within,M1-Liver,ks,light QC,4,0.945273631840796,V4,197,Myc Targets V1,0.85,mTORC1 Signaling,0.79,MYC / growth (translation),53.0,Late-Hybrid,59.0,M1-Liver,100.0,Krt19 Lgals1 Krt8 Tuba1a
+PDAC,pooled,pooled (in vivo),ks,light QC,4,0.9701492537313432,V1,2214,Estrogen Response Early,1.41,Estrogen Response Late,1.25,luminal / differentiation,9.0,Epithelial,100.0,M2-PT,27.0,Fxyd3 Atp1b1 Epcam Krt19
+PDAC,pooled,pooled (in vivo),ks,light QC,4,0.9701492537313432,V2,2214,Hedgehog Signaling,0.02,Wnt-beta Catenin Signaling,-0.11,no Hallmark set above 0.5 SD,18.0,Early-Hybrid,34.0,M1-SS,26.0,Sparc Cald1 Lcn2 Serpine1
+PDAC,pooled,pooled (in vivo),ks,light QC,4,0.9701492537313432,V3,2214,DNA Repair,0.54,Myc Targets V1,0.52,DNA Repair,66.0,Early-Hybrid,68.0,M2-Met,57.0,Areg Krt19 Krt7 Lgals1
+PDAC,pooled,pooled (in vivo),ks,light QC,4,0.9701492537313432,V4,2214,Epithelial Mesenchymal Transition,1.78,TGF-beta Signaling,1.33,EMT / matrix,10.0,Late-Hybrid,64.0,M1-Met,54.0,Cald1 Vim Map1b Sparc
+PDAC,within,M1-Liver,ks,cleaned,4,0.9701492537313432,V1,177,Estrogen Response Early,1.33,KRAS Signaling Dn,1.21,luminal / differentiation,1.0,Epithelial,100.0,M1-Liver,100.0,Atp1b1 Fxyd3 Krt7 Elf3
+PDAC,within,M1-Liver,ks,cleaned,4,0.9701492537313432,V2,177,Hedgehog Signaling,0.7,Epithelial Mesenchymal Transition,0.69,Hedgehog Signaling,5.0,Late-Hybrid,51.0,M1-Liver,100.0,Sparc Cald1 Lcn2 Glyr1
+PDAC,within,M1-Liver,ks,cleaned,4,0.9701492537313432,V3,177,Oxidative Phosphorylation,1.12,Estrogen Response Late,0.86,metabolic,40.0,Epithelial,94.0,M1-Liver,100.0,Krt7 Krt19 Fxyd3 Atp1b1
+PDAC,within,M1-Liver,ks,cleaned,4,0.9701492537313432,V4,177,Glycolysis,0.65,Myc Targets V1,0.57,hypoxia / glycolysis,36.0,Late-Hybrid,73.0,M1-Liver,100.0,Tuba1a Lgals1 Krt19 Vim
+PDAC,within,M1,ks,cleaned,4,0.9850746268656716,V1,200,TGF-beta Signaling,1.18,Epithelial Mesenchymal Transition,1.03,TGF-β response,1.0,Late-Hybrid,58.0,M1-Met,36.0,Hes1 Cald1 Sdc1 Map1b
+PDAC,within,M1,ks,cleaned,4,0.9850746268656716,V2,200,Estrogen Response Early,1.43,Estrogen Response Late,1.38,luminal / differentiation,8.0,Epithelial,100.0,M1-PT,30.0,Krt7 Fxyd3 Atp1b1 Krt19
+PDAC,within,M1,ks,cleaned,4,0.9850746268656716,V3,200,Epithelial Mesenchymal Transition,1.13,Angiogenesis,0.85,EMT / matrix,8.0,Mesenchymal,58.0,M1-SS,66.0,Sparc Cald1 Serpine1 Lhfp
+PDAC,within,M1,ks,cleaned,4,0.9850746268656716,V4,200,mTORC1 Signaling,1.07,Myc Targets V1,1.01,mTORC1 Signaling,48.0,Late-Hybrid,59.0,M1-Liver,35.0,Krt19 Krt8 Lgals1 Tuba1a
+PDAC,within,M2-PT,ks,light QC,3,0.9900497512437813,V1,200,Epithelial Mesenchymal Transition,0.88,Angiogenesis,0.44,EMT / matrix,11.0,Late-Hybrid,44.0,M2-PT,100.0,Cald1 Sparc Tuba1a Msn
+PDAC,within,M2-PT,ks,light QC,3,0.9900497512437813,V2,200,Estrogen Response Early,0.91,Adipogenesis,0.82,luminal / differentiation,7.0,Epithelial,100.0,M2-PT,100.0,Epcam Fxyd3 Atp1b1 Elf3
+PDAC,within,M2-PT,ks,light QC,3,0.9900497512437813,V3,200,Myc Targets V1,0.68,mTORC1 Signaling,0.52,MYC / growth (translation),40.0,Epithelial,55.0,M2-PT,100.0,Krt7 Krt19 Areg Krt8
+PDAC,within,M1,ks,light QC,3,1.0,V1,200,Estrogen Response Early,1.26,Estrogen Response Late,1.23,luminal / differentiation,8.0,Epithelial,100.0,M1-PT,29.0,Krt7 Atp1b1 Fxyd3 Krt19
+PDAC,within,M1,ks,light QC,3,1.0,V2,200,Myc Targets V1,0.59,mTORC1 Signaling,0.51,MYC / growth (translation),46.0,Late-Hybrid,50.0,M1-Liver,30.0,Krt19 Krt8 Lgals1 Tuba1a
+PDAC,within,M1,ks,light QC,3,1.0,V3,200,Epithelial Mesenchymal Transition,1.28,Angiogenesis,0.91,EMT / matrix,3.0,Mesenchymal,54.0,M1-SS,64.0,Sparc Cald1 Serpine1 Sdc1
+T4,pooled,pooled (6 clones),all,light QC,4,0.0049751243781094,V1,997,Hedgehog Signaling,0.17,Mitotic Spindle,-0.16,no Hallmark set above 0.5 SD,17.0,Epithelial,61.0,E,37.0,Vmp1 Arglu1 Cldn4 Apoe
+T4,pooled,pooled (6 clones),all,light QC,4,0.0049751243781094,V2,997,KRAS Signaling Dn,-0.88,Interferon Alpha Response,-1.05,no Hallmark set above 0.5 SD,31.0,Epithelial,64.0,4T1,32.0,Apoe Fos Cldn4 S100a8
+T4,pooled,pooled (6 clones),all,light QC,4,0.0049751243781094,V3,997,TGF-beta Signaling,1.31,UV Response Dn,1.12,TGF-β response,2.0,Mesenchymal,54.0,M,99.0,Ctla2a Fosb Mgp Cp
+T4,pooled,pooled (6 clones),all,light QC,4,0.0049751243781094,V4,997,E2F Targets,1.84,G2-M Checkpoint,1.69,cycling,89.0,Late-Hybrid,35.0,4T1,43.0,S100a4 Top2a Hist1h1e Stmn1
+T4,within,EM1,ks,light QC,4,0.0049751243781094,V1,146,Myc Targets V2,-0.81,E2F Targets,-0.88,no Hallmark set above 0.5 SD,26.0,Epithelial,53.0,EM1,100.0,Rabgap1l Ssh3 Glyr1 Il1rn
+T4,within,EM1,ks,light QC,4,0.0049751243781094,V2,146,TGF-beta Signaling,0.44,Apical Junction,0.39,no Hallmark set above 0.5 SD,8.0,Epithelial,66.0,EM1,100.0,Cldn4 Epcam Jup Dsp
+T4,within,EM1,ks,light QC,4,0.0049751243781094,V3,146,Cholesterol Homeostasis,0.83,Unfolded Protein Response,0.81,metabolic,35.0,Early-Hybrid,34.0,EM1,100.0,Areg Slpi Sfn Klf5
+T4,within,EM1,ks,light QC,4,0.0049751243781094,V4,146,Hypoxia,0.64,Coagulation,0.54,hypoxia / glycolysis,14.0,Late-Hybrid,27.0,EM1,100.0,Slpi Lcn2 Atp1b1 Sparc
+T4,within,EM1,hallmark,light QC,4,0.0049751243781094,V1,146,E2F Targets,-0.5,KRAS Signaling Dn,-0.57,no Hallmark set above 0.5 SD,33.0,Epithelial,58.0,EM1,100.0,Jun Col1a2 Tagln Gadd45b
+T4,within,EM1,hallmark,light QC,4,0.0049751243781094,V2,146,Angiogenesis,1.12,Inflammatory Response,0.93,angiogenesis / matrix,21.0,Early-Hybrid,31.0,EM1,100.0,Areg Pthlh Inhba Vegfa
+T4,within,EM1,hallmark,light QC,4,0.0049751243781094,V3,146,Hypoxia,1.14,TNF-alpha Signaling via NF-kB,0.99,hypoxia / glycolysis,28.0,Late-Hybrid,29.0,EM1,100.0,Ccn1 Thbs1 Bgn Eln
+T4,within,EM1,hallmark,light QC,4,0.0049751243781094,V4,146,Complement,0.67,IL-6/JAK/STAT3 Signaling,0.64,Complement,1.0,Epithelial,40.0,EM1,100.0,Mgp Serpine2 Crlf1 Mmp3
+T4,pooled,pooled (6 clones),all,cleaned,3,0.0099502487562189,V1,663,E2F Targets,2.19,G2-M Checkpoint,2.07,cycling,98.0,Late-Hybrid,32.0,4T1,51.0,Top2a Hist1h1e Hist1h2ap Mki67
+T4,pooled,pooled (6 clones),all,cleaned,3,0.0099502487562189,V2,663,KRAS Signaling Up,0.73,Complement,0.64,KRAS-up (squamous / differentiation),1.0,Epithelial,34.0,4T1,56.0,Csf3 Plet1 Cxcl1 Ptgs2
+T4,pooled,pooled (6 clones),all,cleaned,3,0.0099502487562189,V3,663,TGF-beta Signaling,1.63,UV Response Dn,1.37,TGF-β response,3.0,Mesenchymal,48.0,M,90.0,Ctla2a Fosb Mgp Ccn1
+T4,within,E,all,light QC,3,0.0099502487562189,V1,40,Interferon Alpha Response,-0.81,TNF-alpha Signaling via NF-kB,-1.04,no Hallmark set above 0.5 SD,30.0,Epithelial,92.0,E,100.0,S100a8 Fos H2-Aa Arg1
+T4,within,E,all,light QC,3,0.0099502487562189,V2,40,Oxidative Phosphorylation,1.43,Fatty Acid Metabolism,1.33,metabolic,28.0,Epithelial,100.0,E,100.0,Atf3 Fos Fosb Jun
+T4,within,E,all,light QC,3,0.0099502487562189,V3,40,Mitotic Spindle,0.83,Spermatogenesis,0.74,cycling,8.0,Epithelial,100.0,E,100.0,Csf3 Itga2 Clcf1 Spaca6
+T4,within,M,all,light QC,4,0.0099502487562189,V1,200,E2F Targets,2.1,Myc Targets V1,2.06,cycling,96.0,Mesenchymal,54.0,M,100.0,S100a4 Top2a Odc1 Sec11c
+T4,within,M,all,light QC,4,0.0099502487562189,V2,200,KRAS Signaling Dn,-0.65,TNF-alpha Signaling via NF-kB,-0.66,no Hallmark set above 0.5 SD,14.0,Epithelial,30.0,M,100.0,Fos Jun Atf3 S100a8
+T4,within,M,all,light QC,4,0.0099502487562189,V3,200,Epithelial Mesenchymal Transition,0.92,TGF-beta Signaling,0.87,EMT / matrix,0.0,Mesenchymal,60.0,M,100.0,Ctla2a Ccn4 Atp1b1 Thbs1
+T4,within,M,all,light QC,4,0.0099502487562189,V4,200,Bile Acid Metabolism,0.93,Apical Junction,0.65,metabolic,24.0,Mesenchymal,45.0,M,100.0,Fos Spry1 Gadd45a Nupr1
+T4,within,4T1,all,light QC,4,0.0099502487562189,V1,200,E2F Targets,2.27,G2-M Checkpoint,2.06,cycling,97.0,Late-Hybrid,30.0,4T1,100.0,Top2a Hist1h1e Mki67 Cdk1
+T4,within,4T1,all,light QC,4,0.0099502487562189,V2,200,Angiogenesis,-0.96,KRAS Signaling Dn,-1.18,no Hallmark set above 0.5 SD,42.0,Epithelial,50.0,4T1,100.0,Apoe Col1a1 Lyz2 Col3a1
+T4,within,4T1,all,light QC,4,0.0099502487562189,V3,200,UV Response Dn,0.68,TGF-beta Signaling,0.63,UV Response Dn,2.0,Epithelial,40.0,4T1,100.0,Lcn2 Cp Fn1 Spp1
+T4,within,4T1,all,light QC,4,0.0099502487562189,V4,200,Angiogenesis,1.02,KRAS Signaling Up,0.79,angiogenesis / matrix,6.0,Late-Hybrid,34.0,4T1,100.0,Csf3 Procr Lif Dmp1
+T4,within,EM2,ks,cleaned,3,0.0149253731343283,V1,136,Estrogen Response Late,0.9,p53 Pathway,0.75,luminal / differentiation,74.0,Early-Hybrid,38.0,EM2,100.0,Sfn Tubb6 Epcam Rab11fip1
+T4,within,EM2,ks,cleaned,3,0.0149253731343283,V2,136,Coagulation,0.71,heme Metabolism,0.58,coagulation / matrix-like,4.0,Early-Hybrid,35.0,EM2,100.0,Lcn2 Jup Serpine1 Etv1
+T4,within,EM2,ks,cleaned,3,0.0149253731343283,V3,136,Unfolded Protein Response,0.78,Interferon Gamma Response,0.61,Unfolded Protein Response,50.0,Early-Hybrid,46.0,EM2,100.0,Slpi Areg Rbm47 Tgfa
+T4,within,E,hallmark,light QC,3,0.0149253731343283,V1,40,KRAS Signaling Dn,0.5,IL-6/JAK/STAT3 Signaling,-0.21,KRAS-down (epithelial / differentiated),18.0,Epithelial,98.0,E,100.0,Sdc4 Pdlim4 Timp3 Itgav
+T4,within,E,hallmark,light QC,3,0.0149253731343283,V2,40,p53 Pathway,1.18,Hypoxia,1.09,p53 / stress,15.0,Epithelial,98.0,E,100.0,Jun Gadd45a Rhob Spp1
+T4,within,E,hallmark,light QC,3,0.0149253731343283,V3,40,Angiogenesis,1.31,KRAS Signaling Up,0.98,angiogenesis / matrix,15.0,Epithelial,100.0,E,100.0,Inhba Lama3 Areg Vegfa
+T4,pooled,pooled (6 clones),hallmark,light QC,4,0.0198019801980198,V1,997,Fatty Acid Metabolism,0.67,Glycolysis,0.63,Fatty Acid Metabolism,37.0,Late-Hybrid,33.0,4T1,41.0,Areg Cxcl1 Pthlh Plaur
+T4,pooled,pooled (6 clones),hallmark,light QC,4,0.0198019801980198,V2,997,KRAS Signaling Dn,-0.32,E2F Targets,-0.43,no Hallmark set above 0.5 SD,34.0,Epithelial,67.0,4T1,32.0,Jun Rhob Gadd45b Col1a1
+T4,pooled,pooled (6 clones),hallmark,light QC,4,0.0198019801980198,V3,997,Myogenesis,1.16,UV Response Dn,1.12,muscle / matrix-like,8.0,Mesenchymal,42.0,M,60.0,Mgp Ccn1 Thbs1 Ccn2
+T4,pooled,pooled (6 clones),hallmark,light QC,4,0.0198019801980198,V4,997,KRAS Signaling Up,0.49,Hedgehog Signaling,0.47,no Hallmark set above 0.5 SD,14.0,Epithelial,70.0,4T1,49.0,Lamc2 Inhba Sdc1 Cxcl1
+T4,pooled,pooled (6 clones),ks,cleaned,4,0.0298507462686567,V1,663,TGF-beta Signaling,0.92,Hypoxia,0.82,TGF-β response,10.0,Mesenchymal,40.0,M,55.0,Lcn2 Slpi Atp1b1 Sparc
+T4,pooled,pooled (6 clones),ks,cleaned,4,0.0298507462686567,V2,663,Apical Junction,0.98,p53 Pathway,0.93,epithelial junction,28.0,Epithelial,89.0,4T1,67.0,Cldn4 Epcam Cdh1 Jup
+T4,pooled,pooled (6 clones),ks,cleaned,4,0.0298507462686567,V3,663,Angiogenesis,0.47,Inflammatory Response,0.4,no Hallmark set above 0.5 SD,34.0,Late-Hybrid,36.0,4T1,40.0,Areg Slpi Sfn Pmp22
+T4,pooled,pooled (6 clones),ks,cleaned,4,0.0298507462686567,V4,663,Myc Targets V1,0.74,E2F Targets,0.71,MYC / growth (translation),60.0,Mesenchymal,64.0,M,75.0,Axl Hes1 Vim Tubb6
+T4,within,4T1,all,cleaned,4,0.0597014925373134,V1,200,Fatty Acid Metabolism,1.29,Oxidative Phosphorylation,1.23,Fatty Acid Metabolism,76.0,Early-Hybrid,36.0,4T1,100.0,Procr S100a4 Odc1 Nabp1
+T4,within,4T1,all,cleaned,4,0.0597014925373134,V2,200,E2F Targets,1.9,G2-M Checkpoint,1.67,cycling,93.0,Epithelial,36.0,4T1,100.0,Fos Atf3 Top2a Jun
+T4,within,4T1,all,cleaned,4,0.0597014925373134,V3,200,IL-6/JAK/STAT3 Signaling,0.89,Interferon Gamma Response,0.84,IL-6/JAK/STAT3 Signaling,1.0,Late-Hybrid,27.0,4T1,100.0,Lcn2 Slpi Cp Spp1
+T4,within,4T1,all,cleaned,4,0.0597014925373134,V4,200,Myogenesis,0.86,TGF-beta Signaling,0.77,muscle / matrix-like,2.0,Epithelial,46.0,4T1,100.0,Cldn4 Jup Epcam Plet1
+T4,within,4T1,ks,cleaned,4,0.0597014925373134,V1,200,IL-6/JAK/STAT3 Signaling,0.59,Pancreas Beta Cells,0.44,IL-6/JAK/STAT3 Signaling,5.0,Early-Hybrid,34.0,4T1,100.0,Slpi Lcn2 Etv1 Gja1
+T4,within,4T1,ks,cleaned,4,0.0597014925373134,V2,200,Apical Junction,1.28,Apoptosis,1.01,epithelial junction,27.0,Epithelial,96.0,4T1,100.0,Cldn4 Epcam Cdh1 Jup
+T4,within,4T1,ks,cleaned,4,0.0597014925373134,V3,200,E2F Targets,0.58,DNA Repair,0.58,cycling,45.0,Late-Hybrid,37.0,4T1,100.0,Hes1 Sh2b3 Tob1 Vim
+T4,within,4T1,ks,cleaned,4,0.0597014925373134,V4,200,Fatty Acid Metabolism,0.99,Oxidative Phosphorylation,0.9,Fatty Acid Metabolism,67.0,Late-Hybrid,40.0,4T1,100.0,Sfn Areg Pmp22 Tubb6
+T4,within,EM3,ks,light QC,4,0.0746268656716417,V1,100,PI3K/AKT/mTOR  Signaling,0.78,Myc Targets V1,0.76,PI3K/AKT/mTOR  Signaling,46.0,Mesenchymal,53.0,EM3,100.0,Sfn Areg Krt18 Krt8
+T4,within,EM3,ks,light QC,4,0.0746268656716417,V2,100,KRAS Signaling Up,0.69,heme Metabolism,0.55,KRAS-up (squamous / differentiation),5.0,Mesenchymal,60.0,EM3,100.0,Lcn2 Slpi Areg Klf5
+T4,within,EM3,ks,light QC,4,0.0746268656716417,V3,100,Bile Acid Metabolism,0.84,Interferon Alpha Response,0.79,metabolic,17.0,Mesenchymal,38.0,EM3,100.0,Slpi Sparc Hes1 Epha1
+T4,within,EM3,ks,light QC,4,0.0746268656716417,V4,100,KRAS Signaling Dn,-0.42,Hedgehog Signaling,-0.48,no Hallmark set above 0.5 SD,22.0,Mesenchymal,33.0,EM3,100.0,Il1rn Glyr1 Lcn2 Rabgap1l
+T4,pooled,pooled (6 clones),hallmark,cleaned,4,0.1188118811881188,V1,663,E2F Targets,1.2,G2-M Checkpoint,1.03,cycling,81.0,Mesenchymal,29.0,M,41.0,Jun Mcm7 Rhob Gadd45b
+T4,pooled,pooled (6 clones),hallmark,cleaned,4,0.1188118811881188,V2,663,UV Response Dn,0.63,TGF-beta Signaling,0.61,UV Response Dn,7.0,Mesenchymal,39.0,M,42.0,Serpine2 Mgp Gadd45a Spp1
+T4,pooled,pooled (6 clones),hallmark,cleaned,4,0.1188118811881188,V3,663,Inflammatory Response,0.7,Angiogenesis,0.68,inflammatory / stress response,21.0,Early-Hybrid,31.0,4T1,64.0,Areg Cxcl1 Inhba Pthlh
+T4,pooled,pooled (6 clones),hallmark,cleaned,4,0.1188118811881188,V4,663,Myogenesis,1.31,UV Response Dn,1.16,muscle / matrix-like,15.0,Mesenchymal,35.0,EM1,64.0,Ccn1 Mgp Thbs1 Col6a2
+T4,within,EM3,hallmark,cleaned,3,0.1243781094527363,V1,76,Hypoxia,1.39,Apoptosis,0.95,hypoxia / glycolysis,9.0,Mesenchymal,53.0,EM3,100.0,Jun Ccn1 Gadd45a Rhob
+T4,within,EM3,hallmark,cleaned,3,0.1243781094527363,V2,76,Myc Targets V1,1.05,PI3K/AKT/mTOR  Signaling,0.81,MYC / growth (translation),51.0,Mesenchymal,47.0,EM3,100.0,Pthlh Lgals1 Vim Itga2
+T4,within,EM3,hallmark,cleaned,3,0.1243781094527363,V3,76,KRAS Signaling Up,1.23,Angiogenesis,1.21,KRAS-up (squamous / differentiation),7.0,Mesenchymal,55.0,EM3,100.0,Inhba Areg Cxcl1 Spp1
+T4,within,EM3,hallmark,light QC,3,0.1343283582089552,V1,100,Hypoxia,1.13,Apoptosis,0.83,hypoxia / glycolysis,15.0,Mesenchymal,47.0,EM3,100.0,Jun Ccn1 Gadd45a Rhob
+T4,within,EM3,hallmark,light QC,3,0.1343283582089552,V2,100,KRAS Signaling Up,1.24,Angiogenesis,1.17,KRAS-up (squamous / differentiation),14.0,Mesenchymal,56.0,EM3,100.0,Inhba Cxcl1 Areg Spp1
+T4,within,EM3,hallmark,light QC,3,0.1343283582089552,V3,100,E2F Targets,-0.29,Myc Targets V2,-0.34,no Hallmark set above 0.5 SD,41.0,Mesenchymal,26.0,EM3,100.0,Col3a1 Sat1 Tagln Postn
+T4,within,EM2,hallmark,cleaned,4,0.1393034825870646,V1,136,Inflammatory Response,0.89,KRAS Signaling Up,0.76,inflammatory / stress response,64.0,Early-Hybrid,43.0,EM2,100.0,Cxcl1 Areg Inhba Pthlh
+T4,within,EM2,hallmark,cleaned,4,0.1393034825870646,V2,136,Apoptosis,1.66,TNF-alpha Signaling via NF-kB,1.62,Apoptosis,74.0,Early-Hybrid,35.0,EM2,100.0,Jun Ccn1 Gadd45b Gadd45a
+T4,within,EM2,hallmark,cleaned,4,0.1393034825870646,V3,136,Coagulation,1.05,Complement,0.73,coagulation / matrix-like,3.0,Early-Hybrid,38.0,EM2,100.0,Serpine2 Crlf1 Spp1 Fn1
+T4,within,EM2,hallmark,cleaned,4,0.1393034825870646,V4,136,Myc Targets V1,1.03,G2-M Checkpoint,1.0,MYC / growth (translation),77.0,Early-Hybrid,36.0,EM2,100.0,Col4a1 Col4a2 Mcm7 Wipf1
+T4,within,M,ks,cleaned,3,0.1641791044776119,V1,167,Epithelial Mesenchymal Transition,1.1,TGF-beta Signaling,1.02,EMT / matrix,2.0,Mesenchymal,61.0,M,100.0,Lcn2 Atp1b1 Serpine1 Sparc
+T4,within,M,ks,cleaned,3,0.1641791044776119,V2,167,Myc Targets V1,1.3,E2F Targets,1.13,MYC / growth (translation),80.0,Mesenchymal,50.0,M,100.0,Krt8 Krt18 Krt7 Lgals1
+T4,within,M,ks,cleaned,3,0.1641791044776119,V3,167,Fatty Acid Metabolism,0.46,Unfolded Protein Response,0.38,no Hallmark set above 0.5 SD,29.0,Mesenchymal,38.0,M,100.0,Slpi Areg Sdc1 Rbm47
+T4,within,M,ks,light QC,4,0.1741293532338308,V1,200,Fatty Acid Metabolism,0.39,Unfolded Protein Response,0.38,no Hallmark set above 0.5 SD,18.0,Mesenchymal,39.0,M,100.0,Slpi Areg Cd9 Lgals1
+T4,within,M,ks,light QC,4,0.1741293532338308,V2,200,E2F Targets,0.55,Notch Signaling,0.52,cycling,58.0,Mesenchymal,30.0,M,100.0,Krt8 Cldn4 Krt18 Hes1
+T4,within,M,ks,light QC,4,0.1741293532338308,V3,200,Hypoxia,0.53,Epithelial Mesenchymal Transition,0.43,hypoxia / glycolysis,2.0,Mesenchymal,50.0,M,100.0,Lcn2 Atp1b1 Serpine1 Tob1
+T4,within,M,ks,light QC,4,0.1741293532338308,V4,200,Myc Targets V1,1.14,E2F Targets,0.97,MYC / growth (translation),64.0,Mesenchymal,50.0,M,100.0,Areg Klf5 Tubb6 Lgals1
+T4,pooled,pooled (6 clones),ks,light QC,5,0.1741293532338308,V1,997,KRAS Signaling Dn,-0.55,Myc Targets V2,-0.74,no Hallmark set above 0.5 SD,23.0,Epithelial,41.0,M,28.0,Il1rn Rabgap1l Glyr1 Hes1
+T4,pooled,pooled (6 clones),ks,light QC,5,0.1741293532338308,V2,997,E2F Targets,0.79,G2-M Checkpoint,0.68,cycling,60.0,Mesenchymal,40.0,M,49.0,Lgals1 Vim Krt8 Krt18
+T4,pooled,pooled (6 clones),ks,light QC,5,0.1741293532338308,V3,997,Inflammatory Response,0.54,Fatty Acid Metabolism,0.54,inflammatory / stress response,32.0,Late-Hybrid,36.0,4T1,40.0,Areg Slpi Sfn Gja1
+T4,pooled,pooled (6 clones),ks,light QC,5,0.1741293532338308,V4,997,Apical Junction,0.58,p53 Pathway,0.41,epithelial junction,17.0,Epithelial,98.0,E,59.0,Cldn4 Epcam Cdh1 Jup
+T4,pooled,pooled (6 clones),ks,light QC,5,0.1741293532338308,V5,997,Hypoxia,0.59,TGF-beta Signaling,0.58,hypoxia / glycolysis,9.0,Late-Hybrid,29.0,M,43.0,Lcn2 Slpi Atp1b1 Sparc
+T4,within,4T1,ks,light QC,4,0.1990049751243781,V1,200,Pancreas Beta Cells,0.57,IL-6/JAK/STAT3 Signaling,0.56,Pancreas Beta Cells,6.0,Late-Hybrid,34.0,4T1,100.0,Slpi Lcn2 Gja1 Areg
+T4,within,4T1,ks,light QC,4,0.1990049751243781,V2,200,Fatty Acid Metabolism,0.86,Myc Targets V1,0.8,Fatty Acid Metabolism,58.0,Late-Hybrid,42.0,4T1,100.0,Sfn Areg Tubb6 Krt18
+T4,within,4T1,ks,light QC,4,0.1990049751243781,V3,200,E2F Targets,-0.61,KRAS Signaling Dn,-0.77,no Hallmark set above 0.5 SD,34.0,Epithelial,42.0,4T1,100.0,Il1rn Hes1 Tpm2 Col5a2
+T4,within,4T1,ks,light QC,4,0.1990049751243781,V4,200,Apoptosis,0.78,Apical Junction,0.75,Apoptosis,24.0,Epithelial,97.0,4T1,100.0,Cldn4 Epcam Jup Cdh1
+T4,within,EM2,hallmark,light QC,3,0.208955223880597,V1,170,Inflammatory Response,0.82,KRAS Signaling Up,0.73,inflammatory / stress response,64.0,Early-Hybrid,38.0,EM2,100.0,Cxcl1 Areg Pthlh Inhba
+T4,within,EM2,hallmark,light QC,3,0.208955223880597,V2,170,Coagulation,0.97,Myogenesis,0.66,coagulation / matrix-like,2.0,Early-Hybrid,39.0,EM2,100.0,Serpine2 Crlf1 Spp1 Fn1
+T4,within,EM2,hallmark,light QC,3,0.208955223880597,V3,170,KRAS Signaling Dn,0.42,TNF-alpha Signaling via NF-kB,0.02,no Hallmark set above 0.5 SD,55.0,Epithelial,55.0,EM2,100.0,Jun Ccn1 Gadd45b Rhob
+T4,within,EM1,ks,cleaned,4,0.2189054726368159,V1,69,Myc Targets V1,1.6,Oxidative Phosphorylation,1.09,MYC / growth (translation),65.0,Mesenchymal,42.0,EM1,100.0,Areg Tubb6 Sfn Lgals1
+T4,within,EM1,ks,cleaned,4,0.2189054726368159,V2,69,Apical Junction,0.83,p53 Pathway,0.65,epithelial junction,17.0,Epithelial,59.0,EM1,100.0,Cldn4 Epcam Krt7 Jup
+T4,within,EM1,ks,cleaned,4,0.2189054726368159,V3,69,Hypoxia,0.75,UV Response Dn,0.53,hypoxia / glycolysis,23.0,Mesenchymal,30.0,EM1,100.0,Lcn2 Atp1b1 Sparc Hes1
+T4,within,EM1,ks,cleaned,4,0.2189054726368159,V4,69,KRAS Signaling Up,0.6,Angiogenesis,0.57,KRAS-up (squamous / differentiation),23.0,Early-Hybrid,38.0,EM1,100.0,Areg Slpi Sdc1 Klf5
+T4,within,EM2,ks,light QC,3,0.2786069651741293,V1,170,KRAS Signaling Dn,0.58,p53 Pathway,0.52,KRAS-down (epithelial / differentiated),48.0,Epithelial,56.0,EM2,100.0,Sfn Epcam Cldn4 Krt19
+T4,within,EM2,ks,light QC,3,0.2786069651741293,V2,170,Unfolded Protein Response,0.79,Myc Targets V2,0.66,Unfolded Protein Response,55.0,Early-Hybrid,39.0,EM2,100.0,Slpi Areg Lgals1 Xbp1
+T4,within,EM2,ks,light QC,3,0.2786069651741293,V3,170,KRAS Signaling Dn,-0.48,Hedgehog Signaling,-0.67,no Hallmark set above 0.5 SD,17.0,Epithelial,39.0,EM2,100.0,Lcn2 Glyr1 Ppl Rabgap1l
+T4,within,E,ks,light QC,3,0.3482587064676617,V1,40,KRAS Signaling Dn,0.81,Estrogen Response Early,0.8,KRAS-down (epithelial / differentiated),5.0,Epithelial,100.0,E,100.0,Krt19 Elf3 Krt8 Krt18
+T4,within,E,ks,light QC,3,0.3482587064676617,V2,40,Epithelial Mesenchymal Transition,1.03,Angiogenesis,0.94,EMT / matrix,30.0,Epithelial,100.0,E,100.0,Slpi Vim Gja1 Sdc1
+T4,within,E,ks,light QC,3,0.3482587064676617,V3,40,E2F Targets,-0.52,Myc Targets V2,-0.71,no Hallmark set above 0.5 SD,28.0,Epithelial,88.0,E,100.0,Sparc Mxra7 Chn1 Myo5c
+T4,within,M,hallmark,cleaned,4,0.3980099502487562,V1,167,Angiogenesis,0.56,Unfolded Protein Response,0.56,angiogenesis / matrix,41.0,Mesenchymal,47.0,M,100.0,Areg Inhba Cxcl1 Vegfa
+T4,within,M,hallmark,cleaned,4,0.3980099502487562,V2,167,UV Response Dn,1.45,Myogenesis,1.3,UV Response Dn,6.0,Mesenchymal,63.0,M,100.0,Ccn2 Ccn1 Mgp Thbs1
+T4,within,M,hallmark,cleaned,4,0.3980099502487562,V3,167,Myc Targets V1,1.26,E2F Targets,1.21,MYC / growth (translation),82.0,Mesenchymal,44.0,M,100.0,Jun Lgals1 Vim Mcm7
+T4,within,M,hallmark,cleaned,4,0.3980099502487562,V4,167,Hypoxia,0.82,IL-6/JAK/STAT3 Signaling,0.75,hypoxia / glycolysis,7.0,Mesenchymal,49.0,M,100.0,Mgp Serpine2 Spp1 Jun
+T4,within,EM3,all,cleaned,4,0.4029850746268656,V1,76,Interferon Alpha Response,0.96,Interferon Gamma Response,0.73,interferon response,3.0,Mesenchymal,51.0,EM3,100.0,Lcn2 Cp Spp1 Igfbp7
+T4,within,EM3,all,cleaned,4,0.4029850746268656,V2,76,E2F Targets,2.28,G2-M Checkpoint,2.02,cycling,93.0,Mesenchymal,57.0,EM3,100.0,H1f0 Stmn1 Ccnd1 Top2a
+T4,within,EM3,all,cleaned,4,0.4029850746268656,V3,76,Inflammatory Response,0.55,Hedgehog Signaling,0.52,inflammatory / stress response,5.0,Mesenchymal,57.0,EM3,100.0,Areg Plet1 Sfn Ptgs2
+T4,within,EM3,all,cleaned,4,0.4029850746268656,V4,76,Hypoxia,1.71,p53 Pathway,1.53,hypoxia / glycolysis,24.0,Mesenchymal,51.0,EM3,100.0,Fos Atf3 Jun Fosb
+T4,within,EM1,hallmark,cleaned,4,0.4029850746268656,V1,69,Hypoxia,1.33,Apoptosis,0.91,hypoxia / glycolysis,33.0,Late-Hybrid,33.0,EM1,100.0,Ccn1 Thbs1 Bgn Eln
+T4,within,EM1,hallmark,cleaned,4,0.4029850746268656,V2,69,Angiogenesis,1.03,Inflammatory Response,0.89,angiogenesis / matrix,23.0,Early-Hybrid,36.0,EM1,100.0,Areg Pthlh Cxcl1 Inhba
+T4,within,EM1,hallmark,cleaned,4,0.4029850746268656,V3,69,Complement,0.82,IL-6/JAK/STAT3 Signaling,0.7,Complement,0.0,Early-Hybrid,41.0,EM1,100.0,Mgp Crlf1 Serpine2 Mmp3
+T4,within,EM1,hallmark,cleaned,4,0.4029850746268656,V4,69,Myc Targets V1,1.11,E2F Targets,1.1,MYC / growth (translation),65.0,Early-Hybrid,29.0,EM1,100.0,Jun Mcm7 Gadd45b Htra1
+T4,within,M,hallmark,light QC,3,0.4079601990049751,V1,200,Myogenesis,1.28,UV Response Dn,1.24,muscle / matrix-like,4.0,Mesenchymal,59.0,M,100.0,Mgp Ccn1 Ccn2 Thbs1
+T4,within,M,hallmark,light QC,3,0.4079601990049751,V2,200,Myc Targets V1,0.87,Fatty Acid Metabolism,0.72,MYC / growth (translation),55.0,Mesenchymal,48.0,M,100.0,Areg Cxcl1 Plaur Itga2
+T4,within,M,hallmark,light QC,3,0.4079601990049751,V3,200,E2F Targets,0.38,G2-M Checkpoint,0.1,no Hallmark set above 0.5 SD,57.0,Mesenchymal,28.0,M,100.0,Jun Gadd45b Ccn1 Tnfaip3
+T4,within,EM3,ks,cleaned,4,0.4577114427860697,V1,76,heme Metabolism,0.37,Hedgehog Signaling,0.33,no Hallmark set above 0.5 SD,24.0,Mesenchymal,54.0,EM3,100.0,Areg Klf5 Sfn Sdc1
+T4,within,EM3,ks,cleaned,4,0.4577114427860697,V2,76,Interferon Alpha Response,0.57,Hypoxia,0.56,interferon response,7.0,Mesenchymal,51.0,EM3,100.0,Slpi Lcn2 Etv1 Sparc
+T4,within,EM3,ks,cleaned,4,0.4577114427860697,V3,76,PI3K/AKT/mTOR  Signaling,0.62,KRAS Signaling Up,0.54,PI3K/AKT/mTOR  Signaling,26.0,Mesenchymal,49.0,EM3,100.0,Areg Slpi Sfn Krt8
+T4,within,EM3,ks,cleaned,4,0.4577114427860697,V4,76,E2F Targets,1.21,G2-M Checkpoint,0.94,cycling,58.0,Mesenchymal,51.0,EM3,100.0,Krt18 Hes1 Krt8 Sparc
+T4,within,M,all,cleaned,3,0.4975124378109453,V1,167,E2F Targets,2.2,Myc Targets V1,2.14,cycling,99.0,Mesenchymal,57.0,M,100.0,S100a4 Top2a Hist1h2ap Hist1h1e
+T4,within,M,all,cleaned,3,0.4975124378109453,V2,167,Inflammatory Response,0.76,IL-6/JAK/STAT3 Signaling,0.64,inflammatory / stress response,0.0,Mesenchymal,63.0,M,100.0,Ctla2a Inhba Ptgs2 Dio2
+T4,within,M,all,cleaned,3,0.4975124378109453,V3,167,Hypoxia,1.65,TGF-beta Signaling,1.28,hypoxia / glycolysis,3.0,Mesenchymal,41.0,M,100.0,Fos Jun Fosb Atf3
+T4,within,4T1,hallmark,cleaned,4,0.5621890547263682,V1,200,Angiogenesis,0.77,Apical Junction,0.76,angiogenesis / matrix,36.0,Epithelial,38.0,4T1,100.0,Inhba Lamc2 Itga5 Pthlh
+T4,within,4T1,hallmark,cleaned,4,0.5621890547263682,V2,200,E2F Targets,1.28,Myc Targets V1,1.23,cycling,74.0,Late-Hybrid,30.0,4T1,100.0,Jun Htra1 Mcm7 Pmp22
+T4,within,4T1,hallmark,cleaned,4,0.5621890547263682,V3,200,Inflammatory Response,0.93,IL-6/JAK/STAT3 Signaling,0.84,inflammatory / stress response,6.0,Early-Hybrid,36.0,4T1,100.0,Cxcl1 Serpine2 Spp1 Areg
+T4,within,4T1,hallmark,cleaned,4,0.5621890547263682,V4,200,UV Response Dn,0.78,Hypoxia,0.66,UV Response Dn,10.0,Late-Hybrid,30.0,4T1,100.0,Fn1 Serpine2 Jun Mgp
+T4,within,EM1,all,cleaned,3,0.6218905472636815,V1,69,UV Response Up,1.61,E2F Targets,1.46,stress response,72.0,Early-Hybrid,32.0,EM1,100.0,Fos Atf3 Fosb Ccn1
+T4,within,EM1,all,cleaned,3,0.6218905472636815,V2,69,Complement,0.85,Coagulation,0.69,Complement,0.0,Early-Hybrid,38.0,EM1,100.0,Lcn2 Mmp13 Mgp Cxcl5
+T4,within,EM1,all,cleaned,3,0.6218905472636815,V3,69,Myc Targets V1,1.13,Unfolded Protein Response,1.09,MYC / growth (translation),55.0,Early-Hybrid,39.0,EM1,100.0,Areg Odc1 Lif Pthlh
+T4,within,EM2,all,cleaned,3,0.6268656716417911,V1,136,G2-M Checkpoint,2.05,E2F Targets,1.99,cycling,100.0,Early-Hybrid,41.0,EM2,100.0,Top2a Hist1h1e Hist1h2ap Mki67
+T4,within,EM2,all,cleaned,3,0.6268656716417911,V2,136,Coagulation,1.05,Complement,0.76,coagulation / matrix-like,0.0,Early-Hybrid,38.0,EM2,100.0,Lcn2 Serpine2 F13a1 Fn1
+T4,within,EM2,all,cleaned,3,0.6268656716417911,V3,136,p53 Pathway,1.22,TNF-alpha Signaling via NF-kB,1.0,p53 / stress,73.0,Early-Hybrid,38.0,EM2,100.0,Fosb Sfn Atf3 Plet1
+T4,within,EM2,all,light QC,3,0.6417910447761194,V1,170,KRAS Signaling Dn,-0.63,E2F Targets,-1.15,no Hallmark set above 0.5 SD,30.0,Epithelial,59.0,EM2,100.0,Apoe Col1a1 Vmp1 Arglu1
+T4,within,EM2,all,light QC,3,0.6417910447761194,V2,170,Coagulation,0.95,Complement,0.82,coagulation / matrix-like,0.0,Early-Hybrid,36.0,EM2,100.0,Serpine2 F13a1 Lcn2 Csf3
+T4,within,EM2,all,light QC,3,0.6417910447761194,V3,170,E2F Targets,2.33,G2-M Checkpoint,2.24,cycling,100.0,Early-Hybrid,41.0,EM2,100.0,Top2a Hist1h1e Hist1h2ap Cdk1
+T4,within,4T1,hallmark,light QC,4,0.9054726368159204,V1,200,Myc Targets V1,0.89,PI3K/AKT/mTOR  Signaling,0.88,MYC / growth (translation),68.0,Epithelial,32.0,4T1,100.0,Htra1 Pthlh Itga5 Vegfa
+T4,within,4T1,hallmark,light QC,4,0.9054726368159204,V2,200,Hypoxia,0.73,Myogenesis,0.59,hypoxia / glycolysis,14.0,Epithelial,32.0,4T1,100.0,Jun Gadd45a Mgp Rhob
+T4,within,4T1,hallmark,light QC,4,0.9054726368159204,V3,200,Inflammatory Response,0.98,KRAS Signaling Up,0.96,inflammatory / stress response,4.0,Early-Hybrid,33.0,4T1,100.0,Cxcl1 Serpine2 Areg Spp1
+T4,within,4T1,hallmark,light QC,4,0.9054726368159204,V4,200,E2F Targets,-0.24,Myc Targets V2,-0.52,no Hallmark set above 0.5 SD,44.0,Epithelial,56.0,4T1,100.0,Jun Col1a1 Col3a1 Ccn1
+T4,within,EM3,all,light QC,4,0.9502487562189056,V1,100,Myc Targets V1,1.21,mTORC1 Signaling,0.94,MYC / growth (translation),54.0,Mesenchymal,58.0,EM3,100.0,Odc1 Sfn Areg S100a4
+T4,within,EM3,all,light QC,4,0.9502487562189056,V2,100,KRAS Signaling Dn,-0.94,IL-6/JAK/STAT3 Signaling,-1.02,no Hallmark set above 0.5 SD,31.0,Epithelial,30.0,EM3,100.0,Apoe Lyz2 Cd74 Cd14
+T4,within,EM3,all,light QC,4,0.9502487562189056,V3,100,Bile Acid Metabolism,1.22,Adipogenesis,1.12,metabolic,29.0,Mesenchymal,54.0,EM3,100.0,Gadd45a Spry1 Fos H1f0
+T4,within,EM3,all,light QC,4,0.9502487562189056,V4,100,Hedgehog Signaling,0.53,Inflammatory Response,0.47,Hedgehog Signaling,11.0,Mesenchymal,42.0,EM3,100.0,Vmp1 Ptgs2 Ubp1 Spaca6
+T4,within,EM1,all,light QC,3,1.0,V1,146,KRAS Signaling Dn,-0.98,Myc Targets V2,-1.03,no Hallmark set above 0.5 SD,16.0,Epithelial,58.0,EM1,100.0,Apoe Ubp1 Vmp1 Fubp1
+T4,within,EM1,all,light QC,3,1.0,V2,146,Myc Targets V1,1.54,E2F Targets,1.24,MYC / growth (translation),58.0,Early-Hybrid,29.0,EM1,100.0,Odc1 Areg Has2 S100a4
+T4,within,EM1,all,light QC,3,1.0,V3,146,Hypoxia,1.37,TNF-alpha Signaling via NF-kB,1.12,hypoxia / glycolysis,9.0,Epithelial,49.0,EM1,100.0,Fos Atf3 Dusp1 Fosb
+GSE,within,MCF10A,all,light QC,3,0.0049751243781094,V1,200,KRAS Signaling Dn,2.25,Apical Surface,0.75,KRAS-down (epithelial / differentiated),2.0,Epithelial,97.0,MCF10A_Mock,100.0,SPRR1A SPRR1B SBSN PI3
+GSE,within,MCF10A,all,light QC,3,0.0049751243781094,V2,200,Epithelial Mesenchymal Transition,1.73,Inflammatory Response,1.63,EMT / matrix,32.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,FN1 CXCL3 LAMC2 ANGPTL4
+GSE,within,MCF10A,all,light QC,3,0.0049751243781094,V3,200,E2F Targets,1.76,Myc Targets V1,1.72,cycling,96.0,Late-Hybrid,46.0,MCF10A_Mock,100.0,PTTG1 TUBA1B HMGB2 KIAA0101
+GSE,within,MCF10A,all,cleaned,3,0.0049751243781094,V1,200,KRAS Signaling Dn,2.86,Estrogen Response Late,1.29,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,MCF10A_Mock,100.0,PI3 SPRR1A SPRR1B S100A9
+GSE,within,MCF10A,all,cleaned,3,0.0049751243781094,V2,200,Epithelial Mesenchymal Transition,1.53,Myogenesis,1.43,EMT / matrix,27.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,FN1 CXCL3 CXCL1 TAGLN
+GSE,within,MCF10A,all,cleaned,3,0.0049751243781094,V3,200,Myc Targets V1,1.79,Myc Targets V2,1.61,MYC / growth (translation),100.0,Mesenchymal,60.0,MCF10A_Mock,98.0,PTTG1 HMGB2 CCNB1 TUBA1B
+GSE,within,MCF10A_Mock,all,light QC,3,0.0049751243781094,V1,200,KRAS Signaling Dn,2.19,Apical Surface,1.6,KRAS-down (epithelial / differentiated),1.0,Epithelial,100.0,MCF10A_Mock,100.0,SPRR1A SBSN SPRR1B PI3
+GSE,within,MCF10A_Mock,all,light QC,3,0.0049751243781094,V2,200,TNF-alpha Signaling via NF-kB,0.63,Wnt-beta Catenin Signaling,0.04,inflammatory / stress response,16.0,Mesenchymal,51.0,MCF10A_Mock,100.0,SOD2 BTG1 VIM DKK1
+GSE,within,MCF10A_Mock,all,light QC,3,0.0049751243781094,V3,200,G2-M Checkpoint,2.2,E2F Targets,2.18,cycling,100.0,Mesenchymal,48.0,MCF10A_Mock,100.0,TUBA1B HMGB2 PTTG1 CCNB1
+GSE,within,MCF10A_Mock,all,cleaned,3,0.0049751243781094,V1,127,KRAS Signaling Dn,2.5,Apical Surface,1.8,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,MCF10A_Mock,100.0,SPRR1A SBSN PI3 S100A9
+GSE,within,MCF10A_Mock,all,cleaned,3,0.0049751243781094,V2,127,TNF-alpha Signaling via NF-kB,0.67,p53 Pathway,0.6,inflammatory / stress response,20.0,Late-Hybrid,39.0,MCF10A_Mock,100.0,MIR205HG TGFBI NDRG1 SLC7A5
+GSE,within,MCF10A_Mock,all,cleaned,3,0.0049751243781094,V3,127,G2-M Checkpoint,1.85,E2F Targets,1.82,cycling,100.0,Mesenchymal,61.0,MCF10A_Mock,100.0,CCNB1 STMN1 HMGB2 MAD2L1
+GSE,within,MCF10A_TGFB,all,cleaned,3,0.0049751243781094,V1,157,Myc Targets V1,2.07,E2F Targets,2.01,MYC / growth (translation),100.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,PTTG1 CCNB1 CENPF TUBA1B
+GSE,within,MCF10A_TGFB,all,cleaned,3,0.0049751243781094,V2,157,TNF-alpha Signaling via NF-kB,0.96,Apical Junction,0.92,inflammatory / stress response,5.0,Mesenchymal,99.0,MCF10A_TGFB,100.0,CXCL3 FN1 TGM2 NEAT1
+GSE,within,MCF10A_TGFB,all,cleaned,3,0.0049751243781094,V3,157,KRAS Signaling Dn,2.35,Apical Surface,1.25,KRAS-down (epithelial / differentiated),0.0,Epithelial,69.0,MCF10A_TGFB,100.0,FXYD3 SAA1 KRT16 ADIRF
+GSE,within,HuMEC_Mock,all,cleaned,3,0.0049751243781094,V1,195,KRAS Signaling Dn,2.25,Cholesterol Homeostasis,1.97,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,100.0,SPRR1A SBSN CLIC3 SPINK5
+GSE,within,HuMEC_Mock,all,cleaned,3,0.0049751243781094,V2,195,Hypoxia,0.73,p53 Pathway,0.6,hypoxia / glycolysis,7.0,Epithelial,47.0,HuMEC_Mock,100.0,CXCL14 C10orf99 CKB NEAT1
+GSE,within,HuMEC_Mock,all,cleaned,3,0.0049751243781094,V3,195,G2-M Checkpoint,2.1,E2F Targets,2.03,cycling,99.0,Late-Hybrid,51.0,HuMEC_Mock,100.0,MT2A TUBA1B HMGB2 CCNB1
+GSE,within,MCF10A_Mock,ks,cleaned,3,0.0049751243781094,V1,127,KRAS Signaling Dn,2.5,Apical Surface,1.68,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,MCF10A_Mock,100.0,S100P TACSTD2 FXYD3 SLPI
+GSE,within,MCF10A_Mock,ks,cleaned,3,0.0049751243781094,V2,127,Epithelial Mesenchymal Transition,1.34,Myc Targets V1,0.98,EMT / matrix,82.0,Mesenchymal,90.0,MCF10A_Mock,100.0,VIM EMP3 TPM2 LGALS1
+GSE,within,MCF10A_Mock,ks,cleaned,3,0.0049751243781094,V3,127,Hypoxia,0.94,p53 Pathway,0.88,hypoxia / glycolysis,35.0,Early-Hybrid,51.0,MCF10A_Mock,100.0,KRT15 FXYD3 SFN CD9
+GSE,within,HuMEC,ks,light QC,3,0.0049751243781094,V1,200,KRAS Signaling Dn,2.18,Cholesterol Homeostasis,1.68,KRAS-down (epithelial / differentiated),0.0,Epithelial,99.0,HuMEC_Mock,78.0,SLPI DSC2 CLDN4 TACSTD2
+GSE,within,HuMEC,ks,light QC,3,0.0049751243781094,V2,200,Epithelial Mesenchymal Transition,1.74,Coagulation,1.51,EMT / matrix,49.0,Mesenchymal,84.0,HuMEC_TGFB,97.0,VIM KRT7 EMP3 TUBA1A
+GSE,within,HuMEC,ks,light QC,3,0.0049751243781094,V3,200,KRAS Signaling Dn,0.12,Pancreas Beta Cells,-0.08,no Hallmark set above 0.5 SD,44.0,Early-Hybrid,50.0,HuMEC_Mock,76.0,KRT15 TPM2 FXYD3 HES1
+GSE,within,HuMEC_Mock,ks,cleaned,3,0.0049751243781094,V1,195,KRAS Signaling Dn,2.1,Cholesterol Homeostasis,1.95,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,100.0,SLPI CLDN4 DSC2 RAB25
+GSE,within,HuMEC_Mock,ks,cleaned,3,0.0049751243781094,V2,195,Epithelial Mesenchymal Transition,0.41,Hypoxia,0.41,no Hallmark set above 0.5 SD,46.0,Early-Hybrid,55.0,HuMEC_Mock,100.0,KRT15 VIM TPM2 TSPAN1
+GSE,within,HuMEC_Mock,ks,cleaned,3,0.0049751243781094,V3,195,E2F Targets,1.26,Myc Targets V1,1.23,cycling,83.0,Late-Hybrid,55.0,HuMEC_Mock,100.0,VIM EMP3 KRT7 TUBB6
+GSE,within,HuMEC_TGFB,ks,cleaned,3,0.0049751243781094,V1,200,KRAS Signaling Dn,2.12,Cholesterol Homeostasis,1.76,KRAS-down (epithelial / differentiated),0.0,Epithelial,98.0,HuMEC_TGFB,100.0,SLPI DSC2 TACSTD2 IL1RN
+GSE,within,HuMEC_TGFB,ks,cleaned,3,0.0049751243781094,V2,200,KRAS Signaling Dn,0.7,p53 Pathway,0.69,KRAS-down (epithelial / differentiated),66.0,Early-Hybrid,44.0,HuMEC_TGFB,100.0,KRT15 HES1 TPM2 KRT18
+GSE,within,HuMEC_TGFB,ks,cleaned,3,0.0049751243781094,V3,200,Epithelial Mesenchymal Transition,1.5,Coagulation,1.29,EMT / matrix,44.0,Mesenchymal,92.0,HuMEC_TGFB,100.0,KRT7 TUBA1A SERPINE1 VIM
+GSE,within,MCF10A,hallmark,cleaned,3,0.0049751243781094,V1,200,KRAS Signaling Dn,2.44,Estrogen Response Late,0.96,KRAS-down (epithelial / differentiated),2.0,Epithelial,99.0,MCF10A_Mock,100.0,MFAP5 ECM1 CAPG ID2
+GSE,within,MCF10A,hallmark,cleaned,3,0.0049751243781094,V2,200,Myogenesis,1.29,TGF-beta Signaling,1.18,muscle / matrix-like,61.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,TAGLN FN1 CXCL1 TPM1
+GSE,within,MCF10A,hallmark,cleaned,3,0.0049751243781094,V3,200,Coagulation,1.3,KRAS Signaling Up,1.23,coagulation / matrix-like,7.0,Mesenchymal,71.0,MCF10A_TGFB,100.0,FN1 LAMA3 LAMC2 TGM2
+GSE,within,MCF10A,hallmark,light QC,3,0.0049751243781094,V1,200,KRAS Signaling Dn,1.94,Apical Surface,0.44,KRAS-down (epithelial / differentiated),6.0,Epithelial,98.0,MCF10A_Mock,100.0,ECM1 MFAP5 CD59 GADD45B
+GSE,within,MCF10A,hallmark,light QC,3,0.0049751243781094,V2,200,Oxidative Phosphorylation,0.57,Reactive Oxygen Species Pathway,0.52,metabolic,46.0,Late-Hybrid,51.0,MCF10A_Mock,100.0,NNMT VIM EMP3 ID2
+GSE,within,MCF10A,hallmark,light QC,3,0.0049751243781094,V3,200,Myogenesis,1.62,Inflammatory Response,1.56,muscle / matrix-like,25.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,FN1 CXCL1 LAMC2 TAGLN
+GSE,within,HuMEC_Mock,hallmark,cleaned,3,0.0049751243781094,V1,195,KRAS Signaling Dn,1.82,Cholesterol Homeostasis,1.74,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,100.0,QSOX1 MFAP5 ECM1 TPM4
+GSE,within,HuMEC_Mock,hallmark,cleaned,3,0.0049751243781094,V2,195,Coagulation,1.7,Apical Junction,1.41,coagulation / matrix-like,59.0,Late-Hybrid,53.0,HuMEC_Mock,100.0,FN1 TFPI2 VIM SERPINE2
+GSE,within,HuMEC_Mock,hallmark,cleaned,3,0.0049751243781094,V3,195,Hypoxia,0.92,p53 Pathway,0.61,hypoxia / glycolysis,24.0,Early-Hybrid,43.0,HuMEC_Mock,100.0,DST IGFBP2 HTRA1 SAT1
+GSE,within,MCF10A_TGFB,all,light QC,4,0.0049751243781094,V1,200,KRAS Signaling Dn,2.49,Apical Surface,1.21,KRAS-down (epithelial / differentiated),0.0,Epithelial,73.0,MCF10A_TGFB,100.0,FXYD3 ADIRF KRT16 SPRR1B
+GSE,within,MCF10A_TGFB,all,light QC,4,0.0049751243781094,V2,200,E2F Targets,2.22,G2-M Checkpoint,2.17,cycling,100.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,PTTG1 TUBA1B CCNB1 CENPF
+GSE,within,MCF10A_TGFB,all,light QC,4,0.0049751243781094,V3,200,Apical Junction,0.95,Epithelial Mesenchymal Transition,0.88,epithelial junction,5.0,Mesenchymal,98.0,MCF10A_TGFB,100.0,CXCL3 TGM2 FN1 CXCL2
+GSE,within,MCF10A_TGFB,all,light QC,4,0.0049751243781094,V4,200,Angiogenesis,0.12,Pancreas Beta Cells,-0.25,no Hallmark set above 0.5 SD,8.0,Mesenchymal,87.0,MCF10A_TGFB,100.0,AKR1B1 SOD2 FTH1 FBXO32
+GSE,within,HuMEC,all,light QC,4,0.0049751243781094,V1,200,KRAS Signaling Dn,2.1,Cholesterol Homeostasis,1.59,KRAS-down (epithelial / differentiated),1.0,Epithelial,98.0,HuMEC_Mock,72.0,SPRR1A SBSN CLIC3 SPINK5
+GSE,within,HuMEC,all,light QC,4,0.0049751243781094,V2,200,E2F Targets,1.79,G2-M Checkpoint,1.73,cycling,86.0,Mesenchymal,68.0,HuMEC_TGFB,86.0,MT2A TUBA1B TFPI2 FN1
+GSE,within,HuMEC,all,light QC,4,0.0049751243781094,V3,200,KRAS Signaling Dn,0.42,Hypoxia,0.23,no Hallmark set above 0.5 SD,16.0,Early-Hybrid,50.0,HuMEC_Mock,100.0,CKB CXCL14 C10orf99 NDUFA4L2
+GSE,within,HuMEC,all,light QC,4,0.0049751243781094,V4,200,Angiogenesis,1.29,Hedgehog Signaling,1.28,angiogenesis / matrix,42.0,Early-Hybrid,34.0,HuMEC_Mock,64.0,LAMB3 COL17A1 MTRNR2L1 LAMC2
+GSE,within,HuMEC,all,cleaned,4,0.0049751243781094,V1,200,Epithelial Mesenchymal Transition,1.72,Apical Junction,1.63,EMT / matrix,16.0,Mesenchymal,70.0,HuMEC_TGFB,100.0,FN1 LAMC2 LAMA3 MT2A
+GSE,within,HuMEC,all,cleaned,4,0.0049751243781094,V2,200,KRAS Signaling Dn,2.25,Cholesterol Homeostasis,2.02,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,70.0,SPRR1A SBSN CLIC3 LYPD3
+GSE,within,HuMEC,all,cleaned,4,0.0049751243781094,V3,200,G2-M Checkpoint,2.19,E2F Targets,2.06,cycling,100.0,Late-Hybrid,51.0,HuMEC_Mock,60.0,HMGB2 UBE2C CCNB1 MT2A
+GSE,within,HuMEC,all,cleaned,4,0.0049751243781094,V4,200,p53 Pathway,0.95,KRAS Signaling Dn,0.9,p53 / stress,14.0,Early-Hybrid,44.0,HuMEC_Mock,96.0,CKB CXCL14 C10orf99 CES2
+GSE,within,HuMEC_TGFB,all,cleaned,4,0.0049751243781094,V1,200,G2-M Checkpoint,2.25,E2F Targets,2.05,cycling,100.0,Late-Hybrid,48.0,HuMEC_TGFB,100.0,UBE2C HMGB2 CCNB1 CDC20
+GSE,within,HuMEC_TGFB,all,cleaned,4,0.0049751243781094,V2,200,KRAS Signaling Dn,2.12,Cholesterol Homeostasis,1.82,KRAS-down (epithelial / differentiated),0.0,Epithelial,96.0,HuMEC_TGFB,100.0,SPRR1A KRT6C PI3 CRCT1
+GSE,within,HuMEC_TGFB,all,cleaned,4,0.0049751243781094,V3,200,Epithelial Mesenchymal Transition,1.6,Apical Junction,1.48,EMT / matrix,19.0,Mesenchymal,80.0,HuMEC_TGFB,100.0,FN1 LAMC2 MT2A LAMA3
+GSE,within,HuMEC_TGFB,all,cleaned,4,0.0049751243781094,V4,200,p53 Pathway,0.91,KRAS Signaling Dn,0.83,p53 / stress,20.0,Early-Hybrid,40.0,HuMEC_TGFB,100.0,KRT15 GLUL NEAT1 CA2
+GSE,within,MCF10A,ks,cleaned,4,0.0049751243781094,V1,200,IL-2/STAT5 Signaling,1.24,p53 Pathway,1.2,IL-2/STAT5 Signaling,6.0,Late-Hybrid,36.0,MCF10A_TGFB,100.0,TACSTD2 IRF6 CDH3 CLDN7
+GSE,within,MCF10A,ks,cleaned,4,0.0049751243781094,V2,200,KRAS Signaling Dn,2.87,Estrogen Response Late,1.25,KRAS-down (epithelial / differentiated),1.0,Epithelial,100.0,MCF10A_Mock,98.0,S100P FXYD3 SLPI TACSTD2
+GSE,within,MCF10A,ks,cleaned,4,0.0049751243781094,V3,200,Oxidative Phosphorylation,0.91,Myc Targets V2,0.86,metabolic,71.0,Late-Hybrid,46.0,MCF10A_Mock,100.0,KRT15 S100A14 HES1 PERP
+GSE,within,MCF10A,ks,cleaned,4,0.0049751243781094,V4,200,Epithelial Mesenchymal Transition,1.25,IL-6/JAK/STAT3 Signaling,1.12,EMT / matrix,68.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,SERPINE1 VIM TPM2 EMP3
+GSE,pooled,pooled (4 samples),all,light QC,6,0.0049751243781094,V1,1530,TGF-beta Signaling,2.06,Epithelial Mesenchymal Transition,2.0,TGF-β response,16.0,Mesenchymal,90.0,MCF10A_TGFB,100.0,KRT81 FN1 TGFBI MT1E
+GSE,pooled,pooled (4 samples),all,light QC,6,0.0049751243781094,V2,1530,Hedgehog Signaling,1.05,Wnt-beta Catenin Signaling,0.92,Hedgehog Signaling,33.0,Epithelial,40.0,HuMEC_Mock,67.0,COL17A1 LAMB3 MTRNR2L1 MTRNR2L8
+GSE,pooled,pooled (4 samples),all,light QC,6,0.0049751243781094,V3,1530,G2-M Checkpoint,2.01,E2F Targets,1.99,cycling,92.0,Mesenchymal,51.0,MCF10A_Mock,71.0,KRT81 MT1E MT2A TUBA1B
+GSE,pooled,pooled (4 samples),all,light QC,6,0.0049751243781094,V4,1530,Oxidative Phosphorylation,0.37,Pancreas Beta Cells,0.32,no Hallmark set above 0.5 SD,18.0,Late-Hybrid,40.0,MCF10A_Mock,90.0,KRT81 EIF3E DUSP1 SAA1
+GSE,pooled,pooled (4 samples),all,light QC,6,0.0049751243781094,V5,1530,p53 Pathway,0.92,Fatty Acid Metabolism,0.92,p53 / stress,38.0,Early-Hybrid,45.0,HuMEC_TGFB,52.0,CALML3 S100A9 PYCARD S100A8
+GSE,pooled,pooled (4 samples),all,light QC,6,0.0049751243781094,V6,1530,KRAS Signaling Dn,1.32,Apical Surface,0.72,KRAS-down (epithelial / differentiated),2.0,Epithelial,99.0,MCF10A_Mock,52.0,SPRR1A SBSN PI3 SPRR1B
+GSE,pooled,pooled (4 samples),ks,cleaned,3,0.0099009900990099,V1,683,p53 Pathway,1.0,Estrogen Response Early,0.85,p53 / stress,37.0,Early-Hybrid,47.0,HuMEC_TGFB,50.0,KRT15 PYCARD FXYD3 CD9
+GSE,pooled,pooled (4 samples),ks,cleaned,3,0.0099009900990099,V2,683,KRAS Signaling Dn,1.43,Apical Surface,0.97,KRAS-down (epithelial / differentiated),1.0,Epithelial,100.0,MCF10A_Mock,55.0,SLPI TACSTD2 S100P RAB25
+GSE,pooled,pooled (4 samples),ks,cleaned,3,0.0099009900990099,V3,683,TGF-beta Signaling,1.73,UV Response Dn,1.68,TGF-β response,63.0,Mesenchymal,100.0,MCF10A_TGFB,97.0,SERPINE1 VIM EMP3 KRT7
+GSE,pooled,pooled (4 samples),hallmark,cleaned,3,0.0099009900990099,V1,683,KRAS Signaling Dn,0.81,Apical Surface,0.35,KRAS-down (epithelial / differentiated),8.0,Epithelial,91.0,MCF10A_Mock,80.0,ID2 QSOX1 MFAP5 ECM1
+GSE,pooled,pooled (4 samples),hallmark,cleaned,3,0.0099009900990099,V2,683,UV Response Dn,1.95,TGF-beta Signaling,1.95,UV Response Dn,39.0,Mesenchymal,99.0,MCF10A_TGFB,100.0,FN1 CXCL1 TGFBI POSTN
+GSE,pooled,pooled (4 samples),hallmark,cleaned,3,0.0099009900990099,V3,683,Coagulation,1.19,Myogenesis,0.98,coagulation / matrix-like,47.0,Mesenchymal,45.0,HuMEC_TGFB,85.0,TFPI2 SERPINE2 VIM FN1
+GSE,pooled,pooled (4 samples),all,cleaned,4,0.0099009900990099,V1,683,Epithelial Mesenchymal Transition,1.96,TGF-beta Signaling,1.93,EMT / matrix,21.0,Mesenchymal,98.0,MCF10A_TGFB,100.0,FN1 KRT81 CXCL3 TGFBI
+GSE,pooled,pooled (4 samples),all,cleaned,4,0.0099009900990099,V2,683,KRAS Signaling Dn,1.94,Apical Surface,1.18,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,44.0,SPRR1A SBSN PI3 SPRR1B
+GSE,pooled,pooled (4 samples),all,cleaned,4,0.0099009900990099,V3,683,p53 Pathway,1.0,Fatty Acid Metabolism,0.94,p53 / stress,55.0,Late-Hybrid,46.0,HuMEC_Mock,53.0,CALML3 S100A9 FGFBP1 KRT15
+GSE,pooled,pooled (4 samples),all,cleaned,4,0.0099009900990099,V4,683,Myc Targets V1,1.86,Oxidative Phosphorylation,1.73,MYC / growth (translation),96.0,Late-Hybrid,43.0,MCF10A_Mock,98.0,KRT81 MT1E MT2A PTTG1
+GSE,pooled,pooled (4 samples),hallmark,light QC,5,0.0099009900990099,V1,1530,KRAS Signaling Dn,1.08,p53 Pathway,0.97,KRAS-down (epithelial / differentiated),26.0,Epithelial,47.0,HuMEC_Mock,93.0,DST IGFBP2 HTRA1 GJA1
+GSE,pooled,pooled (4 samples),hallmark,light QC,5,0.0099009900990099,V2,1530,Oxidative Phosphorylation,1.3,Myc Targets V1,1.02,metabolic,50.0,Late-Hybrid,47.0,MCF10A_Mock,100.0,NNMT ID2 TGFBI EMP3
+GSE,pooled,pooled (4 samples),hallmark,light QC,5,0.0099009900990099,V3,1530,Coagulation,1.33,Complement,1.07,coagulation / matrix-like,44.0,Mesenchymal,55.0,HuMEC_TGFB,94.0,TFPI2 SERPINE2 FN1 VIM
+GSE,pooled,pooled (4 samples),hallmark,light QC,5,0.0099009900990099,V4,1530,KRAS Signaling Dn,0.77,Apical Surface,0.25,KRAS-down (epithelial / differentiated),6.0,Epithelial,94.0,MCF10A_Mock,68.0,MFAP5 ECM1 QSOX1 GADD45B
+GSE,pooled,pooled (4 samples),hallmark,light QC,5,0.0099009900990099,V5,1530,TGF-beta Signaling,2.1,UV Response Dn,2.02,TGF-β response,34.0,Mesenchymal,97.0,MCF10A_TGFB,100.0,FN1 TGFBI CXCL1 LAMC2
+GSE,within,HuMEC_TGFB,hallmark,light QC,3,0.0099502487562189,V1,200,Apical Junction,1.87,KRAS Signaling Up,1.63,epithelial junction,34.0,Mesenchymal,54.0,HuMEC_TGFB,100.0,FN1 LAMA3 LAMC2 FLNA
+GSE,within,HuMEC_TGFB,hallmark,light QC,3,0.0099502487562189,V2,200,KRAS Signaling Dn,1.43,Cholesterol Homeostasis,0.68,KRAS-down (epithelial / differentiated),15.0,Epithelial,84.0,HuMEC_TGFB,100.0,MFAP5 ECM1 MYLK QSOX1
+GSE,within,HuMEC_TGFB,hallmark,light QC,3,0.0099502487562189,V3,200,Myc Targets V1,0.75,E2F Targets,0.6,MYC / growth (translation),62.0,Late-Hybrid,44.0,HuMEC_TGFB,100.0,TFPI2 EMP3 TIMP1 VIM
+GSE,within,HuMEC_TGFB,ks,light QC,4,0.0099502487562189,V1,200,Myc Targets V1,0.26,E2F Targets,0.21,cycling,62.0,Late-Hybrid,38.0,HuMEC_TGFB,100.0,SH3YL1 EPCAM SH2D3A ABCC3
+GSE,within,HuMEC_TGFB,ks,light QC,4,0.0099502487562189,V2,200,KRAS Signaling Dn,2.08,Cholesterol Homeostasis,1.53,KRAS-down (epithelial / differentiated),0.0,Epithelial,98.0,HuMEC_TGFB,100.0,SLPI DSC2 TACSTD2 DSP
+GSE,within,HuMEC_TGFB,ks,light QC,4,0.0099502487562189,V3,200,Epithelial Mesenchymal Transition,1.91,Apical Junction,1.66,EMT / matrix,42.0,Mesenchymal,76.0,HuMEC_TGFB,100.0,TUBA1A KRT7 SERPINE1 ITGB4
+GSE,within,HuMEC_TGFB,ks,light QC,4,0.0099502487562189,V4,200,KRAS Signaling Dn,0.67,p53 Pathway,0.44,KRAS-down (epithelial / differentiated),44.0,Late-Hybrid,43.0,HuMEC_TGFB,100.0,KRT15 VIM TSPAN1 HES1
+GSE,within,MCF10A,ks,light QC,4,0.0149253731343283,V1,200,Oxidative Phosphorylation,0.38,Myc Targets V2,0.37,no Hallmark set above 0.5 SD,44.0,Early-Hybrid,48.0,MCF10A_Mock,100.0,KRT15 S100A14 FXYD3 PERP
+GSE,within,MCF10A,ks,light QC,4,0.0149253731343283,V2,200,KRAS Signaling Dn,2.55,Apical Surface,0.98,KRAS-down (epithelial / differentiated),2.0,Epithelial,100.0,MCF10A_Mock,100.0,S100P FXYD3 SLPI TACSTD2
+GSE,within,MCF10A,ks,light QC,4,0.0149253731343283,V3,200,Epithelial Mesenchymal Transition,1.23,TGF-beta Signaling,0.98,EMT / matrix,55.0,Mesenchymal,100.0,MCF10A_TGFB,98.0,VIM SERPINE1 EMP3 CALD1
+GSE,within,MCF10A,ks,light QC,4,0.0149253731343283,V4,200,IL-2/STAT5 Signaling,1.32,Apical Junction,1.31,IL-2/STAT5 Signaling,4.0,Late-Hybrid,41.0,MCF10A_TGFB,100.0,TACSTD2 ITGB6 ITGB4 TUBA1A
+GSE,within,MCF10A_TGFB,hallmark,cleaned,3,0.0248756218905472,V1,157,Myogenesis,0.94,UV Response Dn,0.65,muscle / matrix-like,62.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,TAGLN TPM1 CXCL1 COL4A1
+GSE,within,MCF10A_TGFB,hallmark,cleaned,3,0.0248756218905472,V2,157,Angiogenesis,1.05,Hypoxia,0.97,angiogenesis / matrix,8.0,Mesenchymal,93.0,MCF10A_TGFB,100.0,TGM2 FBLN5 LOX FN1
+GSE,within,MCF10A_TGFB,hallmark,cleaned,3,0.0248756218905472,V3,157,KRAS Signaling Dn,2.13,Estrogen Response Late,1.01,KRAS-down (epithelial / differentiated),11.0,Epithelial,59.0,MCF10A_TGFB,100.0,COL1A1 PDLIM4 CAPG SAT1
+GSE,within,MCF10A_Mock,hallmark,cleaned,4,0.0248756218905472,V1,127,UV Response Dn,0.97,Inflammatory Response,0.96,UV Response Dn,59.0,Mesenchymal,78.0,MCF10A_Mock,100.0,DKK1 VIM EMP3 CXCL1
+GSE,within,MCF10A_Mock,hallmark,cleaned,4,0.0248756218905472,V2,127,KRAS Signaling Dn,2.21,Apical Surface,1.5,KRAS-down (epithelial / differentiated),1.0,Epithelial,100.0,MCF10A_Mock,100.0,CD59 ECM1 MFAP5 CAPG
+GSE,within,MCF10A_Mock,hallmark,cleaned,4,0.0248756218905472,V3,127,Hypoxia,1.13,Unfolded Protein Response,0.6,hypoxia / glycolysis,57.0,Late-Hybrid,48.0,MCF10A_Mock,100.0,TGFBI DST TNFRSF12A VIM
+GSE,within,MCF10A_Mock,hallmark,cleaned,4,0.0248756218905472,V4,127,Angiogenesis,0.54,Oxidative Phosphorylation,0.53,angiogenesis / matrix,25.0,Epithelial,50.0,MCF10A_Mock,100.0,TIMP1 ID2 SDC1 CAPG
+GSE,within,HuMEC_TGFB,hallmark,cleaned,3,0.0348258706467661,V1,200,KRAS Signaling Dn,1.7,Cholesterol Homeostasis,1.21,KRAS-down (epithelial / differentiated),8.0,Epithelial,94.0,HuMEC_TGFB,100.0,MFAP5 ECM1 QSOX1 COL1A1
+GSE,within,HuMEC_TGFB,hallmark,cleaned,3,0.0348258706467661,V2,200,Apical Junction,1.56,Coagulation,1.52,epithelial junction,22.0,Mesenchymal,80.0,HuMEC_TGFB,100.0,FN1 LAMA3 LAMC2 TAGLN
+GSE,within,HuMEC_TGFB,hallmark,cleaned,3,0.0348258706467661,V3,200,Myc Targets V1,0.71,E2F Targets,0.65,MYC / growth (translation),74.0,Mesenchymal,48.0,HuMEC_TGFB,100.0,TFPI2 VIM TIMP1 EMP3
+GSE,within,MCF10A_TGFB,hallmark,light QC,4,0.0348258706467661,V1,200,Coagulation,0.94,KRAS Signaling Up,0.72,coagulation / matrix-like,10.0,Mesenchymal,74.0,MCF10A_TGFB,100.0,TGM2 LAMA3 SDC1 LAMC2
+GSE,within,MCF10A_TGFB,hallmark,light QC,4,0.0348258706467661,V2,200,KRAS Signaling Dn,1.96,Estrogen Response Late,0.46,KRAS-down (epithelial / differentiated),10.0,Epithelial,62.0,MCF10A_TGFB,100.0,SAT1 COL1A1 PDLIM4 GADD45A
+GSE,within,MCF10A_TGFB,hallmark,light QC,4,0.0348258706467661,V3,200,Angiogenesis,0.98,Hypoxia,0.34,angiogenesis / matrix,6.0,Mesenchymal,96.0,MCF10A_TGFB,100.0,FBLN5 LOX POSTN TIMP1
+GSE,within,MCF10A_TGFB,hallmark,light QC,4,0.0348258706467661,V4,200,Myogenesis,0.95,Androgen Response,0.71,muscle / matrix-like,59.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,TAGLN TPM1 CXCL1 COL4A1
+GSE,within,MCF10A_TGFB,ks,light QC,4,0.044776119402985,V1,200,Epithelial Mesenchymal Transition,0.94,G2-M Checkpoint,0.78,EMT / matrix,64.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,SERPINE1 TPM2 MYL9 VIM
+GSE,within,MCF10A_TGFB,ks,light QC,4,0.044776119402985,V2,200,Coagulation,0.58,p53 Pathway,0.57,coagulation / matrix-like,15.0,Mesenchymal,84.0,MCF10A_TGFB,100.0,S100A14 ITGB4 SFN ITGB6
+GSE,within,MCF10A_TGFB,ks,light QC,4,0.044776119402985,V3,200,Angiogenesis,0.21,Pancreas Beta Cells,-0.12,no Hallmark set above 0.5 SD,12.0,Mesenchymal,88.0,MCF10A_TGFB,100.0,ATP1B1 EMP3 CD46 ABCC3
+GSE,within,MCF10A_TGFB,ks,light QC,4,0.044776119402985,V4,200,KRAS Signaling Dn,2.58,Apical Surface,1.15,KRAS-down (epithelial / differentiated),0.0,Epithelial,77.0,MCF10A_TGFB,100.0,FXYD3 TACSTD2 SLPI CD9
+GSE,within,HuMEC,hallmark,cleaned,4,0.0646766169154228,V1,200,Apical Junction,1.7,Coagulation,1.64,epithelial junction,24.0,Mesenchymal,76.0,HuMEC_TGFB,100.0,FN1 LAMC2 LAMA3 SERPINE2
+GSE,within,HuMEC,hallmark,cleaned,4,0.0646766169154228,V2,200,KRAS Signaling Dn,1.86,Cholesterol Homeostasis,1.66,KRAS-down (epithelial / differentiated),0.0,Epithelial,99.0,HuMEC_Mock,87.0,QSOX1 ECM1 CAPG GJA1
+GSE,within,HuMEC,hallmark,cleaned,4,0.0646766169154228,V3,200,Myc Targets V1,0.89,E2F Targets,0.85,MYC / growth (translation),72.0,Late-Hybrid,52.0,HuMEC_TGFB,80.0,TFPI2 VIM EMP3 SERPINE2
+GSE,within,HuMEC,hallmark,cleaned,4,0.0646766169154228,V4,200,p53 Pathway,0.96,Hypoxia,0.89,p53 / stress,34.0,Early-Hybrid,46.0,HuMEC_Mock,94.0,DST IGFBP2 HTRA1 GJA1
+GSE,within,HuMEC,ks,cleaned,3,0.0746268656716417,V1,200,Epithelial Mesenchymal Transition,1.74,Coagulation,1.55,EMT / matrix,42.0,Mesenchymal,88.0,HuMEC_TGFB,99.0,VIM KRT7 EMP3 TUBA1A
+GSE,within,HuMEC,ks,cleaned,3,0.0746268656716417,V2,200,p53 Pathway,0.52,KRAS Signaling Dn,0.52,p53 / stress,62.0,Early-Hybrid,56.0,HuMEC_Mock,77.0,KRT15 HES1 TPM2 ANXA4
+GSE,within,HuMEC,ks,cleaned,3,0.0746268656716417,V3,200,KRAS Signaling Dn,2.13,Cholesterol Homeostasis,1.93,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,74.0,SLPI DSC2 RAB25 TACSTD2
+GSE,within,HuMEC_Mock,all,light QC,4,0.0895522388059701,V1,200,E2F Targets,2.01,G2-M Checkpoint,1.85,cycling,86.0,Late-Hybrid,45.0,HuMEC_Mock,100.0,MT2A TUBA1B H2AFZ STMN1
+GSE,within,HuMEC_Mock,all,light QC,4,0.0895522388059701,V2,200,Hedgehog Signaling,1.33,Apical Junction,1.29,Hedgehog Signaling,44.0,Epithelial,36.0,HuMEC_Mock,100.0,LAMB3 MTRNR2L1 COL17A1 MTRNR2L8
+GSE,within,HuMEC_Mock,all,light QC,4,0.0895522388059701,V3,200,KRAS Signaling Dn,-0.12,Hedgehog Signaling,-0.19,no Hallmark set above 0.5 SD,18.0,Early-Hybrid,46.0,HuMEC_Mock,100.0,CXCL14 C10orf99 CKB CRYAB
+GSE,within,HuMEC_Mock,all,light QC,4,0.0895522388059701,V4,200,KRAS Signaling Dn,1.97,Cholesterol Homeostasis,1.63,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,100.0,SPRR1A SBSN CLIC3 KRT10
+GSE,pooled,pooled (4 samples),ks,light QC,4,0.1194029850746268,V1,1530,Oxidative Phosphorylation,0.33,Pancreas Beta Cells,0.23,no Hallmark set above 0.5 SD,24.0,Epithelial,58.0,MCF10A_Mock,94.0,S100P SLPI CLDN7 HPGD
+GSE,pooled,pooled (4 samples),ks,light QC,4,0.1194029850746268,V2,1530,KRAS Signaling Dn,2.01,Cholesterol Homeostasis,1.66,KRAS-down (epithelial / differentiated),2.0,Epithelial,98.0,HuMEC_Mock,64.0,SLPI TACSTD2 DSC2 DSP
+GSE,pooled,pooled (4 samples),ks,light QC,4,0.1194029850746268,V3,1530,TGF-beta Signaling,1.82,Epithelial Mesenchymal Transition,1.75,TGF-β response,53.0,Mesenchymal,100.0,MCF10A_TGFB,99.0,SERPINE1 KRT7 VIM EMP3
+GSE,pooled,pooled (4 samples),ks,light QC,4,0.1194029850746268,V4,1530,p53 Pathway,0.73,Fatty Acid Metabolism,0.68,p53 / stress,41.0,Late-Hybrid,42.0,HuMEC_TGFB,56.0,KRT15 PYCARD FXYD3 VIM
+GSE,within,HuMEC_Mock,ks,light QC,4,0.2388059701492537,V1,200,Hedgehog Signaling,-0.33,Pancreas Beta Cells,-0.34,no Hallmark set above 0.5 SD,31.0,Early-Hybrid,58.0,HuMEC_Mock,100.0,FXYD3 PERP S100A14 LGALS1
+GSE,within,HuMEC_Mock,ks,light QC,4,0.2388059701492537,V2,200,Apical Junction,1.53,Mitotic Spindle,1.43,epithelial junction,48.0,Epithelial,39.0,HuMEC_Mock,100.0,ITGB4 SDC1 HES1 CALD1
+GSE,within,HuMEC_Mock,ks,light QC,4,0.2388059701492537,V3,200,Myc Targets V1,1.0,E2F Targets,0.98,MYC / growth (translation),63.0,Late-Hybrid,45.0,HuMEC_Mock,100.0,KRT15 VIM EMP3 KRT18
+GSE,within,HuMEC_Mock,ks,light QC,4,0.2388059701492537,V4,200,KRAS Signaling Dn,2.05,Cholesterol Homeostasis,1.81,KRAS-down (epithelial / differentiated),0.0,Epithelial,100.0,HuMEC_Mock,100.0,SLPI CLDN4 DSC2 TACSTD2
+GSE,within,HuMEC,hallmark,light QC,4,0.2835820895522388,V1,200,KRAS Signaling Dn,1.77,Cholesterol Homeostasis,1.14,KRAS-down (epithelial / differentiated),4.0,Epithelial,96.0,HuMEC_Mock,88.0,QSOX1 MFAP5 GJA1 GADD45B
+GSE,within,HuMEC,hallmark,light QC,4,0.2835820895522388,V2,200,Myc Targets V1,0.83,Myc Targets V2,0.64,MYC / growth (translation),60.0,Late-Hybrid,44.0,HuMEC_TGFB,56.0,TIMP1 VIM TFPI2 TPM2
+GSE,within,HuMEC,hallmark,light QC,4,0.2835820895522388,V3,200,Hedgehog Signaling,0.8,KRAS Signaling Dn,0.78,Hedgehog Signaling,26.0,Epithelial,48.0,HuMEC_Mock,96.0,DST IGFBP2 GJA1 FLNA
+GSE,within,HuMEC,hallmark,light QC,4,0.2835820895522388,V4,200,Coagulation,1.75,Apical Junction,1.69,coagulation / matrix-like,35.0,Mesenchymal,60.0,HuMEC_TGFB,98.0,FN1 LAMC2 LAMA3 SERPINE2
+GSE,within,MCF10A_Mock,ks,light QC,4,0.2885572139303483,V1,200,Epithelial Mesenchymal Transition,0.63,TNF-alpha Signaling via NF-kB,0.53,EMT / matrix,34.0,Mesenchymal,78.0,MCF10A_Mock,100.0,VIM EMP3 LGALS1 KRT8
+GSE,within,MCF10A_Mock,ks,light QC,4,0.2885572139303483,V2,200,KRAS Signaling Dn,1.97,Apical Surface,1.0,KRAS-down (epithelial / differentiated),2.0,Epithelial,100.0,MCF10A_Mock,100.0,S100P FXYD3 SLPI TACSTD2
+GSE,within,MCF10A_Mock,ks,light QC,4,0.2885572139303483,V3,200,Hypoxia,1.03,UV Response Dn,0.78,hypoxia / glycolysis,29.0,Late-Hybrid,53.0,MCF10A_Mock,100.0,KRT15 VIM ITGB4 LGALS1
+GSE,within,MCF10A_Mock,ks,light QC,4,0.2885572139303483,V4,200,Apical Surface,1.57,KRAS Signaling Up,1.18,Apical Surface,2.0,Epithelial,98.0,MCF10A_Mock,100.0,TACSTD2 SLPI FXYD3 IL1RN
+GSE,within,MCF10A_TGFB,ks,cleaned,4,0.3930348258706467,V1,157,G2-M Checkpoint,0.84,E2F Targets,0.84,cycling,75.0,Mesenchymal,100.0,MCF10A_TGFB,100.0,SERPINE1 TPM2 MYL9 VIM
+GSE,within,MCF10A_TGFB,ks,cleaned,4,0.3930348258706467,V2,157,Coagulation,1.28,KRAS Signaling Up,0.93,coagulation / matrix-like,13.0,Mesenchymal,94.0,MCF10A_TGFB,100.0,S100A14 SFN CD9 TSPAN13
+GSE,within,MCF10A_TGFB,ks,cleaned,4,0.3930348258706467,V3,157,Myc Targets V2,0.52,Myc Targets V1,0.34,MYC / growth (translation),38.0,Mesenchymal,76.0,MCF10A_TGFB,100.0,S100A14 SLPI ITGB4 KRT18
+GSE,within,MCF10A_TGFB,ks,cleaned,4,0.3930348258706467,V4,157,KRAS Signaling Dn,2.56,Estrogen Response Late,1.17,KRAS-down (epithelial / differentiated),0.0,Epithelial,74.0,MCF10A_TGFB,100.0,FXYD3 TACSTD2 SLPI CLDN7
+GSE,within,MCF10A_Mock,hallmark,light QC,3,0.6169154228855721,V1,200,KRAS Signaling Dn,1.31,Apical Surface,0.53,KRAS-down (epithelial / differentiated),6.0,Epithelial,96.0,MCF10A_Mock,100.0,CD59 MFAP5 ECM1 GADD45B
+GSE,within,MCF10A_Mock,hallmark,light QC,3,0.6169154228855721,V2,200,KRAS Signaling Up,0.67,Cholesterol Homeostasis,0.64,KRAS-up (squamous / differentiation),20.0,Epithelial,59.0,MCF10A_Mock,100.0,TIMP1 SDC1 CAPG LGALS1
+GSE,within,MCF10A_Mock,hallmark,light QC,3,0.6169154228855721,V3,200,TNF-alpha Signaling via NF-kB,1.08,IL-6/JAK/STAT3 Signaling,0.8,inflammatory / stress response,28.0,Mesenchymal,65.0,MCF10A_Mock,100.0,DKK1 VIM EMP3 CXCL1
+GSE,within,HuMEC_TGFB,all,light QC,4,0.746268656716418,V1,200,G2-M Checkpoint,1.87,E2F Targets,1.86,cycling,96.0,Mesenchymal,71.0,HuMEC_TGFB,100.0,MT2A TUBA1B H2AFZ CKS2
+GSE,within,HuMEC_TGFB,all,light QC,4,0.746268656716418,V2,200,KRAS Signaling Dn,1.75,Cholesterol Homeostasis,1.15,KRAS-down (epithelial / differentiated),2.0,Epithelial,92.0,HuMEC_TGFB,100.0,SPRR1A KRT6C SLPI PI3
+GSE,within,HuMEC_TGFB,all,light QC,4,0.746268656716418,V3,200,KRAS Signaling Dn,0.43,Fatty Acid Metabolism,0.27,no Hallmark set above 0.5 SD,36.0,Early-Hybrid,48.0,HuMEC_TGFB,100.0,GLUL KRT15 CA2 CKB
+GSE,within,HuMEC_TGFB,all,light QC,4,0.746268656716418,V4,200,Angiogenesis,1.37,Hedgehog Signaling,1.25,angiogenesis / matrix,42.0,Mesenchymal,30.0,HuMEC_TGFB,100.0,LAMB3 LAMA3 FN1 COL17A1
+GSE,within,HuMEC_Mock,hallmark,light QC,4,0.7910447761194029,V1,200,KRAS Signaling Dn,1.59,Cholesterol Homeostasis,1.2,KRAS-down (epithelial / differentiated),2.0,Epithelial,98.0,HuMEC_Mock,100.0,QSOX1 GADD45B GJA1 ECM1
+GSE,within,HuMEC_Mock,hallmark,light QC,4,0.7910447761194029,V2,200,Apical Junction,2.08,Mitotic Spindle,1.79,epithelial junction,52.0,Early-Hybrid,31.0,HuMEC_Mock,100.0,LAMC2 FN1 LAMA3 FLNA
+GSE,within,HuMEC_Mock,hallmark,light QC,4,0.7910447761194029,V3,200,Myc Targets V1,1.26,Myc Targets V2,1.12,MYC / growth (translation),62.0,Late-Hybrid,54.0,HuMEC_Mock,100.0,TFPI2 VIM EMP3 TNFRSF12A
+GSE,within,HuMEC_Mock,hallmark,light QC,4,0.7910447761194029,V4,200,TGF-beta Signaling,0.07,KRAS Signaling Dn,0.02,no Hallmark set above 0.5 SD,22.0,Early-Hybrid,46.0,HuMEC_Mock,100.0,DST TGFBI ID2 TPM2

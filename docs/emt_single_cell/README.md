@@ -28,3 +28,18 @@ Archetype analysis (Pareto task inference, PCHA) applied to five single-cell EMT
 - Results depend on cell cleaning (at least 10,000 UMI), which adds triangles in PDAC and GSE114687 and removes them in 4T1.
 
 The cleaning audit is Section 9 of the v2 report; the gaps and next steps are sections 10 and 11 (sections 9 and 10 of version 1).
+
+## Best simplex, Hallmark genes and hybrid / generalist analysis (`best_simplex/`, 21 to 23 Oct)
+
+Answers two questions across the five datasets: is there a significant simplex (all genes, KS genes, Hallmark EMT genes; pooled and within each unit) and are its corners tasks; and are hybrid cells generalists under three specialist rules. Main fits: SCC scRNA-only pooled + 8 scRNA tumours, cleaned arm elsewhere.
+
+| File | Content |
+|---|---|
+| `summary/` | One-page overview table + one picture per dataset (sent to supervisor 22 Oct) |
+| `REPORT_simplex_explainer.pdf` | Full explainer report: methods, results per dataset, figures |
+| `Explainer_simplex_results.pptx` / `.pdf` | Every unit, every gene set (168 slides) |
+| `Story_EMT_programmes.pptx` / `.pdf` | Seven-slide story deck |
+| `Summary_simplex_results.pptx` / `.pdf`, `Brief_simplex_results.pdf` | Short summaries |
+| `INTERPRETATION_and_next_steps.pdf` | Interpretation, link to intrinsic dimension (EMT_ID), next steps |
+| `main_fits.csv`, `best_fits.csv`, `all_fits.csv`, `corner_annotations.csv` | Numbers behind every figure |
+| `analyze.py`, `corners.py`, `families.py`, `build_*.py` | Scripts (run from `Project_1/`; `analyze.py` first) |
