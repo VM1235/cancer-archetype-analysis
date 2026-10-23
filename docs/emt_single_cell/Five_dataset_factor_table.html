@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Five dataset factor table</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1c1c1c;--mut:#666;--card:#fff;--bd:#d9d9d4;--ok:#2f855a;--no:#c53030;--mid:#b7791f}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#eee;--mut:#9a9a9a;--card:#222;--bd:#3a3a3a;--ok:#68d391;--no:#fc8181;--mid:#f6ad55}}
+body{margin:0;background:var(--bg);color:var(--fg);font:13.5px/1.45 -apple-system,Helvetica,Arial,sans-serif}
+main{padding:20px 16px 60px;max-width:1500px;margin:0 auto}
+h1{font-size:24px;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 12px}
+.note{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 12px;margin:10px 0}
+.wrap{overflow-x:auto;border:1px solid var(--bd);border-radius:8px;background:var(--card)}
+table{border-collapse:separate;border-spacing:0;min-width:1350px;width:100%}
+th,td{padding:8px 9px;vertical-align:top;border-bottom:1px solid var(--bd);border-right:1px solid var(--bd);text-align:left}
+th:last-child,td:last-child{border-right:0}
+thead th{color:#fff;position:sticky;top:0;z-index:2}
+tbody th{background:rgba(128,128,128,.12);width:150px;position:sticky;left:0;z-index:1}
+.g{background:#555}.a{background:#2b6cb0}.b{background:#2f855a}.c{background:#b7791f}.d{background:#c53030}.e{background:#6b46c1}
+.sec td,.sec th{background:rgba(128,128,128,.22)!important;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.y{color:var(--ok);font-weight:700}.n{color:var(--no);font-weight:700}.m{color:var(--mid);font-weight:700}
+td b{font-weight:650}small{color:var(--mut)}
+/*forcedark*/:root{--bg:#161616;--fg:#e8e8e8;--mut:#9a9a9a;--card:#222;--bd:#3a3a3a;--c1:#63b3ed;--c2:#68d391;--c3:#f6ad55;--c4:#fc8181;--c5:#b794f4;--ok:#68d391;--no:#fc8181;--mid:#f6ad55;--blue:#63b3ed;--green:#68d391;--red:#fc8181;--amb:#f6ad55;--pur:#b794f4;color-scheme:dark}.chip{color:#111}</style>
+<main>
+<h1>Five datasets × eight factors</h1>
+<p class="sub">Everything below is read from the v2 report and the saved output files in the repo. Items marked <span class="n">NOT DONE</span> or <span class="m">estimate</span> are not measured.</p>
+<div class="note"><b>How to read "containment".</b> <b>inside %</b> = share of cells whose barycentric weights are all ≥ 0, i.e. lie geometrically inside the fitted simplex (from each fit's <code>describe_k*/summary.md</code>). <b>t-ratio</b> = simplex volume ÷ convex-hull volume of the data; the permutation <b>p</b> tests whether that t-ratio beats shuffled data. Inside % was written out only for SCC, 4T1 and GSE114687 pooled fits; for Cook and PDAC it was not recorded (it can be computed from the saved archetypes).<br>
+<b>How corners were named (all datasets):</b> top marker genes of the cells nearest each corner; composition by EMT state, sample, phase; then MSigDB Hallmark gene-set scores at each corner (z of nearest 10% of cells minus the rest).</div>
+
+<div class="wrap"><table>
+<thead><tr><th class="g">Factor</th><th class="a">1 · Mouse SCC<br>GSE288137</th><th class="b">2 · Cook<br>GSE147405</th><th class="c">3 · Mouse PDAC<br>GSE173958</th><th class="d">4 · 4T1 clones<br>GSE303505</th><th class="e">5 · MCF10A/HuMEC<br>GSE114687</th></tr></thead>
+<tbody>
+
+<tr><th>1. What the dataset means</th>
+<td>Real mouse skin tumours (LKPR model), 12 tumours, 23,959 cells, with the authors' 4 EMT states. EMT happens <i>in vivo</i> but tumour, assay (scRNA vs multiome) and state are tangled.</td>
+<td>4 human cancer lines given TGF-β and sampled over time. Time after TGF-β is an EMT coordinate independent of our score: the cleanest test of time-ordered EMT. One line = one identity.</td>
+<td>Mouse pancreatic tumour cells from 2 mice at several body sites (primary, liver, lung, metastasis) = metastasis lineage. EMT labels are ours (KS score bins), so partly circular.</td>
+<td>5 single-cell clones of 4T1 breast cancer chosen along an epithelial–mesenchymal spectrum, plus parental, one tumour each. Clone = tumour = batch; only clone E is clearly separate on EMT.</td>
+<td>Human mammary cells grown as colonies, so EMT rises with distance from the colony edge (inner vs outer = "pseudospace"); Mock vs TGF-β. Induced EMT in culture, no replicates.</td></tr>
+
+<tr class="sec"><th>Gene set</th><td colspan="5">Shape finding by PCA + PCHA, then a permutation test. "Task corners" = what the corners represent.</td></tr>
+
+<tr><th>2. Hallmark EMT genes<br><small>(200-gene MSigDB set)</small></th>
+<td colspan="5"><span class="n">NOT DONE in any dataset.</span> Hallmark sets were used only to <i>name</i> corners after fitting (Gap 3 in the report, "unchanged"). <b>Why not:</b> never prioritised; KS genes were chosen first because the earlier breast (Pal) work used them. <b>Needed first:</b> map symbols (human uppercase; mouse by capitalisation, as for KS) and check how many of the 200 are present. <b>Time (estimate, not measured):</b> the gene set is small, so PCA is fast. A pooled run is 5 k-values × 200 shuffles run in parallel, likely tens of minutes per dataset (SCC's all-genes pooled run took hours; KS-size sets are far lighter). Within-sample fits: measured median 12 min each (range 1.5 to 25) across the audit's 104 fits. A pooled fit on all five datasets plus within-sample fits is roughly an afternoon to one day of compute on this machine, plus about a day to write up. Realistic expectation from the KS results: no simplex pooled, because Hallmark EMT overlaps KS heavily. A planted-triangle power check should come with it.</td></tr>
+
+<tr><th>3. KS EMT genes<br><small>(Tan 2014; SCC 176, Cook 163, GSE 191)</small></th>
+<td><span class="n">No simplex</span> pooled: k=3 p=0.83 (real t-ratio 0.481 <i>below</i> shuffled median 0.496).<br><b>Inside:</b> 82.5% at k=3.<br><b>Corners:</b> none to name. KS PC1 (26% of variance) is almost purely EMT state (η² 0.81), so EMT is an <b>axis</b>, not a triangle.<br>Only k=6,7 pass (beyond elbow 5, ignored).</td>
+<td><span class="m">Pooled: p=0.005 at every k</span>, elbow 4, but vertices = cell lines (100% of specialists at each vertex are one line). Identity, not EMT. <b>Inside:</b> not recorded.<br><b>Within line (cleaned):</b> only MCF7 passes (k=3 p=0.030); A549, DU145, OVCA420 fail.<br><b>Found by:</b> scoring the nearest 10% of cells on KS epithelial / mesenchymal, proliferation, hypoxia and TGF-β sets: corners are proliferation and TGF-β response, not E or M.</td>
+<td><span class="n">No simplex</span> pooled: k=3 1.00, k=4 0.97, k=5 0.77. <b>Inside:</b> not recorded.<br><b>Within library, cleaned:</b> 0 of 9 at k=3; 3 of 9 at k=4 (M1-SS 0.005, M2 0.025, M2-Met 0.040).<br>EMT genes alone give no within-library triangle at k=3; the all-genes triangles come from other programmes.</td>
+<td><span class="n">No simplex</span> pooled: light QC k=3 0.93; cleaned 0.52 (k=4 0.03). <b>Inside:</b> 85.5% at k=3 (light QC).<br><b>Within clone, cleaned:</b> EM2 passes at all three contamination cutoffs (0.035 / 0.015 / 0.050); parental passes only at cutoff 0.5 (p=0.005, unexplained). Others fail.<br>Corners not named: the pooled shape is not significant.</td>
+<td><span class="m">Pooled: none until k=5 to 7</span>; k=4 (p not significant) has vertices = samples (e.g. V3 = MCF10A + TGF-β, 94% mesenchymal). <b>Inside:</b> 36.0% at k=4, 16.3% at k=5.<br><span class="y">Within sample, cleaned: 7 of 12 pass</span> (MCF10A Mock, HuMEC Mock, HuMEC TGFB at k=3 and k=4; 3 of 6 at k=3 in the UMI sweep; fails at 5,000 UMI).<br><b>Corners:</b> cycling (E2F / G2-M top set, 8 of 8 fits), EMT/matrix (EMT set +0.16 to +0.46), differentiated epithelial (no Hallmark set; named from genes SPRR1A/B, KRT16).</td></tr>
+
+<tr><th>4. All genes<br><small>(11k to 14.5k genes)</small></th>
+<td><span class="m">Version A (12 tumours): k=3 p=0.005</span>, t-ratio 0.528, null median 0.468. <b>Inside:</b> 73.1%.<br><b>Corners:</b> V3 late EMT (93% late EMT; Col3a1, Col1a1, Dcn, Postn), V2 proliferating epithelial/early hybrid (Krt14, Krt5, 33% G2M), V1 <b>technical</b> (79% multiome; long-gene markers).<br><b>B</b> (scRNA only): p=0.005, inside 77.7%, V1 persists (SC15, SC46).<br><span class="n">Six clean tumours: p=1.00</span>, inside 45.1%.<br><span class="y">Within tumour (raw):</span> SC15 0.005, SC32 0.015, SC46 0.244.<br><b>Found by:</b> markers, η², long-gene score, leave-one-tumour-out (90 to 99% agreement), Hallmark (E2F/G2-M, EMT).</td>
+<td><span class="m">Pooled: p=0.005 every k</span> (corners = lines). <b>Inside:</b> not recorded.<br><b>Within line, cleaned:</b> A549 passes at k=3 (0.010) but fails at k=4 (1.00) and when time-balanced (0.224); uncleaned it was 0.711. Others fail.<br><b>Corners (A549):</b> early-response and TGF-β-response, plus proliferation; found by programme scores on the nearest 10%.</td>
+<td><span class="n">Pooled: none</span> (k=3 0.99; elbow 5). Both mice cleaned: k=4 p=0.045 only. <b>Inside:</b> not recorded.<br><span class="y">Within library, cleaned: 6 of 7 at k=3</span> (uncleaned 3 of 7).<br><b>Corners:</b> epithelial/ductal (Ttr, Dmbt1, Krt7), proliferation (Hmgb2, Birc5, Top2a; 82 to 100% S/G2M), third = EMT signalling (Inhba, Fn1, Id3, Hmga2) in mouse 1 or hypoxia in mouse 2. EMT is an <b>edge</b> (epithelial→EMT), not a corner. <b>Found by:</b> top genes + programme scores + Hallmark on 19 corners.</td>
+<td><span class="m">Pooled, light QC: k=4 p=0.005</span>, inside 35.7%: corners clone E, parental, clone M, cycling. <span class="m">Cleaned: k=3 p=0.010</span> (weak), inside 81.1%: V1 cycling (95% S+G2M), V2 epithelial-leaning G1, V3 <b>clone M</b> (89%).<br><b>Found by:</b> clone/phase composition, leave-one-clone-out (dropping M: agreement 79%, corner replaced), Hallmark (E2F/G2-M; M clone TGF-β/hypoxia).<br><span class="n">Within clone, cleaned: 0 of 5</span> at every cutoff (1 of 20 over all fits, chance level).</td>
+<td><span class="m">Pooled: k=6 only (p=0.005)</span>, inside 1.2%; corners = samples.<br><span class="y">Within sample, cleaned: 11 of 12 pass</span> (18 of 24 with KS); MCF10A stable at 5k, 10k, 15k UMI; HuMEC cutoff-sensitive. Triangle beats an EMT-score path in 6 of 12 tests.<br><b>Corners:</b> cycling / differentiated epithelial / EMT-matrix, recurring in both lines. <b>Found by:</b> top genes, outer-colony share (EMT and cycling corners 58 to 98% outer), Hallmark, depth control (regression 8/8, matching 7/8 keep the triangle).</td></tr>
+
+<tr class="sec"><th>Specialist / generalist</th><td colspan="5">Three rules: purity gap ≥ 0.35, Groves closest-5%, weight &gt; 0.95. Each <code>06_groves_specialists.py</code> script is written to report all three.</td></tr>
+
+<tr><th>5. Specialist / generalist: all three rules?</th>
+<td><span class="y">All three reported</span> (scRNA fit, k=3).<br>Hybrid cells generalist: <b>82% / 99% / 100%</b> (gap / closest-5% / &gt;0.95). Late EMT is the clearest specialist state (63% at its corner by gap, 12% by closest-5%).</td>
+<td><span class="m">Figure text says three rules; I could verify only the gap and closest-5% numbers.</span> Gap rule: 1 d (middle) 89% generalist; 0 d 66%, 3 d 64%. Closest-5%: 75 to 90% generalist. The &gt;0.95 numbers were not in the text I read. Done on the pooled A549 / line fits only.</td>
+<td><span class="y">All three reported</span> (six significant libraries pooled).<br>Generalist, gap / closest-5% / &gt;0.95: Epithelial 57/84/100, Early-Hybrid 64/88/100, Late-Hybrid 52/82/100, Mesenchymal 53/80/100.</td>
+<td><span class="m">Closest-5% only reported:</span> cleaned k=3 epithelial 86%, early-hybrid 87%, late-hybrid 85%, mesenchymal 83% (light QC 72 to 85%). The script also computes the other two (a groves summary file contains the 0.95 output) but they are not in the report. <b>Missing because</b> only one rule was written up. <b>Time (estimate):</b> minutes to re-run.</td>
+<td><span class="m">Gap and closest-5% reported; &gt;0.95 not reported.</span> A hybrid state is the most generalist in 7 of 8 fits (gap) and 8 of 8 (closest-5%). Early-hybrid 47 to 77% / 72 to 99%; late-hybrid 40 to 86% / 82 to 97%. Exception: HuMEC Mock under the gap rule. <b>Time (estimate):</b> minutes per fit.</td></tr>
+
+<tr><th>6. Cleaning: what was done, is it OK, what else</th>
+<td><b>Done:</b> authors' own QC only (&gt;700 genes, &lt;20% mito). No cleaning arm. <b>OK?</b> Mostly: the problem is assay, not depth; 10k UMI would drop 50% of multiome cells. <b>Else:</b> batch correction (Harmony) was never run; regression of the technical axis was tried and withdrawn.</td>
+<td><b>Done:</b> ≥10,000 UMI and mito ≤0.07 (keeps 89%); technical-gene filter was <i>not applied</i> until the audit, then added (MALAT1, NEAT1, HBB…): no result changed. <b>OK?</b> Yes, light touch. <b>Else:</b> UMI sweep not run; mito 0.07 differs from the others.</td>
+<td><b>Done:</b> 1,000 to 7,000 genes, mito ≤15%; tumour-cell cluster selection; ≥10,000 UMI (keeps 80%); mouse technical genes incl. liver ambient RNA. <b>OK?</b> Reasonable; it turned 3 of 7 into 6 of 7 passes, so results depend on it. <b>Else:</b> UMI sweep not run; selection thresholds (0.85 / 0.3) not tested.</td>
+<td><b>Done:</b> ≥500 genes, mito ≤15%, ≥10,000 UMI (keeps 69%; clone E 21%), contamination panel ≤0.3 set by eye, technical genes. <b>OK?</b> Partly: cutoff sweep 0.2/0.3/0.5 shows the conclusion holds, but clone E drops to 142 cells and cannot be tested. <b>Else:</b> UMI sweep; per-clone thresholds; sort immune out upstream.</td>
+<td><b>Done:</b> ≥500 genes, mito ≤15%, ≥10,000 UMI (keeps 45%; HuMEC 35 to 40%); human technical-gene fix added in audit. <b>OK?</b> The most sensitive: UMI sweep shows HuMEC is cutoff-sensitive and KS-only triangle needs ≥10,000 UMI. <b>Else:</b> depth-aware normalisation instead of a hard cut.</td></tr>
+
+<tr><th>7. Patterns inferred</th>
+<td>A triangle exists on all genes but its third corner is technology. Without that axis the pooled triangle disappears; two of three mixed tumours still carry one. EMT order is shared across tumours (cross-projection into SC32). Hybrids are generalists.</td>
+<td>Pooled shape = cell identity. Time ordering is real in A549 and a pseudotime path explains 7 of 8 fits. Corners are TGF-β and proliferation programmes. Middle time point is the most generalist.</td>
+<td>Pooled blur = mouse and site. Cleaning reveals per-library triangles with epithelial / proliferation / EMT-or-hypoxia corners; EMT is an edge. Corners are mostly not shared across mice. Hybrids are interior.</td>
+<td>The "spectrum" is one epithelial clone plus five similar ones, so there is little EMT variance to fill a simplex. Corners are cycling and clone M. Cleaning removes within-clone shapes: earlier ones were stress, immune and stromal contamination.</td>
+<td>The clearest trade-off: cycling vs differentiated vs EMT/matrix, recurring across cell lines and arms and lining up with colony position. Pooled shape is sample identity. EMT is a strong axis (36 to 90% of PC1) with extra dimensions added by cycling and differentiation.</td></tr>
+
+<tr><th>8. Next step</th>
+<td>Path-vs-triangle test (never run on SCC); Harmony-corrected run to settle the technical axis; fit on Hallmark EMT; fill the missing cleaning arm.</td>
+<td>Add the specialist rules table for all three; fit Hallmark EMT; UMI sweep; link corners to time with the pseudotime path.</td>
+<td>Path test on PDAC; UMI sweep; test the tumour-selection thresholds; an independent EMT score to break label circularity.</td>
+<td>Look at the corner genes of the unexplained parental pass (cutoff 0.5); write up all three specialist rules; cross-projection (not done); UMI sweep. Consider dropping 4T1 as a test of EMT triangles (one tumour per clone).</td>
+<td>Redo the path test with the authors' pseudospace trajectory; replicate in another culture system; planted-triangle power check; Hallmark EMT fit.</td></tr>
+
+</tbody></table></div>
+</main>

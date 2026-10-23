@@ -4,7 +4,8 @@ Archetype analysis (Pareto task inference, PCHA) applied to five single-cell EMT
 
 | File | Content |
 |---|---|
-| `EMT_archetype_analysis_FINAL_REPORT.md` / `.pdf` | Full report: methods, code flow, every figure explained, results per dataset, trends, gaps |
+| `EMT_archetype_analysis_FINAL_REPORT_v2.md` | **Current full report (17 Oct):** methods, code flow, every figure explained, results per dataset, trends, the cleaning audit (Section 9), gaps |
+| `EMT_archetype_analysis_FINAL_REPORT.md` / `.pdf` | Version 1 (16 Oct), kept unchanged |
 | `EMT_archetype_analysis_FINAL_DECK.pptx` | Slide version of the report (not tracked in git) |
 | `Mouse_SCC_Archetype_Pipeline_Guide.pdf` | Short guide to the SCC pipeline |
 
@@ -26,4 +27,4 @@ Archetype analysis (Pareto task inference, PCHA) applied to five single-cell EMT
 - Hybrid cells are mostly generalists in every dataset.
 - Results depend on cell cleaning (at least 10,000 UMI), which adds triangles in PDAC and GSE114687 and removes them in 4T1.
 
-The gaps and next steps are in sections 9 and 10 of the report.
+The cleaning audit is Section 9 of the v2 report; the gaps and next steps are sections 10 and 11 (sections 9 and 10 of version 1).

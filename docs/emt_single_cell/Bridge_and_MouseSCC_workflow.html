@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bridge and Mouse SCC workflow</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1c1c1c;--mut:#666;--card:#fff;--bd:#d9d9d4;--blue:#2b6cb0;--green:#2f855a;--red:#c53030;--amb:#b7791f;--pur:#6b46c1}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#eee;--mut:#9a9a9a;--card:#222;--bd:#3a3a3a;--blue:#63b3ed;--green:#68d391;--red:#fc8181;--amb:#f6ad55;--pur:#b794f4}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,Helvetica,Arial,sans-serif}
+main{max-width:900px;margin:0 auto;padding:24px 16px 60px}
+h1{font-size:26px;margin:0 0 4px}h2{font-size:20px;margin:36px 0 10px;border-bottom:1px solid var(--bd);padding-bottom:4px}
+.sub{color:var(--mut);margin-bottom:20px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:10px 0}
+.card h3{margin:0 0 4px;font-size:15px}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;border:1px solid currentColor;margin-right:6px;vertical-align:1px}
+.know{color:var(--green)}.new{color:var(--blue)}.warn{color:var(--red)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}th,td{border:1px solid var(--bd);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--card)}
+.flow{display:flex;flex-direction:column;align-items:stretch}
+.step{background:var(--card);border:1px solid var(--bd);border-left:6px solid var(--blue);border-radius:8px;padding:10px 14px}
+.step b.n{display:inline-block;min-width:26px;color:var(--blue)}
+.step .s{font-weight:600}.step code{font-size:12.5px;background:rgba(128,128,128,.15);padding:1px 5px;border-radius:4px}
+.step .r{margin-top:4px;font-size:13.5px;color:var(--mut)}
+.arrow{text-align:center;color:var(--mut);line-height:1.1;font-size:18px;margin:2px 0}
+.step.data{border-left-color:var(--pur)}.step.fit{border-left-color:var(--blue)}.step.chk{border-left-color:var(--amb)}.step.bad{border-left-color:var(--red)}.step.ok{border-left-color:var(--green)}
+.branch{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media(max-width:700px){.branch{grid-template-columns:1fr}}
+.legend span{margin-right:14px;font-size:13px}.dot{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px}
+/*forcedark*/:root{--bg:#161616;--fg:#e8e8e8;--mut:#9a9a9a;--card:#222;--bd:#3a3a3a;--c1:#63b3ed;--c2:#68d391;--c3:#f6ad55;--c4:#fc8181;--c5:#b794f4;--ok:#68d391;--no:#fc8181;--mid:#f6ad55;--blue:#63b3ed;--green:#68d391;--red:#fc8181;--amb:#f6ad55;--pur:#b794f4;color-scheme:dark}.chip{color:#111}</style>
+<main>
+<h1>From the educational report to v2, and the Mouse_SCC workflow</h1>
+<div class="sub">Part A: concepts that bridge the two documents. Part B: everything done in <code>Mouse_SCC/</code>, step by step.</div>
+
+<h2>Part A. The bridge</h2>
+<div class="card"><b>One-line picture.</b> The PDF you read (11 Oct) teaches one dataset (mouse SCC) and one machine: <i>PCA → fit a simplex (PCHA) → test it against shuffled data → name the corners</i>. v2 (17 Oct) keeps that machine, runs it on five datasets, and asks a harder question: <i>is a corner an EMT "task", or just a programme, a batch or a technical axis?</i></div>
+
+<h3>What you already have from the PDF</h3>
+<div class="card"><span class="tag know">known</span>Cells as vectors; PCA; convex hull and simplex; barycentric weights; t-ratio; permutation test (p = (1+hits)/(1+shuffles)); ESV elbow for k; versions A / B / C; specialist by gap ≥ 0.35; η² (how much of a PC a label explains).</div>
+
+<h3>What v2 adds, in the order you need it</h3>
+
+<div class="card"><h3><span class="tag new">1</span>Two questions, not one</h3>
+Q1: do corners exist that look like tasks? Q2: do hybrid cells sit at a corner (specialist) or in the interior (generalist)? In the PDF these were mixed together; v2 answers them separately for every dataset.</div>
+
+<div class="card"><h3><span class="tag new">2</span>Corner = programme, not automatically a "task"</h3>
+A corner is only a direction of extreme expression. It can be proliferation, matrix/TGF-β response, stress, or technology. This is why v2 stresses <b>naming evidence</b>: marker genes, state mix, tumour mix, and a <b>Hallmark gene-set check</b> (E2F/G2-M → cycling; EMT set → mesenchymal; nothing above +0.25 → technical).</div>
+
+<div class="card"><h3><span class="tag new">3</span>Confounding is the central problem</h3>
+In SCC, tumour, assay (scRNA vs multiome) and EMT state are tangled. A pooled fit can pass the permutation test purely because tumours differ. Hence the extra tests: leave-one-tumour-out, scRNA-only (B), six clean tumours, and <b>η² of tumour vs state</b> on each PC. Key lesson: <i>a small p only says "not a shuffled blob", not "Pareto front"</i>.</div>
+
+<div class="card"><h3><span class="tag new">4</span>Pooled fit vs within-sample fit</h3>
+Pooled: one triangle for all cells (dominated by sample differences). Within-sample: PCA and PCHA done <i>inside one tumour/line/clone</i>, so batch cannot be the explanation. Then <b>cross-projection</b>: freeze one sample's triangle and drop every other sample into it, to see whether the EMT ordering is shared.</div>
+
+<div class="card"><h3><span class="tag new">5</span>Path versus triangle</h3>
+If EMT is a single continuum, cells line up on a curve, not a triangle. The path test (script 08c) asks whether a 3-corner shape beats a 1-D path. This is the formal version of "EMT might not have corners at all".</div>
+
+<div class="card"><h3><span class="tag new">6</span>Specialist rules compared</h3>
+Gap rule (Pal): top weight − second ≥ 0.35. Closest-5% rule (Groves 2022): the 5% of cells nearest each corner are specialists, the rest generalists. The 98.8% "generalist" number for SCC hybrids uses the second rule.</div>
+
+<div class="card"><h3><span class="tag new">7</span>Cleaning matters, and can cut both ways</h3>
+Filters: ≥10,000 UMI, technical genes (Malat1, Neat1, haemoglobin…), contamination panel (4T1). Cleaning <i>created</i> triangles in PDAC and GSE114687 and <i>removed</i> them in 4T1 and Cook. The 17 Oct audit found the technical-gene filter silently did nothing on human data (mouse spelling), fixed it, reran 104 fits; conclusions did not change. Depth (UMI) can itself make a corner, so v2 adds <b>depth regression / matching</b>.</div>
+
+<div class="card"><h3><span class="tag new">8</span>Replication across datasets</h3>
+Same pipeline on Cook (cell lines, TGF-β time course), PDAC (metastasis), 4T1 (clones), GSE114687 (MCF10A/HuMEC pseudospace). Only the last shows a triangle inside samples: <b>cycling / differentiated-epithelial / EMT-matrix</b>. That is the "trade-off exists in clean induced EMT, not in tumours" result.</div>
+
+<div class="card"><h3><span class="tag warn">9</span>Honesty log and withdrawn results</h3>
+Pre-registered predictions (SCC, 4T1 only). Things changed after looking are listed. Notably the SCC <b>regress-out-V1</b> result (p = 0.04) was <b>withdrawn</b>: it also removed real EMT signal (Krt14, Col1a1 slopes ≈ ±1). Treat anything under that heading as <i>do not cite</i>.</div>
+
+<h3>Mapping: PDF chapters → v2 sections</h3>
+<table>
+<tr><th>PDF (Oct 11)</th><th>v2 (Oct 17)</th><th>What changed</th></tr>
+<tr><td>Ch 1 question, 1.4 predictions</td><td>§0, §1.2, §2.3</td><td>Split into Q1/Q2; honesty log</td></tr>
+<tr><td>Ch 2–3 biology, literature</td><td>§1.1, §1.3</td><td>Condensed</td></tr>
+<tr><td>Ch 4 data</td><td>§3.1, §9.2–9.3</td><td>Plus cleaning audit across datasets</td></tr>
+<tr><td>Ch 5–6 maths and methods</td><td>§1.3, §2.1–2.2</td><td>Same engine; shared across 5 datasets</td></tr>
+<tr><td>Ch 7 code walkthrough</td><td>§2.1 table, §3.3</td><td>Adds scripts 08, 08b, 08c, 09, 10</td></tr>
+<tr><td>Ch 8–9 results (A, B, C)</td><td>§3.4–3.6</td><td>Adds scrna6, within-tumour, cross-projection, Hallmark check</td></tr>
+<tr><td>Ch 10–13 limits</td><td>§8, §10</td><td>Cross-dataset trends; the cleaning problem</td></tr>
+<tr><td>—</td><td>§4–7, §9</td><td><b>New:</b> four more datasets; cleaning audit</td></tr>
+</table>
+
+<h2>Part B. Mouse_SCC, step by step</h2>
+<div class="legend card"><span><i class="dot" style="background:var(--pur)"></i>data</span><span><i class="dot" style="background:var(--blue)"></i>fit / compute</span><span><i class="dot" style="background:var(--amb)"></i>check / robustness</span><span><i class="dot" style="background:var(--green)"></i>current result</span><span><i class="dot" style="background:var(--red)"></i>withdrawn / problem</span></div>
+
+<div class="flow">
+
+<div class="step data"><b class="n">0</b><span class="s">Download GSE288137 and write predictions</span><br><code>data/raw/</code> · <code>results/PREREGISTERED_PREDICTIONS.md</code>
+<div class="r">Authors' Seurat object: 23,959 tumour cells, 12 tumours (4 multiome, 8 scRNA), 4 EMT states. Predictions fixed before any fit: k = 3, corners epithelial / late EMT / proliferating hybrid.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step data"><b class="n">1</b><span class="s">Build the matrix</span> <code>01_build_anndata.py</code>
+<div class="r">Counts → CP10k → log1p. Keep genes in ≥1% of cells, drop mito/ribo → 14,502 genes.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step fit"><b class="n">2</b><span class="s">PCA on balanced fit cells</span> <code>02_pca.py --geneset all|ks</code>
+<div class="r">≤800 cells per tumour (9,600 fit cells), genes centred not scaled, exact PCA, then project all cells. Diagnostics: η² of tumour / assay / state per PC. Finding: on all genes PC1 is tumour (0.76) and assay (0.54); on KS genes PC1 is EMT state (0.81).</div></div>
+<div class="arrow">▼</div>
+
+<div class="step chk"><b class="n">2b</b><span class="s">Tumour effect within state</span> <code>02b_tumour_within_state.py</code>
+<div class="r">Does tumour still matter after fixing the EMT state? Separates batch from biology.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step fit"><b class="n">3</b><span class="s">Fit and test</span> <code>run_fits.sh all main 200</code> → <code>03_fit_and_test.py</code>
+<div class="r">ESV curve; PCHA for k = 3…7 (15 starts, largest volume kept); 200-shuffle permutation test per k. Run three ways: <b>A</b> all genes/all cells, <b>B</b> all genes/scRNA only, <b>C</b> 176 KS genes.</div></div>
+<div class="arrow">▼</div>
+
+<div class="branch">
+<div class="step ok"><b>A</b><br>k = 3, p = 0.005. Corners: late EMT, proliferating epithelium, <b>technical</b> (79% multiome).</div>
+<div class="step ok"><b>B</b><br>k = 3, p = 0.005. Corner V1 persists (SC15, SC46): sample-level, not EMT.</div>
+<div class="step ok"><b>C</b><br>KS genes: <b>no simplex</b>, p = 0.83.</div>
+</div>
+<div class="arrow">▼</div>
+
+<div class="step fit"><b class="n">4</b><span class="s">Describe the simplex</span> <code>04_describe_simplex.py --k 3</code>
+<div class="r">Weights for every cell; state / cluster / tumour / phase by corner; distance-bin enrichment; marker genes per corner; figures. Corners are named only after the tumour breakdown is checked.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step chk"><b class="n">5</b><span class="s">Robustness refits</span> <code>05_robustness.py --variant loto | scrna | nophase | seed</code>
+<div class="r">Leave each tumour out; scRNA only; cell cycle regressed; new random subsample. Corner agreement with the main fit.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step fit"><b class="n">6</b><span class="s">Specialists vs generalists (Q2)</span> <code>06_groves_specialists.py</code>
+<div class="r">Closest-5% rule, with gap rule and weight &gt; 0.95 for comparison. <b>Hybrid cells: 98.8% generalists.</b></div></div>
+<div class="arrow">▼</div>
+
+<div class="step bad"><b class="n">7</b><span class="s">Regress the technical axis out</span> <code>07_regress_v1.py</code> &nbsp;(<code>all_scrna_noV1</code>)
+<div class="r">k = 3, p = 0.04, but it also deleted EMT signal (Krt14 slope 1.04, Col1a1 −1.06). <b>Withdrawn as an artefact; do not cite.</b></div></div>
+<div class="arrow">▼</div>
+
+<div class="step chk"><b class="n">7b</b><span class="s">Drop the technical tumours instead</span> <code>all_scrna6</code>
+<div class="r">Six clean scRNA tumours, no correction: <b>no simplex, k = 3, p = 1.00</b>. So the pooled triangle came from the technical axis.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step fit"><b class="n">8</b><span class="s">Fit inside single tumours</span> <code>08_within_tumour.py --raw</code> → <code>results/within_tumour_raw</code>
+<div class="r">PCA and PCHA done inside one tumour, so batch is excluded.</div></div>
+<div class="arrow">▼</div>
+<div class="branch">
+<div class="step ok">SC15<br>p = 0.005 (triangle)</div>
+<div class="step ok">SC32<br>p = 0.015 (triangle)</div>
+<div class="step bad">SC46<br>p = 0.244 (no triangle)</div>
+</div>
+<div class="arrow">▼</div>
+
+<div class="step fit"><b class="n">9</b><span class="s">Cross-projection</span> <code>09_cross_projection.py --raw</code> → <code>cross_projection_SC32_raw</code>
+<div class="r">Freeze SC32's triangle (mesenchymal, epithelial, cycling) and project every tumour into it. Result: the EMT ordering is <b>shared across tumours</b>.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step chk"><b class="n">10</b><span class="s">Name corners with Hallmark sets</span> <code>docs/cleaning_audit/hallmark_scc_4t1.py</code> &nbsp;(added 17 Oct)
+<div class="r">Proliferating corner: E2F +0.42…0.58, G2-M. Late-EMT corner: EMT set +0.36…0.43. Technical corner: nothing above +0.25. Agrees with the names.</div></div>
+<div class="arrow">▼</div>
+
+<div class="step data"><b class="n">11</b><span class="s">Write-up</span> <code>research_report/</code> · <code>Mouse SCC archetype analysis.pptx</code> · v2 report §3
+<div class="r"><b>Q1:</b> no EMT task corners survive removing the technical axis; corners are late-EMT matrix programme, proliferation and technology. <b>Q2:</b> hybrids are generalists.</div></div>
+
+</div>
+
+<div class="card" style="margin-top:20px"><b>Read it as a story.</b> A triangle appears (A, B) → it is mostly technical → EMT genes alone give nothing (C) → removing the technical axis by regression fails (7) → dropping technical tumours kills the pooled triangle (7b) → inside two tumours a real triangle remains (8) and the EMT order is shared (9) → Hallmark confirms what the corners are (10).</div>
+</main>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Five dataset workflow</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1c1c1c;--mut:#666;--card:#fff;--bd:#d9d9d4;
+--c1:#2b6cb0;--c2:#2f855a;--c3:#b7791f;--c4:#c53030;--c5:#6b46c1;--ok:#2f855a;--no:#c53030;--mid:#b7791f}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#eee;--mut:#9a9a9a;--card:#222;--bd:#3a3a3a;
+--c1:#63b3ed;--c2:#68d391;--c3:#f6ad55;--c4:#fc8181;--c5:#b794f4;--ok:#68d391;--no:#fc8181;--mid:#f6ad55}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14.5px/1.5 -apple-system,Helvetica,Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 70px}
+h1{font-size:26px;margin:0 0 4px}h2{font-size:20px;margin:42px 0 6px;padding-bottom:4px;border-bottom:1px solid var(--bd)}
+h3{font-size:15px;margin:0 0 4px}
+.sub{color:var(--mut);margin:0 0 14px}
+code{font-size:12px;background:rgba(128,128,128,.16);padding:1px 5px;border-radius:4px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:10px 0}
+/* backbone */
+.bb{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:860px){.bb{grid-template-columns:1fr 1fr}}@media(max-width:520px){.bb{grid-template-columns:1fr}}
+.bs{background:var(--card);border:1px solid var(--bd);border-top:5px solid var(--c1);border-radius:8px;padding:10px 12px;position:relative}
+.bs .k{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.bs b{display:block;margin:2px 0}.bs small{color:var(--mut);display:block;margin-top:3px}
+.bs.d{border-top-color:var(--c5)}.bs.f{border-top-color:var(--c1)}.bs.c{border-top-color:var(--c3)}.bs.r{border-top-color:var(--c2)}
+/* swimlane */
+.lane-wrap{overflow-x:auto;border:1px solid var(--bd);border-radius:10px;background:var(--card)}
+table.lane{border-collapse:separate;border-spacing:0;min-width:1000px;width:100%;font-size:13px}
+.lane th,.lane td{padding:8px 9px;vertical-align:top;border-bottom:1px solid var(--bd);border-right:1px solid var(--bd)}
+.lane th:last-child,.lane td:last-child{border-right:0}.lane tr:last-child td,.lane tr:last-child th{border-bottom:0}
+.lane thead th{position:sticky;top:0;color:#fff;text-align:left;font-size:13px}
+.lane tbody th{width:118px;text-align:left;background:rgba(128,128,128,.10);font-size:12px;color:var(--mut)}
+.h1{background:#2b6cb0}.h2{background:#2f855a}.h3{background:#b7791f}.h4{background:#c53030}.h5{background:#6b46c1}
+.hl{background:#555}
+.chip{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:9px;margin:1px 0;color:#fff}
+.ok{background:var(--ok)}.no{background:var(--no)}.mid{background:var(--mid)}.neu{background:#718096}
+@media(prefers-color-scheme:dark){.chip{color:#111}}
+/* decision trails */
+.trail{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;margin:8px 0 2px}
+.node{flex:1 1 150px;min-width:150px;max-width:230px;background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px 10px;font-size:12.8px;position:relative;margin:0 20px 10px 0;border-top:4px solid var(--tc,var(--c1))}
+.node:not(:last-child)::after{content:"➜";position:absolute;right:-18px;top:50%;transform:translateY(-50%);color:var(--mut)}
+.node .t{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.node.bad{border-top-color:var(--no)}.node.good{border-top-color:var(--ok)}.node.chk{border-top-color:var(--mid)}
+.ds{border-left:6px solid var(--tc);padding-left:12px;margin:18px 0}
+.ds h3{font-size:16px}.ds .meta{color:var(--mut);font-size:13px;margin-bottom:2px}
+/* bars */
+.bars .row{display:grid;grid-template-columns:110px 1fr 70px;gap:8px;align-items:center;margin:7px 0;font-size:13px}
+.track{height:18px;background:rgba(128,128,128,.18);border-radius:4px;overflow:hidden}.fill{height:100%;border-radius:4px}
+.legend span{margin-right:14px;font-size:12.5px;display:inline-block}.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:760px){.two{grid-template-columns:1fr}}
+/* timeline */
+.tl{border-left:3px solid var(--bd);margin:10px 0 0 8px;padding-left:16px}
+.tl div{margin:0 0 10px;position:relative}.tl div::before{content:"";position:absolute;left:-23px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--c1)}
+.tl b{display:block}
+/* audit */
+.aud{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}.aud .node{margin:0 20px 8px 0}
+/*forcedark*/:root{--bg:#161616;--fg:#e8e8e8;--mut:#9a9a9a;--card:#222;--bd:#3a3a3a;--c1:#63b3ed;--c2:#68d391;--c3:#f6ad55;--c4:#fc8181;--c5:#b794f4;--ok:#68d391;--no:#fc8181;--mid:#f6ad55;--blue:#63b3ed;--green:#68d391;--red:#fc8181;--amb:#f6ad55;--pur:#b794f4;color-scheme:dark}.chip{color:#111}</style>
+<main>
+<h1>Five datasets, one pipeline: the whole analysis as a workflow</h1>
+<p class="sub">Mouse skin SCC, Cook cell lines, mouse PDAC, 4T1 clones and MCF10A/HuMEC pseudospace (GSE114687). The method was built on SCC first, then re-run on the other four. Source: v2 report (17 Oct 2026).</p>
+
+<div class="card"><b>Two questions asked of every dataset.</b>
+Q1: do EMT "task" corners (a simplex) exist? Q2: do hybrid cells sit at a corner (specialists) or inside (generalists)?</div>
+
+<h2>1. The shared backbone</h2>
+<p class="sub">Every dataset runs the same sequence. Only the data-loading, labels and cleaning differ (section 2).</p>
+<div class="bb">
+ <div class="bs d"><span class="k">Step 1</span><b>Build matrix</b>CP10k, log1p; keep genes in ≥1% of cells; drop mito/ribo; score cell cycle.<small><code>01_build_anndata.py</code></small></div>
+ <div class="bs d"><span class="k">Step 1b–1e</span><b>Dataset-specific prep</b>Tumour-cell selection, derived EMT labels, cleaned copy, depth-matched copy.<small><code>01b … 01e</code></small></div>
+ <div class="bs f"><span class="k">Step 2</span><b>Balanced PCA</b>Cap cells per sample; centre genes (no scaling); exact PCA; project all cells; η² per PC.<small><code>02_pca.py</code></small></div>
+ <div class="bs f"><span class="k">Step 3</span><b>Fit + test</b>ESV curve; PCHA k = 3…7; 200-shuffle permutation test; pick smallest k with p &lt; 0.01 at/before elbow.<small><code>run_fits.sh → 03</code></small></div>
+ <div class="bs r"><span class="k">Step 4</span><b>Describe</b>Weights per cell; label × corner tables; markers; enrichment; figures.<small><code>04_describe_simplex.py</code></small></div>
+ <div class="bs c"><span class="k">Step 5</span><b>Robustness</b>Leave one sample out; new subsample; cell cycle removed.<small><code>05_robustness.py</code></small></div>
+ <div class="bs r"><span class="k">Step 6</span><b>Specialists (Q2)</b>Closest-5% rule, plus gap ≥ 0.35 and weight &gt; 0.95.<small><code>06_groves_specialists.py</code></small></div>
+ <div class="bs f"><span class="k">Step 8</span><b>Within-sample fit</b>PCA + PCHA inside one tumour / line / clone / library; options --clean, --regress-depth.<small><code>08_within_unit.py</code></small></div>
+ <div class="bs c"><span class="k">Step 8b–8c</span><b>Corners and path test</b>Describe corners (cycling %, depth, EMT score); triangle vs 1-D path.<small><code>08b, 08c</code></small></div>
+ <div class="bs f"><span class="k">Step 9</span><b>Cross-projection + Hallmark</b>Freeze one triangle, project others; score Hallmark sets at corners.<small><code>09_*</code></small></div>
+ <div class="bs r"><span class="k">Step 10</span><b>Label tables</b>Specialist / generalist share per EMT state.<small><code>10_describe_labels.py</code></small></div>
+ <div class="bs r"><span class="k">Step 13</span><b>Figures + report</b>Slide figures; per-dataset write-up; cross-dataset synthesis.<small><code>13_mail_figures.py</code></small></div>
+</div>
+<div class="card legend"><span><i class="sw" style="background:var(--c5)"></i>data prep</span><span><i class="sw" style="background:var(--c1)"></i>fit / compute</span><span><i class="sw" style="background:var(--c3)"></i>checks</span><span><i class="sw" style="background:var(--c2)"></i>description / answers</span>
+Common choices: no imputation (no MAGIC), no batch correction in the main fit, genes centred not scaled, two gene sets (all genes and ~176–191 Tan-2014 "KS" EMT genes), specialist gap ≥ 0.35.</div>
+
+<h2>2. Five lanes, side by side</h2>
+<p class="sub">Read down a column for one dataset; read across a row to compare how each was handled. Scroll sideways on a narrow screen.</p>
+<div class="lane-wrap"><table class="lane">
+<thead><tr><th class="hl">Stage</th><th class="h1">1 · Mouse SCC<br><small>GSE288137</small></th><th class="h2">2 · Cook<br><small>GSE147405</small></th><th class="h3">3 · Mouse PDAC<br><small>GSE173958</small></th><th class="h4">4 · 4T1 clones<br><small>GSE303505</small></th><th class="h5">5 · MCF10A / HuMEC<br><small>GSE114687</small></th></tr></thead>
+<tbody>
+<tr><th>System</th><td>LKPR mouse skin SCC; 12 tumours (4 multiome, 8 scRNA); 23,959 cells</td><td>4 human lines (A549, DU145, MCF7, OVCA420) + TGF-β time course</td><td>2 mice, tumour at several body sites + 2 cultures; 80,944 droplets → 57,770 tumour cells</td><td>5 clones (E, EM1, EM2, EM3, M) + parental, one tumour each; 19,930 tumour cells</td><td>Colonies grown so EMT rises with distance from edge; Mock vs TGF-β; 30,590 cells</td></tr>
+<tr><th>Unit ("sample")</th><td>tumour</td><td>cell line</td><td>library (and mouse)</td><td>clone = tumour</td><td>line × arm (4) and 6 units</td></tr>
+<tr><th>EMT labels</th><td>Authors' 4 states (Epi, Early-Hyb, Hyb, Late-EMT)</td><td>Time after TGF-β (independent truth) + authors' pseudotime</td><td>Ours: KS score binned 40/75/95% into 4 states</td><td>Clone + KS quartiles</td><td>Colony position (inner/outer) + KS states</td></tr>
+<tr><th>Extra prep</th><td>Authors' QC (&gt;700 genes, &lt;20% mito)</td><td>11,250 genes shared by all lines</td><td>40 k-means clusters; keep epithelial-marker clusters, drop immune/stromal/blood</td><td>Authors' <code>Tumor</code> annotation + QC</td><td>Only cells in authors' metadata; ≥500 genes, ≤15% mito</td></tr>
+<tr><th>Fit-cell cap</th><td>800 / tumour</td><td>550 / line (forward arm); removal arm as guests</td><td>1,000 / library; cultures as guests</td><td>790 / clone</td><td>1,500 / sample</td></tr>
+<tr><th>Cleaning arm</th><td>none (problem is assay, not depth)</td><td>≥10k UMI, mito ≤0.07</td><td>≥10k UMI + technical genes</td><td>≥10k UMI + contamination ≤0.3 + technical genes</td><td>≥10k UMI (keeps only 45%; HuMEC 35–40%)</td></tr>
+<tr><th>Predictions written first?</th><td><span class="chip ok">yes</span></td><td><span class="chip neu">no</span></td><td><span class="chip neu">no</span></td><td><span class="chip ok">yes</span></td><td><span class="chip neu">no</span></td></tr>
+<tr><th>Pooled, all genes</th><td><span class="chip mid">k=3, p 0.005</span> but one corner technical</td><td><span class="chip mid">every k</span> corners = cell lines</td><td><span class="chip no">none</span> (k=3: 0.99)</td><td><span class="chip mid">weak</span> k=4 light QC, k=3 cleaned</td><td><span class="chip mid">k=6</span> (1.2% cells); corners = samples</td></tr>
+<tr><th>Pooled, KS EMT genes</th><td><span class="chip no">none</span> p 0.83</td><td><span class="chip mid">every k</span> = cell lines</td><td><span class="chip no">none</span> k=3: 1.00</td><td><span class="chip no">none</span> 0.93 (clean 0.52)</td><td><span class="chip mid">k=5–7</span> = samples</td></tr>
+<tr><th>Within-sample fits that pass</th><td><span class="chip ok">2 of 3 mixed tumours</span><br>SC15 0.005 · SC32 0.015 · SC46 0.244</td><td><span class="chip no">2 of 8</span><br>A549 all genes; MCF7 KS</td><td><span class="chip ok">6 of 7 libraries</span> (cleaned)</td><td><span class="chip no">1 of 20</span> (cleaned)</td><td><span class="chip ok">18 of 24</span> (cleaned; 11 of 24 uncleaned)</td></tr>
+<tr><th>What the corners are</th><td>Late-EMT matrix; proliferating epithelium; <b>technical axis</b> (pooled). Inside tumours: mesenchymal, epithelial, cycling</td><td>Proliferation; TGF-β response (A549 early-response)</td><td>Epithelial/ductal; proliferation; EMT signalling (mouse 1) or hypoxia (mouse 2)</td><td>Cycling; epithelial-leaning; clone M (TGF-β/hypoxia)</td><td><b>Cycling; differentiated epithelial; EMT/matrix</b>, recur in both lines and arms</td></tr>
+<tr><th>EMT path vs triangle</th><td>Shared EMT order across tumours (cross-projection into SC32)</td><td>Pseudotime path explains 7 of 8 fits</td><td>EMT runs along an edge</td><td>EMT score explains &lt;6% of leading PCs; no triangle beats path</td><td>EMT explains 36–90% of PC1; triangle beats path in 6 of 12</td></tr>
+<tr><th>Dataset-only extras</th><td>Regress-technical-axis (withdrawn); scrna6 (6 clean tumours, p 1.00)</td><td>Pooled tetrahedron; per-line triangles; corner programmes</td><td>Cross-projection into M1-SS (70–86% interior); not shared across mice</td><td>Contamination filter; clone E left with 142 cells</td><td>Depth control: regression 8/8, matching 7/8 survive</td></tr>
+<tr><th>Q2: hybrids</th><td><span class="chip ok">98.8% generalist</span></td><td><span class="chip ok">mid time point 89%</span></td><td><span class="chip ok">early-hyb 64% / 88%</span></td><td><span class="chip ok">83–87%</span></td><td><span class="chip ok">most generalist state in 7–8 of 8</span></td></tr>
+<tr><th>Hallmark corner check</th><td>added 17 Oct</td><td>done</td><td>done (19 corners)</td><td>added 17 Oct</td><td>done</td></tr>
+</tbody></table></div>
+
+<h2>3. How each dataset unfolded (decision trails)</h2>
+<p class="sub">Each box is what was done and why the next step followed. Green = result kept, red = problem or withdrawn, amber = check.</p>
+
+<div class="ds" style="--tc:var(--c1)"><h3>1 · Mouse SCC</h3><div class="meta">The template. Everything later copies this.</div>
+<div class="trail">
+ <div class="node"><div class="t">Predict</div>k=3; epithelial / late EMT / proliferating hybrid corners</div>
+ <div class="node"><div class="t">Fit A</div>All genes, 12 tumours: triangle p 0.005</div>
+ <div class="node bad"><div class="t">Problem</div>One corner is 79% multiome: technical</div>
+ <div class="node chk"><div class="t">Fit B / C</div>scRNA only: V1 persists. KS genes: no simplex (0.83)</div>
+ <div class="node bad"><div class="t">Try</div>Regress V1 out: p 0.04, but removes EMT signal. Withdrawn</div>
+ <div class="node good"><div class="t">Instead</div>Six clean tumours: no pooled simplex (1.00)</div>
+ <div class="node good"><div class="t">Within tumour</div>SC15 0.005, SC32 0.015, SC46 0.244</div>
+ <div class="node good"><div class="t">Cross-project</div>Into SC32: shared EMT order</div>
+ <div class="node chk"><div class="t">Hallmark</div>E2F/G2-M, EMT sets confirm names</div>
+</div></div>
+
+<div class="ds" style="--tc:var(--c2)"><h3>2 · Cook (TGF-β time course)</h3><div class="meta">Cleanest test: time is an EMT coordinate independent of our score.</div>
+<div class="trail">
+ <div class="node"><div class="t">Pooled</div>4 lines, forward arm, ≤550 per line</div>
+ <div class="node bad"><div class="t">Result</div>Simplex at every k but corners are cell lines</div>
+ <div class="node"><div class="t">Per line</div>Cleaned (≥10k UMI, mito ≤0.07), time-balanced version</div>
+ <div class="node chk"><div class="t">Result</div>A549 (all) and MCF7 (KS) pass; A549 depends on cleaning (0.711 → 0.010 → 0.224)</div>
+ <div class="node chk"><div class="t">Path test</div>Authors' pseudotime path explains 7 of 8</div>
+ <div class="node good"><div class="t">Corners</div>Proliferation + TGF-β response, not E/M sets</div>
+ <div class="node bad"><div class="t">Audit</div>Tech-gene filter never applied; fixed, nothing changed</div>
+</div></div>
+
+<div class="ds" style="--tc:var(--c3)"><h3>3 · Mouse PDAC (metastasis)</h3><div class="meta">Needed tumour-cell selection first; labels are ours.</div>
+<div class="trail">
+ <div class="node"><div class="t">Select</div>40 clusters; keep epithelial-marker ones → 57,770 tumour cells</div>
+ <div class="node"><div class="t">Label</div>KS score → 4 states (labels built from the genes tested)</div>
+ <div class="node bad"><div class="t">Pooled</div>No simplex (k=3: 0.99 / 1.00)</div>
+ <div class="node"><div class="t">Within library</div>Light QC: 3 of 7 pass</div>
+ <div class="node good"><div class="t">Clean</div>≥10k UMI + tech genes: 6 of 7 pass</div>
+ <div class="node good"><div class="t">Corners</div>Ductal, proliferation, EMT (mouse 1) / hypoxia (mouse 2)</div>
+ <div class="node chk"><div class="t">Cross-project</div>M1-SS triangle: not shared across mice</div>
+ <div class="node bad"><div class="t">Audit</div>Cleaned KS fits: 0 of 9 at k=3</div>
+</div></div>
+
+<div class="ds" style="--tc:var(--c4)"><h3>4 · 4T1 clones</h3><div class="meta">One tumour per clone: clone, tumour and batch are the same thing.</div>
+<div class="trail">
+ <div class="node"><div class="t">Predict</div>Written before fitting</div>
+ <div class="node"><div class="t">Check</div>Only clone E is clearly separate on the EMT score (37% of variance between clones)</div>
+ <div class="node bad"><div class="t">Pooled</div>KS: none. All genes: weak shape</div>
+ <div class="node bad"><div class="t">Uncleaned</div>Within-clone corners = stress, immune, stromal</div>
+ <div class="node chk"><div class="t">Clean</div>≥10k UMI + contamination panel ≤0.3 (set by eye)</div>
+ <div class="node bad"><div class="t">After</div>Passes fall 5 of 24 → 1 of 20</div>
+ <div class="node chk"><div class="t">Audit</div>Cutoff 0.2 / 0.3 / 0.5: all genes 0 of 5; EM2 passes on KS at all three</div>
+</div></div>
+
+<div class="ds" style="--tc:var(--c5)"><h3>5 · MCF10A / HuMEC pseudospace</h3><div class="meta">The only dataset with a within-sample triangle across most fits.</div>
+<div class="trail">
+ <div class="node"><div class="t">Pooled</div>Corners = sample identity; position explains ≤6% of any PC</div>
+ <div class="node"><div class="t">Within sample</div>6 units × all/KS × k3/k4</div>
+ <div class="node chk"><div class="t">Light QC</div>11 of 24 pass</div>
+ <div class="node good"><div class="t">Clean</div>≥10k UMI: 18 of 24; KS genes pass in 3 samples</div>
+ <div class="node good"><div class="t">Corners</div>Cycling · differentiated · EMT/matrix; Hallmark confirms</div>
+ <div class="node chk"><div class="t">Path test</div>Triangle beats EMT path in 6 of 12</div>
+ <div class="node chk"><div class="t">Depth control</div>Cycling corner could be depth: regression 8/8, matching 7/8 survive</div>
+ <div class="node good"><div class="t">Q2</div>Hybrid state most generalist in 7–8 of 8 fits</div>
+</div></div>
+
+<h2>4. The cleaning problem and the 17 October audit</h2>
+<p class="sub">Cleaning raised passes in PDAC and GSE114687 and lowered them in Cook and 4T1, so it was audited.</p>
+<div class="two">
+<div class="card bars"><h3>Within-sample fits that pass (cleaned)</h3>
+<div class="row"><span>SCC</span><div class="track"><div class="fill" style="width:67%;background:var(--c1)"></div></div><span>2 of 3</span></div>
+<div class="row"><span>Cook</span><div class="track"><div class="fill" style="width:25%;background:var(--c2)"></div></div><span>2 of 8</span></div>
+<div class="row"><span>PDAC</span><div class="track"><div class="fill" style="width:86%;background:var(--c3)"></div></div><span>6 of 7</span></div>
+<div class="row"><span>4T1</span><div class="track"><div class="fill" style="width:5%;background:var(--c4)"></div></div><span>1 of 20</span></div>
+<div class="row"><span>GSE114687</span><div class="track"><div class="fill" style="width:75%;background:var(--c5)"></div></div><span>18 of 24</span></div>
+<small class="sub">SCC uses raw fits (no cleaning arm). Denominators differ, so compare shapes, not exact ratios.</small></div>
+<div class="card bars"><h3>Share of cells kept by ≥10,000 UMI</h3>
+<div class="row"><span>Cook</span><div class="track"><div class="fill" style="width:89%;background:var(--c2)"></div></div><span>89%</span></div>
+<div class="row"><span>PDAC</span><div class="track"><div class="fill" style="width:80%;background:var(--c3)"></div></div><span>80%</span></div>
+<div class="row"><span>SCC</span><div class="track"><div class="fill" style="width:71%;background:var(--c1)"></div></div><span>71%</span></div>
+<div class="row"><span>4T1</span><div class="track"><div class="fill" style="width:69%;background:var(--c4)"></div></div><span>69%</span></div>
+<div class="row"><span>GSE114687</span><div class="track"><div class="fill" style="width:45%;background:var(--c5)"></div></div><span>45%</span></div>
+<small class="sub">Lowest single samples: 4T1 clone E 21%, SCC MU8 30%, HuMEC Mock 35%.</small></div>
+</div>
+<div class="aud">
+ <div class="node chk"><div class="t">Read</div>Cleaning code of all five datasets</div>
+ <div class="node bad"><div class="t">Found</div>Technical-gene filter used mouse spelling: matched nothing in Cook and GSE114687</div>
+ <div class="node"><div class="t">Fix</div>Short human list; UMI and contamination cutoffs become options; old defaults reproduce old t-ratios</div>
+ <div class="node"><div class="t">Rerun</div>104 fits, 4 at a time, 01:58–07:00, no failures</div>
+ <div class="node good"><div class="t">Outcome</div>Human fix changes nothing; 4T1 stable at 0.2–0.5; PDAC KS 0 of 9; MCF10A triangle holds at 5k/10k/15k, HuMEC cutoff-sensitive</div>
+</div>
+
+<h2>5. How the story converged</h2>
+<div class="two">
+<div class="card"><h3>Q1 · Do task corners exist?</h3>
+<b>Partly, but not as epithelial / hybrid / mesenchymal.</b>
+<ul style="margin:6px 0 0;padding-left:18px">
+<li>EMT genes never give a simplex beyond sample identity (SCC, Cook, PDAC, 4T1).</li>
+<li>Pooled corners are identity: tumours or assay, cell lines, mice, clones, samples.</li>
+<li>Corners that survive are programmes: proliferation, TGF-β/matrix, hypoxia, differentiation.</li>
+<li>Only GSE114687 gives a recurring triangle: cycling, differentiated, EMT/matrix.</li>
+<li>EMT itself behaves like an axis, not a corner.</li></ul></div>
+<div class="card"><h3>Q2 · Where do hybrids lie?</h3>
+<b>Mostly interior (generalists); in no dataset do they own a corner.</b>
+<ul style="margin:6px 0 0;padding-left:18px">
+<li>SCC 98.8%, 4T1 83–87%, PDAC early-hybrid 88% (closest 5%).</li>
+<li>Cook: middle time point most generalist (89%).</li>
+<li>GSE114687: hybrid is most generalist in 7 of 8 (gap), 8 of 8 (closest 5%).</li>
+<li>Exception: HuMEC Mock under the gap rule, where epithelial cells are slightly more generalist.</li></ul></div>
+</div>
+<div class="card"><h3>Caveats that apply across all five</h3>
+Most datasets have one sample per condition; EMT labels are partly derived from the score they are compared with (PDAC, 4T1, GSE114687); GSE114687 has no replicates; results flip direction with cleaning; none shows that EMT is or is not a Pareto trade-off in tumours.</div>
+
+<h2>6. Order in which it happened</h2>
+<div class="tl">
+ <div><b>10–11 Oct · Mouse SCC</b>Predictions, versions A/B/C, robustness, Groves, regression (withdrawn), within-tumour, cross-projection.</div>
+ <div><b>Next · Cook, PDAC</b>Same pipeline; Cook adds time/pseudotime and per-line fits; PDAC adds tumour-cell selection and cleaned library fits.</div>
+ <div><b>Next · 4T1, MCF10A/HuMEC</b>4T1 clones and contamination filter; pseudospace with path test, Hallmark and depth control.</div>
+ <div><b>16 Oct · Five-dataset report and deck</b>Cross-dataset table and answers to Q1/Q2.</div>
+ <div><b>17 Oct · Cleaning audit</b>Technical-gene bug, 104 reruns, Hallmark for SCC and 4T1, report v2.</div>
+</div>
+</main>
